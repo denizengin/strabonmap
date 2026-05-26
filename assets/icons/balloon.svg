@@ -1,0 +1,24 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Hot-air balloon">
+  <!-- hot-air balloon, UPRIGHT. Light from TOP-LEFT.
+       Gold = burner glow above the basket (single gold accent). -->
+  <ellipse class="sh" cx="50" cy="94" rx="20" ry="3.5"/>
+  <!-- envelope: lit half (wall) + shadow half (wall-s) -->
+  <path class="wall" d="M50 8 q-26 4 -26 30 q0 16 14 26 L50 64 Z"/>
+  <path class="wall-s" d="M50 8 q26 4 26 30 q0 16 -14 26 L50 64 Z"/>
+  <path class="hi" d="M50 10 q-16 3 -18 20 q3 -12 18 -16 Z"/>
+  <!-- gores (seams) -->
+  <path class="out-thin" fill="none" d="M50 8 L50 64 M37 10 q-8 24 1 44 M63 10 q8 24 -1 44"/>
+  <!-- bottom mouth ring -->
+  <path class="out-thin" fill="none" d="M38 64 q12 5 24 0"/>
+  <!-- ropes -->
+  <path class="out-thin" fill="none" d="M40 63 L44 80 M60 63 L56 80 M50 64 L50 80"/>
+  <!-- burner glow (gold accent) -->
+  <circle class="gold" cx="50" cy="74" r="2.6"/>
+  <!-- basket: lit front + shadow side (wood) -->
+  <path class="wood-l" d="M43 80 L57 80 L55 90 L45 90 Z"/>
+  <path class="wood" d="M50 80 L57 80 L55 90 L50 90 Z"/>
+  <path class="out-thin" fill="none" d="M45 84 L55 84 M47 80 L46 90 M50 80 L50 90 M53 80 L54 90"/>
+  <!-- primary contours -->
+  <path class="out" fill="none" d="M50 8 q-26 4 -26 30 q0 16 14 26 q12 5 24 0 q14 -10 14 -26 q0 -26 -26 -30 Z"/>
+  <path class="out" fill="none" d="M43 80 L57 80 L55 90 L45 90 Z"/>
+</svg>

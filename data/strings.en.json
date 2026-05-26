@@ -1,0 +1,12 @@
+{
+  "_meta": "E-B2 i18n string table. Keys are stable ids; values are the EN copy (1930s pulp voice — do NOT plain-language these). To translate: add data/strings.<lang>.json with the same keys. The app falls back to EN for any missing key. This is the FOUNDATION slice: a handful of high-visibility strings are wired through t(); the full ~200-string migration is mechanical follow-on (E-B2b).",
+  "landing.pitch.lead": "Turn your trips into a",
+  "landing.pitch.em": "1930s pulp-adventure travel-montage",
+  "landing.cta.make": "Make your own map",
+  "landing.cta.sub": "No account · photos stay on your device",
+  "editor.newTrip": "＋ A new expedition",
+  "editor.import": "⊞ Import from photographs",
+  "gear.language": "Language",
+  "gear.textSize": "Text size",
+  "fin.routeComplete": "Route complete."
+}

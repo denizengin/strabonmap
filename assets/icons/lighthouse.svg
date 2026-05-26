@@ -1,0 +1,31 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Lighthouse">
+  <!-- A LIGHTHOUSE: a tall tapering tower on a rocky base, a lantern room at the
+       top with a glowing light. Light from TOP-LEFT: left tower face lit
+       (stone-l), right face shadow (stone-s). Gold lantern light = the one gold
+       accent. -->
+  <!-- (1) cast shadow -->
+  <ellipse class="sh" cx="50" cy="88" rx="34" ry="4.5"/>
+  <!-- rocky base mound -->
+  <path class="stone" d="M22 80 q8 -10 28 -10 q20 0 28 10 L78 88 L22 88 Z"/>
+  <path class="stone-s" d="M50 70 q20 0 28 10 L78 88 L50 88 Z"/>
+  <!-- tapering tower body: lit left + shadow right -->
+  <path class="stone-l" d="M42 34 L50 34 L46 78 L38 78 Z"/>
+  <path class="stone-s" d="M50 34 L58 34 L62 78 L46 78 Z"/>
+  <!-- two warm banded courses on the tower -->
+  <path class="wall" d="M40 48 L60 48 L60.8 54 L39.2 54 Z"/>
+  <path class="wall" d="M37 64 L63 64 L63.8 70 L36.2 70 Z"/>
+  <!-- gallery platform under the lantern -->
+  <path class="stone-l" d="M38 32 L62 32 L60 34 L40 34 Z"/>
+  <!-- lantern room (glass openings) -->
+  <path class="win" d="M42 20 L58 20 L60 32 L40 32 Z"/>
+  <!-- lantern cap roof -->
+  <path class="roof-l" d="M50 12 L42 20 L50 20 Z"/>
+  <path class="roof-s" d="M50 12 L58 20 L50 20 Z"/>
+  <!-- gold lantern light + glow beams -->
+  <circle class="gold" cx="50" cy="26" r="3.6"/>
+  <path class="out-thin" fill="none" d="M53 24 L66 19 M53 28 L66 33 M47 24 L34 19 M47 28 L34 33"/>
+  <!-- lantern mullions + tower edge -->
+  <path class="out-thin" fill="none" d="M46 20 L45 32 M54 20 L55 32 M50 34 L50 78"/>
+  <!-- primary contour -->
+  <path class="out" fill="none" d="M50 12 L42 20 L40 34 L38 78 M50 12 L58 20 L60 34 L62 78 M42 20 L58 20"/>
+</svg>

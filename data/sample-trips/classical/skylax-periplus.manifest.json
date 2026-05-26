@@ -1,0 +1,21 @@
+{
+  "tripId": "skylax-periplus",
+  "style": "hand-coloured cartographic plate, muted ink, period-appropriate",
+  "images": [
+    {"stopId": "stop-1",  "prompt": "Karyanda island-harbour on the Carian coast at dawn, single beached trireme, fishing skiffs, low scrub and a watchtower; hand-coloured cartographic plate, muted ink, period-appropriate.", "size": "1200x800"},
+    {"stopId": "stop-2",  "prompt": "Halikarnassos acropolis above curving harbour, fortified mole, anchored galleys, a young Carian pilot studying a chart; hand-coloured cartographic plate, muted ink, period-appropriate.", "size": "1200x800"},
+    {"stopId": "stop-3",  "prompt": "Sardis with the Pactolus stream and Mount Tmolus behind, a Persian satrapal palace, mounted couriers setting out on the Royal Road; hand-coloured cartographic plate, muted ink, period-appropriate.", "size": "1200x800"},
+    {"stopId": "stop-4",  "prompt": "Palace of Darius at Susa, glazed-brick lion frieze, audience-hall columns, a Greek captain receiving orders from a Persian official; hand-coloured cartographic plate, muted ink, period-appropriate.", "size": "1200x800"},
+    {"stopId": "stop-5",  "prompt": "River craft on the upper Indus below pine-clad hills at Caspatyrus, Persian officials and Greek sailors loading provisions; hand-coloured cartographic plate, muted ink, period-appropriate.", "size": "1200x800"},
+    {"stopId": "stop-6",  "prompt": "Broad muddy middle Indus through Sind, merchantman drifting with the current, reed villages on the banks, herons in the shallows; hand-coloured cartographic plate, muted ink, period-appropriate.", "size": "1200x800"},
+    {"stopId": "stop-7",  "prompt": "Indus delta at Patala, mangrove channels opening to the ocean, three triremes rigging masts at the bar, monsoon clouds southward; hand-coloured cartographic plate, muted ink, period-appropriate.", "size": "1200x800"},
+    {"stopId": "stop-8",  "prompt": "Arid Gedrosian Makran coast falling sheer to the sea, trireme close inshore, watering party landing at a wadi mouth; hand-coloured cartographic plate, muted ink, period-appropriate.", "size": "1200x800"},
+    {"stopId": "stop-9",  "prompt": "Strait of Hormuz at sunrise, headlands of Arabia and Persia closing the horizon, a trireme threading the channel under oar; hand-coloured cartographic plate, muted ink, period-appropriate.", "size": "1200x800"},
+    {"stopId": "stop-10", "prompt": "Omani coast with rocky capes and white-sand bays, a trireme at anchor, frankincense traders on the beach; hand-coloured cartographic plate, muted ink, period-appropriate.", "size": "1200x800"},
+    {"stopId": "stop-11", "prompt": "South-Arabian Hadramaut shore with frankincense trees on inland ridges, close-hauled trireme, fortified harbour town below; hand-coloured cartographic plate, muted ink, period-appropriate.", "size": "1200x800"},
+    {"stopId": "stop-12", "prompt": "Bab el-Mandeb narrows with African and Arabian shores converging, a trireme entering the Red Sea on a fair wind; hand-coloured cartographic plate, muted ink, period-appropriate.", "size": "1200x800"},
+    {"stopId": "stop-13", "prompt": "Mid-Red-Sea coral-fringed coast near Berenike, a trireme drying sails at a sheltered cove, distant desert mountains; hand-coloured cartographic plate, muted ink, period-appropriate.", "size": "1200x800"},
+    {"stopId": "stop-14", "prompt": "Head of the Gulf of Suez at Heroopolis, masonry of Darius's canal works in the middle distance, worn triremes drawing up onto the beach; hand-coloured cartographic plate, muted ink, period-appropriate.", "size": "1200x800"},
+    {"stopId": "stop-15", "prompt": "Return to Karyanda: older Skylax at a writing-desk under an awning, scrolls of a periplus on the table, the harbour and a single trireme beyond; hand-coloured cartographic plate, muted ink, period-appropriate.", "size": "1200x800"}
+  ]
+}

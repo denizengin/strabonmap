@@ -1,0 +1,11 @@
+{
+  "tripId": "earhart-world-flight",
+  "style": "sepia hand-coloured plate, late-1930s register",
+  "images": [
+    {"stopId": "stop-1", "prompt": "Miami airfield dawn, Electra 10E with NR16020; sepia plate.", "size": "1200x800"},
+    {"stopId": "stop-2", "prompt": "Natal tropical airfield, Electra being refuelled; sepia plate.", "size": "1200x800"},
+    {"stopId": "stop-3", "prompt": "Karachi Imperial Airways hangar with Electra on apron; sepia plate.", "size": "1200x800"},
+    {"stopId": "stop-4", "prompt": "Lae jungle grass strip, Electra taking off toward sea; sepia plate.", "size": "1200x800"},
+    {"stopId": "stop-5", "prompt": "Howland Island coral atoll, Itasca cutter below empty sky; sepia plate.", "size": "1200x800"}
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "tripId": "cook-first-voyage",
+  "style": "hand-coloured cartographic plate, muted ink, period-appropriate",
+  "images": [
+    {"stopId": "stop-1", "prompt": "Plymouth Sound dawn departure of Endeavour under topsails; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-2", "prompt": "Rio sugar-loaf harbour with single English ship at anchor; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-3", "prompt": "Matavai Bay observation fort with brass instruments, outriggers around ship; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-4", "prompt": "Queen Charlotte Sound, careened ship on gravel beach, Māori waka offshore; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-5", "prompt": "Botany Bay eucalypt shore, ship's boat coming ashore, two Aboriginal men with shields; hand-coloured plate.", "size": "1200x800"}
+  ]
+}

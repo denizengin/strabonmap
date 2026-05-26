@@ -1,0 +1,36 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Cathedral">
+  <!-- Gothic CATHEDRAL, front view. A tall central nave with a steep pointed roof,
+       a round rose window on the facade, an arched portal, and two flanking spires.
+       Light from TOP-LEFT: left faces lit, right faces shadow.
+       Gold cross finial atop the central spire = the one gold accent. -->
+  <!-- (1) cast shadow -->
+  <ellipse class="sh" cx="50" cy="87" rx="38" ry="4.5"/>
+  <!-- left flanking spire: lit body + shadow side + pointed roof -->
+  <path class="wall" d="M16 46 L28 46 L28 84 L16 84 Z"/>
+  <path class="wall-s" d="M24 46 L28 46 L28 84 L24 84 Z"/>
+  <path class="roof-l" d="M22 24 L16 46 L28 46 Z"/>
+  <!-- right flanking spire -->
+  <path class="wall" d="M72 46 L84 46 L84 84 L72 84 Z"/>
+  <path class="wall-s" d="M80 46 L84 46 L84 84 L80 84 Z"/>
+  <path class="roof-s" d="M78 24 L72 46 L84 46 Z"/>
+  <!-- central nave facade: lit left + shadow right -->
+  <path class="wall" d="M34 40 L50 40 L50 84 L34 84 Z"/>
+  <path class="wall-s" d="M50 40 L66 40 L66 84 L50 84 Z"/>
+  <!-- steep central pointed roof: lit left + shadow right -->
+  <path class="roof-l" d="M50 12 L34 40 L50 40 Z"/>
+  <path class="roof-s" d="M50 12 L66 40 L50 40 Z"/>
+  <!-- rose window (round) on the facade -->
+  <circle class="win" cx="50" cy="52" r="7"/>
+  <!-- arched portal at the nave base (dark) -->
+  <path class="win" d="M44 84 L44 68 q6 -8 12 0 L56 84 Z"/>
+  <!-- lancet windows on the spires -->
+  <path class="win" d="M20 56 L24 56 L24 66 q-2 2 -4 0 Z"/>
+  <path class="win" d="M76 56 L80 56 L80 66 q-2 2 -4 0 Z"/>
+  <!-- gold cross finial atop the central spire -->
+  <path class="out-thin" fill="none" d="M50 12 L50 4"/>
+  <path class="gold" d="M49 7 L51 7 L51 4 L53 4 L53 6 L51 6 L51 10 L49 10 L49 6 L47 6 L47 4 L49 4 Z"/>
+  <!-- rose tracery + course lines -->
+  <path class="out-thin" fill="none" d="M50 45 L50 59 M43 52 L57 52 M34 40 L66 40 M50 40 L50 68"/>
+  <!-- primary contour -->
+  <path class="out" fill="none" d="M16 84 L16 46 L22 24 L28 46 L34 46 L34 40 L50 12 L66 40 L66 46 L72 46 L78 24 L84 46 L84 84"/>
+</svg>

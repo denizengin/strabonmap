@@ -1,0 +1,60 @@
+{
+  "id": "khalid-yarmuk",
+  "era": "dark-ages",
+  "title": "Khalid ibn al-Walid — the Sword of God",
+  "themeSuggestion": "dark-ages-vellum",
+  "viewport": "auto",
+  "intro": {
+    "title": "From Iraq to the Yarmuk",
+    "dateline": "633-636 CE",
+    "body": "Khalid ibn al-Walid won twin campaigns under Abu Bakr and Umar — first the Sasanid border in Iraq, then a 600-mile desert ride across the Syrian Hamad to reinforce the army in Palestine. The Yarmuk battle in August 636 ended Byzantine Syria."
+  },
+  "companions": ["Khalid ibn al-Walid"],
+  "stops": [
+    {
+      "id": "stop-1",
+      "name": "al-Hira",
+      "lat": 31.90,
+      "lon": 44.45,
+      "note": "Lakhmid capital, capitulates spring 633. Khalid's base for the Iraqi campaign.",
+      "imagePrompt": "Hand-coloured plate. Lakeside Arab Christian town, palm groves, Khalid's bedouin cavalry pitching tents outside the wall.",
+      "vehicleToNext": "camel"
+    },
+    {
+      "id": "stop-2",
+      "name": "Anbar",
+      "lat": 33.38,
+      "lon": 43.70,
+      "note": "Euphrates city captured June 633. The 'Action of the Eye' — Khalid's archers shoot defenders at the loopholes (Tabari I.2061).",
+      "imagePrompt": "Hand-coloured plate. Mud-brick walls along the Euphrates, archers in close ranks at the base of the wall.",
+      "vehicleToNext": "camel"
+    },
+    {
+      "id": "stop-3",
+      "name": "Quraqir",
+      "lat": 34.00,
+      "lon": 39.50,
+      "note": "Last reliable well before the waterless Syrian Hamad. Khalid waters camels here in May 634 for the famous five-day desert crossing.",
+      "imagePrompt": "Hand-coloured plate. Cluster of black tents around a single deep well, camels being filled with water, sun overhead.",
+      "vehicleToNext": "camel"
+    },
+    {
+      "id": "stop-4",
+      "name": "Damascus",
+      "lat": 33.51,
+      "lon": 36.30,
+      "note": "Captured 18 September 635 after a six-month siege. Khalid takes the East Gate at dawn while Abu Ubayda accepts capitulation at another.",
+      "imagePrompt": "Hand-coloured plate. Walled garden city in the Ghouta, dawn light on the East Gate, Arab cavalry inside.",
+      "vehicleToNext": "camel"
+    },
+    {
+      "id": "stop-5",
+      "name": "Yarmuk",
+      "lat": 32.72,
+      "lon": 35.97,
+      "note": "15-20 August 636. Six-day battle on the Yarmuk gorge. Vahan's Byzantine army shatters and Syria is open to the Caliphate.",
+      "imagePrompt": "Hand-coloured plate. Dust-storm battle on a high plateau ending at the lip of a deep gorge, broken Byzantine standards.",
+      "vehicleToNext": "horse"
+    }
+  ]
+}

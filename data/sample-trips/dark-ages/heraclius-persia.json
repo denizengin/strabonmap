@@ -1,0 +1,60 @@
+{
+  "id": "heraclius-persia",
+  "era": "dark-ages",
+  "title": "Heraclius — counter-stroke against Persia",
+  "themeSuggestion": "dark-ages-vellum",
+  "viewport": "auto",
+  "intro": {
+    "title": "The True Cross Recovered",
+    "dateline": "622-628 CE",
+    "body": "Heraclius launched the first imperial campaign led personally by an emperor in two centuries, striking Khusrau II in the Caucasian heartland. The True Cross, taken from Jerusalem in 614, was returned to the city in 630."
+  },
+  "companions": ["Heraclius"],
+  "stops": [
+    {
+      "id": "stop-1",
+      "name": "Constantinople",
+      "lat": 41.01,
+      "lon": 28.97,
+      "note": "Departure 5 April 622. Sergius patriarch keeps the city while Heraclius takes the field — unprecedented since Theodosius.",
+      "imagePrompt": "Hand-coloured plate. Emperor leaving Golden Gate at dawn, patriarch blessing standards.",
+      "vehicleToNext": "dhow"
+    },
+    {
+      "id": "stop-2",
+      "name": "Issus / Cilicia",
+      "lat": 36.85,
+      "lon": 36.16,
+      "note": "Winter 622-623. Heraclius re-trains the army on the Cilician coast, drilling new tactics against Persian cataphracts (Theophanes AM 6114).",
+      "imagePrompt": "Hand-coloured plate. Coastal camp under cypresses, infantry drilling in close order, snow on the Taurus behind.",
+      "vehicleToNext": "horse"
+    },
+    {
+      "id": "stop-3",
+      "name": "Dvin",
+      "lat": 40.00,
+      "lon": 44.58,
+      "note": "Armenian capital, captured spring 624. The base from which Heraclius strikes east into Atropatene.",
+      "imagePrompt": "Hand-coloured plate. Armenian fortified town on a high plateau, basilica beside the palace, Byzantine ensigns rising.",
+      "vehicleToNext": "horse"
+    },
+    {
+      "id": "stop-4",
+      "name": "Ganzak",
+      "lat": 36.62,
+      "lon": 47.20,
+      "note": "Royal Sasanid fire-temple of Adur Gushnasp. Heraclius sacks it in 624 in retaliation for the taking of Jerusalem.",
+      "imagePrompt": "Hand-coloured plate. Walled fire-temple complex on a volcanic crater, sacred fire being extinguished.",
+      "vehicleToNext": "horse"
+    },
+    {
+      "id": "stop-5",
+      "name": "Nineveh",
+      "lat": 36.36,
+      "lon": 43.15,
+      "note": "12 December 627. Heraclius defeats the Persian army of Rhahzadh in fog beside the ruins of Nineveh, opening the road to Ctesiphon.",
+      "imagePrompt": "Hand-coloured plate. Foggy battlefield by ancient ruined walls, cavalry locked in melee, emperor in the front rank.",
+      "vehicleToNext": "horse"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "schliemann-troy",
+  "era": "industrial",
+  "title": "Schliemann at Hisarlık",
+  "themeSuggestion": "industrial-engraving",
+  "viewport": "auto",
+  "intro": {
+    "title": "Digging for Homer",
+    "dateline": "1868-1873 CE",
+    "body": "Heinrich Schliemann arrived at Hisarlık in 1868 convinced it was the site of Homeric Troy. After Frank Calvert directed him to the right mound, Schliemann began excavating in 1870 and announced 'Priam's Treasure' in May 1873. His work damaged the site but identified it correctly."
+  },
+  "companions": ["Schliemann", "Calvert"],
+  "stops": [
+    {
+      "id": "stop-1",
+      "name": "Paris",
+      "lat": 48.86,
+      "lon": 2.35,
+      "note": "Schliemann's residence in the late 1860s where he wrote Ithaque and prepared his Trojan expedition.",
+      "imagePrompt": "Hand-coloured plate. Haussmann boulevard, gentleman in fur-collared coat with map case stepping into a hansom.",
+      "vehicleToNext": "locomotive"
+    },
+    {
+      "id": "stop-2",
+      "name": "Athens",
+      "lat": 37.98,
+      "lon": 23.73,
+      "note": "Schliemann marries Sophia Engastromenos here in 1869; she joins him at Hisarlık.",
+      "imagePrompt": "Hand-coloured plate. Athenian neoclassical house, wedding party emerging onto a sunlit street, Acropolis behind.",
+      "vehicleToNext": "steamer"
+    },
+    {
+      "id": "stop-3",
+      "name": "Çanakkale",
+      "lat": 40.15,
+      "lon": 26.41,
+      "note": "Schliemann's nearest port of supply. The Calvert family of British consuls owned half the Hisarlık mound and pointed Schliemann to it.",
+      "imagePrompt": "Hand-coloured plate. Ottoman harbour town on the Dardanelles, paddle-steamer at the customs mole, Anatolian hills beyond.",
+      "vehicleToNext": "horse"
+    },
+    {
+      "id": "stop-4",
+      "name": "Hisarlık (Troy)",
+      "lat": 39.96,
+      "lon": 26.24,
+      "note": "Excavations 1870-1873. The deep trench cuts through nine layers; Schliemann attributes the burned 'Treasure' layer to Priam (it is actually a millennium older).",
+      "imagePrompt": "Hand-coloured plate. Wide excavation trench in a low mound, Turkish workmen with shovels, Schliemann in a sun-hat at the bottom.",
+      "vehicleToNext": "foot"
+    },
+    {
+      "id": "stop-5",
+      "name": "Mycenae",
+      "lat": 37.73,
+      "lon": 22.75,
+      "note": "Schliemann turns to Mycenae in 1876 and finds the shaft-grave gold of the 'Mask of Agamemnon'.",
+      "imagePrompt": "Hand-coloured plate. Lion Gate of Mycenae with workmen clearing the dromos, fragments of gold leaf being passed up in a basket.",
+      "vehicleToNext": "horse"
+    }
+  ]
+}

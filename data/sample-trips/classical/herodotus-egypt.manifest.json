@@ -1,0 +1,11 @@
+{
+  "tripId": "herodotus-egypt",
+  "style": "hand-coloured cartographic plate, muted ink, period-appropriate",
+  "images": [
+    {"stopId": "stop-1", "prompt": "Halikarnassos port with scholar boarding a merchantman with scrolls; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-2", "prompt": "Island-city of Tyre with twin harbours and Melqart temple; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-3", "prompt": "Heliopolis temple of Atum-Ra with obelisks and palm avenue; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-4", "prompt": "Memphis sphinx-lined avenue to Ptah temple with colossal kings; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-5", "prompt": "Granite Elephantine island at First Cataract with papyrus skiffs; hand-coloured plate.", "size": "1200x800"}
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "richard-acre",
+  "era": "high-medieval",
+  "title": "Richard I — to Acre",
+  "themeSuggestion": "high-medieval-vellum",
+  "viewport": "auto",
+  "intro": {
+    "title": "Lionheart Eastward",
+    "dateline": "1190-1191 CE",
+    "body": "Richard sailed from Marseille in August 1190, wintered in Sicily, took Cyprus in May 1191 to spite Isaac Komnenos, and arrived at the siege of Acre in June. Acre fell on 12 July. The Itinerarium Peregrinorum and Ambroise's verse chronicle are the sources."
+  },
+  "companions": ["Richard I"],
+  "stops": [
+    {
+      "id": "stop-1",
+      "name": "Marseille",
+      "lat": 43.30,
+      "lon": 5.37,
+      "note": "Richard embarks late August 1190 with ~100 ships and ~17,000 men.",
+      "imagePrompt": "Hand-coloured plate. Provençal harbour at sunset, knight banners on cogs, royal galley at the mole.",
+      "vehicleToNext": "cog"
+    },
+    {
+      "id": "stop-2",
+      "name": "Messina",
+      "lat": 38.19,
+      "lon": 15.55,
+      "note": "Winter quarters 1190-91. Richard storms the city after a dispute with King Tancred over his sister Joan's dowry.",
+      "imagePrompt": "Hand-coloured plate. Sicilian harbour town under a winter storm, English siege engines, smoke from the eastern quarter.",
+      "vehicleToNext": "cog"
+    },
+    {
+      "id": "stop-3",
+      "name": "Limassol (Cyprus)",
+      "lat": 34.68,
+      "lon": 33.04,
+      "note": "Richard takes Cyprus in May 1191 after Isaac Komnenos imprisons shipwrecked English sailors. He marries Berengaria of Navarre in the Limassol chapel.",
+      "imagePrompt": "Hand-coloured plate. Crusader fleet at Cypriot harbour, chapel wedding scene, mountains behind.",
+      "vehicleToNext": "cog"
+    },
+    {
+      "id": "stop-4",
+      "name": "Tyre",
+      "lat": 33.27,
+      "lon": 35.20,
+      "note": "Provisioning call. Conrad of Montferrat's stronghold; Richard adjudicates the rival claims to the crown of Jerusalem here.",
+      "imagePrompt": "Hand-coloured plate. Twin-harbour island city of Tyre, royal council under awnings in the cathedral close.",
+      "vehicleToNext": "cog"
+    },
+    {
+      "id": "stop-5",
+      "name": "Acre",
+      "lat": 32.92,
+      "lon": 35.07,
+      "note": "Richard arrives 8 June 1191, intensifies the siege, and the city falls 12 July. The garrison is later massacred at Ayyadieh on 20 August.",
+      "imagePrompt": "Hand-coloured plate. Acre harbour besieged from land and sea, towers being raised against the walls, banners of Plantagenet and Capet on the lines.",
+      "vehicleToNext": "horse"
+    }
+  ]
+}

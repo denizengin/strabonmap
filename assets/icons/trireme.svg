@@ -1,0 +1,30 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Trireme">
+  <!-- Classical Greek TRIREME. Sleek low hull with a prominent forward
+       BOW RAM (the signature), three dense tiers of oars, single mast
+       with a square sail. Light from TOP-LEFT; sits on a water hint.
+       Gold stem-finial = the one gold accent. -->
+  <ellipse class="sh" cx="50" cy="82" rx="40" ry="4.5"/>
+  <path class="water" d="M8 79 q10 4 21 0 q11 -4 21 0 q11 4 21 0 q10 -4 21 0 L92 85 L8 85 Z"/>
+  <path class="foam" fill="none" d="M12 78 q8 3 16 0 M52 78 q8 3 16 0"/>
+  <!-- mast + yard -->
+  <path class="wood" d="M49 16 L51 54 L49 54 Z"/>
+  <path class="wood" d="M28 24 L72 24 L72 26 L28 26 Z"/>
+  <!-- square sail: lit face + shadow reef-band -->
+  <path class="wall" d="M30 25 L70 25 L67 45 L33 45 Z"/>
+  <path class="wall-s" d="M50 25 L70 25 L67 45 L50 45 Z"/>
+  <path class="out-thin" fill="none" d="M30 25 L70 25 L67 45 L33 45 Z M50 25 L50 45 M37 31 L63 31"/>
+  <!-- sleek low hull: lit upper strake + shadow lower strake -->
+  <path class="wood-l" d="M14 54 L82 54 q5 0 7 4 L18 58 Z"/>
+  <path class="wood" d="M18 58 L89 58 q-4 9 -18 9 L28 67 q-11 0 -14 -9 Z"/>
+  <!-- prominent forward BOW RAM (right) — low, pointed, twin-pronged -->
+  <path class="wood" d="M86 60 L99 61 L92 64 Z"/>
+  <path class="wood-l" d="M86 57 L99 60 L91 61 Z"/>
+  <path class="out-thin" fill="none" d="M86 57 L99 60 M86 60 L99 61"/>
+  <!-- curved stern (left) with gold finial -->
+  <path class="wood-l" d="M14 54 q-7 -3 -5 -13 q4 4 5 8 Z"/>
+  <circle class="gold" cx="8.5" cy="40" r="2.6"/>
+  <!-- three dense tiers of oars (denser bank than a galley) -->
+  <path class="out-thin" fill="none" d="M24 60 L20 70 M30 60 L26 70 M36 60 L32 70 M42 60 L38 70 M48 60 L44 70 M54 60 L50 70 M60 60 L56 70 M66 60 L62 70 M72 60 L68 70"/>
+  <!-- primary contour around the hull -->
+  <path class="out" fill="none" d="M14 54 L82 54 q5 0 7 4 q-4 9 -18 9 L28 67 q-11 0 -14 -9 Z"/>
+</svg>

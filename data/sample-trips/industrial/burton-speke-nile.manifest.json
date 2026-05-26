@@ -1,0 +1,11 @@
+{
+  "tripId": "burton-speke-nile",
+  "style": "hand-coloured cartographic plate, muted ink, period-appropriate",
+  "images": [
+    {"stopId": "stop-1", "prompt": "Zanzibar sultan's palace courtyard with Englishmen arguing, porters loading; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-2", "prompt": "Bagamoyo dawn beach, porters with chests ascending into bush; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-3", "prompt": "Tabora flat-roofed houses, English officers on string beds; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-4", "prompt": "Lake Tanganyika seen from wooded hill, sling-borne Europeans; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-5", "prompt": "Lake Victoria sunlit islands, lone European on granite rock; hand-coloured plate.", "size": "1200x800"}
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "tripId": "abbasid-charlemagne-embassy",
+  "style": "hand-coloured cartographic plate, muted ink, period-appropriate",
+  "images": [
+    {"stopId": "stop-1", "prompt": "Baghdad round city, elephant led toward western gate; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-2", "prompt": "Damascus Umayyad mosque courtyard with resting elephant; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-3", "prompt": "Carthage/Tunis port in winter rain with elephant under canopy; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-4", "prompt": "Portus Veneris coastal harbour, elephant walked off dhow on planks; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-5", "prompt": "Aachen palatine chapel, elephant entering gate as nobles stare; hand-coloured plate.", "size": "1200x800"}
+  ]
+}

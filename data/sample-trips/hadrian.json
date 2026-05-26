@@ -1,0 +1,30 @@
+{
+  "id": "__sample_hadrian__",
+  "name": "Hadrian's Inspection",
+  "seeded": true,
+  "intro": {
+    "title": "Hadrian's Inspection",
+    "dateline": "AD 122",
+    "body": "Hadrian travelled from Rome to Britannia to inspect the northern limes, leaving Antinous in Antioch. The journey took him across Gaul and the Channel; he walked the line where the empire would end.\n\nAt the frontier he ordered the great wall built — eighty Roman miles of stone across the neck of the island, marking not conquest but limit. A boundary in masonry. A frontier as policy."
+  },
+  "cities": [
+    { "name": "Rome",         "country": "Italy",          "lat": 41.90, "lon": 12.50 },
+    { "name": "Lugdunum",     "country": "Gaul",           "lat": 45.76, "lon": 4.83  },
+    { "name": "Gesoriacum",   "country": "Gaul",           "lat": 50.73, "lon": 1.61  },
+    { "name": "Londinium",    "country": "Britannia",      "lat": 51.51, "lon": -0.13 },
+    { "name": "Eboracum",     "country": "Britannia",      "lat": 53.96, "lon": -1.08 },
+    { "name": "Vindolanda",   "country": "Britannia",      "lat": 54.99, "lon": -2.36 }
+  ],
+  "legs": [
+    { "vehicle": "carriage" },
+    { "vehicle": "carriage" },
+    { "vehicle": "ship" },
+    { "vehicle": "carriage" },
+    { "vehicle": "carriage" }
+  ],
+  "landmarks": [],
+  "companions": [],
+  "unallocated": [],
+  "createdAt": 0,
+  "lastSavedAt": 0
+}

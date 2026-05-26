@@ -1,0 +1,26 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Junk">
+  <!-- Chinese JUNK. Signature battened LUG sails with horizontal batten
+       lines, an upturned bow (right) and a high stern (left). Light from
+       TOP-LEFT; water hint. Gold = stern-lantern (single accent). -->
+  <ellipse class="sh" cx="50" cy="82" rx="40" ry="4.5"/>
+  <path class="water" d="M8 79 q11 4 21 0 q10 -4 21 0 q11 4 21 0 q10 -4 21 0 L92 85 L8 85 Z"/>
+  <path class="foam" fill="none" d="M12 78 q8 3 16 0 M52 78 q8 3 16 0"/>
+  <!-- two masts -->
+  <path class="wood" d="M37 58 L38 16 L40 16 L39 58 Z"/>
+  <path class="wood" d="M64 58 L65 24 L67 24 L66 58 Z"/>
+  <!-- mainsail: battened lug, lit panel + shadow leech, batten lines -->
+  <path class="wall" d="M22 22 L40 18 L40 56 L24 52 Z"/>
+  <path class="wall-s" d="M40 18 L40 56 L33 54 L33 20 Z"/>
+  <path class="out-thin" fill="none" d="M22 22 L40 18 M23 30 L40 27 M23 38 L40 36 M23.5 46 L40 45 M24 52 L40 56"/>
+  <!-- foresail: smaller battened lug, lit panel + shadow leech, battens -->
+  <path class="wall" d="M50 28 L67 25 L67 56 L51 53 Z"/>
+  <path class="wall-s" d="M67 25 L67 56 L61 54 L61 26 Z"/>
+  <path class="out-thin" fill="none" d="M50 28 L67 25 M50.5 35 L67 33 M51 42 L67 41 M51 49 L67 48 M51 53 L67 56"/>
+  <!-- junk hull: upturned bow right, high stern left (lit strake + shadow) -->
+  <path class="wood-l" d="M14 58 L86 58 L88 62 L12 62 Z"/>
+  <path class="wood" d="M12 62 L88 62 q2 -6 4 -12 q-2 14 -16 16 L30 72 q-18 0 -16 -16 q2 6 4 12 Z"/>
+  <!-- gold stern-lantern atop the high stern -->
+  <circle class="gold" cx="14" cy="50" r="2.6"/>
+  <!-- primary contour around the hull -->
+  <path class="out" fill="none" d="M12 62 L88 62 q2 -6 4 -12 q-2 14 -16 16 L30 72 q-18 0 -16 -16 q2 6 4 12 Z"/>
+</svg>

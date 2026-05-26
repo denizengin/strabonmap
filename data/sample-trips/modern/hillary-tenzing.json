@@ -1,0 +1,60 @@
+{
+  "id": "hillary-tenzing",
+  "era": "modern",
+  "title": "Hillary and Tenzing — first ascent of Everest",
+  "themeSuggestion": "modern-clean",
+  "viewport": "auto",
+  "intro": {
+    "title": "On Top",
+    "dateline": "1953 CE",
+    "body": "The ninth British Everest expedition placed Edmund Hillary and Tenzing Norgay on the summit at 11:30 am, 29 May 1953. They spent fifteen minutes there. The news reached London on the morning of Queen Elizabeth II's coronation."
+  },
+  "companions": ["Hillary", "Tenzing", "Hunt"],
+  "stops": [
+    {
+      "id": "stop-1",
+      "name": "Kathmandu",
+      "lat": 27.72,
+      "lon": 85.32,
+      "note": "Expedition arrives March 1953. From here the new southern approach replaces the 1924 Tibetan route.",
+      "imagePrompt": "Photographic plate, post-war register. Newari brick-and-tile Kathmandu, expedition vehicles loaded with crates, snow Himalayas in the distance.",
+      "vehicleToNext": "foot"
+    },
+    {
+      "id": "stop-2",
+      "name": "Namche Bazaar",
+      "lat": 27.81,
+      "lon": 86.71,
+      "note": "Sherpa staging town. The expedition hires porters and acclimatises here in early April.",
+      "imagePrompt": "Photographic plate. Stepped Sherpa village on a steep hillside, terraced fields, Ama Dablam pyramid behind.",
+      "vehicleToNext": "foot"
+    },
+    {
+      "id": "stop-3",
+      "name": "Khumbu Icefall (Base Camp)",
+      "lat": 28.00,
+      "lon": 86.85,
+      "note": "Base Camp 5,364 m at the foot of the Khumbu Icefall, established 12 April 1953.",
+      "imagePrompt": "Photographic plate. Cluster of canvas tents on glacial moraine, jumbled blue ice of the icefall behind, prayer flags strung between rocks.",
+      "vehicleToNext": "foot"
+    },
+    {
+      "id": "stop-4",
+      "name": "South Col (Camp 8)",
+      "lat": 27.97,
+      "lon": 86.93,
+      "note": "Camp 8 at 7,900 m, established 21 May 1953. The first summit attempt by Evans and Bourdillon turns back from the South Summit.",
+      "imagePrompt": "Photographic plate. Two small tents on a vast windswept saddle of bare ice between two peaks, climber in down jacket and oxygen mask.",
+      "vehicleToNext": "foot"
+    },
+    {
+      "id": "stop-5",
+      "name": "Summit",
+      "lat": 27.99,
+      "lon": 86.93,
+      "note": "11:30 am, 29 May 1953. Hillary photographs Tenzing on the summit holding the UN, Indian, Nepali, and Union flags on an ice-axe.",
+      "imagePrompt": "Photographic plate. Tenzing on summit cornice silhouetted against sky, ice-axe held aloft with four flags, oxygen mask down on his chest.",
+      "vehicleToNext": "foot"
+    }
+  ]
+}

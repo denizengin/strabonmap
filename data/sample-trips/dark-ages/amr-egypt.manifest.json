@@ -1,0 +1,11 @@
+{
+  "tripId": "amr-egypt",
+  "style": "hand-coloured cartographic plate, muted ink, period-appropriate",
+  "images": [
+    {"stopId": "stop-1", "prompt": "ʿArish sandy oasis, Arab cavalry watering horses among palms; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-2", "prompt": "Pelusium marsh-edge fortress with lateen-rigged dhows in lagoons; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-3", "prompt": "Heliopolis obelisk above a battle plain; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-4", "prompt": "Roman Babylon bastion by the Nile with Arab tents around; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-5", "prompt": "Alexandria Pharos and Eastern Harbour, ceremonial surrender; hand-coloured plate.", "size": "1200x800"}
+  ]
+}

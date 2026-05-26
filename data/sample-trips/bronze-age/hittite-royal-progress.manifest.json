@@ -1,0 +1,11 @@
+{
+  "tripId": "hittite-royal-progress",
+  "style": "hand-coloured cartographic plate, muted ink, period-appropriate",
+  "images": [
+    {"stopId": "stop-1", "prompt": "Hattusa cyclopean walls and lion gate, chariots in lower town; hand-coloured cartographic plate.", "size": "1200x800"},
+    {"stopId": "stop-2", "prompt": "Village shrine knoll at Tahurpa, royal chariot and retinue arriving; hand-coloured cartographic plate.", "size": "1200x800"},
+    {"stopId": "stop-3", "prompt": "Arinna sun-disk standard above stone temple, procession of priestesses; hand-coloured cartographic plate.", "size": "1200x800"},
+    {"stopId": "stop-4", "prompt": "Zippalanda mountain shrine with bull statue under gathering storm; hand-coloured cartographic plate.", "size": "1200x800"},
+    {"stopId": "stop-5", "prompt": "Nerik hilltop temple in pine country, priests with libation vessels; hand-coloured cartographic plate.", "size": "1200x800"}
+  ]
+}

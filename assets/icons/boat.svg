@@ -1,0 +1,24 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sailing boat">
+  <!-- period-neutral single-masted vessel: one mast, ONE square sail,
+       no funnel, no oars. Sits on a water hint. Light from TOP-LEFT.
+       Gold = mast-top finial (single gold accent). -->
+  <ellipse class="sh" cx="50" cy="82" rx="34" ry="4.5"/>
+  <!-- water hint -->
+  <path class="water" d="M10 78 q10 4 20 0 q10 -4 20 0 q10 4 20 0 q10 -4 20 0 L90 84 L10 84 Z"/>
+  <path class="foam" fill="none" d="M14 77 q8 3 16 0 M54 77 q8 3 16 0"/>
+  <!-- mast -->
+  <path class="wood" d="M49 12 L51 60 L49 60 Z"/>
+  <circle class="gold" cx="50" cy="11" r="2.6"/>
+  <!-- yard (spar holding the square sail) -->
+  <path class="wood" d="M30 24 L70 24 L70 26 L30 26 Z"/>
+  <!-- ONE square sail: lit half + shadow half, gently bellied -->
+  <path class="wall" d="M31 25 q6 4 19 5 L50 52 q-12 -1 -19 -5 Z"/>
+  <path class="wall-s" d="M50 30 q11 -1 19 -5 L69 47 q-8 4 -19 5 Z"/>
+  <path class="out-thin" fill="none" d="M31 25 L31 47 q9 4 19 5 q10 -1 19 -5 L69 25 M50 30 L50 52"/>
+  <!-- hull: lit deck strake + shadow belly -->
+  <path class="wood-l" d="M18 60 L82 60 q5 0 7 4 L22 64 Z"/>
+  <path class="wood" d="M22 64 L89 64 q-7 11 -22 11 L33 75 q-13 0 -15 -11 Z"/>
+  <path class="out-thin" fill="none" d="M22 64 L89 64 M26 67 L74 67"/>
+  <!-- primary contour -->
+  <path class="out" fill="none" d="M18 60 L82 60 q5 0 7 4 q-7 11 -22 11 L33 75 q-13 0 -15 -11 Z"/>
+</svg>

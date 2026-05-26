@@ -1,0 +1,11 @@
+{
+  "tripId": "hannibal-italy",
+  "style": "hand-coloured cartographic plate, muted ink, period-appropriate",
+  "images": [
+    {"stopId": "stop-1", "prompt": "New Carthage Iberian harbour, elephants boarding transports at dawn; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-2", "prompt": "Rhône crossing, elephants on timber rafts, Gallic skirmishers on far bank; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-3", "prompt": "Alpine pass in early snow, column of elephants on narrow mountain track; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-4", "prompt": "Misty Lake Trasimene shore, Roman column ambushed from wooded hills; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-5", "prompt": "Cannae double envelopment on Apulian plain, crescent line absorbing Roman center; hand-coloured plate.", "size": "1200x800"}
+  ]
+}

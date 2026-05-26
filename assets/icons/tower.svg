@@ -1,0 +1,29 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tower">
+  <!-- A lone medieval watch TOWER: a single tall square tower with battlements and a
+       small conical roof, and a couple of dark windows. Light from TOP-LEFT: left
+       face lit (stone-l), right face shadow (stone-s). Gold pennant at the top = the
+       one gold accent. Distinct from a castle: just ONE slender tower. -->
+  <!-- (1) cast shadow -->
+  <ellipse class="sh" cx="50" cy="87" rx="24" ry="4.5"/>
+  <!-- tower body: lit left + shadow right -->
+  <path class="stone-l" d="M38 32 L50 32 L50 84 L38 84 Z"/>
+  <path class="stone-s" d="M50 32 L62 32 L62 84 L50 84 Z"/>
+  <!-- battlement crenellations along the top -->
+  <path class="stone-l" d="M37 26 L41 26 L41 32 L37 32 Z M44 26 L48 26 L48 32 L44 32 Z"/>
+  <path class="stone-s" d="M52 26 L56 26 L56 32 L52 32 Z M59 26 L63 26 L63 32 L59 32 Z"/>
+  <!-- small conical roof rising from inside the battlements -->
+  <path class="roof-l" d="M50 12 L42 26 L50 26 Z"/>
+  <path class="roof-s" d="M50 12 L58 26 L50 26 Z"/>
+  <!-- arrow-slit windows (dark) -->
+  <rect class="win" x="46" y="44" width="3" height="9"/>
+  <rect class="win" x="51" y="60" width="3" height="9"/>
+  <!-- arched door at the base -->
+  <path class="win" d="M44 84 L44 72 q6 -7 12 0 L56 84 Z"/>
+  <!-- gold pennant on a staff atop the roof -->
+  <path class="out-thin" fill="none" d="M50 12 L50 4"/>
+  <path class="gold" d="M50 5 L62 8 L50 11 Z"/>
+  <!-- course lines + tower center edge -->
+  <path class="out-thin" fill="none" d="M50 32 L50 84 M38 44 L62 44 M38 60 L62 60"/>
+  <!-- primary contour -->
+  <path class="out" fill="none" d="M38 84 L38 26 L42 26 L50 12 L58 26 L62 26 L62 84 M37 32 L63 32"/>
+</svg>

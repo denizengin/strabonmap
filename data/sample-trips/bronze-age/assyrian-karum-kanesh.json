@@ -1,0 +1,60 @@
+{
+  "id": "assyrian-karum-kanesh",
+  "era": "bronze-age",
+  "title": "Assyrian merchant caravan — Aššur to Kaneš",
+  "themeSuggestion": "bronze-age-limestone",
+  "viewport": "auto",
+  "intro": {
+    "title": "Tin and Textiles up the Tigris",
+    "dateline": "c. 1900 BCE",
+    "body": "The Old Assyrian merchant archive of Kaneš (Kültepe) documents ~22,000 tablets of caravan trade between Aššur and central Anatolia. Caravans of black donkeys carried tin and woven textiles north, returning with silver. The round trip took about six weeks."
+  },
+  "companions": [],
+  "stops": [
+    {
+      "id": "stop-1",
+      "name": "Aššur",
+      "lat": 35.46,
+      "lon": 43.26,
+      "note": "Old Assyrian capital on the Tigris. Origin of the caravans; tin arrived here from the east before being repackaged on donkey-back.",
+      "imagePrompt": "Hand-coloured plate. Mud-brick citadel above the Tigris, lines of donkeys laden with cloth-wrapped tin ingots leaving the gate.",
+      "vehicleToNext": "donkey"
+    },
+    {
+      "id": "stop-2",
+      "name": "Apum (Tell Leilan)",
+      "lat": 36.96,
+      "lon": 41.50,
+      "note": "Stopping-place in the Khabur triangle. Tablets from Tell Leilan attest its role as caravan node in the period of Shamshi-Adad.",
+      "imagePrompt": "Hand-coloured plate. Walled tell on a steppe, caravanserai courtyard with donkeys at troughs.",
+      "vehicleToNext": "donkey"
+    },
+    {
+      "id": "stop-3",
+      "name": "Hahhum",
+      "lat": 37.30,
+      "lon": 38.80,
+      "note": "Toll-station at a Euphrates crossing on the route to Anatolia. Identified tentatively with Lidar Höyük.",
+      "imagePrompt": "Hand-coloured plate. River crossing with reed-bundle rafts ferrying donkeys, officials with clay tablets at a customs post.",
+      "vehicleToNext": "raft"
+    },
+    {
+      "id": "stop-4",
+      "name": "Mamma",
+      "lat": 38.20,
+      "lon": 37.00,
+      "note": "Intermediate town in the Anti-Taurus. Kültepe letters mention it as a node where caravans regrouped before the mountain crossing.",
+      "imagePrompt": "Hand-coloured plate. Mountain town in a steep valley, donkeys resting under pine, snow on the peaks.",
+      "vehicleToNext": "donkey"
+    },
+    {
+      "id": "stop-5",
+      "name": "Kaneš (Kültepe)",
+      "lat": 38.85,
+      "lon": 35.63,
+      "note": "Destination kārum — the merchant quarter outside the Anatolian city of Kaneš. Tin and textiles unloaded; silver returned south.",
+      "imagePrompt": "Hand-coloured plate. Lower-town merchant quarter outside a citadel mound, scribes writing on clay, donkeys being unloaded.",
+      "vehicleToNext": "donkey"
+    }
+  ]
+}

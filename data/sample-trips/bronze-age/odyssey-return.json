@@ -1,0 +1,141 @@
+{
+  "id": "odyssey-return",
+  "era": "bronze-age",
+  "title": "Odyssey — Odysseus's return",
+  "themeSuggestion": "bronze-age-limestone",
+  "viewport": "auto",
+  "intro": {
+    "title": "The Long Way Home",
+    "dateline": "c. 1190 BCE",
+    "body": "The Odyssey traces a ten-year return from Troy to Ithaca, scattered by Poseidon's anger and the cunning of monsters. Geographical identifications are speculative — these are the most-cited proposals from Strabo onward, marked as such in the notes."
+  },
+  "companions": ["Odysseus"],
+  "stops": [
+    {
+      "id": "stop-1",
+      "name": "Troy (Hisarlık)",
+      "lat": 39.96,
+      "lon": 26.24,
+      "note": "Departure point. Odyssey IX opens with Odysseus naming himself to the Phaeacians and recounting the leaving.",
+      "imagePrompt": "Hand-coloured plate. Beached black ships pushing off from a sandy strand under burning citadel walls in the distance.",
+      "vehicleToNext": "galley"
+    },
+    {
+      "id": "stop-2",
+      "name": "Ismaros",
+      "lat": 40.92,
+      "lon": 25.20,
+      "note": "Thracian raid on the Cicones (Odyssey IX.39). Modern Maroneia is the conventional identification.",
+      "imagePrompt": "Hand-coloured plate. Coastal Thracian town under raid, smoke, low galleys offshore.",
+      "vehicleToNext": "galley"
+    },
+    {
+      "id": "stop-3",
+      "name": "Lotus-Eaters (Djerba)",
+      "lat": 33.80,
+      "lon": 10.85,
+      "note": "Strabo (Geog. I.2.17) places the Lotus-Eaters on the island of Meninx — modern Djerba off Tunisia. Speculative.",
+      "imagePrompt": "Hand-coloured plate. Low palm-fringed island, sailors drowsing among lotus blossoms on the strand.",
+      "vehicleToNext": "galley"
+    },
+    {
+      "id": "stop-4",
+      "name": "Cyclops (Sicily)",
+      "lat": 37.51,
+      "lon": 15.09,
+      "note": "Thucydides VI.2 places the Cyclopes in Sicily; the Aci Trezza sea-stacks off Catania are the traditional Polyphemus site. Speculative.",
+      "imagePrompt": "Hand-coloured plate. Volcanic coast with offshore basalt sea-stacks, smoking peak of Etna behind.",
+      "vehicleToNext": "galley"
+    },
+    {
+      "id": "stop-5",
+      "name": "Aeolia (Lipari)",
+      "lat": 38.47,
+      "lon": 14.95,
+      "note": "Aeolus's floating island, identified since antiquity with the Aeolian (Lipari) islands. Speculative.",
+      "imagePrompt": "Hand-coloured plate. Cluster of volcanic isles, bronze walls around a high citadel, winds drawn as cherubic faces.",
+      "vehicleToNext": "galley"
+    },
+    {
+      "id": "stop-6",
+      "name": "Telepylos (Bonifacio)",
+      "lat": 41.39,
+      "lon": 9.16,
+      "note": "Land of the Laestrygonian giants. Strabo and Thucydides offer conflicting locations; the high white cliffs of Bonifacio in southern Corsica match the harbour description. Speculative.",
+      "imagePrompt": "Hand-coloured plate. Narrow rock-walled harbour with sheer white cliffs above, giants hurling boulders down on ships.",
+      "vehicleToNext": "galley"
+    },
+    {
+      "id": "stop-7",
+      "name": "Aeaea (Monte Circeo)",
+      "lat": 41.23,
+      "lon": 13.07,
+      "note": "Circe's island. Hesiod's Theogony links Aeaea to the Italian coast; Monte Circeo south of Rome is the conventional identification. Speculative.",
+      "imagePrompt": "Hand-coloured plate. Wooded promontory rising as an island-like cape, smoke from a palace among cypresses.",
+      "vehicleToNext": "galley"
+    },
+    {
+      "id": "stop-8",
+      "name": "Entrance to Hades (Cumae)",
+      "lat": 40.85,
+      "lon": 14.05,
+      "note": "Odyssey XI nekuia. Virgil's Aeneid VI places the underworld entrance at Lake Avernus near Cumae; the older Odyssean text is geographically vague. Speculative.",
+      "imagePrompt": "Hand-coloured plate. Sulphurous lake in a wooded crater, cavern mouth at the water's edge, pale shades drifting.",
+      "vehicleToNext": "galley"
+    },
+    {
+      "id": "stop-9",
+      "name": "Sirens (Li Galli)",
+      "lat": 40.58,
+      "lon": 14.43,
+      "note": "Strabo (I.2.12) places the Sirens off the Sorrentine coast at the Li Galli islets, between Capri and Positano. Speculative.",
+      "imagePrompt": "Hand-coloured plate. Three small rocky islets, sirens perched among bones of past sailors, calm sea.",
+      "vehicleToNext": "galley"
+    },
+    {
+      "id": "stop-10",
+      "name": "Scylla and Charybdis (Strait of Messina)",
+      "lat": 38.25,
+      "lon": 15.65,
+      "note": "Thucydides and Strabo agree the strait between Sicily and Calabria is the home of Scylla and Charybdis. Tidal whirlpools off Punta del Faro support the identification.",
+      "imagePrompt": "Hand-coloured plate. Narrow strait between two coasts, six-headed creature on one cliff, whirlpool on the other.",
+      "vehicleToNext": "galley"
+    },
+    {
+      "id": "stop-11",
+      "name": "Thrinacia (Sicily)",
+      "lat": 37.30,
+      "lon": 13.58,
+      "note": "Island of Helios's cattle. The name (Greek for 'three-pointed') was applied to Sicily already in classical antiquity. Speculative.",
+      "imagePrompt": "Hand-coloured plate. Triangular island with three capes, white cattle grazing on inland meadows.",
+      "vehicleToNext": "galley"
+    },
+    {
+      "id": "stop-12",
+      "name": "Ogygia (Gozo)",
+      "lat": 36.04,
+      "lon": 14.25,
+      "note": "Calypso's island. Strabo I.2.18 places Ogygia in the central Mediterranean; Maltese tradition identifies it with Gozo. Speculative.",
+      "imagePrompt": "Hand-coloured plate. Small fertile island, low caves on a limestone coast, nymph's grotto with vines.",
+      "vehicleToNext": "raft"
+    },
+    {
+      "id": "stop-13",
+      "name": "Scheria (Corfu)",
+      "lat": 39.62,
+      "lon": 19.92,
+      "note": "Phaeacian harbour where Odysseus is washed ashore. Thucydides I.25 identifies Corcyra (Corfu) with Scheria; the western beach at Paleokastritsa is the traditional landing.",
+      "imagePrompt": "Hand-coloured plate. Curved beach below tall cliffs, a single bedraggled figure washed up on the sand.",
+      "vehicleToNext": "galley"
+    },
+    {
+      "id": "stop-14",
+      "name": "Ithaca",
+      "lat": 38.42,
+      "lon": 20.72,
+      "note": "Modern Ithaki. The home palace's exact site is disputed (north Ithaca vs Kefalonia); the island identification itself is the orthodox reading of Odyssey IX.21.",
+      "imagePrompt": "Hand-coloured plate. Rugged limestone island, olive groves, a small palace among cypresses, a hound at the gate.",
+      "vehicleToNext": "foot"
+    }
+  ]
+}

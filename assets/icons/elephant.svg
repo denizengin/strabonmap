@@ -1,0 +1,39 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Elephant">
+  <!-- War / transport ELEPHANT, side-on facing RIGHT. Large rounded body,
+       head with a curled trunk and a tusk, big ear, four sturdy legs, and
+       a small howdah seat on the back. Land animal: NO water, sh shadow
+       on the ground. Light from TOP-LEFT. Gold = howdah finial (one accent). -->
+  <ellipse class="sh" cx="50" cy="88" rx="38" ry="4.5"/>
+  <!-- FAR legs (shadow), sturdy columns -->
+  <path class="wall-s" d="M30 60 L28 84 L37 84 L37 60 Z"/>
+  <path class="wall-s" d="M58 60 L58 84 L67 84 L65 60 Z"/>
+  <!-- NEAR legs (lit), sturdy columns -->
+  <path class="wall" d="M22 60 L20 84 L30 84 L30 60 Z"/>
+  <path class="wall" d="M50 60 L50 84 L60 84 L60 60 Z"/>
+  <path class="out-thin" fill="none" d="M22 60 L20 84 M50 60 L50 84"/>
+  <!-- large rounded body: lit topline + shadow belly -->
+  <path class="wall" d="M18 52 q2 -22 30 -23 q22 -1 30 8 q5 5 4 12 L18 56 Z"/>
+  <path class="wall-s" d="M18 56 L82 49 q2 9 -6 13 q-16 7 -38 6 q-18 -1 -20 -12 Z"/>
+  <path class="hi" d="M24 44 q12 -9 26 -8 q-15 0 -26 8 Z"/>
+  <!-- head + big domed forehead (right): lit + shadow -->
+  <path class="wall" d="M72 48 q4 -16 16 -16 q7 0 8 8 q1 9 -8 16 q-9 5 -16 -1 Z"/>
+  <path class="wall-s" d="M96 40 q1 9 -8 16 q-9 5 -16 -1 q11 1 18 -6 q5 -4 6 -9 Z"/>
+  <!-- big ear (lit + shadow), light TOP-LEFT -->
+  <path class="wall" d="M66 40 q-10 -3 -12 8 q-1 8 8 11 q6 1 9 -3 q-7 -8 -5 -16 Z"/>
+  <path class="wall-s" d="M62 56 q6 1 9 -3 q-7 -8 -5 -16 q-2 11 -4 19 Z"/>
+  <path class="out-thin" fill="none" d="M66 40 q-10 -3 -12 8 q-1 8 8 11"/>
+  <!-- curled trunk reaching down-right -->
+  <path class="wall" d="M88 50 q9 6 8 18 q-1 8 -7 9 q-4 1 -5 -3 q4 0 5 -5 q1 -9 -6 -15 Z"/>
+  <path class="out-thin" fill="none" d="M88 50 q9 6 8 18 q-1 8 -7 9"/>
+  <!-- tusk curving forward, gold tip -->
+  <path class="stone-l" d="M82 56 q6 4 10 2 q-2 5 -8 4 q-3 -1 -4 -4 Z"/>
+  <circle class="gold" cx="92" cy="58" r="2.4"/>
+  <!-- howdah seat on the back (roof lit + roof-s shadow) -->
+  <path class="roof" d="M30 32 L52 32 L50 40 L32 40 Z"/>
+  <path class="roof-s" d="M44 32 L52 32 L50 40 L44 40 Z"/>
+  <path class="out-thin" fill="none" d="M30 32 L52 32 M30 32 L32 40 M52 32 L50 40"/>
+  <!-- tail at the rear (left) -->
+  <path class="wall-s" d="M18 50 q-6 4 -6 16 q3 -3 3 -8 q1 -5 3 -8 Z"/>
+  <!-- primary contour: rump -> back -> head -> trunk -> belly -->
+  <path class="out" fill="none" d="M18 52 q2 -22 30 -23 q22 -1 30 8 q4 -13 14 -13 q9 0 8 9 q1 9 -8 16 q9 7 7 18 q-1 8 -7 9 q-5 1 -5 -4 q-13 4 -32 3 q-18 -1 -20 -13 Z"/>
+</svg>

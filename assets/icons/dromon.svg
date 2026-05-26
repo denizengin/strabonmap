@@ -1,0 +1,37 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dromon">
+  <!-- Byzantine DROMON. Re-authored to read UNMISTAKABLY differently from
+       the trireme: (a) a tall forward-raked mast with one BIG dominant
+       triangular LATEEN sail on a long diagonal yard sweeping bow-high;
+       (b) a raised stone fighting CASTLE/tower at the bow; (c) NO oar
+       bank (so it no longer echoes the trireme). Light from TOP-LEFT;
+       water hint. Gold castle pennant-finial = the one gold accent. -->
+  <ellipse class="sh" cx="50" cy="83" rx="39" ry="4.5"/>
+  <path class="water" d="M9 80 q10 4 20 0 q10 -4 20 0 q10 4 20 0 q10 -4 20 0 L89 86 L9 86 Z"/>
+  <path class="foam" fill="none" d="M13 79 q8 3 16 0 M53 79 q8 3 16 0"/>
+  <!-- tall forward-raked mast -->
+  <path class="wood" d="M34 60 L40 12 L43 12 L37 60 Z"/>
+  <!-- long diagonal lateen yard: sweeps from low aft up to high over the bow -->
+  <path class="wood" d="M16 58 L86 9 L88 12 L18 61 Z"/>
+  <!-- BIG dominant lateen triangle: long hypotenuse on the yard,
+       lit upper face + shadow lower face, point down toward the stern -->
+  <path class="wall" d="M18 57 L85 11 L40 62 Z"/>
+  <path class="wall-s" d="M40 62 L85 11 L66 38 Z"/>
+  <path class="out-thin" fill="none" d="M18 57 L85 11 L40 62 Z M40 62 L85 11 M30 50 L57 36 M37 56 L66 38"/>
+  <!-- raised stone fighting CASTLE/tower at the bow (forward, right) -->
+  <path class="stone-l" d="M70 38 L88 38 L88 41 L70 41 Z"/>
+  <path class="stone" d="M71 41 L87 41 L87 60 L71 60 Z"/>
+  <path class="stone-s" d="M80 41 L87 41 L87 60 L80 60 Z"/>
+  <!-- crenellations + tower window + the gold pennant-finial -->
+  <path class="out-thin" fill="none" d="M70 38 L88 38 M71 41 L71 60 M87 41 L87 60 M73 38 L73 35 M77 38 L77 35 M81 38 L81 35 M85 38 L85 35 M85 35 L73 35"/>
+  <path class="win" d="M75 45 L83 45 L83 52 L75 52 Z"/>
+  <path class="out-thin" fill="none" d="M79 35 L79 27"/>
+  <path class="gold" d="M79 27 L88 29 L79 31 Z"/>
+  <!-- hull: lit upper strake + shadow lower hull, low forward ram (no oars) -->
+  <path class="wood-l" d="M15 60 L83 60 q5 0 7 4 L19 64 Z"/>
+  <path class="wood" d="M19 64 L90 64 q-5 10 -20 10 L29 74 q-11 0 -14 -10 Z"/>
+  <path class="wood" d="M87 64 L98 66 L90 69 Z"/>
+  <!-- one decorative wale line (not angled oars) -->
+  <path class="out-thin" fill="none" d="M20 68 L82 68"/>
+  <!-- primary contour around the hull -->
+  <path class="out" fill="none" d="M15 60 L83 60 q5 0 7 4 q-5 10 -20 10 L29 74 q-11 0 -14 -10 Z"/>
+</svg>

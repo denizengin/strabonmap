@@ -1,0 +1,11 @@
+{
+  "tripId": "cyril-methodius",
+  "style": "hand-coloured cartographic plate, muted ink, period-appropriate",
+  "images": [
+    {"stopId": "stop-1", "prompt": "Thessalonica autumn dusk, two monks at scriptorium window with wax tablet; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-2", "prompt": "Patriarchal scriptorium with Cyril drafting Glagolitic letters; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-3", "prompt": "Sirmium river plain, brothers and Slavic scribes copying texts; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-4", "prompt": "Velehrad wooden palisade castle, vernacular liturgy consecration; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-5", "prompt": "Saint Peter's basilica, pope receiving monks with relic-casket; hand-coloured plate.", "size": "1200x800"}
+  ]
+}

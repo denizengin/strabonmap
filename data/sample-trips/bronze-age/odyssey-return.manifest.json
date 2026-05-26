@@ -1,0 +1,20 @@
+{
+  "tripId": "odyssey-return",
+  "style": "hand-coloured cartographic plate, muted ink, period-appropriate",
+  "images": [
+    {"stopId": "stop-1", "prompt": "Black ships pushing off from Troy under a burning citadel; hand-coloured cartographic plate.", "size": "1200x800"},
+    {"stopId": "stop-2", "prompt": "Thracian coastal raid on Ismaros, low galleys, smoke; hand-coloured cartographic plate.", "size": "1200x800"},
+    {"stopId": "stop-3", "prompt": "Lotus-Eaters on Djerba, palm-fringed strand, drowsy sailors; hand-coloured cartographic plate.", "size": "1200x800"},
+    {"stopId": "stop-4", "prompt": "Sicilian coast with basalt sea-stacks and smoking Etna for the Cyclops; hand-coloured cartographic plate.", "size": "1200x800"},
+    {"stopId": "stop-5", "prompt": "Aeolian isles cluster with bronze citadel walls and winds as cherub faces; hand-coloured cartographic plate.", "size": "1200x800"},
+    {"stopId": "stop-6", "prompt": "Telepylos harbour at Bonifacio, white cliffs, giants throwing boulders; hand-coloured cartographic plate.", "size": "1200x800"},
+    {"stopId": "stop-7", "prompt": "Aeaea (Monte Circeo) wooded cape, palace smoke among cypresses; hand-coloured cartographic plate.", "size": "1200x800"},
+    {"stopId": "stop-8", "prompt": "Lake Avernus underworld entrance, sulphurous lake in wooded crater; hand-coloured cartographic plate.", "size": "1200x800"},
+    {"stopId": "stop-9", "prompt": "Sirens on three rocky islets among bones; hand-coloured cartographic plate.", "size": "1200x800"},
+    {"stopId": "stop-10", "prompt": "Strait of Messina with Scylla cliff-creature and Charybdis whirlpool; hand-coloured cartographic plate.", "size": "1200x800"},
+    {"stopId": "stop-11", "prompt": "Triangular Sicilian island with sacred cattle; hand-coloured cartographic plate.", "size": "1200x800"},
+    {"stopId": "stop-12", "prompt": "Ogygia on Gozo, limestone coast with grotto and vines; hand-coloured cartographic plate.", "size": "1200x800"},
+    {"stopId": "stop-13", "prompt": "Phaeacian beach at Corfu's Paleokastritsa, washed-up figure on sand; hand-coloured cartographic plate.", "size": "1200x800"},
+    {"stopId": "stop-14", "prompt": "Ithaca palace among cypresses with old hound at gate; hand-coloured cartographic plate.", "size": "1200x800"}
+  ]
+}

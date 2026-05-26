@@ -1,0 +1,11 @@
+{
+  "tripId": "apollo-11",
+  "style": "photographic plate, Kodachrome saturation, late-1960s register",
+  "images": [
+    {"stopId": "stop-1", "prompt": "Saturn V dawn lift-off with condensation cone; Kodachrome plate.", "size": "1200x800"},
+    {"stopId": "stop-2", "prompt": "Earth disc through porthole, S-IVB tank below; Kodachrome plate.", "size": "1200x800"},
+    {"stopId": "stop-3", "prompt": "LM Eagle on lunar plain with long shadow, footprints to flag; Kodachrome plate.", "size": "1200x800"},
+    {"stopId": "stop-4", "prompt": "Command Module bobbing beside raft, frogmen in water; Kodachrome plate.", "size": "1200x800"},
+    {"stopId": "stop-5", "prompt": "Quarantine trailer at JSC, crew waving through glass; Kodachrome plate.", "size": "1200x800"}
+  ]
+}

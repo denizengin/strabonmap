@@ -1,0 +1,60 @@
+{
+  "id": "diocletian-tetrarchy",
+  "era": "late-antiquity",
+  "title": "Diocletian — the four capitals",
+  "themeSuggestion": "late-antiquity-porphyry",
+  "viewport": "auto",
+  "intro": {
+    "title": "Empire of Four",
+    "dateline": "293-305 CE",
+    "body": "Diocletian's tetrarchy divided the empire among four rulers, each based at a forward capital near the threatened frontiers. Nicomedia (East), Sirmium (Danube), Mediolanum (West), and Augusta Treverorum (Rhine) replaced Rome as working seats."
+  },
+  "companions": [],
+  "stops": [
+    {
+      "id": "stop-1",
+      "name": "Nicomedia",
+      "lat": 40.77,
+      "lon": 29.92,
+      "note": "Diocletian's eastern capital; he proclaimed himself emperor here in 284. Modern İzmit.",
+      "imagePrompt": "Hand-coloured plate. Bay-side imperial palace with porphyry columns, harbour beyond, basilica under construction.",
+      "vehicleToNext": "horse"
+    },
+    {
+      "id": "stop-2",
+      "name": "Antioch",
+      "lat": 36.20,
+      "lon": 36.16,
+      "note": "Eastern operations base during the Persian campaigns of 296-299. The mint here issued tetrarchic coinage.",
+      "imagePrompt": "Hand-coloured plate. Walled Syrian capital along the Orontes, palace on the river island, colonnaded street.",
+      "vehicleToNext": "horse"
+    },
+    {
+      "id": "stop-3",
+      "name": "Alexandria",
+      "lat": 31.20,
+      "lon": 29.92,
+      "note": "Diocletian besieged the usurper Domitius Domitianus here, 297-298. The 'Pompey's Pillar' column commemorates the eventual capitulation.",
+      "imagePrompt": "Hand-coloured plate. Lighthouse of Pharos in the distance, Egyptian-Greek port, victory column being raised.",
+      "vehicleToNext": "liburna"
+    },
+    {
+      "id": "stop-4",
+      "name": "Salonae (Split)",
+      "lat": 43.51,
+      "lon": 16.43,
+      "note": "Diocletian's retirement palace, built 295-305 CE. The colonnaded peristyle and mausoleum survive as the core of modern Split.",
+      "imagePrompt": "Hand-coloured plate. Coastal palace-fortress with peristyle, mausoleum dome, Adriatic in the background.",
+      "vehicleToNext": "liburna"
+    },
+    {
+      "id": "stop-5",
+      "name": "Sirmium",
+      "lat": 44.97,
+      "lon": 19.61,
+      "note": "Tetrarchic Danube capital. Site of repeated imperial conferences; modern Sremska Mitrovica.",
+      "imagePrompt": "Hand-coloured plate. Danube-side fortified city, four porphyry-mantled emperors meeting in a basilica forecourt.",
+      "vehicleToNext": "horse"
+    }
+  ]
+}

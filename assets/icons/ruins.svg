@@ -1,0 +1,34 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ruins">
+  <!-- Classical RUINS: a row of broken/standing columns of varying heights, a
+       fragment of architrave atop two columns, and a fallen capital drum on the
+       ground. Light from TOP-LEFT: left faces lit, right shadow. Gold glint on the
+       architrave fragment = the one gold accent. The broken column row is the signature. -->
+  <!-- (1) cast shadow -->
+  <ellipse class="sh" cx="50" cy="84" rx="40" ry="4.5"/>
+  <!-- stepped stylobate base -->
+  <path class="stone-l" d="M14 76 L86 76 L86 80 L14 80 Z"/>
+  <path class="stone-s" d="M12 80 L88 80 L88 84 L12 84 Z"/>
+  <!-- column 1 (tall, intact-ish): lit + shadow -->
+  <path class="stone-l" d="M20 30 L26 30 L26 76 L20 76 Z"/>
+  <path class="stone-s" d="M26 30 L29 30 L29 76 L26 76 Z"/>
+  <!-- column 2 (tall, paired with col1, carries architrave): lit + shadow -->
+  <path class="stone-l" d="M38 30 L44 30 L44 76 L38 76 Z"/>
+  <path class="stone-s" d="M44 30 L47 30 L47 76 L44 76 Z"/>
+  <!-- architrave fragment spanning col1-col2 -->
+  <path class="stone" d="M18 24 L49 24 L49 30 L18 30 Z"/>
+  <path class="stone-s" d="M18 30 L49 30 L49 32 L18 32 Z"/>
+  <!-- column 3 (broken short stub): lit + shadow -->
+  <path class="stone-l" d="M58 52 L64 52 L64 76 L58 76 Z"/>
+  <path class="stone-s" d="M64 52 L67 52 L67 76 L64 76 Z"/>
+  <!-- column 4 (medium height, broken top): lit + shadow -->
+  <path class="stone-l" d="M74 40 L80 40 L80 76 L74 76 Z"/>
+  <path class="stone-s" d="M80 40 L83 40 L83 76 L80 76 Z"/>
+  <!-- fallen capital drum lying on the ground -->
+  <ellipse class="stone-s" cx="55" cy="73" rx="6" ry="3"/>
+  <!-- gold glint on the architrave fragment -->
+  <circle class="gold" cx="44" cy="27" r="2.4"/>
+  <!-- column flute lines + broken-top jagged hints + base line -->
+  <path class="out-thin" fill="none" d="M23 30 L23 76 M41 32 L41 76 M61 52 L61 76 M77 40 L77 76 M58 52 L60 49 L64 52 M74 40 L77 37 L80 40"/>
+  <!-- primary contour of the standing pieces -->
+  <path class="out" fill="none" d="M12 84 L12 80 L20 76 L20 30 L18 24 L49 24 L47 30 L47 76 M58 76 L58 52 L67 52 L67 76 M74 76 L74 40 L83 40 L83 76"/>
+</svg>

@@ -1,0 +1,29 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Windmill">
+  <!-- A WINDMILL: a tapered tower body, a conical cap on top, and four angled
+       wood-lattice sails crossing in an X. Light from TOP-LEFT: left face lit
+       (wall), right face shadow (wall-s). Gold hub at the sail center = the one
+       gold accent. The X of blades is the signature. -->
+  <!-- (1) cast shadow -->
+  <ellipse class="sh" cx="50" cy="87" rx="26" ry="4.5"/>
+  <!-- tapered tower body: lit left + shadow right -->
+  <path class="wall" d="M42 44 L50 44 L46 84 L36 84 Z"/>
+  <path class="wall-s" d="M50 44 L58 44 L64 84 L46 84 Z"/>
+  <!-- door at the base (dark) -->
+  <path class="win" d="M45 84 L45 74 q5 -5 10 0 L55 84 Z"/>
+  <!-- small window -->
+  <rect class="win" x="47" y="58" width="6" height="6"/>
+  <!-- conical cap: lit left + shadow right -->
+  <path class="roof-l" d="M50 28 L40 44 L50 44 Z"/>
+  <path class="roof-s" d="M50 28 L60 44 L50 44 Z"/>
+  <!-- four angled wood sails crossing in an X (lattice = wood + out-thin) -->
+  <path class="wood" d="M48 30 L24 18 L26 14 L50 26 Z"/>
+  <path class="wood" d="M52 30 L76 18 L74 14 L50 26 Z"/>
+  <path class="wood" d="M48 28 L24 40 L26 44 L50 32 Z"/>
+  <path class="wood" d="M52 28 L76 40 L74 44 L50 32 Z"/>
+  <!-- gold hub at the sail center -->
+  <circle class="gold" cx="50" cy="29" r="3"/>
+  <!-- lattice spar lines across the sails -->
+  <path class="out-thin" fill="none" d="M37 22 L33 30 M30 26 L41 28 M63 22 L67 30 M70 26 L59 28 M37 36 L33 28 M63 36 L67 28 M50 32 L46 84 M50 44 L50 84"/>
+  <!-- primary contour: cap + body -->
+  <path class="out" fill="none" d="M40 44 L50 28 L60 44 M42 44 L36 84 M58 44 L64 84 M36 84 L64 84"/>
+</svg>

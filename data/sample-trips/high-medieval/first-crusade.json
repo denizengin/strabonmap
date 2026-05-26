@@ -1,0 +1,60 @@
+{
+  "id": "first-crusade",
+  "era": "high-medieval",
+  "title": "First Crusade — Clermont to Jerusalem",
+  "themeSuggestion": "high-medieval-vellum",
+  "viewport": "auto",
+  "intro": {
+    "title": "Deus Vult",
+    "dateline": "1095-1099 CE",
+    "body": "Urban II preached the Crusade at Clermont in November 1095. The princely armies — Bohemond, Godfrey, Raymond — converged on Constantinople in 1096-97, crossed Anatolia, took Antioch by siege, and stormed Jerusalem in July 1099. The Gesta Francorum is the eyewitness."
+  },
+  "companions": ["Bohemond", "Godfrey", "Raymond"],
+  "stops": [
+    {
+      "id": "stop-1",
+      "name": "Constantinople",
+      "lat": 41.01,
+      "lon": 28.97,
+      "note": "Crusader armies muster outside the walls 1096-97. Alexios extracts oaths of fealty before ferrying them across the Bosphorus.",
+      "imagePrompt": "Hand-coloured plate. Latin knights camped outside Theodosian walls, Greek galleys ferrying horses across the Bosphorus.",
+      "vehicleToNext": "horse"
+    },
+    {
+      "id": "stop-2",
+      "name": "Nicaea",
+      "lat": 40.43,
+      "lon": 29.72,
+      "note": "Captured 19 June 1097. The Seljuk capital falls jointly to Crusader siege and Byzantine fleet on Lake Ascanius.",
+      "imagePrompt": "Hand-coloured plate. Lake-side city under siege from land, Greek galleys on the water, Latin towers on the shore.",
+      "vehicleToNext": "horse"
+    },
+    {
+      "id": "stop-3",
+      "name": "Dorylaeum",
+      "lat": 39.78,
+      "lon": 30.50,
+      "note": "1 July 1097. Bohemond's vanguard absorbs Kilij Arslan's attack at dawn; the main army arrives at midday and wins (Gesta IX).",
+      "imagePrompt": "Hand-coloured plate. Anatolian plain at dawn, Latin knights forming a defensive ring against Turkish horse archers.",
+      "vehicleToNext": "horse"
+    },
+    {
+      "id": "stop-4",
+      "name": "Antioch",
+      "lat": 36.20,
+      "lon": 36.16,
+      "note": "Seven-month siege October 1097 - June 1098. Bohemond enters through Firouz's tower; Kerbogha's relief army defeated 28 June.",
+      "imagePrompt": "Hand-coloured plate. Antioch citadel above the besieging camp, scaling ladder against the tower, dawn ascent.",
+      "vehicleToNext": "horse"
+    },
+    {
+      "id": "stop-5",
+      "name": "Jerusalem",
+      "lat": 31.78,
+      "lon": 35.22,
+      "note": "Stormed 15 July 1099. Godfrey's tower mounts the northern wall first; the city falls amid massacre. Godfrey becomes Advocatus.",
+      "imagePrompt": "Hand-coloured plate. Holy City walls with siege tower against the northern stretch, banners on the parapet.",
+      "vehicleToNext": "horse"
+    }
+  ]
+}

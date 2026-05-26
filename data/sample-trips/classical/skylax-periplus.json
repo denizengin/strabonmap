@@ -1,0 +1,150 @@
+{
+  "id": "skylax-periplus",
+  "era": "classical",
+  "title": "Skylax of Karyanda — The Indus to Suez Voyage",
+  "themeSuggestion": "classical-marble",
+  "viewport": "auto",
+  "intro": {
+    "title": "Skylax's Great Voyage for Darius",
+    "dateline": "c. 515 BCE",
+    "body": "Skylax of Karyanda, a Carian Greek in Achaemenid service, was sent by Darius the Great to descend the Indus and follow the coast of Arabia back to Egypt — a thirty-month voyage recorded in Herodotus, Histories IV.44. This trip traces his life: birthplace, the imperial road to Susa, the great voyage itself, and a return to Caria where in later years he composed the lost Periodos Ges (Strab. XII.4.4)."
+  },
+  "companions": [],
+  "stops": [
+    {
+      "id": "stop-1",
+      "name": "Karyanda",
+      "lat": 37.04,
+      "lon": 27.42,
+      "note": "Skylax's birthplace, named in Herodotus, Histories IV.44 as 'Skylax of Karyanda'. Strab. XIV.2.20 describes Karyanda as a small island with a harbour, near Myndos on the Carian coast; identified with modern Salih Adası.",
+      "imagePrompt": "Hand-coloured cartographic plate, muted ink. Small island-harbour on the Carian coast at dawn, a single beached trireme, fishing skiffs, low scrub and a watchtower.",
+      "vehicleToNext": "foot"
+    },
+    {
+      "id": "stop-2",
+      "name": "Halikarnassos",
+      "lat": 37.038,
+      "lon": 27.428,
+      "note": "The principal Carian city, a short coastwise hop from Karyanda. Herodotus, Histories I.171 records the Carians as the first to fit shield-grips and crests — a maritime warrior culture in which a son of Karyanda would have trained before entering Persian service.",
+      "imagePrompt": "Hand-coloured cartographic plate, muted ink. Halikarnassos acropolis above a curving harbour, fortified mole, anchored galleys, a young pilot studying a coastal chart.",
+      "vehicleToNext": "trireme"
+    },
+    {
+      "id": "stop-3",
+      "name": "Sardis",
+      "lat": 38.488,
+      "lon": 28.040,
+      "note": "Satrapal capital of Lydia and western terminus of the Royal Road that ran inland to Susa (Herodotus, Histories V.52). Any Carian taken into Achaemenid imperial service would pass through Sardis on the way east.",
+      "imagePrompt": "Hand-coloured cartographic plate, muted ink. Sardis with the Pactolus stream and Tmolus mountain behind, a Persian satrap's palace, mounted couriers setting out on the Royal Road.",
+      "vehicleToNext": "horse"
+    },
+    {
+      "id": "stop-4",
+      "name": "Susa",
+      "lat": 32.189,
+      "lon": 48.258,
+      "note": "Achaemenid imperial capital, terminus of the Royal Road and almost certainly where Darius the Great commissioned the Indus expedition that Herodotus, Histories IV.44 describes.",
+      "imagePrompt": "Hand-coloured cartographic plate, muted ink. The palace of Darius at Susa, glazed-brick lion frieze, audience hall columns, a Greek captain receiving orders from a Persian official.",
+      "vehicleToNext": "horse"
+    },
+    {
+      "id": "stop-5",
+      "name": "Caspatyrus",
+      "lat": 33.8,
+      "lon": 71.5,
+      "note": "Embarkation point on the upper Indus. Herodotus, Histories IV.44: 'Darius sent ships manned with men he could trust, among whom was Skylax of Karyanda, and they put to sea from the city of Caspatyrus and the land of Pactyice.' Most often identified with the Kabul-Indus confluence near modern Peshawar.",
+      "imagePrompt": "Hand-coloured cartographic plate, muted ink. River craft drawn up on the upper Indus below pine-clad hills, Persian officials and Greek sailors loading provisions.",
+      "vehicleToNext": "merchantman"
+    },
+    {
+      "id": "stop-6",
+      "name": "Middle Indus (Sind)",
+      "lat": 27.5,
+      "lon": 68.5,
+      "note": "Descent of the Indus through the Sind plains, the long middle stage of the river journey before the delta. Herodotus, Histories IV.44 compresses this into 'they sailed down the river toward the east and the sunrise', but a craft from Caspatyrus must traverse hundreds of kilometres of slow water here.",
+      "imagePrompt": "Hand-coloured cartographic plate, muted ink. Broad muddy river under a hot sky, a merchantman drifting with the current, reed villages on the banks, herons in the shallows.",
+      "vehicleToNext": "merchantman"
+    },
+    {
+      "id": "stop-7",
+      "name": "Patala (Indus delta)",
+      "lat": 24.8,
+      "lon": 67.5,
+      "note": "Mouth of the Indus and sea-departure point of the voyage. Herodotus, Histories IV.44: 'and when they reached the sea they sailed westward'. Patala became famous a century and a half later as Alexander's own embarkation; the Skylax expedition was the first Greek-led fleet to put to sea here.",
+      "imagePrompt": "Hand-coloured cartographic plate, muted ink. Indus delta with mangrove channels opening to the ocean, three triremes rigging masts at the bar, monsoon clouds on the southern horizon.",
+      "vehicleToNext": "trireme"
+    },
+    {
+      "id": "stop-8",
+      "name": "Gedrosian Coast",
+      "lat": 25.0,
+      "lon": 60.0,
+      "note": "The Makran coast, sailing westward along the southern edge of the Iranian plateau. Herodotus, Histories IV.44 says only 'westward through the sea', but any periplus from Patala to Hormuz must hug this arid shore — the same coast Nearchus would later log in detail.",
+      "imagePrompt": "Hand-coloured cartographic plate, muted ink. Bone-dry cliff coast falling sheer to the sea, a trireme close inshore, a watering party landing at a wadi mouth.",
+      "vehicleToNext": "trireme"
+    },
+    {
+      "id": "stop-9",
+      "name": "Strait of Hormuz",
+      "lat": 26.6,
+      "lon": 56.3,
+      "note": "Narrows between Arabia and Persia, the threshold of the Persian Gulf. Implied by the route in Herodotus, Histories IV.44, since to round Arabia coastwise from the Indus one must pass these straits before turning south along the Omani shore.",
+      "imagePrompt": "Hand-coloured cartographic plate, muted ink. The strait at sunrise, headlands of Arabia and Persia closing the horizon, a trireme threading the channel under oar.",
+      "vehicleToNext": "trireme"
+    },
+    {
+      "id": "stop-10",
+      "name": "Oman Coast",
+      "lat": 22.6,
+      "lon": 59.5,
+      "note": "Southeastern Arabia, the long turn around the peninsula. Herodotus, Histories IV.44 describes the voyage as taking thirty months in total; the slow coastwise circuit of Arabia is the part of the route that consumed most of those months.",
+      "imagePrompt": "Hand-coloured cartographic plate, muted ink. Rocky Omani capes and white-sand bays, a trireme at anchor, frankincense traders on the beach.",
+      "vehicleToNext": "trireme"
+    },
+    {
+      "id": "stop-11",
+      "name": "Hadramaut",
+      "lat": 14.5,
+      "lon": 49.0,
+      "note": "Southern Arabian coast — the incense lands. The voyage of Herodotus, Histories IV.44 passes the whole southern shore of Arabia; the Hadramaut is its central stretch and the source of the frankincense trade that already in Skylax's day reached Persia and the Mediterranean.",
+      "imagePrompt": "Hand-coloured cartographic plate, muted ink. South-Arabian shore with frankincense trees on the inland ridges, a trireme close-hauled, a small fortified harbour town below.",
+      "vehicleToNext": "trireme"
+    },
+    {
+      "id": "stop-12",
+      "name": "Bab el-Mandeb",
+      "lat": 12.6,
+      "lon": 43.3,
+      "note": "Strait at the southern entrance of the Red Sea, the turn northwest into the final leg of the voyage. The route described in Herodotus, Histories IV.44 from the Arabian Sea to Egypt is impossible without passing this gate.",
+      "imagePrompt": "Hand-coloured cartographic plate, muted ink. The narrows of Bab el-Mandeb with the African and Arabian shores converging, a trireme entering the Red Sea on a fair wind.",
+      "vehicleToNext": "trireme"
+    },
+    {
+      "id": "stop-13",
+      "name": "Red Sea — Berenike Coast",
+      "lat": 22.5,
+      "lon": 36.0,
+      "note": "Generic mid-Red-Sea anchorage on the Egyptian-controlled western shore, representing the long northward beat from Bab el-Mandeb. Herodotus, Histories IV.44 says only that after thirty months they reached the gulf 'from which the Egyptian king sent the Phoenicians to circumnavigate Libya' — the Red Sea.",
+      "imagePrompt": "Hand-coloured cartographic plate, muted ink. Coral-fringed Red Sea coast, a trireme drying sails at a sheltered cove, distant desert mountains.",
+      "vehicleToNext": "trireme"
+    },
+    {
+      "id": "stop-14",
+      "name": "Heroopolis (Suez)",
+      "lat": 30.0,
+      "lon": 32.55,
+      "note": "Northern terminus of the Red Sea, near modern Suez, where the voyage ended. Herodotus, Histories IV.44: 'they completed their voyage in the thirtieth month'. Heroopolis stood at the head of the gulf where Darius's canal to the Nile would shortly be completed.",
+      "imagePrompt": "Hand-coloured cartographic plate, muted ink. Head of the Gulf of Suez, the masonry of Darius's canal works in the middle distance, the Skylax expedition's worn triremes drawing up onto the beach.",
+      "vehicleToNext": "trireme"
+    },
+    {
+      "id": "stop-15",
+      "name": "Return to Karyanda",
+      "lat": 37.04,
+      "lon": 27.42,
+      "note": "Return to his Carian homeland after reporting at the Persian court. The Suda, s.v. 'Skylax', and Strab. XII.4.4 credit him with later writings including the Periodos Ges, an account of the coasts of the inhabited world — most plausibly composed in retirement at home.",
+      "imagePrompt": "Hand-coloured cartographic plate, muted ink. The small island of Karyanda again, an older Skylax at a writing-desk under an awning, scrolls of a periplus on the table, the harbour and a single trireme beyond.",
+      "vehicleToNext": null
+    }
+  ]
+}

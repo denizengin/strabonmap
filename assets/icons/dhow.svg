@@ -1,0 +1,28 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dhow">
+  <!-- Arab DHOW. A single large LATEEN triangular sail on a steeply
+       raked yard, a slim curved hull with a high upswept stern.
+       Very distinct triangular-sail silhouette. Light from TOP-LEFT;
+       water hint. Gold sternpost cap = the one gold accent. -->
+  <ellipse class="sh" cx="50" cy="82" rx="38" ry="4.5"/>
+  <path class="water" d="M10 79 q10 4 20 0 q10 -4 20 0 q10 4 20 0 q10 -4 20 0 L90 85 L10 85 Z"/>
+  <path class="foam" fill="none" d="M14 78 q8 3 16 0 M54 78 q8 3 16 0"/>
+  <!-- mast (slightly raked) + long steeply-raked lateen yard -->
+  <path class="wood" d="M40 58 L44 22 L46 22 L42 58 Z"/>
+  <path class="wood" d="M22 56 L82 12 L83 14 L23 58 Z"/>
+  <!-- single large lateen triangular sail: lit + shadow faces -->
+  <path class="wall" d="M24 57 L81 13 L44 60 Z"/>
+  <path class="wall-s" d="M44 60 L81 13 L62 56 Z"/>
+  <path class="out-thin" fill="none" d="M24 57 L81 13 L44 60 Z M44 60 L81 13 M36 50 L62 28"/>
+  <!-- slim curved hull: lit upper strake + shadow lower strake -->
+  <path class="wood-l" d="M20 60 L80 58 q5 0 7 4 L24 64 Z"/>
+  <path class="wood" d="M24 64 L87 62 q-4 9 -16 10 L34 73 q-12 -1 -14 -9 Z"/>
+  <!-- high upswept stern (left) with gold cap -->
+  <path class="wood-l" d="M20 60 q-9 -3 -8 -16 q6 5 8 11 Z"/>
+  <path class="out-thin" fill="none" d="M20 60 q-9 -3 -8 -16"/>
+  <circle class="gold" cx="11.5" cy="43" r="2.5"/>
+  <!-- low pointed bow forward (right) -->
+  <path class="wood" d="M84 63 L96 60 L88 66 Z"/>
+  <path class="out-thin" fill="none" d="M84 63 L96 60"/>
+  <!-- primary contour around the hull -->
+  <path class="out" fill="none" d="M20 60 L80 58 q5 0 7 4 q-4 9 -16 10 L34 73 q-12 -1 -14 -9 Z"/>
+</svg>

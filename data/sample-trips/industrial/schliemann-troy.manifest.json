@@ -1,0 +1,11 @@
+{
+  "tripId": "schliemann-troy",
+  "style": "hand-coloured cartographic plate, muted ink, period-appropriate",
+  "images": [
+    {"stopId": "stop-1", "prompt": "Haussmann Paris, gentleman with map case stepping into hansom; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-2", "prompt": "Athens neoclassical wedding scene under Acropolis; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-3", "prompt": "Çanakkale Dardanelles paddle-steamer at customs mole; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-4", "prompt": "Hisarlık excavation trench, Schliemann in sun-hat at bottom; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-5", "prompt": "Mycenae Lion Gate, workmen clearing dromos, gold passed up in basket; hand-coloured plate.", "size": "1200x800"}
+  ]
+}

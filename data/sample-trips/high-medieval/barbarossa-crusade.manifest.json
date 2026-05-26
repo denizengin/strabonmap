@@ -1,0 +1,11 @@
+{
+  "tripId": "barbarossa-crusade",
+  "style": "hand-coloured cartographic plate, muted ink, period-appropriate",
+  "images": [
+    {"stopId": "stop-1", "prompt": "Regensburg Danube bridge with imperial banners and red-cross knights; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-2", "prompt": "Adrianople winter snow, imperial pavilion, German and Greek envoys parleying; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-3", "prompt": "Hellespont crossing, Byzantine round ships ferrying knights; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-4", "prompt": "Iconium captured, mailed knights in lower city, Seljuk citadel still standing; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-5", "prompt": "Saleph river in flood, riderless horse, drowned imperial helm; hand-coloured plate.", "size": "1200x800"}
+  ]
+}

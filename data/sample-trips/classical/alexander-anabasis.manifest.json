@@ -1,0 +1,11 @@
+{
+  "tripId": "alexander-anabasis",
+  "style": "hand-coloured cartographic plate, muted ink, period-appropriate",
+  "images": [
+    {"stopId": "stop-1", "prompt": "Hellespont crossing, low transports relaying army across strait; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-2", "prompt": "Granicus river cavalry battle, Companions charging up far bank; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-3", "prompt": "Issus narrow coastal plain, sarissa phalanx versus Persian center, Darius's chariot turning; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-4", "prompt": "Siege of Tyre, mole reaching from mainland, siege towers on the causeway; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-5", "prompt": "Gaugamela vast plain, scythed chariots, Alexander's oblique advance; hand-coloured plate.", "size": "1200x800"}
+  ]
+}

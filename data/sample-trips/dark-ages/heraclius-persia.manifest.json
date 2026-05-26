@@ -1,0 +1,11 @@
+{
+  "tripId": "heraclius-persia",
+  "style": "hand-coloured cartographic plate, muted ink, period-appropriate",
+  "images": [
+    {"stopId": "stop-1", "prompt": "Heraclius leaves Constantinople Golden Gate, patriarch blessing; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-2", "prompt": "Cilician coast winter camp under Taurus snow, infantry drilling; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-3", "prompt": "Armenian Dvin fortified town with Byzantine ensigns; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-4", "prompt": "Ganzak fire-temple on volcanic crater, sacred fire extinguished; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-5", "prompt": "Foggy battle of Nineveh beside ancient ruined walls; hand-coloured plate.", "size": "1200x800"}
+  ]
+}

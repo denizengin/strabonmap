@@ -1,0 +1,33 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Fort gate">
+  <!-- A fortified GATE: a big dark arched gateway flanked by two thick bastion
+       towers with battlements on top. Light from TOP-LEFT: left tower/wall lit
+       (stone-l), right tower shadow (stone-s). Gold pennant on the gatehouse =
+       the one gold accent. -->
+  <!-- (1) cast shadow -->
+  <ellipse class="sh" cx="50" cy="87" rx="40" ry="4.5"/>
+  <!-- left bastion tower: lit body + shadow side -->
+  <path class="stone-l" d="M12 38 L30 38 L30 84 L12 84 Z"/>
+  <path class="stone-s" d="M25 38 L30 38 L30 84 L25 84 Z"/>
+  <!-- right bastion tower -->
+  <path class="stone" d="M70 38 L88 38 L88 84 L70 84 Z"/>
+  <path class="stone-s" d="M81 38 L88 38 L88 84 L81 84 Z"/>
+  <!-- central gatehouse wall between the towers -->
+  <path class="stone" d="M30 50 L70 50 L70 84 L30 84 Z"/>
+  <path class="stone-s" d="M55 50 L70 50 L70 84 L55 84 Z"/>
+  <!-- battlements across left tower, gatehouse, right tower -->
+  <path class="stone-l" d="M12 34 L17 34 L17 38 L12 38 Z M22 34 L27 34 L27 38 L22 38 Z"/>
+  <path class="stone" d="M32 46 L37 46 L37 50 L32 50 Z M44 46 L49 46 L49 50 L44 50 Z M56 46 L61 46 L61 50 L56 50 Z"/>
+  <path class="stone-s" d="M71 34 L76 34 L76 38 L71 38 Z M81 34 L86 34 L86 38 L81 38 Z"/>
+  <!-- big arched gateway (dark opening) -->
+  <path class="win" d="M37 84 L37 60 q13 -14 26 0 L63 84 Z"/>
+  <!-- tower slit windows -->
+  <path class="win" d="M18 52 L24 52 L24 60 L18 60 Z"/>
+  <path class="win" d="M76 52 L82 52 L82 60 L76 60 Z"/>
+  <!-- gold pennant on the gatehouse -->
+  <path class="out-thin" fill="none" d="M50 46 L50 34"/>
+  <path class="gold" d="M50 34 L62 37 L50 40 Z"/>
+  <!-- portcullis bars inside the gate + masonry lines -->
+  <path class="out-thin" fill="none" d="M43 84 L43 60 M50 84 L50 56 M57 84 L57 60 M12 60 L30 60 M70 60 L88 60 M30 68 L70 68"/>
+  <!-- primary contour -->
+  <path class="out" fill="none" d="M12 84 L12 34 L30 34 L30 46 L70 46 L70 34 L88 34 L88 84 M37 84 L37 60 q13 -14 26 0 L63 84"/>
+</svg>

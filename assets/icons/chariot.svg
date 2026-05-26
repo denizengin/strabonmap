@@ -1,0 +1,30 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Chariot">
+  <!-- 2-wheel war chariot, facing RIGHT. Light from TOP-LEFT.
+       Open D-shaped car box (left, wall/wall-s), ONE big spoked wheel,
+       long forward draw-pole to the right toward the horses.
+       Gold = rail finial on the car (single gold accent). -->
+  <ellipse class="sh" cx="40" cy="86" rx="34" ry="4.5"/>
+  <!-- long forward draw-pole sweeping up-right toward the horses + yoke tip -->
+  <path class="wood" d="M40 56 L94 44 L94 47 L40 59 Z"/>
+  <path class="wood-l" d="M90 41 L98 44 L94 48 L88 45 Z"/>
+  <path class="out-thin" fill="none" d="M40 56 L94 44"/>
+  <!-- open car box: high curved front guard (right) sweeping down to low back (left) -->
+  <path class="wall" d="M18 60 L18 46 q0 -8 8 -10 q12 -3 22 0 q6 2 6 8 L52 56 Z"/>
+  <path class="wall-s" d="M18 60 L52 56 L54 62 q-1 3 -6 3 L24 65 q-6 0 -6 -5 Z"/>
+  <path class="hi" d="M22 45 q12 -4 24 -1 q-12 -1 -24 3 Z"/>
+  <!-- rail line + finial post on the front guard (gold) -->
+  <path class="out-thin" fill="none" d="M20 50 L52 47 M20 56 L53 53"/>
+  <circle class="gold" cx="54" cy="38" r="2.6"/>
+  <path class="out-thin" fill="none" d="M54 40 L54 48"/>
+  <!-- ONE big spoked wheel, set forward/under the car (rim lit, wood spokes) -->
+  <circle class="wood-l" cx="44" cy="70" r="16"/>
+  <circle class="wood" cx="44" cy="70" r="11"/>
+  <circle class="out" fill="none" cx="44" cy="70" r="16"/>
+  <path class="out-thin" fill="none" d="M44 54 L44 86 M28 70 L60 70 M33 59 L55 81 M55 59 L33 81"/>
+  <circle class="wood-l" cx="44" cy="70" r="3.6"/>
+  <circle class="out-thin" fill="none" cx="44" cy="70" r="3.6"/>
+  <!-- axle peg to the car -->
+  <path class="out-thin" fill="none" d="M30 62 L44 70"/>
+  <!-- primary contour around the car box -->
+  <path class="out" fill="none" d="M18 60 L18 46 q0 -8 8 -10 q12 -3 22 0 q6 2 6 8 L54 62 q-1 3 -6 3 L24 65 q-6 0 -6 -5 Z"/>
+</svg>

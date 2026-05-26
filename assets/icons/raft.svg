@@ -1,0 +1,28 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Raft">
+  <!-- A simple log RAFT. Flat platform of lashed parallel logs, a single
+       slim mast / steering pole carrying a tiny square sail. Low and
+       humble, sitting deep in the water. Light from TOP-LEFT; water hint.
+       Gold lashing knot = the one gold accent. -->
+  <ellipse class="sh" cx="50" cy="80" rx="40" ry="4.5"/>
+  <path class="water" d="M8 76 q10 4 21 0 q11 -4 21 0 q11 4 21 0 q10 -4 21 0 L92 84 L8 84 Z"/>
+  <path class="foam" fill="none" d="M12 75 q8 3 16 0 M52 75 q8 3 16 0"/>
+  <!-- slim mast / steering pole + small yard -->
+  <path class="wood" d="M55 30 L57 64 L55 64 Z"/>
+  <path class="wood" d="M44 34 L70 34 L70 36 L44 36 Z"/>
+  <!-- tiny square sail: lit face + shadow band -->
+  <path class="wall" d="M45 35 L69 35 L67 50 L47 50 Z"/>
+  <path class="wall-s" d="M57 35 L69 35 L67 50 L57 50 Z"/>
+  <path class="out-thin" fill="none" d="M45 35 L69 35 L67 50 L47 50 Z M57 35 L57 50"/>
+  <!-- flat platform of lashed parallel logs: alternating lit / shadow strakes -->
+  <path class="wood-l" d="M16 62 L84 62 q3 0 4 3 L18 65 Z"/>
+  <path class="wood" d="M16 65 L86 65 q-1 4 -4 4 L16 69 Z"/>
+  <path class="wood-l" d="M16 69 L82 69 q3 0 4 3 L18 72 Z"/>
+  <path class="wood" d="M16 72 L84 72 q-1 4 -4 4 L18 76 Z"/>
+  <!-- log ends rounded at the bow (right) -->
+  <path class="out-thin" fill="none" d="M82 62 q5 1 5 4 q0 3 -4 3 M80 69 q5 1 5 4 q0 3 -4 3"/>
+  <!-- lashing cords binding the logs + the one gold lashing knot -->
+  <path class="out-thin" fill="none" d="M30 61 L30 77 M70 61 L70 77"/>
+  <circle class="gold" cx="50" cy="64" r="2.3"/>
+  <!-- primary contour around the platform -->
+  <path class="out" fill="none" d="M16 62 L84 62 q4 0 4 4 q-1 6 -6 6 L84 72 q-1 4 -4 4 L16 76 Z"/>
+</svg>

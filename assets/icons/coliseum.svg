@@ -1,0 +1,30 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Coliseum">
+  <!-- Roman amphitheatre / COLISEUM, 3/4 view. A curved two-tier facade with rows
+       of repeated arches. Light from TOP-LEFT: left curve lit (stone-l), right
+       curve shadow (stone-s). Gold banner draped over the top arch = the one gold
+       accent. -->
+  <!-- (1) cast shadow -->
+  <ellipse class="sh" cx="50" cy="84" rx="42" ry="5"/>
+  <!-- lower-tier facade band: lit left + shadow right -->
+  <path class="stone-l" d="M12 78 q38 -10 76 0 L88 56 q-38 -10 -76 0 Z"/>
+  <path class="stone-s" d="M62 60 q14 0 26 -4 L88 78 q-13 4 -26 4 Z"/>
+  <!-- upper-tier facade band -->
+  <path class="stone" d="M16 54 q34 -9 68 0 L84 36 q-34 -9 -68 0 Z"/>
+  <path class="stone-s" d="M60 39 q12 0 24 -3 L84 54 q-12 3 -24 3 Z"/>
+  <!-- lower-tier arches (repeated dark openings) -->
+  <path class="win" d="M20 76 L20 66 q5 -5 10 0 L30 76 Z"/>
+  <path class="win" d="M35 73 L35 63 q5 -4 10 0 L45 73 Z"/>
+  <path class="win" d="M50 72 L50 62 q5 -4 10 0 L60 72 Z"/>
+  <path class="win" d="M65 73 L65 63 q5 -4 10 0 L75 73 Z"/>
+  <!-- upper-tier arches (smaller repeated openings) -->
+  <path class="win" d="M24 52 L24 44 q4 -4 8 0 L32 52 Z"/>
+  <path class="win" d="M38 50 L38 42 q4 -3 8 0 L46 50 Z"/>
+  <path class="win" d="M52 49 L52 41 q4 -3 8 0 L60 49 Z"/>
+  <path class="win" d="M66 50 L66 42 q4 -3 8 0 L74 50 Z"/>
+  <!-- gold banner over the top arch -->
+  <path class="gold" d="M48 36 L62 34 L62 41 L55 39 L48 41 Z"/>
+  <!-- tier divider + contours -->
+  <path class="out-thin" fill="none" d="M16 56 q34 -9 68 0 M12 78 q38 -10 76 0 M16 54 q34 -9 68 0 L84 36"/>
+  <!-- primary contour -->
+  <path class="out" fill="none" d="M12 78 L16 36 q34 -9 68 0 L88 78 q-38 10 -76 0 Z"/>
+</svg>

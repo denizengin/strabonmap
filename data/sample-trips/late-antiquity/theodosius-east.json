@@ -1,0 +1,60 @@
+{
+  "id": "theodosius-east",
+  "era": "late-antiquity",
+  "title": "Theodosius I — east to Constantinople",
+  "themeSuggestion": "late-antiquity-porphyry",
+  "viewport": "auto",
+  "intro": {
+    "title": "After Adrianople",
+    "dateline": "378-381 CE",
+    "body": "After the Roman defeat at Adrianople in August 378, Gratian summoned Theodosius from Spain to take the eastern command. Theodosius spent three campaigning seasons rebuilding the Balkan field army before entering Constantinople in November 380."
+  },
+  "companions": ["Theodosius"],
+  "stops": [
+    {
+      "id": "stop-1",
+      "name": "Sirmium",
+      "lat": 44.97,
+      "lon": 19.61,
+      "note": "Gratian invests Theodosius as Augustus here, 19 January 379. Theodosius takes command of Illyricum, Thrace, and the East.",
+      "imagePrompt": "Hand-coloured plate. Danube-side basilica, purple-clad emperor receiving acclamation, frost on the roofs.",
+      "vehicleToNext": "horse"
+    },
+    {
+      "id": "stop-2",
+      "name": "Adrianople",
+      "lat": 41.68,
+      "lon": 26.55,
+      "note": "Battlefield of August 378 where Valens fell with two-thirds of the eastern field army. Theodosius reorganises the survivors from here.",
+      "imagePrompt": "Hand-coloured plate. Thracian plain with broken weapons in long grass, Roman officers reviewing recruits beneath the city walls.",
+      "vehicleToNext": "horse"
+    },
+    {
+      "id": "stop-3",
+      "name": "Thessalonica",
+      "lat": 40.64,
+      "lon": 22.94,
+      "note": "Theodosius's working headquarters 379-380. The Edict of Thessalonica (Cunctos populos), 27 February 380, makes Nicene Christianity the state faith.",
+      "imagePrompt": "Hand-coloured plate. Macedonian port-city basilica, edict being read from the steps to assembled people.",
+      "vehicleToNext": "horse"
+    },
+    {
+      "id": "stop-4",
+      "name": "Heraclea (Perinthos)",
+      "lat": 40.97,
+      "lon": 27.96,
+      "note": "Coastal staging-point on the Via Egnatia approach to Constantinople. Theodosius musters here in October 380.",
+      "imagePrompt": "Hand-coloured plate. Propontis port at low autumn light, cavalry tents on the strand, the city walls behind.",
+      "vehicleToNext": "horse"
+    },
+    {
+      "id": "stop-5",
+      "name": "Constantinople",
+      "lat": 41.01,
+      "lon": 28.97,
+      "note": "Theodosius enters the city 24 November 380 to wide acclaim. The council of 381 (Constantinople I) follows, reaffirming Nicaea.",
+      "imagePrompt": "Hand-coloured plate. Adventus procession through the Golden Gate, basilica in the distance, banners with chi-rho.",
+      "vehicleToNext": "horse"
+    }
+  ]
+}

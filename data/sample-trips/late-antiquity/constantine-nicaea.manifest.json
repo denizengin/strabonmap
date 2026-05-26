@@ -1,0 +1,11 @@
+{
+  "tripId": "constantine-nicaea",
+  "style": "hand-coloured cartographic plate, muted ink, period-appropriate",
+  "images": [
+    {"stopId": "stop-1", "prompt": "Thessalonica with Galerian rotunda and city walls, fleet at anchor; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-2", "prompt": "Battle of Chrysopolis on the Asian shore, labarum standard advancing; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-3", "prompt": "Constantine surveying new walls of Constantinople above the Golden Horn; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-4", "prompt": "Council of Nicaea, bishops in lakeside basilica, emperor on low dais; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-5", "prompt": "Antioch evening colonnade lamps, imperial party at river palace; hand-coloured plate.", "size": "1200x800"}
+  ]
+}

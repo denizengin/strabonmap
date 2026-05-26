@@ -1,0 +1,11 @@
+{
+  "tripId": "photios-embassy",
+  "style": "hand-coloured cartographic plate, muted ink, period-appropriate",
+  "images": [
+    {"stopId": "stop-1", "prompt": "Constantinople Theodosian walls at dusk, embassy riding out with mules of books; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-2", "prompt": "Caesarea below Mount Argaeus, episcopal palace courtyard; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-3", "prompt": "Tarsus border river prisoner exchange with scribes; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-4", "prompt": "Baghdad Tigris and Round City, Byzantine envoy in tiled hall; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-5", "prompt": "Samarra spiral minaret over caliphal pavilion city; hand-coloured plate.", "size": "1200x800"}
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "christie-orient-express",
+  "era": "nineteen-thirties",
+  "title": "Agatha Christie — Murder on the Orient Express",
+  "themeSuggestion": "thirties-grain",
+  "viewport": "auto",
+  "intro": {
+    "title": "The Calais Coach",
+    "dateline": "1928-1934 CE",
+    "body": "Agatha Christie travelled the Orient Express repeatedly between 1928 and 1932 to join her husband Max Mallowan at the Ur excavation. A train snowed in at Çerkezköy in February 1929 furnished the setting for Murder on the Orient Express (1934)."
+  },
+  "companions": ["Agatha Christie"],
+  "stops": [
+    {
+      "id": "stop-1",
+      "name": "London (Victoria)",
+      "lat": 51.50,
+      "lon": -0.14,
+      "note": "Christie boards the Calais boat-train at Victoria Station with her travelling typewriter.",
+      "imagePrompt": "Sepia hand-coloured plate, late-1920s register. Victoria station with porters in caps, Pullman carriage of the Wagons-Lits, lady novelist with hatbox.",
+      "vehicleToNext": "ferry"
+    },
+    {
+      "id": "stop-2",
+      "name": "Calais",
+      "lat": 50.95,
+      "lon": 1.86,
+      "note": "Cross-Channel ferry, then the Calais-Mediterranée Express on the French rails.",
+      "imagePrompt": "Sepia hand-coloured plate. Channel ferry at French quay, Wagons-Lits express drawn up beside the gangway, porters trundling luggage.",
+      "vehicleToNext": "locomotive"
+    },
+    {
+      "id": "stop-3",
+      "name": "Belgrade",
+      "lat": 44.81,
+      "lon": 20.46,
+      "note": "Wagon-restaurant stop in the Balkans. By 1932 the Simplon route replaces the original; Christie usually takes the Simplon line.",
+      "imagePrompt": "Sepia hand-coloured plate. Snowy Belgrade station at evening, dining car with white-clothed tables glimpsed through windows.",
+      "vehicleToNext": "locomotive"
+    },
+    {
+      "id": "stop-4",
+      "name": "Çerkezköy",
+      "lat": 41.28,
+      "lon": 27.99,
+      "note": "Thracian village. The 1929 blizzard stranded Christie's train here for six days — the seed of the novel.",
+      "imagePrompt": "Sepia hand-coloured plate. Snowed-in train on a curved cutting in flat Thracian countryside, single lit window, village in the distance.",
+      "vehicleToNext": "locomotive"
+    },
+    {
+      "id": "stop-5",
+      "name": "Istanbul (Sirkeci)",
+      "lat": 41.01,
+      "lon": 28.98,
+      "note": "Sirkeci terminus on the Bosphorus. Christie crosses by ferry to the Asian shore for the onward Taurus Express to Mosul.",
+      "imagePrompt": "Sepia hand-coloured plate. Sirkeci station seafront, ferry boats puffing across the Golden Horn, lady writer in cloche hat on the steps.",
+      "vehicleToNext": "ferry"
+    }
+  ]
+}

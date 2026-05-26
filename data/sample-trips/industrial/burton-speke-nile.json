@@ -1,0 +1,60 @@
+{
+  "id": "burton-speke-nile",
+  "era": "industrial",
+  "title": "Burton and Speke — sources of the Nile",
+  "themeSuggestion": "industrial-engraving",
+  "viewport": "auto",
+  "intro": {
+    "title": "Two Lakes and a Quarrel",
+    "dateline": "1857-1859 CE",
+    "body": "Richard Burton and John Hanning Speke crossed German East Africa in 1857-1859 searching for the source of the Nile. They reached Lake Tanganyika together; Speke alone pressed north and sighted Lake Victoria. The dispute over which lake was the source ended only with Speke's death in 1864."
+  },
+  "companions": ["Burton", "Speke"],
+  "stops": [
+    {
+      "id": "stop-1",
+      "name": "Zanzibar",
+      "lat": -6.16,
+      "lon": 39.20,
+      "note": "Departure preparations, December 1856 - June 1857. Burton hires Sidi Mubarak Bombay as headman.",
+      "imagePrompt": "Hand-coloured plate. Sultan's palace overlooking the harbour, two Englishmen in waistcoats arguing in a courtyard, porters loading crates.",
+      "vehicleToNext": "steamer"
+    },
+    {
+      "id": "stop-2",
+      "name": "Bagamoyo",
+      "lat": -6.44,
+      "lon": 38.90,
+      "note": "Mainland departure 27 June 1857. The party of 132 porters strikes inland for the unknown lakes.",
+      "imagePrompt": "Hand-coloured plate. Equatorial beach at dawn, surf, long string of porters with chests on heads ascending into bush.",
+      "vehicleToNext": "foot"
+    },
+    {
+      "id": "stop-3",
+      "name": "Tabora",
+      "lat": -5.02,
+      "lon": 32.81,
+      "note": "Arab depot. Burton and Speke recover here from malaria for five months. Burton studies Swahili manuscripts.",
+      "imagePrompt": "Hand-coloured plate. Arab-style flat-roofed houses behind a thorn fence, English officers sick on string beds under a verandah.",
+      "vehicleToNext": "foot"
+    },
+    {
+      "id": "stop-4",
+      "name": "Lake Tanganyika (Ujiji)",
+      "lat": -4.92,
+      "lon": 29.68,
+      "note": "14 February 1858. First Europeans on Tanganyika. Burton too ill to walk; Speke partly blind. They paddle north in a dugout looking for an outlet.",
+      "imagePrompt": "Hand-coloured plate. Vast inland sea seen from a wooded hill, native dugout on the beach, two haggard Europeans in slings on porters' backs.",
+      "vehicleToNext": "foot"
+    },
+    {
+      "id": "stop-5",
+      "name": "Lake Victoria (Speke Gulf)",
+      "lat": -2.50,
+      "lon": 33.20,
+      "note": "30 July 1858. Speke alone reaches and names the great lake, claims it as the Nile source. Burton stays at Tabora and disputes the identification for the rest of his life.",
+      "imagePrompt": "Hand-coloured plate. Sunlit inland sea with low islands, single European in pith helmet on a granite rock, porters in foreground.",
+      "vehicleToNext": "foot"
+    }
+  ]
+}

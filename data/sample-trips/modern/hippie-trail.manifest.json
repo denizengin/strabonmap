@@ -1,0 +1,11 @@
+{
+  "tripId": "hippie-trail",
+  "style": "photographic plate, early-1970s register",
+  "images": [
+    {"stopId": "stop-1", "prompt": "London wet street, loaded Mini, travellers with paper map on bonnet; plate.", "size": "1200x800"},
+    {"stopId": "stop-2", "prompt": "Pudding Shop cork board with handwritten notes, Blue Mosque through window; plate.", "size": "1200x800"},
+    {"stopId": "stop-3", "prompt": "Tehran hotel courtyard with kombi vans and Alborz behind; plate.", "size": "1200x800"},
+    {"stopId": "stop-4", "prompt": "Herat caravanserai, Mercedes truck, blue Friday Mosque distant; plate.", "size": "1200x800"},
+    {"stopId": "stop-5", "prompt": "Freak Street Kathmandu, painted Newari facades, long-haired travellers; plate.", "size": "1200x800"}
+  ]
+}

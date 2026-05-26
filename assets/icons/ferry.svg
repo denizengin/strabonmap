@@ -1,0 +1,27 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ferry">
+  <!-- Small iron CHANNEL FERRY / steam packet. Squat utilitarian hull, a
+       low boxy deckhouse with a row of windows, a short stubby funnel.
+       Smaller + boxier than the steamer. Light from TOP-LEFT; water hint.
+       Gold = the funnel band (single accent). -->
+  <ellipse class="sh" cx="50" cy="80" rx="36" ry="4.5"/>
+  <path class="water" d="M12 77 q10 4 19 0 q10 -4 19 0 q10 4 19 0 q9 -4 19 0 L88 83 L12 83 Z"/>
+  <path class="foam" fill="none" d="M16 76 q8 3 15 0 M53 76 q8 3 15 0"/>
+  <!-- smoke wisp from the stubby funnel -->
+  <path class="out-thin" fill="none" d="M58 30 q-5 -4 -1 -8"/>
+  <!-- short stubby funnel: lit front + shadow side, gold band -->
+  <path class="wall" d="M53 32 L63 32 L62 46 L54 46 Z"/>
+  <path class="wall-s" d="M58 32 L63 32 L62 46 L58 46 Z"/>
+  <path class="gold" d="M53 34 L63 34 L63 37 L53 37 Z"/>
+  <!-- low boxy deckhouse: lit front + shadow side -->
+  <path class="wall" d="M24 44 L72 44 L72 56 L24 56 Z"/>
+  <path class="wall-s" d="M60 44 L72 44 L72 56 L60 56 Z"/>
+  <!-- row of deckhouse windows -->
+  <rect class="win" x="29" y="48" width="6" height="5"/>
+  <rect class="win" x="39" y="48" width="6" height="5"/>
+  <rect class="win" x="49" y="48" width="6" height="5"/>
+  <!-- squat utilitarian hull: lit upper strake + shadow lower hull -->
+  <path class="wall" d="M16 56 L84 56 L86 60 L14 60 Z"/>
+  <path class="wall-s" d="M14 60 L86 60 q-3 11 -16 11 L30 71 q-13 0 -16 -11 Z"/>
+  <!-- primary contour around the hull -->
+  <path class="out" fill="none" d="M14 60 L86 60 q-3 11 -16 11 L30 71 q-13 0 -16 -11 Z"/>
+</svg>

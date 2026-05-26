@@ -1,0 +1,60 @@
+{
+  "id": "hittite-royal-progress",
+  "era": "bronze-age",
+  "title": "Hittite royal progress — Hattusa circuit",
+  "themeSuggestion": "bronze-age-limestone",
+  "viewport": "auto",
+  "intro": {
+    "title": "The King's Spring Progress",
+    "dateline": "c. 1320 BCE",
+    "body": "Hittite kings spent the spring touring sanctuaries before campaigning. The AN.TAH.SUM festival route reconstructed from cuneiform tablets links Hattusa with the great cult-centres of central Anatolia — Nerik, Zippalanda, Tahurpa, Arinna — over roughly 38 days."
+  },
+  "companions": [],
+  "stops": [
+    {
+      "id": "stop-1",
+      "name": "Hattusa",
+      "lat": 40.02,
+      "lon": 34.62,
+      "note": "Capital and start of the AN.TAH.SUM spring festival route. Royal residence on the central Anatolian plateau.",
+      "imagePrompt": "Hand-coloured plate. Cyclopean basalt walls of an upland fortress, lion-gate, chariots assembling in the lower town.",
+      "vehicleToNext": "chariot"
+    },
+    {
+      "id": "stop-2",
+      "name": "Tahurpa",
+      "lat": 39.95,
+      "lon": 33.62,
+      "note": "First festival stop south-west of Hattusa, mentioned in CTH 604. Exact site uncertain; conventionally placed near Yörüklü.",
+      "imagePrompt": "Hand-coloured plate. Village shrine on a low knoll, royal chariot arriving with retinue on foot.",
+      "vehicleToNext": "chariot"
+    },
+    {
+      "id": "stop-3",
+      "name": "Arinna",
+      "lat": 39.78,
+      "lon": 33.50,
+      "note": "Cult-centre of the Sun-Goddess of Arinna, chief deity of the Hittite pantheon. Identified by many with modern Alaca Höyük.",
+      "imagePrompt": "Hand-coloured plate. Sun-disk standard above a stone temple precinct, priestesses leading procession.",
+      "vehicleToNext": "chariot"
+    },
+    {
+      "id": "stop-4",
+      "name": "Zippalanda",
+      "lat": 39.85,
+      "lon": 34.10,
+      "note": "Cult-centre of the Storm-God of Zippalanda. Convincingly identified with Uşaklı Höyük on the basis of recent excavation.",
+      "imagePrompt": "Hand-coloured plate. Mountain shrine with bull-statue, storm clouds gathering above.",
+      "vehicleToNext": "chariot"
+    },
+    {
+      "id": "stop-5",
+      "name": "Nerik",
+      "lat": 40.92,
+      "lon": 35.18,
+      "note": "Northern cult-centre of the Storm-God of Nerik, lost to the Kaska and recovered under Hattusili III. Identified with Oymaağaç Höyük.",
+      "imagePrompt": "Hand-coloured plate. Hilltop temple in pine country, priests with libation vessels, distant smoke of frontier watchfires.",
+      "vehicleToNext": "chariot"
+    }
+  ]
+}

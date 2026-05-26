@@ -1,0 +1,60 @@
+{
+  "id": "cairo-conference",
+  "era": "nineteen-thirties",
+  "title": "Cairo Conference — drawing the Middle East",
+  "themeSuggestion": "thirties-grain",
+  "viewport": "auto",
+  "intro": {
+    "title": "Forty Thieves at the Pyramids",
+    "dateline": "1921 CE",
+    "body": "Winston Churchill, then Colonial Secretary, convened the Cairo Conference in March 1921 to settle the Middle Eastern mandates. Faisal became king of Iraq; Abdullah was given Transjordan; the borders we live with were drawn at the Semiramis Hotel."
+  },
+  "companions": ["Churchill", "Lawrence", "Gertrude Bell"],
+  "stops": [
+    {
+      "id": "stop-1",
+      "name": "London",
+      "lat": 51.51,
+      "lon": -0.13,
+      "note": "Churchill's party leaves London by boat-train for Marseille on 1 March 1921.",
+      "imagePrompt": "Sepia plate. Whitehall in March drizzle, motor cars under umbrellas, Churchill in homburg and overcoat descending steps.",
+      "vehicleToNext": "locomotive"
+    },
+    {
+      "id": "stop-2",
+      "name": "Marseille",
+      "lat": 43.30,
+      "lon": 5.37,
+      "note": "Embarkation for Egypt aboard a P&O liner.",
+      "imagePrompt": "Sepia plate. Provençal port, two-funnel liner at the mole, Colonial Office party climbing gangway in straw hats.",
+      "vehicleToNext": "steamer"
+    },
+    {
+      "id": "stop-3",
+      "name": "Alexandria",
+      "lat": 31.20,
+      "lon": 29.92,
+      "note": "Landfall 9 March 1921. Train onwards to Cairo.",
+      "imagePrompt": "Sepia plate. Mediterranean harbour, liner berthed, dockside porters in galabiyas, English ladies under parasols.",
+      "vehicleToNext": "locomotive"
+    },
+    {
+      "id": "stop-4",
+      "name": "Cairo (Semiramis Hotel)",
+      "lat": 30.04,
+      "lon": 31.23,
+      "note": "Conference sessions 12-30 March 1921. The decisions that produced Iraq and Transjordan are taken in this hotel beside the Nile.",
+      "imagePrompt": "Sepia plate. Belle Époque hotel terrace by the Nile, conference photograph being arranged on the steps, Lawrence in Arab dress to one side.",
+      "vehicleToNext": "car"
+    },
+    {
+      "id": "stop-5",
+      "name": "Pyramids of Giza",
+      "lat": 29.98,
+      "lon": 31.13,
+      "note": "Famous group photograph 20 March 1921 — Churchill, Lawrence, and Gertrude Bell on camelback before the Sphinx. Bell's camel briefly bolts; Churchill is unmoved.",
+      "imagePrompt": "Sepia plate. Three camels before the Great Pyramid, English visitors in solar topees mounted, dragoman holding bridles.",
+      "vehicleToNext": "horse"
+    }
+  ]
+}

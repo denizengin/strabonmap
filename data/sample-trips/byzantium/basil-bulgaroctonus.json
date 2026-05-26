@@ -1,0 +1,60 @@
+{
+  "id": "basil-bulgaroctonus",
+  "era": "byzantium",
+  "title": "Basil II — the Bulgar-Slayer",
+  "themeSuggestion": "byzantium-gold",
+  "viewport": "auto",
+  "intro": {
+    "title": "Forty Years to Ohrid",
+    "dateline": "986-1018 CE",
+    "body": "Basil II spent four decades subduing the First Bulgarian Empire. The campaign is bracketed by his defeat at Trajan's Gate in 986 and the final entry into Ohrid in 1018. Skylitzes is the principal source."
+  },
+  "companions": ["Basil II"],
+  "stops": [
+    {
+      "id": "stop-1",
+      "name": "Constantinople",
+      "lat": 41.01,
+      "lon": 28.97,
+      "note": "Basil's working capital. The 986 expedition departs from here for the disastrous defeat at Trajan's Gate.",
+      "imagePrompt": "Hand-coloured plate. Walled capital in early summer, imperial galley loading at the Bucoleon.",
+      "vehicleToNext": "horse"
+    },
+    {
+      "id": "stop-2",
+      "name": "Trajan's Gate",
+      "lat": 42.40,
+      "lon": 23.99,
+      "note": "17 August 986. Samuel of Bulgaria ambushes Basil's column in the Ihtiman pass. The emperor barely escapes; he never forgets.",
+      "imagePrompt": "Hand-coloured plate. Forested mountain pass with Roman milestone, scattered baggage, Bulgarian archers in oaks.",
+      "vehicleToNext": "horse"
+    },
+    {
+      "id": "stop-3",
+      "name": "Thessalonica",
+      "lat": 40.64,
+      "lon": 22.94,
+      "note": "Forward base for the long Macedonian campaigns 990s-1010s. Basil winters here repeatedly.",
+      "imagePrompt": "Hand-coloured plate. Aegean port city walls under winter rain, imperial pavilion in the gardens, scribes drafting orders.",
+      "vehicleToNext": "horse"
+    },
+    {
+      "id": "stop-4",
+      "name": "Kleidion",
+      "lat": 41.42,
+      "lon": 23.10,
+      "note": "29 July 1014. Basil's troops surround Samuel's army in the Strymon defile. The emperor blinds 14,000 captives, leaving one in 100 with a single eye to lead them home.",
+      "imagePrompt": "Hand-coloured plate. Narrow Strymon defile, lines of bound men being led blindfolded along a track, distant city.",
+      "vehicleToNext": "horse"
+    },
+    {
+      "id": "stop-5",
+      "name": "Ohrid",
+      "lat": 41.12,
+      "lon": 20.80,
+      "note": "Bulgarian capital, surrenders 1018. Basil enters the city without a battle, completes the conquest.",
+      "imagePrompt": "Hand-coloured plate. Lakeside fortified town with churches, imperial party crossing the bridge to the citadel.",
+      "vehicleToNext": "horse"
+    }
+  ]
+}

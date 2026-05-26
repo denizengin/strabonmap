@@ -1,0 +1,11 @@
+{
+  "tripId": "julian-persian",
+  "style": "hand-coloured cartographic plate, muted ink, period-appropriate",
+  "images": [
+    {"stopId": "stop-1", "prompt": "Snowy Antioch with bearded Julian haranguing curiales; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-2", "prompt": "Hierapolis steppe-fringe, two columns mustering; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-3", "prompt": "Callinicum Euphrates port with shallow transports drawn by oxen; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-4", "prompt": "Ctesiphon with arched palace and burning Roman fleet on Tigris bank; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-5", "prompt": "Samarra dusk encampment, lit imperial tent, mourning officers; hand-coloured plate.", "size": "1200x800"}
+  ]
+}

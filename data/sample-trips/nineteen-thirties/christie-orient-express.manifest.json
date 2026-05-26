@@ -1,0 +1,11 @@
+{
+  "tripId": "christie-orient-express",
+  "style": "sepia hand-coloured plate, late-1920s/1930s register",
+  "images": [
+    {"stopId": "stop-1", "prompt": "Victoria station Pullman boarding, lady novelist with hatbox; sepia plate.", "size": "1200x800"},
+    {"stopId": "stop-2", "prompt": "Calais quay, Wagons-Lits express beside ferry gangway; sepia plate.", "size": "1200x800"},
+    {"stopId": "stop-3", "prompt": "Snowy Belgrade station at evening, lit dining car windows; sepia plate.", "size": "1200x800"},
+    {"stopId": "stop-4", "prompt": "Snowed-in train on Thracian cutting, single lit window; sepia plate.", "size": "1200x800"},
+    {"stopId": "stop-5", "prompt": "Sirkeci station seafront, Golden Horn ferries, cloche-hatted writer; sepia plate.", "size": "1200x800"}
+  ]
+}

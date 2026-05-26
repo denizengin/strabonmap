@@ -1,0 +1,11 @@
+{
+  "tripId": "richard-acre",
+  "style": "hand-coloured cartographic plate, muted ink, period-appropriate",
+  "images": [
+    {"stopId": "stop-1", "prompt": "Marseille harbour at sunset, knight banners on cogs; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-2", "prompt": "Messina winter siege, English engines battering eastern quarter; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-3", "prompt": "Limassol Cypriot harbour, chapel wedding; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-4", "prompt": "Tyre twin harbours, royal council in cathedral close; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-5", "prompt": "Acre siege from land and sea, Plantagenet and Capet banners; hand-coloured plate.", "size": "1200x800"}
+  ]
+}

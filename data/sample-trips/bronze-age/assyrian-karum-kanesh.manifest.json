@@ -1,0 +1,11 @@
+{
+  "tripId": "assyrian-karum-kanesh",
+  "style": "hand-coloured cartographic plate, muted ink, period-appropriate",
+  "images": [
+    {"stopId": "stop-1", "prompt": "Mud-brick Aššur citadel above the Tigris, donkey caravan leaving the gate; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-2", "prompt": "Walled tell of Apum on the steppe, caravanserai with donkeys at troughs; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-3", "prompt": "Euphrates crossing at Hahhum, reed-bundle rafts ferrying donkeys, customs post with tablets; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-4", "prompt": "Mountain town of Mamma in Anti-Taurus valley, donkeys under pine, snowy peaks; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-5", "prompt": "Kaneš kārum lower town with scribes and donkeys being unloaded; hand-coloured plate.", "size": "1200x800"}
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "id": "iliad-troy",
+  "era": "bronze-age",
+  "title": "Iliad — Achaean expedition to Troy",
+  "themeSuggestion": "bronze-age-limestone",
+  "viewport": "auto",
+  "intro": {
+    "title": "The Black Ships to Ilios",
+    "dateline": "c. 1190 BCE",
+    "body": "The Catalogue of Ships in Iliad II names roughly 1,186 vessels mustering at Aulis under Agamemnon to recover Helen from Troy. The siege runs ten years; only the final year is sung. The route shown is the bridgehead, not the campaign — Aulis to Tenedos to the Trojan plain at Hisarlık."
+  },
+  "companions": ["Agamemnon", "Achilles", "Odysseus", "Diomedes"],
+  "stops": [
+    {
+      "id": "stop-1",
+      "name": "Aulis",
+      "lat": 38.40,
+      "lon": 23.60,
+      "note": "Mustering harbour on the Euboean Gulf. Iliad II describes the fleet held there by contrary winds until Iphigenia's sacrifice released them.",
+      "imagePrompt": "Hand-coloured cartographic plate, muted ink. Wide bay packed with low black-hulled triremes, lateen sails furled, smoke from an altar on the headland, weathered antique colour palette.",
+      "vehicleToNext": "galley"
+    },
+    {
+      "id": "stop-2",
+      "name": "Tenedos",
+      "lat": 39.82,
+      "lon": 26.05,
+      "note": "Island staging-point off the Troad. Apollo's island in the Iliad; later the Greeks pretend to withdraw here before the wooden horse.",
+      "imagePrompt": "Hand-coloured cartographic plate, muted ink. Small forested island seen from the sea, beached ships drawn up on the strand, smoke of cookfires, sepia and umber tones.",
+      "vehicleToNext": "galley"
+    },
+    {
+      "id": "stop-3",
+      "name": "Troy (Hisarlık)",
+      "lat": 39.96,
+      "lon": 26.24,
+      "note": "Citadel mound at Hisarlık, identified by Schliemann in 1870. The Iliadic plain stretches between citadel and the Hellespont; the Scamander and Simois rivers cross it.",
+      "imagePrompt": "Hand-coloured cartographic plate, muted ink. Citadel walls of cyclopean stone on a low mound, plain beyond with two rivers, distant beached ships, ochre and slate palette.",
+      "vehicleToNext": "foot"
+    }
+  ]
+}

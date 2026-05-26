@@ -1,0 +1,31 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="On foot">
+  <!-- V-28 traveller on foot — the universal, era-neutral "delight anchor".
+       Single walking figure in profile, mid-stride: wide-brimmed hat,
+       cloak with a lit fold + shadow fold, a slung pack, a walking staff.
+       Gold staff-tip = the one gold accent. Light from TOP-LEFT. -->
+  <!-- (1) cast shadow -->
+  <ellipse class="sh" cx="50" cy="86" rx="22" ry="4.5"/>
+  <!-- walking staff (planted forward) -->
+  <path class="wood" d="M64 30 L60 84 L62.5 84 L66.5 30 Z"/>
+  <path class="out-thin" fill="none" d="M65 30 L61 84"/>
+  <circle class="gold" cx="65.2" cy="29" r="2.6"/>
+  <!-- legs mid-stride -->
+  <path class="wood" d="M43 60 L39 84 L43 84 L47 62 Z"/>
+  <path class="wood-l" d="M48 60 L56 82 L60 81 L52 60 Z"/>
+  <path class="out-thin" fill="none" d="M43 60 L39 84 M50 60 L57 82"/>
+  <!-- cloak: lit front face + shadow back fold (the two planes) -->
+  <path class="roof" d="M38 33 q-4 22 4 32 L58 65 q6 -30 -2 -34 Z"/>
+  <path class="roof-s" d="M50 31 q8 4 8 34 L50 65 Z"/>
+  <path class="hi" d="M40 36 q-2 14 2 24 L46 60 q-3 -22 -1 -26 Z"/>
+  <!-- slung pack on the back -->
+  <path class="wall" d="M34 44 q-5 3 -4 11 q4 3 7 0 q1 -8 -3 -11 Z"/>
+  <path class="wall-s" d="M30 55 q4 3 7 0 L36 50 Z"/>
+  <!-- head + wide-brimmed traveller's hat -->
+  <circle class="wall" cx="50" cy="26" r="6"/>
+  <path class="wall-s" d="M50 20 a6 6 0 0 1 0 12 Z"/>
+  <path class="wood" d="M38 22 q12 -7 24 0 q-3 4 -12 4 q-9 0 -12 -4 Z"/>
+  <path class="wood-l" d="M44 14 q6 -3 12 0 q1 6 -6 8 q-7 -2 -6 -8 Z"/>
+  <path class="out-thin" fill="none" d="M38 22 q12 -7 24 0"/>
+  <!-- primary contour over the cloak silhouette -->
+  <path class="out" fill="none" d="M38 33 q-4 22 4 32 L58 65 q6 -30 -2 -34"/>
+</svg>

@@ -1,0 +1,11 @@
+{
+  "tripId": "diocletian-tetrarchy",
+  "style": "hand-coloured cartographic plate, muted ink, period-appropriate",
+  "images": [
+    {"stopId": "stop-1", "prompt": "Nicomedia bay palace with porphyry columns; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-2", "prompt": "Antioch on the Orontes, palace island and colonnaded street; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-3", "prompt": "Alexandria Pharos lighthouse, victory column rising; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-4", "prompt": "Diocletian's palace at Split, peristyle and mausoleum dome above the Adriatic; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-5", "prompt": "Sirmium Danube fortified city, tetrarchs meeting in basilica forecourt; hand-coloured plate.", "size": "1200x800"}
+  ]
+}

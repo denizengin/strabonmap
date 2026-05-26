@@ -1,0 +1,60 @@
+{
+  "id": "barbarossa-crusade",
+  "era": "high-medieval",
+  "title": "Frederick Barbarossa — Third Crusade",
+  "themeSuggestion": "high-medieval-vellum",
+  "viewport": "auto",
+  "intro": {
+    "title": "The Old Emperor's Last Road",
+    "dateline": "1189-1190 CE",
+    "body": "Frederick I marched 100,000 men overland to recover Jerusalem after Hattin, fighting Byzantine obstruction across the Balkans and Turkish ambushes through Anatolia. He drowned on 10 June 1190 in the Saleph river, never reaching Acre. The Historia de expeditione Friderici is the eyewitness."
+  },
+  "companions": ["Frederick Barbarossa"],
+  "stops": [
+    {
+      "id": "stop-1",
+      "name": "Regensburg",
+      "lat": 49.02,
+      "lon": 12.10,
+      "note": "Muster point on the Danube, May 1189. The emperor takes the cross with his son Frederick of Swabia.",
+      "imagePrompt": "Hand-coloured plate. Danube bridge with imperial banners, mounted knights in mail with red crosses, cathedral behind.",
+      "vehicleToNext": "horse"
+    },
+    {
+      "id": "stop-2",
+      "name": "Adrianople",
+      "lat": 41.68,
+      "lon": 26.55,
+      "note": "Frederick winters in Thrace 1189-90 in tense standoff with Isaac II Angelos before treaty is reached.",
+      "imagePrompt": "Hand-coloured plate. Thracian city in winter snow, imperial pavilion outside walls, German and Greek envoys parleying.",
+      "vehicleToNext": "horse"
+    },
+    {
+      "id": "stop-3",
+      "name": "Gallipoli crossing",
+      "lat": 40.41,
+      "lon": 26.67,
+      "note": "Frederick ferries the army across the Hellespont in March 1190 on Byzantine ships under the treaty.",
+      "imagePrompt": "Hand-coloured plate. Narrow strait, Byzantine round ships ferrying knights and horses two by two, snow on Asian shore.",
+      "vehicleToNext": "horse"
+    },
+    {
+      "id": "stop-4",
+      "name": "Iconium (Konya)",
+      "lat": 37.87,
+      "lon": 32.49,
+      "note": "Captured 17 May 1190 from the Seljuks of Rum after a sharp battle outside the walls.",
+      "imagePrompt": "Hand-coloured plate. Anatolian capital with white walls, mailed knights in the lower city, Seljuk citadel still flying its standards.",
+      "vehicleToNext": "horse"
+    },
+    {
+      "id": "stop-5",
+      "name": "Saleph (Göksu)",
+      "lat": 36.30,
+      "lon": 33.50,
+      "note": "10 June 1190. Frederick drowns crossing the river in Cilicia; the army largely disintegrates. His son carries his bones toward Acre.",
+      "imagePrompt": "Hand-coloured plate. Cilician river in flood, riderless horse on the bank, drowned imperial helm in shallow water downstream.",
+      "vehicleToNext": "horse"
+    }
+  ]
+}

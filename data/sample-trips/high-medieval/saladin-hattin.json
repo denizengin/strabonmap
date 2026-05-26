@@ -1,0 +1,60 @@
+{
+  "id": "saladin-hattin",
+  "era": "high-medieval",
+  "title": "Saladin — to the Horns of Hattin",
+  "themeSuggestion": "high-medieval-vellum",
+  "viewport": "auto",
+  "intro": {
+    "title": "The Loss of the True Cross",
+    "dateline": "1187 CE",
+    "body": "Saladin crossed the Jordan in late June 1187 with 30,000 men, drew the Crusader army into waterless ground at the Horns of Hattin, and shattered it on 4 July. Jerusalem surrendered three months later. Ibn al-Athir and Imad al-Din are the primary Muslim sources."
+  },
+  "companions": ["Saladin"],
+  "stops": [
+    {
+      "id": "stop-1",
+      "name": "Damascus",
+      "lat": 33.51,
+      "lon": 36.30,
+      "note": "Saladin's headquarters since 1174. Spring 1187: he summons the contingents of his empire from Egypt to Mesopotamia.",
+      "imagePrompt": "Hand-coloured plate. Ayyubid Damascus citadel, contingents of Egyptian and Syrian cavalry assembling outside.",
+      "vehicleToNext": "horse"
+    },
+    {
+      "id": "stop-2",
+      "name": "Tell Ashtara",
+      "lat": 32.85,
+      "lon": 36.42,
+      "note": "Saladin musters the field army on the Hauran plain south of Damascus, late June 1187.",
+      "imagePrompt": "Hand-coloured plate. Black-tented camp on a wide basalt plain, banners of green and gold, horse-lines.",
+      "vehicleToNext": "horse"
+    },
+    {
+      "id": "stop-3",
+      "name": "Jordan crossing (al-Sennabra)",
+      "lat": 32.71,
+      "lon": 35.57,
+      "note": "Saladin fords the Jordan south of the Sea of Galilee on 30 June 1187.",
+      "imagePrompt": "Hand-coloured plate. River ford, cavalry crossing with banners, Sea of Galilee visible upstream.",
+      "vehicleToNext": "horse"
+    },
+    {
+      "id": "stop-4",
+      "name": "Horns of Hattin",
+      "lat": 32.80,
+      "lon": 35.45,
+      "note": "4 July 1187. Saladin pins the Crusader army against the twin-peaked extinct volcano without water; the army melts in the heat. King Guy and the True Cross are captured.",
+      "imagePrompt": "Hand-coloured plate. Twin-peaked volcanic hill above dry plain, smoke from burning brush, Crusader banners falling.",
+      "vehicleToNext": "horse"
+    },
+    {
+      "id": "stop-5",
+      "name": "Jerusalem",
+      "lat": 31.78,
+      "lon": 35.22,
+      "note": "Surrenders 2 October 1187 after a brief siege. Balian of Ibelin negotiates the terms; Saladin allows most Christians to ransom themselves.",
+      "imagePrompt": "Hand-coloured plate. Dome of the Rock visible above walls, mounted sultan in green entering Jaffa Gate, refugees streaming out the opposite side.",
+      "vehicleToNext": "horse"
+    }
+  ]
+}

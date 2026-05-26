@@ -1,0 +1,60 @@
+{
+  "id": "amr-egypt",
+  "era": "dark-ages",
+  "title": "ʿAmr ibn al-ʿAs — conquest of Egypt",
+  "themeSuggestion": "dark-ages-vellum",
+  "viewport": "auto",
+  "intro": {
+    "title": "From Pelusium to Babylon",
+    "dateline": "639-642 CE",
+    "body": "ʿAmr ibn al-ʿAs crossed Sinai in December 639 with 4,000 horsemen and took Egypt in less than three years. The decisive engagements were the siege of the Roman fortress of Babylon by the Nile and the surrender of Alexandria after a six-month standoff."
+  },
+  "companions": ["ʿAmr ibn al-ʿAs"],
+  "stops": [
+    {
+      "id": "stop-1",
+      "name": "ʿArish",
+      "lat": 31.13,
+      "lon": 33.80,
+      "note": "Last Sinai oasis before the Delta. ʿAmr crosses with 4,000 horsemen in early December 639, against caliphal hesitation.",
+      "imagePrompt": "Hand-coloured plate. Coastal palms at a sandy oasis, Arab cavalry watering horses, low dunes east and west.",
+      "vehicleToNext": "horse"
+    },
+    {
+      "id": "stop-2",
+      "name": "Pelusium",
+      "lat": 31.04,
+      "lon": 32.55,
+      "note": "Eastern gate of Egypt. Falls after a month's siege, January 640. Opens the Delta road.",
+      "imagePrompt": "Hand-coloured plate. Brackish marsh-edge fortress at the Delta's eastern lip, lateen-rigged Arab dhows in lagoons.",
+      "vehicleToNext": "horse"
+    },
+    {
+      "id": "stop-3",
+      "name": "Heliopolis",
+      "lat": 30.13,
+      "lon": 31.30,
+      "note": "ʿAmr defeats the Roman field army outside Heliopolis in July 640, opening the road to the fortress of Babylon.",
+      "imagePrompt": "Hand-coloured plate. Ancient obelisk above a plain, cavalry clash in mid-distance, palms in the foreground.",
+      "vehicleToNext": "horse"
+    },
+    {
+      "id": "stop-4",
+      "name": "Babylon (Fustat)",
+      "lat": 30.01,
+      "lon": 31.23,
+      "note": "Roman fortress beside the Nile, surrenders 9 April 641. ʿAmr founds the camp-city of Fustat on the spot — origin of Cairo.",
+      "imagePrompt": "Hand-coloured plate. Round Roman bastion at the Nile bend, Arab tents springing up around it, river craft on the water.",
+      "vehicleToNext": "dhow"
+    },
+    {
+      "id": "stop-5",
+      "name": "Alexandria",
+      "lat": 31.20,
+      "lon": 29.92,
+      "note": "Six-month siege from spring 641; the city surrenders 8 November 641 by the treaty of patriarch Cyrus. The Library, already much diminished, is not burned by ʿAmr — that story is twelfth-century invention.",
+      "imagePrompt": "Hand-coloured plate. Pharos rising over walls and seafront, ceremonial surrender at the Eastern Harbour gate.",
+      "vehicleToNext": "dhow"
+    }
+  ]
+}

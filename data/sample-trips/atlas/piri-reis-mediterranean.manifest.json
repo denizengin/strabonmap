@@ -1,0 +1,11 @@
+{
+  "tripId": "piri-reis-mediterranean",
+  "style": "hand-coloured cartographic plate, muted ink, period-appropriate",
+  "images": [
+    {"stopId": "stop-1", "prompt": "Gallipoli arsenal with galleys on slipways, dockyard scribes at chart work; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-2", "prompt": "Hospitaller Rhodes under Ottoman siege with galleys blockading; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-3", "prompt": "Alexandria presentation of Kitab-i Bahriye to Suleiman; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-4", "prompt": "Tunis harbour with corsair galleys, kasbah behind; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-5", "prompt": "Venice lagoon from offshore with Doge's palace and campanile; hand-coloured plate.", "size": "1200x800"}
+  ]
+}

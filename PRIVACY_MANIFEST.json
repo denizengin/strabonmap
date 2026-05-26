@@ -1,0 +1,78 @@
+{
+  "$comment": "Strabon Map — machine-readable trust statement (E50). Not the formal Apple PrivacyInfo.xcprivacy spec; an internal-discipline document that asserts what the artifact does and doesn't do. Future feature work that violates any of these claims MUST update this file in the same commit.",
+  "schemaVersion": "1.0",
+  "appName": "Strabon Map",
+  "lastReviewed": "2026-05-15",
+  "collectsPersonalData": false,
+  "networkRequests": {
+    "outbound": [],
+    "$comment": "The artifact makes ZERO outbound requests at runtime. All assets are same-origin. Even the optional data/coast.geojson fetch is same-origin. No analytics, no telemetry, no fonts.googleapis.com, no CDN scripts. Adding any outbound request requires updating this list AND amending the landing-screen trust copy (E36)."
+  },
+  "thirdPartyScripts": [],
+  "$comment_thirdParty": "There are NO third-party scripts loaded at runtime. The artifact ships with two vendored libraries (vendor/exifr, vendor/libheif), both served from the same origin as static files. Vendored != third-party loaded: see the `vendoredLibraries` section below.",
+  "vendoredLibraries": [
+    {
+      "name": "exifr",
+      "path": "vendor/exifr/exifr.lite.umd.js",
+      "license": "MIT",
+      "purpose": "Reading EXIF GPS + timestamp from HEIC photos during import (E38). The original photo bytes never leave the device.",
+      "loadedEagerly": true
+    },
+    {
+      "name": "libheif-js",
+      "path": "vendor/libheif/libheif-bundle.js",
+      "license": "MIT (with libheif itself LGPL)",
+      "purpose": "Decoding HEIC pixel data into a canvas on browsers that don't support HEIC natively (E61). Decoding happens entirely in-process via WASM; no network calls.",
+      "loadedEagerly": false,
+      "loadedWhen": "First HEIC photo import in a session"
+    }
+  ],
+  "storage": {
+    "localStorage": {
+      "used": true,
+      "purpose": "Trip JSON (trip name, stops, dates, journal notes, companion names, theme preference, landing-seen flag). All keys are namespaced under 'strabonMap.*'."
+    },
+    "indexedDB": {
+      "used": true,
+      "purpose": "Photo bytes as JPEG Blobs, keyed by generated photoId (E11). EXIF metadata is stripped during the canvas re-encode before any byte hits the store — the stored photo cannot be reverse-engineered back to a GPS coordinate."
+    },
+    "cookies": {
+      "used": false
+    },
+    "remoteStorage": {
+      "used": false,
+      "$comment": "There is no backend. Local-first is not a marketing claim, it's a structural property of the artifact: there is no other place the data could go."
+    }
+  },
+  "permissions": {
+    "$comment": "Browser permissions the artifact may request at runtime.",
+    "geolocation": false,
+    "camera": false,
+    "microphone": false,
+    "notifications": false,
+    "clipboardWrite": "$conditional",
+    "clipboardRead": false,
+    "fileSystemAccess": "$conditional",
+    "$comment_conditional": "clipboardWrite may be used by the souvenir export flow (E35) when the user explicitly clicks a 'copy to clipboard' affordance. fileSystemAccess is used only via the standard <input type='file'> upload — not the modern File System Access API."
+  },
+  "trackingTechnologies": {
+    "fingerprinting": false,
+    "behavioralAnalytics": false,
+    "advertisingIdentifiers": false,
+    "crashReporting": false
+  },
+  "userRights": {
+    "deleteAllData": "Open browser DevTools > Application > Storage > Clear site data. Removes the IndexedDB photo store and all localStorage trip JSON. The user has full control because the data never left their browser.",
+    "exportAllData": "The souvenir export (E35) bundles the active trip as a standalone HTML file. To export every trip, repeat for each one. (E51 — full journal backup — is on the roadmap.)",
+    "rectifyData": "Every field is editable in the artifact's UI: trip name, stop name, dates, journal note, companion names, photo set."
+  },
+  "complianceContext": {
+    "$comment": "Strabon Map is a personal-use single-file web artifact. The standard frameworks (GDPR, CCPA, COPPA) target processors and controllers of others' data. Strabon Map has none — the user runs it on their own browser against their own data. There is no controller and no processor in the regulatory sense.",
+    "appliesTo": "personal-use; not a data-processing service"
+  },
+  "auditPolicy": {
+    "$comment": "This file is the source of truth for the trust claims in the README, the landing-screen trust block (E36), and SECURITY.md (E62, planned). Any commit that changes runtime behaviour MUST also update this file when relevant — outbound requests, new vendored deps, new browser permissions, new storage keys.",
+    "lastReviewed": "2026-05-15",
+    "reviewedBy": "deniz.vehbi@gmail.com"
+  }
+}

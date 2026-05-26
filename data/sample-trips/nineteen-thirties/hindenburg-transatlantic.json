@@ -1,0 +1,60 @@
+{
+  "id": "hindenburg-transatlantic",
+  "era": "nineteen-thirties",
+  "title": "LZ 129 Hindenburg — to Lakehurst",
+  "themeSuggestion": "thirties-grain",
+  "viewport": "auto",
+  "intro": {
+    "title": "The Last Crossing",
+    "dateline": "1937 CE",
+    "body": "The Hindenburg made ten Atlantic crossings in 1936 carrying paying passengers in dirigible luxury. On the first of the 1937 season she caught fire approaching the mooring mast at Lakehurst on 6 May, killing 36 of 97 souls aboard. Herbert Morrison's radio dispatch survives."
+  },
+  "companions": [],
+  "stops": [
+    {
+      "id": "stop-1",
+      "name": "Frankfurt-am-Main",
+      "lat": 50.10,
+      "lon": 8.68,
+      "note": "Departure 3 May 1937 at 19:16. The new German Zeppelin field at Rhein-Main is the airship's home base.",
+      "imagePrompt": "Sepia plate. Vast silver dirigible at low mast, swastikas on the tail fin, ground crew in field-grey overalls handling lines, German evening sky.",
+      "vehicleToNext": "balloon"
+    },
+    {
+      "id": "stop-2",
+      "name": "English Channel",
+      "lat": 50.50,
+      "lon": -0.50,
+      "note": "Cruising altitude 200 m over the Channel, 4 May 1937. Passengers dine at white-clothed tables in the lower gondola.",
+      "imagePrompt": "Sepia plate. Channel from above through a giant slanted window, white-clothed dinner table inside, passengers in evening dress.",
+      "vehicleToNext": "balloon"
+    },
+    {
+      "id": "stop-3",
+      "name": "Newfoundland",
+      "lat": 48.50,
+      "lon": -55.00,
+      "note": "Headwinds slow the crossing; Hindenburg passes south of Newfoundland in fog. Captain Pruss radios revised ETA.",
+      "imagePrompt": "Sepia plate. Vast banks of cloud below the airship, only the curve of the lower gondola visible against grey.",
+      "vehicleToNext": "balloon"
+    },
+    {
+      "id": "stop-4",
+      "name": "Boston",
+      "lat": 42.36,
+      "lon": -71.06,
+      "note": "Overflight at low altitude, afternoon of 6 May. Boston cinemas show newsreels of the airship next morning — before the news of Lakehurst.",
+      "imagePrompt": "Sepia plate. New England city seen from above with church spires, dirigible shadow across the Common, crowds in the street looking up.",
+      "vehicleToNext": "balloon"
+    },
+    {
+      "id": "stop-5",
+      "name": "Lakehurst",
+      "lat": 40.03,
+      "lon": -74.35,
+      "note": "Mooring approach 19:25, 6 May 1937. Fire at 19:25:30; airship destroyed in 34 seconds. Morrison's recording: 'Oh, the humanity'.",
+      "imagePrompt": "Sepia plate. Sky over the New Jersey pinelands at evening, mooring mast in foreground, vast burning silhouette descending tail-first onto the field.",
+      "vehicleToNext": "balloon"
+    }
+  ]
+}

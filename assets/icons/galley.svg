@@ -1,0 +1,38 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Galley">
+  <!-- Bronze-age GALLEY — meadow grade. A low, single-masted oared
+       war-galley, side-on: curved hull with a forward ram, a bank of
+       oars, a square sail on a central mast, a high curved stern.
+       Distinct from a byzantine dromon / age-of-sail caravel (period-
+       correct per the council). Gold stem-finial = the one gold accent.
+       Light from TOP-LEFT; sits on a hint of water. -->
+  <!-- (1) cast shadow on the water -->
+  <ellipse class="sh" cx="50" cy="80" rx="38" ry="4.5"/>
+  <!-- water hint under the keel -->
+  <path class="water" d="M10 78 q10 4 20 0 q10 -4 20 0 q10 4 20 0 q10 -4 20 0 L90 84 L10 84 Z"/>
+  <path class="foam" fill="none" d="M14 77 q8 3 16 0 M54 77 q8 3 16 0"/>
+  <!-- mast + yard -->
+  <path class="wood" d="M49 18 L51 56 L49 56 Z"/>
+  <path class="wood" d="M30 26 L70 26 L70 28 L30 28 Z"/>
+  <!-- square sail: lit face + shadow reef-band -->
+  <path class="wall" d="M31 27 L69 27 L66 47 L34 47 Z"/>
+  <path class="wall-s" d="M50 27 L69 27 L66 47 L50 47 Z"/>
+  <path class="out-thin" fill="none" d="M31 27 L69 27 L66 47 L34 47 Z M50 27 L50 47 M38 33 L62 33"/>
+  <!-- hull: lit upper strake + shadow lower strake, curved ram forward -->
+  <path class="wood-l" d="M16 56 L84 56 q6 0 8 5 L20 61 Z"/>
+  <path class="wood" d="M20 61 L92 61 q-6 11 -22 11 L30 72 q-12 0 -14 -11 Z"/>
+  <!-- forward ram (to the right) -->
+  <path class="wood" d="M88 60 L98 63 L90 66 Z"/>
+  <!-- high curved stern (left) with gold finial -->
+  <path class="wood-l" d="M16 56 q-8 -2 -6 -14 q5 4 6 9 Z"/>
+  <path class="out-thin" fill="none" d="M16 56 q-8 -2 -6 -14"/>
+  <circle class="gold" cx="9.5" cy="42" r="2.6"/>
+  <!-- oar bank -->
+  <path class="out-thin" fill="none" d="M28 62 L24 74 M38 62 L34 74 M48 62 L44 74 M58 62 L54 74 M68 62 L64 74"/>
+  <!-- shield row along the gunwale (one warm row) -->
+  <circle class="roof" cx="34" cy="58" r="2.4"/>
+  <circle class="roof" cx="44" cy="58" r="2.4"/>
+  <circle class="roof-s" cx="54" cy="58" r="2.4"/>
+  <circle class="roof-s" cx="64" cy="58" r="2.4"/>
+  <!-- primary contour around the hull -->
+  <path class="out" fill="none" d="M16 56 L84 56 q6 0 8 5 q-6 11 -22 11 L30 72 q-12 0 -14 -11 Z"/>
+</svg>

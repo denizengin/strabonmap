@@ -1,0 +1,12 @@
+{
+  "_meta": "E-B2 i18n — Turkish (TR) seed. Same keys as strings.en.json; any missing key falls back to EN. Seeded for the high-visibility foundation strings; remaining keys to be filled as the full migration lands.",
+  "landing.pitch.lead": "Gezilerinizi şuna dönüştürün:",
+  "landing.pitch.em": "1930'ların maceracı seyahat montajı",
+  "landing.cta.make": "Kendi haritanı yap",
+  "landing.cta.sub": "Hesap yok · fotoğraflar cihazınızda kalır",
+  "editor.newTrip": "＋ Yeni sefer",
+  "editor.import": "⊞ Fotoğraflardan içe aktar",
+  "gear.language": "Dil",
+  "gear.textSize": "Yazı boyutu",
+  "fin.routeComplete": "Rota tamamlandı."
+}

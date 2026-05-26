@@ -1,0 +1,30 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Temple">
+  <!-- Classical Greek/Roman TEMPLE, front view. A row of fluted columns on a
+       stepped base carries an entablature and a triangular pediment. Light from
+       TOP-LEFT: left columns/faces lit (stone-l), right shadowed (stone-s).
+       Gold akroterion finial at the pediment apex = the one gold accent. -->
+  <!-- (1) cast shadow on the ground -->
+  <ellipse class="sh" cx="50" cy="86" rx="40" ry="4.5"/>
+  <!-- stepped base platform: lit top step + shadow under-step -->
+  <path class="stone-l" d="M14 74 L86 74 L86 79 L14 79 Z"/>
+  <path class="stone-s" d="M11 79 L89 79 L89 84 L11 84 Z"/>
+  <!-- colonnade: six columns, leftmost lit, rightmost in shadow -->
+  <rect class="stone-l" x="18" y="46" width="7" height="28"/>
+  <rect class="stone-l" x="31" y="46" width="7" height="28"/>
+  <rect class="stone" x="44" y="46" width="7" height="28"/>
+  <rect class="stone" x="57" y="46" width="7" height="28"/>
+  <rect class="stone-s" x="70" y="46" width="7" height="28"/>
+  <rect class="stone-s" x="62" y="46" width="3" height="28"/>
+  <!-- entablature beam over the columns: lit band + shadow band -->
+  <path class="stone-l" d="M14 41 L86 41 L86 46 L14 46 Z"/>
+  <path class="stone-s" d="M14 46 L86 46 L86 48 L14 48 Z"/>
+  <!-- triangular pediment (roof): lit left face + shadow right face -->
+  <path class="roof-l" d="M50 18 L88 41 L50 41 Z"/>
+  <path class="roof-s" d="M50 18 L12 41 L50 41 Z"/>
+  <!-- gold akroterion finial at the apex -->
+  <path class="gold" d="M50 18 L46 12 L50 8 L54 12 Z"/>
+  <!-- column flute detail + step lines -->
+  <path class="out-thin" fill="none" d="M21.5 46 L21.5 74 M34.5 46 L34.5 74 M47.5 46 L47.5 74 M60.5 46 L60.5 74 M73.5 46 L73.5 74 M14 79 L86 79"/>
+  <!-- primary contour around the temple silhouette -->
+  <path class="out" fill="none" d="M11 84 L11 79 L14 79 L14 48 L12 41 L50 18 L88 41 L86 48 L86 79 L89 79 L89 84 Z"/>
+</svg>

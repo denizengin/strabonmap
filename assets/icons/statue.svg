@@ -1,0 +1,30 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Statue">
+  <!-- A monumental STATUE: a standing robed figure atop a tall plinth (Colossus /
+       civic monument). Light from TOP-LEFT: left faces lit, right shadow.
+       Gold raised torch the figure holds = the one gold accent. -->
+  <!-- (1) cast shadow -->
+  <ellipse class="sh" cx="50" cy="86" rx="30" ry="4.5"/>
+  <!-- tall plinth: lit left + shadow right + base step -->
+  <path class="stone-l" d="M34 60 L50 60 L50 82 L34 82 Z"/>
+  <path class="stone-s" d="M50 60 L66 60 L66 82 L50 82 Z"/>
+  <path class="stone-s" d="M30 82 L70 82 L70 84 L30 84 Z"/>
+  <!-- inscription panel (dark) on the plinth -->
+  <path class="win" d="M40 66 L60 66 L60 76 L40 76 Z"/>
+  <!-- robed body of the figure: lit left half -->
+  <path class="wall" d="M50 30 L44 32 L42 60 L50 60 Z"/>
+  <!-- robed body: shadow right half -->
+  <path class="wall-s" d="M50 30 L56 32 L58 60 L50 60 Z"/>
+  <!-- head -->
+  <circle class="wall" cx="50" cy="24" r="6"/>
+  <path class="wall-s" d="M50 18 a6 6 0 0 1 0 12 Z"/>
+  <!-- right arm raised holding the torch -->
+  <path class="wall-s" d="M55 34 L66 22 L69 25 L58 38 Z"/>
+  <!-- left arm at side -->
+  <path class="wall" d="M45 34 L38 48 L41 49 L48 36 Z"/>
+  <!-- gold torch flame held aloft -->
+  <path class="gold" d="M67 22 q-3 -8 0 -12 q3 4 0 12 Z"/>
+  <!-- robe fold lines + plinth edge -->
+  <path class="out-thin" fill="none" d="M50 32 L50 60 M46 40 L46 58 M54 40 L54 58 M34 60 L66 60"/>
+  <!-- primary contour -->
+  <path class="out" fill="none" d="M30 84 L30 82 L34 82 L34 60 L42 60 L44 32 L50 18 L56 32 L58 60 L66 60 L66 82 L70 82 L70 84 Z"/>
+</svg>

@@ -1,0 +1,60 @@
+{
+  "id": "cook-first-voyage",
+  "era": "atlas",
+  "title": "Cook — first voyage of HMB Endeavour",
+  "themeSuggestion": "atlas-sepia",
+  "viewport": "auto",
+  "intro": {
+    "title": "Transit of Venus and Beyond",
+    "dateline": "1768-1771 CE",
+    "body": "Lieutenant James Cook sailed HMB Endeavour to observe the 1769 transit of Venus from Tahiti, then opened sealed orders to seek the Great Southern Continent. The voyage charted New Zealand and the east coast of Australia. Joseph Banks and Sydney Parkinson sailed as naturalist and artist."
+  },
+  "companions": ["Cook", "Banks", "Parkinson"],
+  "stops": [
+    {
+      "id": "stop-1",
+      "name": "Plymouth",
+      "lat": 50.37,
+      "lon": -4.14,
+      "note": "Departure 26 August 1768. Endeavour clears Plymouth Sound for Madeira and the Atlantic crossing.",
+      "imagePrompt": "Hand-coloured plate. Devon harbour at dawn, square-rigged collier-brig under topsails, breakwater astern.",
+      "vehicleToNext": "frigate"
+    },
+    {
+      "id": "stop-2",
+      "name": "Rio de Janeiro",
+      "lat": -22.91,
+      "lon": -43.17,
+      "note": "Provisioning stop, November 1768. Viceroy refuses to believe the ship is on a scientific mission and confines Banks aboard.",
+      "imagePrompt": "Hand-coloured plate. Sugar-loaf headland from the harbour, Portuguese flag on shore battery, single English ship at anchor.",
+      "vehicleToNext": "frigate"
+    },
+    {
+      "id": "stop-3",
+      "name": "Tahiti (Matavai Bay)",
+      "lat": -17.49,
+      "lon": -149.50,
+      "note": "13 April 1769 - 13 July 1769. Fort Venus is built for the 3 June transit observation. Banks and the crew interact with Queen Purea's court.",
+      "imagePrompt": "Hand-coloured plate. Black-sand bay below volcanic peaks, stockaded observation fort with brass instruments, outrigger canoes around the ship.",
+      "vehicleToNext": "frigate"
+    },
+    {
+      "id": "stop-4",
+      "name": "New Zealand (Ship Cove)",
+      "lat": -41.10,
+      "lon": 174.23,
+      "note": "January 1770. Cook careens Endeavour at Queen Charlotte Sound while charting both main islands — proving Aotearoa is not a continental coast.",
+      "imagePrompt": "Hand-coloured plate. Fjord-like inlet with steep wooded slopes, ship careened on its side on a gravel beach, Māori waka offshore.",
+      "vehicleToNext": "frigate"
+    },
+    {
+      "id": "stop-5",
+      "name": "Botany Bay",
+      "lat": -34.00,
+      "lon": 151.20,
+      "note": "29 April 1770. First landfall on the Australian east coast. Banks collects so many specimens that Cook renames the inlet from Stingray Bay.",
+      "imagePrompt": "Hand-coloured plate. Eucalypt-fringed bay, ship's boat coming ashore through low surf, two Aboriginal men with shields on the beach.",
+      "vehicleToNext": "frigate"
+    }
+  ]
+}

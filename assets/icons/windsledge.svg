@@ -1,0 +1,28 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Wind sledge">
+  <!-- Wind-driven SAIL SLEDGE (Verne's prairie wind-sledge). A low sledge
+       platform on runners, a single mast carrying a square sail catching
+       the wind, motion lines streaming behind (left). On ground: NO water,
+       sh shadow. Light from TOP-LEFT. Gold = a masthead pennant (one accent). -->
+  <ellipse class="sh" cx="52" cy="82" rx="40" ry="4.5"/>
+  <!-- motion lines streaming behind the moving sledge (left) -->
+  <path class="out-thin" fill="none" d="M6 60 L20 60 M4 67 L22 67 M8 74 L24 74"/>
+  <!-- mast + yard -->
+  <path class="wood" d="M55 60 L57 16 L59 16 L57 60 Z"/>
+  <path class="wood" d="M36 24 L78 24 L78 26 L36 26 Z"/>
+  <!-- gold pennant streaming from the masthead -->
+  <path class="gold" d="M58 14 L74 11 L66 16 L74 20 L58 18 Z"/>
+  <!-- single square sail bellied by the wind: lit face + shadow leech -->
+  <path class="wall" d="M37 26 q20 6 40 0 L74 54 q-17 5 -34 0 Z"/>
+  <path class="wall-s" d="M57 28 L74 54 q-9 3 -17 2 Z"/>
+  <path class="out-thin" fill="none" d="M37 26 q20 6 40 0 M40 36 q17 5 34 0 M40.5 45 q16 4 32 0"/>
+  <!-- low sledge platform / deck: lit top + shadow front -->
+  <path class="wood-l" d="M28 60 L86 60 L84 64 L26 64 Z"/>
+  <path class="wood" d="M26 64 L84 64 L82 68 L24 68 Z"/>
+  <!-- twin curved runners under the platform -->
+  <path class="wood" d="M22 70 L86 70 q8 0 12 -5 L98 67 q-6 7 -14 7 L26 74 Z"/>
+  <path class="out-thin" fill="none" d="M22 70 L86 70 q8 0 12 -5"/>
+  <!-- runner uprights -->
+  <path class="out-thin" fill="none" d="M34 68 L34 71 M52 68 L52 71 M70 68 L70 71"/>
+  <!-- primary contour around platform + runner -->
+  <path class="out" fill="none" d="M26 64 L84 64 L82 68 L86 68 q8 0 12 -5 q-6 7 -14 7 L26 72 Z"/>
+</svg>

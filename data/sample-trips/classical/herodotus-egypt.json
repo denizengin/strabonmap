@@ -1,0 +1,60 @@
+{
+  "id": "herodotus-egypt",
+  "era": "classical",
+  "title": "Herodotus in Egypt",
+  "themeSuggestion": "classical-marble",
+  "viewport": "auto",
+  "intro": {
+    "title": "Up the Nile with the Father of History",
+    "dateline": "c. 450 BCE",
+    "body": "Herodotus devoted Book II of the Histories to Egypt, ascending the Nile as far as Elephantine and gathering temple traditions from the priests of Heliopolis, Memphis, and Thebes. His route is the one his testimony lets us reconstruct."
+  },
+  "companions": [],
+  "stops": [
+    {
+      "id": "stop-1",
+      "name": "Halikarnassos",
+      "lat": 37.04,
+      "lon": 27.42,
+      "note": "Herodotus's birthplace and the implicit point of departure for his Egyptian journey.",
+      "imagePrompt": "Hand-coloured plate. Carian port with merchantmen, scholar boarding with scrolls.",
+      "vehicleToNext": "merchantman"
+    },
+    {
+      "id": "stop-2",
+      "name": "Tyre",
+      "lat": 33.27,
+      "lon": 35.20,
+      "note": "Herodotus II.44: he visits Tyre to ask the priests of Herakles about the temple's age. They give him 2,300 years.",
+      "imagePrompt": "Hand-coloured plate. Island-city of Tyre with twin harbours, temple of Melqart on the headland.",
+      "vehicleToNext": "merchantman"
+    },
+    {
+      "id": "stop-3",
+      "name": "Heliopolis",
+      "lat": 30.13,
+      "lon": 31.30,
+      "note": "Herodotus II.3: 'The Heliopolitans are said to be the most learned in records of the Egyptians.' He questions the priests here on chronology and ritual.",
+      "imagePrompt": "Hand-coloured plate. Temple of Atum-Ra with obelisks, palm avenue, priests in linen.",
+      "vehicleToNext": "merchantman"
+    },
+    {
+      "id": "stop-4",
+      "name": "Memphis",
+      "lat": 29.85,
+      "lon": 31.25,
+      "note": "Herodotus II.99-110 reports the king-list of Memphis from Min onward. He inspects the temple of Hephaestus (Ptah).",
+      "imagePrompt": "Hand-coloured plate. Sphinx-lined avenue to the Ptah temple, colossal seated kings flanking the gate.",
+      "vehicleToNext": "merchantman"
+    },
+    {
+      "id": "stop-5",
+      "name": "Elephantine",
+      "lat": 24.09,
+      "lon": 32.89,
+      "note": "Herodotus II.29: 'As far as Elephantine I went and saw with my own eyes; what is beyond I learned by question.' Southern limit of his autopsy.",
+      "imagePrompt": "Hand-coloured plate. Granite island in the Nile at the First Cataract, papyrus skiffs threading the rocks.",
+      "vehicleToNext": "merchantman"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "tripId": "sea-peoples-raid",
+  "style": "hand-coloured cartographic plate, muted ink, period-appropriate",
+  "images": [
+    {"stopId": "stop-1", "prompt": "Mycenae lion gate above the Argive plain, distant palace smoke; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-2", "prompt": "Ugarit burning by the sea, crested-helmet warriors landing from galleys; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-3", "prompt": "Cypriot walled town with breach, raiders inside; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-4", "prompt": "Philistine settlement at Ashkelon, longhouses being raised; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-5", "prompt": "Nile Delta sea battle from Medinet Habu reliefs; hand-coloured plate.", "size": "1200x800"}
+  ]
+}

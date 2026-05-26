@@ -1,0 +1,11 @@
+{
+  "tripId": "magellan-elcano",
+  "style": "hand-coloured cartographic plate, muted ink, period-appropriate",
+  "images": [
+    {"stopId": "stop-1", "prompt": "Sanlúcar Guadalquivir mouth, five caravels and naos under sail; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-2", "prompt": "Strait of Magellan between snow-capped headlands, three ships in line; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-3", "prompt": "Mactan tropical shore, helmeted Spaniards in surf, native warriors on beach; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-4", "prompt": "Tidore volcanic island, ships loading cloves, sultan's pavilion; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-5", "prompt": "Sanlúcar return, one battered ship, ragged men kneeling on quay; hand-coloured plate.", "size": "1200x800"}
+  ]
+}

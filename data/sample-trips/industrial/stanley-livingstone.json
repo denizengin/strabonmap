@@ -1,0 +1,60 @@
+{
+  "id": "stanley-livingstone",
+  "era": "industrial",
+  "title": "Stanley — search for Livingstone",
+  "themeSuggestion": "industrial-engraving",
+  "viewport": "auto",
+  "intro": {
+    "title": "Doctor Livingstone, I presume",
+    "dateline": "1871 CE",
+    "body": "Henry Morton Stanley led an expedition financed by the New York Herald to find David Livingstone, last heard from in 1869 from the African interior. From Zanzibar he marched 700 miles inland to Ujiji where he met Livingstone on 10 November 1871."
+  },
+  "companions": ["Stanley"],
+  "stops": [
+    {
+      "id": "stop-1",
+      "name": "Zanzibar",
+      "lat": -6.16,
+      "lon": 39.20,
+      "note": "Stanley arrives 6 January 1871. He hires 200 porters, eight horses, and buys 36,000 yards of trade cloth.",
+      "imagePrompt": "Hand-coloured plate. Old Stone Town harbour with Arab dhows, sweltering quay piled with cotton bales, European in pith helmet directing porters.",
+      "vehicleToNext": "steamer"
+    },
+    {
+      "id": "stop-2",
+      "name": "Bagamoyo",
+      "lat": -6.44,
+      "lon": 38.90,
+      "note": "Mainland departure point opposite Zanzibar. The caravan sets out 21 March 1871.",
+      "imagePrompt": "Hand-coloured plate. Coconut palms above a tidal beach, long caravan of porters with head-loads stretching inland.",
+      "vehicleToNext": "foot"
+    },
+    {
+      "id": "stop-3",
+      "name": "Tabora",
+      "lat": -5.02,
+      "lon": 32.81,
+      "note": "Arab caravan-station in the central plateau. Stanley reaches it June 1871 and is delayed by the Mirambo war.",
+      "imagePrompt": "Hand-coloured plate. Mud-walled compound on a savanna plain, baobabs, Stanley conferring with an Arab trader under a thatched awning.",
+      "vehicleToNext": "foot"
+    },
+    {
+      "id": "stop-4",
+      "name": "Ujiji",
+      "lat": -4.92,
+      "lon": 29.68,
+      "note": "10 November 1871. Stanley meets Livingstone on the lakeshore. Stanley's much-quoted greeting may be invented; his journal page for that day was torn out.",
+      "imagePrompt": "Hand-coloured plate. Mango-shaded lakeshore village, frail bearded missionary in a cap meeting Stanley in a sun-helmet, porters watching.",
+      "vehicleToNext": "foot"
+    },
+    {
+      "id": "stop-5",
+      "name": "Lake Tanganyika (northern shore)",
+      "lat": -3.40,
+      "lon": 29.30,
+      "note": "Stanley and Livingstone spend December 1871 - February 1872 jointly exploring the northern shore by dugout, hoping to prove the lake drains to the Nile (it does not).",
+      "imagePrompt": "Hand-coloured plate. Dugout canoe on a vast lake, hippos in the foreground, distant mountain wall on the western shore.",
+      "vehicleToNext": "foot"
+    }
+  ]
+}

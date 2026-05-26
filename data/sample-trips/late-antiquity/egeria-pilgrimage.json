@@ -1,0 +1,60 @@
+{
+  "id": "egeria-pilgrimage",
+  "era": "late-antiquity",
+  "title": "Egeria — pilgrimage to the Holy Land",
+  "themeSuggestion": "late-antiquity-porphyry",
+  "viewport": "auto",
+  "intro": {
+    "title": "The Lady's Itinerarium",
+    "dateline": "381-384 CE",
+    "body": "Egeria, a Hispano-Roman nun, travelled from Gallaecia to the Holy Land and Sinai over three years. The surviving Itinerarium Egeriae records her route in letters home: 'Don't think, sisters, that the place is small.' Her descriptions of the Sinai monasteries and Jerusalem liturgy are the earliest extant."
+  },
+  "companions": ["Egeria"],
+  "stops": [
+    {
+      "id": "stop-1",
+      "name": "Constantinople",
+      "lat": 41.01,
+      "lon": 28.97,
+      "note": "Egeria's letter-receiving sisters were in Gallaecia; she writes from Constantinople on the return leg, c. 384.",
+      "imagePrompt": "Hand-coloured plate. New capital with Hagia Eirene under scaffolding, walls along the Marmara, woman in plain habit at a scriptorium window.",
+      "vehicleToNext": "liburna"
+    },
+    {
+      "id": "stop-2",
+      "name": "Jerusalem",
+      "lat": 31.78,
+      "lon": 35.22,
+      "note": "Egeria's base for the central year of her journey. She records Holy Week liturgy at the Anastasis and the Mount of Olives.",
+      "imagePrompt": "Hand-coloured plate. Constantinian Anastasis rotunda, processional cross, pilgrims with candles in narrow lanes.",
+      "vehicleToNext": "foot"
+    },
+    {
+      "id": "stop-3",
+      "name": "Mount Sinai",
+      "lat": 28.54,
+      "lon": 33.97,
+      "note": "Itinerarium I-V: Egeria climbs the mountain at dawn, hears the Exodus story read at the summit, descends to the burning-bush garden.",
+      "imagePrompt": "Hand-coloured plate. Granite pinnacle in dawn light, walled monastery in the wadi below, single small figure on a ridge.",
+      "vehicleToNext": "pack-mule"
+    },
+    {
+      "id": "stop-4",
+      "name": "Edessa",
+      "lat": 37.16,
+      "lon": 38.79,
+      "note": "Itinerarium XVII-XIX: Egeria visits the tomb of the apostle Thomas and receives the legendary Abgar-Christ correspondence.",
+      "imagePrompt": "Hand-coloured plate. North-Mesopotamian city with citadel pools, basilica with martyrium shrine.",
+      "vehicleToNext": "ox-cart"
+    },
+    {
+      "id": "stop-5",
+      "name": "Chalcedon",
+      "lat": 40.98,
+      "lon": 29.03,
+      "note": "Itinerarium XXIII: Egeria's last extant stop — she crosses from the Asian side back to Constantinople at the Euphemia martyrium.",
+      "imagePrompt": "Hand-coloured plate. Bosphorus ferry landing, octagonal martyrium of Saint Euphemia, pilgrims kissing relics.",
+      "vehicleToNext": "liburna"
+    }
+  ]
+}

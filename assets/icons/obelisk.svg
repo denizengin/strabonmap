@@ -1,0 +1,30 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Obelisk">
+  <!-- An Egyptian OBELISK: a tall tapering four-sided shaft on a small base, with
+       faint hieroglyph lines. Light from TOP-LEFT: left face lit (stone), right
+       face shadow (stone-s). Gold gilded pyramidion cap = the one gold accent. -->
+  <!-- (1) cast shadow -->
+  <ellipse class="sh" cx="50" cy="86" rx="26" ry="4.5"/>
+  <!-- base platform: lit top step + shadow under-step + lower plinth -->
+  <path class="stone-l" d="M34 72 L66 72 L66 76 L34 76 Z"/>
+  <path class="stone" d="M32 76 L68 76 L68 80 L32 80 Z"/>
+  <path class="stone-s" d="M30 80 L70 80 L70 84 L30 84 Z"/>
+  <!-- tapering shaft: lit left face -->
+  <path class="stone" d="M46 24 L50 24 L46 72 L40 72 Z"/>
+  <!-- tapering shaft: shadow right face -->
+  <path class="stone-s" d="M50 24 L54 24 L60 72 L46 72 Z"/>
+  <!-- gold pyramidion (gilded cap) at the very top -->
+  <path class="gold" d="M48 10 L46 24 L54 24 Z"/>
+  <!-- faint hieroglyph register lines on the lit face (individual glyph rows) -->
+  <path class="out-thin" fill="none" d="M44 32 L48 32"/>
+  <path class="out-thin" fill="none" d="M43 38 L52 38"/>
+  <path class="out-thin" fill="none" d="M45 44 L51 44"/>
+  <path class="out-thin" fill="none" d="M42 50 L54 50"/>
+  <path class="out-thin" fill="none" d="M43 56 L53 56"/>
+  <path class="out-thin" fill="none" d="M41 62 L56 62"/>
+  <path class="out-thin" fill="none" d="M44 68 L57 68"/>
+  <!-- center edge of the shaft + base course lines -->
+  <path class="out-thin" fill="none" d="M50 24 L50 72"/>
+  <path class="out-thin" fill="none" d="M34 76 L66 76 M32 80 L68 80"/>
+  <!-- primary contour -->
+  <path class="out" fill="none" d="M31 84 L31 80 L34 80 L40 76 L46 24 L48 10 L54 24 L60 76 L66 80 L69 80 L69 84 Z"/>
+</svg>

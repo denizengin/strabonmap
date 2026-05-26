@@ -1,0 +1,33 @@
+{
+  "name": "Strabon Map",
+  "short_name": "Strabon Map",
+  "description": "Turn your trips into a 1930s pulp-adventure travel-montage. Red-dashed routes across a hand-painted 1936 map. No account. Photos stay on your device.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#d6b787",
+  "theme_color": "#7a1f1a",
+  "lang": "en",
+  "categories": ["travel", "lifestyle", "photo"],
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

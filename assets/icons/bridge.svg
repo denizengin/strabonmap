@@ -1,0 +1,33 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bridge">
+  <!-- A stone ARCH BRIDGE: a span with two rounded arches, a roadway across the top,
+       and water flowing beneath the arches. Light from TOP-LEFT: left faces lit
+       (stone), right faces shadow (stone-s). Gold lamp post on the parapet = the
+       one gold accent. -->
+  <!-- (1) cast shadow -->
+  <ellipse class="sh" cx="50" cy="84" rx="42" ry="4"/>
+  <!-- water flowing under the arches -->
+  <path class="water" d="M8 70 L92 70 L92 80 L8 80 Z"/>
+  <path class="water-d" d="M8 75 L92 75 L92 80 L8 80 Z"/>
+  <!-- foam ripples on the water -->
+  <path class="foam" fill="none" d="M14 73 q4 -2 8 0 q4 2 8 0 M62 73 q4 -2 8 0 q4 2 8 0"/>
+  <!-- bridge masonry body: lit face -->
+  <path class="stone" d="M10 70 L10 44 L90 44 L90 70 Z"/>
+  <!-- shadow band along the underside of the deck -->
+  <path class="stone-s" d="M10 64 L90 64 L90 70 L10 70 Z"/>
+  <!-- left arch opening (dark void over water) -->
+  <path class="win" d="M20 70 L20 58 q9 -12 18 0 L38 70 Z"/>
+  <!-- right arch opening -->
+  <path class="win" d="M58 70 L58 58 q9 -12 18 0 L76 70 Z"/>
+  <!-- central pier between the arches: shadow -->
+  <path class="stone-s" d="M44 50 L52 50 L52 70 L44 70 Z"/>
+  <!-- roadway deck + parapet on top: lit + shadow -->
+  <path class="stone-l" d="M8 38 L92 38 L92 44 L8 44 Z"/>
+  <path class="stone-s" d="M8 44 L92 44 L92 46 L8 46 Z"/>
+  <!-- gold lamp post standing on the parapet -->
+  <path class="out-thin" fill="none" d="M50 38 L50 28"/>
+  <circle class="gold" cx="50" cy="26" r="3"/>
+  <!-- voussoir lines around the arches + deck line -->
+  <path class="out-thin" fill="none" d="M20 58 q9 -12 18 0 M58 58 q9 -12 18 0 M8 44 L92 44"/>
+  <!-- primary contour of the bridge -->
+  <path class="out" fill="none" d="M8 46 L8 70 M92 46 L92 70 M8 38 L92 38 M20 70 L20 58 q9 -12 18 0 L38 70 M58 70 L58 58 q9 -12 18 0 L76 70"/>
+</svg>

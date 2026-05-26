@@ -1,0 +1,30 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Cog">
+  <!-- Medieval COG. A tubby, high-sided hull with fore- and stern-
+       castles, one mast carrying one broad square sail. Bulky and tall,
+       distinct from the sleek galley. Light from TOP-LEFT; water hint.
+       Gold masthead truck = the one gold accent. -->
+  <ellipse class="sh" cx="50" cy="84" rx="37" ry="4.5"/>
+  <path class="water" d="M12 80 q9 4 19 0 q10 -4 19 0 q10 4 19 0 q9 -4 19 0 L88 86 L12 86 Z"/>
+  <path class="foam" fill="none" d="M16 79 q8 3 15 0 M53 79 q8 3 15 0"/>
+  <!-- mast + yard, gold truck at masthead -->
+  <path class="wood" d="M49 12 L51 58 L49 58 Z"/>
+  <path class="wood" d="M28 22 L72 22 L72 24 L28 24 Z"/>
+  <circle class="gold" cx="50" cy="12" r="2.4"/>
+  <!-- one broad square sail: lit face + shadow reef-band -->
+  <path class="wall" d="M29 23 L71 23 L68 50 L32 50 Z"/>
+  <path class="wall-s" d="M50 23 L71 23 L68 50 L50 50 Z"/>
+  <path class="out-thin" fill="none" d="M29 23 L71 23 L68 50 L32 50 Z M50 23 L50 50 M36 31 L64 31 M35 40 L65 40"/>
+  <!-- tubby high-sided hull: lit upper strake + deep shadow lower hull -->
+  <path class="wood-l" d="M18 58 L82 58 L84 62 L16 62 Z"/>
+  <path class="wood" d="M16 62 L84 62 q-3 12 -16 12 L32 74 q-13 0 -16 -12 Z"/>
+  <!-- fore-castle (right) raised box -->
+  <path class="wood-l" d="M74 50 L88 50 L88 53 L74 53 Z"/>
+  <path class="wood" d="M76 53 L86 53 L86 58 L76 58 Z"/>
+  <path class="out-thin" fill="none" d="M74 50 L88 50 M76 53 L76 58 M86 53 L86 58 M78 50 L78 47 M82 50 L82 47 M86 47 L74 47"/>
+  <!-- stern-castle (left) raised box -->
+  <path class="wood-l" d="M12 50 L26 50 L26 53 L12 53 Z"/>
+  <path class="wood" d="M14 53 L24 53 L24 58 L14 58 Z"/>
+  <path class="out-thin" fill="none" d="M12 50 L26 50 M14 53 L14 58 M24 53 L24 58 M16 50 L16 47 M20 50 L20 47 M24 47 L12 47"/>
+  <!-- primary contour around the hull -->
+  <path class="out" fill="none" d="M16 62 L84 62 q-3 12 -16 12 L32 74 q-13 0 -16 -12 Z"/>
+</svg>

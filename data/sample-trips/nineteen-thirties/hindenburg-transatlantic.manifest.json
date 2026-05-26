@@ -1,0 +1,11 @@
+{
+  "tripId": "hindenburg-transatlantic",
+  "style": "sepia hand-coloured plate, late-1930s register",
+  "images": [
+    {"stopId": "stop-1", "prompt": "Frankfurt Zeppelin field, silver airship at low mast, ground crew handling lines; sepia plate.", "size": "1200x800"},
+    {"stopId": "stop-2", "prompt": "Channel from above through slanted window, dinner table inside, passengers in evening dress; sepia plate.", "size": "1200x800"},
+    {"stopId": "stop-3", "prompt": "Vast clouds below airship, only gondola curve visible; sepia plate.", "size": "1200x800"},
+    {"stopId": "stop-4", "prompt": "Boston spires from above, dirigible shadow on Common, crowds looking up; sepia plate.", "size": "1200x800"},
+    {"stopId": "stop-5", "prompt": "Lakehurst mooring approach, burning airship descending tail-first; sepia plate.", "size": "1200x800"}
+  ]
+}

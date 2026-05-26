@@ -1,0 +1,60 @@
+{
+  "id": "magellan-elcano",
+  "era": "atlas",
+  "title": "Magellan and Elcano — the first circumnavigation",
+  "themeSuggestion": "atlas-sepia",
+  "viewport": "auto",
+  "intro": {
+    "title": "Around the World, Westward",
+    "dateline": "1519-1522 CE",
+    "body": "Ferdinand Magellan sailed from Sanlúcar with five ships and 270 men in September 1519. He was killed at Mactan in April 1521; Juan Sebastián Elcano brought the Victoria home in September 1522 with 18 survivors. Antonio Pigafetta's journal is the eyewitness."
+  },
+  "companions": ["Magellan", "Elcano", "Pigafetta"],
+  "stops": [
+    {
+      "id": "stop-1",
+      "name": "Sanlúcar de Barrameda",
+      "lat": 36.78,
+      "lon": -6.35,
+      "note": "Departure 20 September 1519. The fleet of five ships clears the Guadalquivir bar.",
+      "imagePrompt": "Hand-coloured plate. Andalusian river mouth, five caravels and naos under sail, white town on the bank.",
+      "vehicleToNext": "caravel"
+    },
+    {
+      "id": "stop-2",
+      "name": "Strait of Magellan",
+      "lat": -53.50,
+      "lon": -70.50,
+      "note": "Discovered 21 October 1520. The 38-day passage through the strait at the southern tip of South America opens the Pacific.",
+      "imagePrompt": "Hand-coloured plate. Narrow channel between snow-capped headlands, three ships in line with steep cliffs to either side.",
+      "vehicleToNext": "caravel"
+    },
+    {
+      "id": "stop-3",
+      "name": "Mactan (Philippines)",
+      "lat": 10.31,
+      "lon": 123.95,
+      "note": "27 April 1521. Magellan is killed by Lapulapu's warriors in shallow water off the island.",
+      "imagePrompt": "Hand-coloured plate. Tropical shore with breaking surf, helmeted Spaniards in knee-deep water, native warriors with spears on the beach.",
+      "vehicleToNext": "caravel"
+    },
+    {
+      "id": "stop-4",
+      "name": "Tidore (Spice Islands)",
+      "lat": 0.68,
+      "lon": 127.43,
+      "note": "Victoria and Trinidad reach the Moluccas 8 November 1521. The cloves loaded here pay for the entire expedition.",
+      "imagePrompt": "Hand-coloured plate. Volcanic peak above a tropical island, ships taking on sacks of cloves, sultan's pavilion on the strand.",
+      "vehicleToNext": "caravel"
+    },
+    {
+      "id": "stop-5",
+      "name": "Sanlúcar (return)",
+      "lat": 36.78,
+      "lon": -6.35,
+      "note": "Victoria returns 6 September 1522 under Elcano with 18 starved men. They walk barefoot in procession to the cathedral.",
+      "imagePrompt": "Hand-coloured plate. Same Andalusian river mouth, one battered ship limping in, ragged men kneeling on the quay.",
+      "vehicleToNext": "foot"
+    }
+  ]
+}

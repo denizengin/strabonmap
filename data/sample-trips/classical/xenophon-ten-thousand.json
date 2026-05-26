@@ -1,0 +1,60 @@
+{
+  "id": "xenophon-ten-thousand",
+  "era": "classical",
+  "title": "Xenophon — March of the Ten Thousand",
+  "themeSuggestion": "classical-marble",
+  "viewport": "auto",
+  "intro": {
+    "title": "The Sea, the Sea",
+    "dateline": "401-400 BCE",
+    "body": "Cyrus the Younger hired 10,400 Greek hoplites to march against his brother Artaxerxes II. After Cyrus fell at Cunaxa, Xenophon led the survivors home across Armenia. The Anabasis records every stage; his cry 'Thalatta! Thalatta!' from Mount Theches enters the canon at IV.7."
+  },
+  "companions": ["Xenophon"],
+  "stops": [
+    {
+      "id": "stop-1",
+      "name": "Sardis",
+      "lat": 38.49,
+      "lon": 28.04,
+      "note": "Cyrus's mustering point in spring 401 BCE. The army marched east from here under the pretext of a Pisidian campaign (Anabasis I.2).",
+      "imagePrompt": "Hand-coloured plate. Lydian citadel above a plain, hoplite phalanxes assembling, satrap's pavilion.",
+      "vehicleToNext": "foot"
+    },
+    {
+      "id": "stop-2",
+      "name": "Tarsus",
+      "lat": 36.92,
+      "lon": 34.90,
+      "note": "Cilician capital. Cyrus halted here twenty days to settle Greek pay disputes after the Cilician Gates (Anabasis I.2.23).",
+      "imagePrompt": "Hand-coloured plate. River town below the Cilician plain, hoplites bathing in the Cydnus.",
+      "vehicleToNext": "foot"
+    },
+    {
+      "id": "stop-3",
+      "name": "Cunaxa",
+      "lat": 33.30,
+      "lon": 44.20,
+      "note": "Battle north of Babylon, 3 September 401 BCE. The Greeks won their wing; Cyrus charged Artaxerxes and was killed. The retreat begins (Anabasis I.8).",
+      "imagePrompt": "Hand-coloured plate. Phalanx pressing forward on a Mesopotamian plain, Persian chariots scattering, distant palm groves.",
+      "vehicleToNext": "foot"
+    },
+    {
+      "id": "stop-4",
+      "name": "Mount Theches",
+      "lat": 40.55,
+      "lon": 39.80,
+      "note": "Pontic ridge from which the army first sights the Black Sea. 'Thalatta! Thalatta!' — they fall on each other's necks weeping (Anabasis IV.7.24). Conventionally placed inland of Trabzon.",
+      "imagePrompt": "Hand-coloured plate. Hoplites on a snowy ridge in winter sun, distant blue sea below the peaks.",
+      "vehicleToNext": "foot"
+    },
+    {
+      "id": "stop-5",
+      "name": "Trapezus",
+      "lat": 41.00,
+      "lon": 39.72,
+      "note": "First Greek city the Ten Thousand reach (Anabasis IV.8). Modern Trabzon. They rest, sacrifice, and embark coastwise.",
+      "imagePrompt": "Hand-coloured plate. Greek colony harbour on the Pontic coast, hoplites making sacrifice on the beach.",
+      "vehicleToNext": "trireme"
+    }
+  ]
+}

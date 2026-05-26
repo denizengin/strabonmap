@@ -1,0 +1,9 @@
+{
+  "tripId": "iliad-troy",
+  "style": "hand-coloured cartographic plate, muted ink, period-appropriate",
+  "images": [
+    {"stopId": "stop-1", "prompt": "Wide bay at Aulis packed with low black-hulled Mycenaean galleys, sails furled, smoke from an altar on the headland; hand-coloured cartographic plate, sepia + umber.", "size": "1200x800"},
+    {"stopId": "stop-2", "prompt": "Forested island of Tenedos seen from the sea, beached ships on the strand, cookfire smoke; hand-coloured cartographic plate, weathered antique palette.", "size": "1200x800"},
+    {"stopId": "stop-3", "prompt": "Citadel of Troy (Hisarlık) on a low mound, cyclopean walls, the Trojan plain with Scamander and Simois rivers beyond, distant beached ships; hand-coloured cartographic plate, ochre + slate.", "size": "1200x800"}
+  ]
+}

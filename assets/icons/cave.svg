@@ -1,0 +1,30 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Cave">
+  <!-- A CAVE mouth: a dark arched opening set into a rocky hillside with a grass
+       cap on top, plus a few rock striations. Light from TOP-LEFT: left rock lit
+       (stone-l), right rock shadow (stone-s). Gold crystal glint inside the dark
+       mouth = the one gold accent. -->
+  <!-- (1) cast shadow -->
+  <ellipse class="sh" cx="50" cy="86" rx="40" ry="4.5"/>
+  <!-- rocky hillside body: lit left mass + shadow right mass -->
+  <path class="stone-l" d="M12 84 L14 50 q6 -14 22 -16 L50 84 Z"/>
+  <path class="stone" d="M36 34 q14 2 22 16 L60 84 L50 84 Z"/>
+  <path class="stone-s" d="M58 50 q14 2 22 16 L88 84 L60 84 Z"/>
+  <!-- grass cap over the hill crest -->
+  <path class="grass" d="M14 50 q6 -14 22 -16 q16 2 22 16 q-12 -6 -22 -4 q-12 -2 -22 4 Z"/>
+  <!-- dark arched cave opening (deep shadow) -->
+  <path class="win" d="M36 84 L36 60 q14 -16 28 0 L64 84 Z"/>
+  <!-- inner shadow lip for depth -->
+  <path class="wall-s" fill="none" d="M40 84 L40 62 q10 -10 20 0 L60 84"/>
+  <!-- small boulders at the mouth threshold: lit + shadow pair -->
+  <path class="stone-l" d="M28 80 q4 -5 9 -3 q3 4 -1 7 Z"/>
+  <path class="stone-s" d="M66 81 q4 -4 8 -1 q2 4 -2 6 Z"/>
+  <!-- gold crystal glint deep inside the mouth -->
+  <path class="gold" d="M50 70 L53 75 L50 80 L47 75 Z"/>
+  <!-- rock striations -->
+  <path class="out-thin" fill="none" d="M18 56 q8 -3 14 0"/>
+  <path class="out-thin" fill="none" d="M66 58 q8 -2 14 4"/>
+  <path class="out-thin" fill="none" d="M70 70 q6 0 10 4"/>
+  <path class="out-thin" fill="none" d="M20 70 q6 2 10 0"/>
+  <!-- primary contour around hill + mouth -->
+  <path class="out" fill="none" d="M12 84 L14 50 q6 -14 22 -16 q16 2 22 16 q14 2 22 16 L88 84 M36 84 L36 60 q14 -16 28 0 L64 84"/>
+</svg>

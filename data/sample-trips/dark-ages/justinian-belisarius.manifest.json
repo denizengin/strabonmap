@@ -1,0 +1,11 @@
+{
+  "tripId": "justinian-belisarius",
+  "style": "hand-coloured cartographic plate, muted ink, period-appropriate",
+  "images": [
+    {"stopId": "stop-1", "prompt": "Golden Horn fleet at midsummer, patriarch blessing; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-2", "prompt": "Methone harbour, ships taking on water; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-3", "prompt": "Caput Vada landfall, troops from beached transports; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-4", "prompt": "Ad Decimum running battle in olive groves; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-5", "prompt": "Carthage harbour, Belisarius dining in palace; hand-coloured plate.", "size": "1200x800"}
+  ]
+}

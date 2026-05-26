@@ -1,0 +1,60 @@
+{
+  "id": "alexander-anabasis",
+  "era": "classical",
+  "title": "Alexander — Granicus to Gaugamela",
+  "themeSuggestion": "classical-marble",
+  "viewport": "auto",
+  "intro": {
+    "title": "The Three Battles East",
+    "dateline": "334-331 BCE",
+    "body": "Alexander crossed the Hellespont in May 334 BCE with ~40,000 men. The three set-piece battles that broke the Achaemenid empire — Granicus, Issus, Gaugamela — span three campaigning seasons. The route shown is the strategic arc; the actual march was longer and more sinuous."
+  },
+  "companions": ["Hephaestion", "Parmenion"],
+  "stops": [
+    {
+      "id": "stop-1",
+      "name": "Hellespont crossing",
+      "lat": 40.18,
+      "lon": 26.40,
+      "note": "Alexander throws his spear into Asian soil from the prow (Arrian I.11). The army crosses by relay near Abydos.",
+      "imagePrompt": "Hand-coloured plate. Narrow strait crowded with low transports, royal trireme leading, two coasts visible.",
+      "vehicleToNext": "foot"
+    },
+    {
+      "id": "stop-2",
+      "name": "Granicus",
+      "lat": 40.13,
+      "lon": 27.27,
+      "note": "First major battle, May 334 BCE. Alexander's cavalry charge across the river breaks the Persian line (Arrian I.13-16).",
+      "imagePrompt": "Hand-coloured plate. River-crossing cavalry battle, Companion cavalry breasting the bank, Persian satraps in plumed helmets.",
+      "vehicleToNext": "foot"
+    },
+    {
+      "id": "stop-3",
+      "name": "Issus",
+      "lat": 36.85,
+      "lon": 36.16,
+      "note": "November 333 BCE. Darius III chooses ground at the Pinarus river; Alexander's right-flank thrust panics him (Arrian II.8-11).",
+      "imagePrompt": "Hand-coloured plate. Narrow coastal plain between mountains and sea, sarissa phalanx versus Persian center, Darius's chariot turning.",
+      "vehicleToNext": "foot"
+    },
+    {
+      "id": "stop-4",
+      "name": "Tyre",
+      "lat": 33.27,
+      "lon": 35.20,
+      "note": "Seven-month siege, January-July 332 BCE. Alexander builds a mole from the mainland to the island (Arrian II.16-24).",
+      "imagePrompt": "Hand-coloured plate. Island fortress under siege, a stone causeway extending from the mainland, siege towers on rollers.",
+      "vehicleToNext": "foot"
+    },
+    {
+      "id": "stop-5",
+      "name": "Gaugamela",
+      "lat": 36.36,
+      "lon": 43.25,
+      "note": "1 October 331 BCE. Alexander declines Darius's offer to share the empire and wins the decisive battle east of the Tigris (Arrian III.8-15).",
+      "imagePrompt": "Hand-coloured plate. Vast plain with two opposed armies, scythed chariots, dust, Alexander's oblique advance angling rightward.",
+      "vehicleToNext": "foot"
+    }
+  ]
+}

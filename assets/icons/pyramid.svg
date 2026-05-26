@@ -1,0 +1,33 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Pyramid">
+  <!-- An Egyptian PYRAMID: a big triangular pyramid with a clear diagonal edge down
+       the middle, one lit face + one shadow face, on a sand/ground line. A small
+       second pyramid behind for depth. Gold capstone apex = the one gold accent. -->
+  <!-- (1) cast shadow -->
+  <ellipse class="sh" cx="50" cy="82" rx="40" ry="4.5"/>
+  <!-- small second pyramid behind, to the right (lit + shadow) for depth -->
+  <path class="stone-l" d="M74 46 L62 76 L74 76 Z"/>
+  <path class="stone-s" d="M74 46 L86 76 L74 76 Z"/>
+  <!-- main pyramid: lit left face -->
+  <path class="stone" d="M44 20 L18 78 L44 78 Z"/>
+  <!-- main pyramid: shadow right face -->
+  <path class="stone-s" d="M44 20 L70 78 L44 78 Z"/>
+  <!-- worn limestone casing weathered into stepped courses on the lit face -->
+  <path class="stone-l" d="M44 50 L31 78 L44 78 Z"/>
+  <!-- gold capstone apex -->
+  <path class="gold" d="M44 20 L40 30 L48 30 Z"/>
+  <!-- low entrance void on the lit face -->
+  <path class="win" d="M40 70 L48 70 L44 62 Z"/>
+  <!-- desert sand dunes at the base -->
+  <path class="grass" d="M10 78 q14 -5 30 0 q16 5 50 0 L90 84 L10 84 Z"/>
+  <!-- ground line + central edge of the main pyramid -->
+  <path class="out-thin" fill="none" d="M10 78 L90 78"/>
+  <path class="out-thin" fill="none" d="M44 30 L44 78"/>
+  <!-- faint course bands on the lit face (individual courses) -->
+  <path class="out-thin" fill="none" d="M37 36 L44 36"/>
+  <path class="out-thin" fill="none" d="M33 48 L44 48"/>
+  <path class="out-thin" fill="none" d="M28 60 L44 60"/>
+  <!-- primary contour of the main pyramid -->
+  <path class="out" fill="none" d="M18 78 L44 20 L70 78"/>
+  <!-- contour of the small back pyramid -->
+  <path class="out" fill="none" d="M62 76 L74 46 L86 76"/>
+</svg>

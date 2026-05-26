@@ -1,0 +1,30 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Castle">
+  <!-- Medieval CASTLE, 3/4 front view. A tall crenellated keep with battlements,
+       a smaller flanking tower to the right, and a dark arched gate at the base.
+       Light from TOP-LEFT: left wall lit (stone-l), right wall shadow (stone-s).
+       Gold pennant on the keep top = the one gold accent. -->
+  <!-- (1) cast shadow -->
+  <ellipse class="sh" cx="50" cy="87" rx="38" ry="4.5"/>
+  <!-- main keep body: lit left face + shadow right face -->
+  <path class="stone-l" d="M28 34 L52 34 L52 84 L28 84 Z"/>
+  <path class="stone-s" d="M52 34 L64 34 L64 84 L52 84 Z"/>
+  <!-- keep battlements (crenellations) -->
+  <path class="stone-l" d="M28 30 L33 30 L33 34 L28 34 Z M38 30 L43 30 L43 34 L38 34 Z M48 30 L53 30 L53 34 L48 34 Z"/>
+  <path class="stone-s" d="M58 30 L63 30 L63 34 L58 34 Z"/>
+  <!-- smaller flanking tower (right) -->
+  <path class="stone" d="M64 48 L78 48 L78 84 L64 84 Z"/>
+  <path class="stone-s" d="M72 48 L78 48 L78 84 L72 84 Z"/>
+  <path class="stone" d="M64 44 L67 44 L67 48 L64 48 Z M70 44 L73 44 L73 48 L70 48 Z M76 44 L78 44 L78 48 L76 48 Z"/>
+  <!-- arched gate (dark opening) at the keep base -->
+  <path class="win" d="M38 84 L38 64 q8 -9 16 0 L54 84 Z"/>
+  <!-- gate slit window above + tower window -->
+  <path class="win" d="M44 48 L48 48 L48 56 L44 56 Z"/>
+  <path class="win" d="M68 56 L72 56 L72 64 L68 64 Z"/>
+  <!-- gold pennant flying from the keep -->
+  <path class="out-thin" fill="none" d="M50 30 L50 18"/>
+  <path class="gold" d="M50 18 L62 21 L50 24 Z"/>
+  <!-- masonry course lines + contours -->
+  <path class="out-thin" fill="none" d="M28 50 L64 50 M28 66 L64 66 M64 60 L78 60 M64 72 L78 72 M52 34 L52 84"/>
+  <!-- primary contour -->
+  <path class="out" fill="none" d="M28 84 L28 30 L33 30 L33 34 L38 34 L38 30 L43 30 L43 34 L48 34 L48 30 L53 30 L53 34 L58 34 L58 30 L63 30 L63 34 L64 34 L64 44 L78 44 L78 84 Z"/>
+</svg>

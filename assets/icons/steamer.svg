@@ -1,0 +1,32 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Steamer">
+  <!-- 1930s STEAMSHIP / ocean liner. Long low hull, tall central funnel
+       with a smoke wisp, a multi-deck superstructure of cabins with
+       portholes. Engine-powered: NO sails. Light from TOP-LEFT; water
+       hint. Gold = the funnel band (single accent). -->
+  <ellipse class="sh" cx="50" cy="82" rx="42" ry="4.5"/>
+  <path class="water" d="M6 79 q11 4 22 0 q11 -4 22 0 q11 4 22 0 q11 -4 22 0 L94 85 L6 85 Z"/>
+  <path class="foam" fill="none" d="M10 78 q9 3 18 0 M54 78 q9 3 18 0"/>
+  <!-- smoke wisp rising from the funnel -->
+  <path class="out-thin" fill="none" d="M50 16 q-6 -5 -1 -10 q5 -4 0 -9"/>
+  <!-- tall central funnel: lit front + shadow side, with gold band -->
+  <path class="wall" d="M44 18 L56 18 L55 38 L45 38 Z"/>
+  <path class="wall-s" d="M51 18 L56 18 L55 38 L51 38 Z"/>
+  <path class="gold" d="M44 21 L56 21 L56 25 L44 25 Z"/>
+  <!-- superstructure: two stepped decks of cabins (lit + shadow) -->
+  <path class="wall" d="M24 38 L78 38 L78 48 L24 48 Z"/>
+  <path class="wall-s" d="M62 38 L78 38 L78 48 L62 48 Z"/>
+  <path class="wall" d="M30 48 L84 48 L84 56 L30 56 Z"/>
+  <path class="wall-s" d="M68 48 L84 48 L84 56 L68 56 Z"/>
+  <!-- portholes / cabin windows -->
+  <circle class="win" cx="32" cy="43" r="2"/>
+  <circle class="win" cx="42" cy="43" r="2"/>
+  <circle class="win" cx="52" cy="43" r="2"/>
+  <circle class="win" cx="38" cy="52" r="2"/>
+  <circle class="win" cx="50" cy="52" r="2"/>
+  <circle class="win" cx="62" cy="52" r="2"/>
+  <!-- long liner hull: lit upper strake + shadow lower hull -->
+  <path class="wall" d="M12 56 L88 56 L90 60 L10 60 Z"/>
+  <path class="wall-s" d="M10 60 L90 60 q-4 13 -20 13 L28 73 q-16 0 -18 -13 Z"/>
+  <!-- primary contour around the hull -->
+  <path class="out" fill="none" d="M10 60 L90 60 q-4 13 -20 13 L28 73 q-16 0 -18 -13 Z"/>
+</svg>

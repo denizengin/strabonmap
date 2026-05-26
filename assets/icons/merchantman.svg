@@ -1,0 +1,32 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Merchantman">
+  <!-- A broad-beamed MERCHANTMAN. Single tall mast with a square
+       mainsail plus a smaller square foresail, deep rounded cargo hull.
+       Fuller and rounder than the warships. Light from TOP-LEFT;
+       water hint. Gold masthead truck = the one gold accent. -->
+  <ellipse class="sh" cx="50" cy="85" rx="39" ry="4.5"/>
+  <path class="water" d="M10 81 q10 4 20 0 q10 -4 20 0 q10 4 20 0 q10 -4 20 0 L90 87 L10 87 Z"/>
+  <path class="foam" fill="none" d="M14 80 q8 3 16 0 M54 80 q8 3 16 0"/>
+  <!-- single tall mast + yards -->
+  <path class="wood" d="M53 12 L55 60 L53 60 Z"/>
+  <path class="wood" d="M34 22 L74 22 L74 24 L34 24 Z"/>
+  <path class="wood" d="M62 38 L86 38 L86 40 L62 40 Z"/>
+  <circle class="gold" cx="54" cy="12" r="2.4"/>
+  <!-- square mainsail: lit face + shadow reef-band -->
+  <path class="wall" d="M35 23 L73 23 L70 46 L38 46 Z"/>
+  <path class="wall-s" d="M54 23 L73 23 L70 46 L54 46 Z"/>
+  <path class="out-thin" fill="none" d="M35 23 L73 23 L70 46 L38 46 Z M54 23 L54 46 M41 31 L67 31"/>
+  <!-- smaller square foresail forward (lit + shadow) -->
+  <path class="wall" d="M64 39 L85 39 L83 52 L66 52 Z"/>
+  <path class="wall-s" d="M74 39 L85 39 L83 52 L74 52 Z"/>
+  <path class="out-thin" fill="none" d="M64 39 L85 39 L83 52 L66 52 Z M74 39 L74 52"/>
+  <!-- deep broad rounded cargo hull: lit upper strake + full shadow belly -->
+  <path class="wood-l" d="M14 60 L86 60 L88 65 L12 65 Z"/>
+  <path class="wood" d="M12 65 L88 65 q-2 14 -20 14 L32 79 q-18 0 -20 -14 Z"/>
+  <!-- gunwale rail line -->
+  <path class="out-thin" fill="none" d="M16 62 L84 62"/>
+  <!-- low stern post (left) -->
+  <path class="wood-l" d="M14 60 q-6 -2 -5 -10 q4 3 5 6 Z"/>
+  <path class="out-thin" fill="none" d="M14 60 q-6 -2 -5 -10"/>
+  <!-- primary contour around the hull -->
+  <path class="out" fill="none" d="M12 65 L88 65 q-2 14 -20 14 L32 79 q-18 0 -20 -14 Z"/>
+</svg>

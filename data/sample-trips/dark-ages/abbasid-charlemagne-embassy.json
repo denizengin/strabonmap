@@ -1,0 +1,60 @@
+{
+  "id": "abbasid-charlemagne-embassy",
+  "era": "dark-ages",
+  "title": "Harun al-Rashid's embassy to Charlemagne",
+  "themeSuggestion": "dark-ages-vellum",
+  "viewport": "auto",
+  "intro": {
+    "title": "The Elephant Abul-Abbas",
+    "dateline": "797-802 CE",
+    "body": "Charlemagne sent Isaac the Jew east as part of an embassy to Harun al-Rashid in 797. Isaac returned in 802 with caliphal gifts — silks, brass clocks, and Abul-Abbas the elephant — who walked from Baghdad to Aachen via Tunisia. Einhard's Vita Karoli records the elephant's death in 810."
+  },
+  "companions": ["Isaac the Jew"],
+  "stops": [
+    {
+      "id": "stop-1",
+      "name": "Baghdad",
+      "lat": 33.34,
+      "lon": 44.40,
+      "note": "Round City of Mansur, Abbasid capital. Isaac receives Harun's gifts in autumn 801.",
+      "imagePrompt": "Hand-coloured plate. Concentric round city plan, palace at center, elephant being led out toward the western gate.",
+      "vehicleToNext": "camel"
+    },
+    {
+      "id": "stop-2",
+      "name": "Damascus",
+      "lat": 33.51,
+      "lon": 36.30,
+      "note": "Caravan stage on the route to the Mediterranean. The Umayyad mosque is then forty years old.",
+      "imagePrompt": "Hand-coloured plate. Umayyad mosque courtyard with elephant resting in the shade, traders with caged falcons.",
+      "vehicleToNext": "camel"
+    },
+    {
+      "id": "stop-3",
+      "name": "Carthage / Tunis",
+      "lat": 36.86,
+      "lon": 10.32,
+      "note": "African coast embarkation point. Isaac winters here 801-802 waiting for safe sailing weather.",
+      "imagePrompt": "Hand-coloured plate. North African port in winter rain, elephant under a canopy, dhows being rerigged for the crossing.",
+      "vehicleToNext": "dhow"
+    },
+    {
+      "id": "stop-4",
+      "name": "Portus Veneris",
+      "lat": 44.06,
+      "lon": 9.83,
+      "note": "Ligurian landing-point, October 801. The elephant cannot cross the Alps before winter and is housed at Vercelli.",
+      "imagePrompt": "Hand-coloured plate. Italian coastal harbour with steep hills, elephant being walked off a dhow on planks.",
+      "vehicleToNext": "foot"
+    },
+    {
+      "id": "stop-5",
+      "name": "Aachen",
+      "lat": 50.78,
+      "lon": 6.08,
+      "note": "Abul-Abbas reaches Charlemagne's palace on 20 July 802 (Royal Frankish Annals). He dies in 810 at the Rhine.",
+      "imagePrompt": "Hand-coloured plate. Palatine chapel of Aachen with elephant being led through the gate, Frankish nobles staring.",
+      "vehicleToNext": "foot"
+    }
+  ]
+}

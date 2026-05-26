@@ -1,0 +1,37 @@
+{
+  "id": "__sample_verne_eighty_days__",
+  "name": "Around the World in Eighty Days",
+  "seeded": true,
+  "era": "industrial",
+  "intro": {
+    "title": "Phileas Fogg's Eighty Days",
+    "dateline": "2 October 1872",
+    "body": "Phileas Fogg wagered twenty thousand pounds at the Reform Club that he could circumnavigate the globe in eighty days, going EAST. Suez by the new canal, then Bombay, Calcutta, Hong Kong, Yokohama — and the Pacific crossing to San Francisco that no atlas of the day drew as a straight westward dash but as the eastward arc the steamship really took.\n\nThe directionality matters: a route engine that draws the shortest line between two points puts Yokohama-to-San-Francisco backward across Asia. Fogg's chronicle is the regression case — the route must cross the antimeridian."
+  },
+  "cities": [
+    { "name": "London",        "country": "United Kingdom", "lat": 51.51, "lon":   -0.13 },
+    { "name": "Suez",          "country": "Egypt",          "lat": 29.98, "lon":   32.55 },
+    { "name": "Bombay",        "country": "India",          "lat": 18.97, "lon":   72.83 },
+    { "name": "Calcutta",      "country": "India",          "lat": 22.57, "lon":   88.36 },
+    { "name": "Hong Kong",     "country": "China",          "lat": 22.30, "lon":  114.17 },
+    { "name": "Yokohama",      "country": "Japan",          "lat": 35.44, "lon":  139.64 },
+    { "name": "San Francisco", "country": "United States",  "lat": 37.77, "lon": -122.42 },
+    { "name": "New York",      "country": "United States",  "lat": 40.71, "lon":  -74.01 },
+    { "name": "London",        "country": "United Kingdom", "lat": 51.51, "lon":   -0.13 }
+  ],
+  "legs": [
+    { "vehicle": "steamer" },
+    { "vehicle": "steamer" },
+    { "vehicle": "locomotive" },
+    { "vehicle": "steamer" },
+    { "vehicle": "steamer" },
+    { "vehicle": "steamer", "via": [{ "lat": 35, "lon": -170 }], "bearingHint": "east" },
+    { "vehicle": "locomotive" },
+    { "vehicle": "steamer" }
+  ],
+  "landmarks": [],
+  "companions": [],
+  "unallocated": [],
+  "createdAt": 0,
+  "lastSavedAt": 0
+}

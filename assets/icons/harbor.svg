@@ -1,0 +1,28 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Harbor">
+  <!-- A HARBOR: a stone quay/jetty with mooring bollards and a mooring post,
+       gentle water lapping along the base. Light from TOP-LEFT: quay top lit
+       (stone-l), quay face shadow (stone-s). Gold mooring ring on the post =
+       the one gold accent. -->
+  <!-- (1) cast shadow on the water -->
+  <ellipse class="sh" cx="50" cy="84" rx="40" ry="4.5"/>
+  <!-- water along the base with foam crests -->
+  <path class="water" d="M8 76 q9 4 18 0 q9 -4 18 0 q9 4 18 0 q9 -4 18 0 L90 88 L8 88 Z"/>
+  <path class="water-d" d="M8 82 q9 3 18 0 q9 -3 18 0 q9 3 18 0 q9 -3 18 0 L90 88 L8 88 Z"/>
+  <path class="foam" fill="none" d="M12 75 q7 3 14 0 M48 75 q7 3 14 0"/>
+  <!-- stone quay/jetty deck: lit top + shadow front face -->
+  <path class="stone-l" d="M14 50 L78 50 L86 56 L22 56 Z"/>
+  <path class="stone" d="M14 50 L22 56 L22 74 L14 68 Z"/>
+  <path class="stone-s" d="M22 56 L86 56 L86 74 L22 74 Z"/>
+  <!-- mooring bollards along the quay edge -->
+  <path class="stone-l" d="M30 44 L36 44 L35 50 L31 50 Z"/>
+  <path class="stone-l" d="M52 44 L58 44 L57 50 L53 50 Z"/>
+  <!-- taller mooring post (right) carrying the gold ring -->
+  <path class="wood" d="M70 34 L76 34 L75 50 L71 50 Z"/>
+  <path class="wood-l" d="M70 34 L73 34 L72 50 L71 50 Z"/>
+  <!-- gold mooring ring on the post -->
+  <circle class="gold" cx="78" cy="40" r="3.4" fill="none"/>
+  <!-- quay block masonry lines -->
+  <path class="out-thin" fill="none" d="M22 64 L86 64 M40 56 L40 74 M58 56 L58 74 M22 56 L22 74"/>
+  <!-- primary contour around the quay -->
+  <path class="out" fill="none" d="M14 68 L14 50 L78 50 L86 56 L86 74 L22 74 L22 56 L14 50"/>
+</svg>

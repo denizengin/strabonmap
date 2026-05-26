@@ -1,0 +1,11 @@
+{
+  "tripId": "theodosius-east",
+  "style": "hand-coloured cartographic plate, muted ink, period-appropriate",
+  "images": [
+    {"stopId": "stop-1", "prompt": "Sirmium acclamation of Theodosius in frosty basilica; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-2", "prompt": "Adrianople plain with broken weapons in long grass, officers reviewing recruits; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-3", "prompt": "Thessalonica basilica steps, edict being read aloud; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-4", "prompt": "Heraclea Perinthos port at autumn dusk with cavalry tents; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-5", "prompt": "Constantinople adventus through Golden Gate with chi-rho banners; hand-coloured plate.", "size": "1200x800"}
+  ]
+}

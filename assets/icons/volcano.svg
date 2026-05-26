@@ -1,0 +1,37 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Volcano">
+  <!-- A VOLCANO: a conical mountain with an erupting crater spilling lava, a fire
+       glow plume and drifting smoke wisps. Light from TOP-LEFT: left slope lit
+       (stone), right slope shadow (stone-s). This is the one icon that uses
+       fire/lava. Gold ember spark = the one gold accent. -->
+  <!-- (1) cast shadow -->
+  <ellipse class="sh" cx="50" cy="84" rx="40" ry="4.5"/>
+  <!-- mountain cone: lit left slope -->
+  <path class="stone" d="M50 28 L18 80 L50 80 Z"/>
+  <!-- mountain cone: shadow right slope -->
+  <path class="stone-s" d="M50 28 L82 80 L50 80 Z"/>
+  <!-- snow / rock cap near the crater rim: lit + shadow -->
+  <path class="stone-l" d="M50 28 L40 44 q10 -4 20 0 Z"/>
+  <!-- molten lava pooling in the crater -->
+  <path class="lava" d="M41 30 q9 -5 18 0 q-2 5 -9 5 q-7 0 -9 -5 Z"/>
+  <!-- lava flows running down the slopes -->
+  <path class="lava" d="M45 33 L40 60 L44 60 L48 34 Z"/>
+  <path class="lava" d="M55 33 L60 54 L56 55 L52 34 Z"/>
+  <!-- fire glow plume rising from the crater -->
+  <path class="fire" d="M50 30 q-7 -12 -3 -22 q3 6 3 6 q1 -8 5 -12 q1 9 -2 14 q5 -3 6 -9 q3 9 -4 16 q4 -2 6 -6 q1 8 -8 13 Z"/>
+  <!-- a small ember flung clear of the crater -->
+  <circle class="lava" cx="68" cy="22" r="2"/>
+  <!-- gold ember spark above the flame -->
+  <circle class="gold" cx="56" cy="6" r="2.4"/>
+  <!-- drifting smoke wisps (individual curls) -->
+  <path class="out-thin" fill="none" d="M40 14 q-6 -4 -3 -10"/>
+  <path class="out-thin" fill="none" d="M64 16 q7 -3 5 -10"/>
+  <path class="out-thin" fill="none" d="M48 4 q-3 -4 0 -8"/>
+  <!-- crater rim + central slope ridge -->
+  <path class="out-thin" fill="none" d="M40 30 L60 30"/>
+  <path class="out-thin" fill="none" d="M50 44 L50 80"/>
+  <!-- rock striations on the shadow slope -->
+  <path class="out-thin" fill="none" d="M58 50 L66 56"/>
+  <path class="out-thin" fill="none" d="M60 62 L70 68"/>
+  <!-- primary contour of the cone -->
+  <path class="out" fill="none" d="M18 80 L41 30 M59 30 L82 80"/>
+</svg>

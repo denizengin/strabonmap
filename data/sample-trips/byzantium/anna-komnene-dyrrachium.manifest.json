@@ -1,0 +1,11 @@
+{
+  "tripId": "anna-komnene-dyrrachium",
+  "style": "hand-coloured cartographic plate, muted ink, period-appropriate",
+  "images": [
+    {"stopId": "stop-1", "prompt": "Coronation of Alexios in Hagia Sophia; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-2", "prompt": "Thessalonica forum with Varangians and Greek cavalry assembling; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-3", "prompt": "Dyrrachium walls under Norman siege, retreat in rain; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-4", "prompt": "Kastoria frozen lake crossing on planks to island fortress; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-5", "prompt": "Larissa Thessalian plain, Byzantine relief column descending from pass; hand-coloured plate.", "size": "1200x800"}
+  ]
+}

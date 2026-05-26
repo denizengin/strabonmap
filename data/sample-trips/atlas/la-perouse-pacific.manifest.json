@@ -1,0 +1,11 @@
+{
+  "tripId": "la-perouse-pacific",
+  "style": "hand-coloured cartographic plate, muted ink, period-appropriate",
+  "images": [
+    {"stopId": "stop-1", "prompt": "Brest roadstead, two French frigates warped out by ship's boats; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-2", "prompt": "Cape Horn black headland, ships running before the wind under reefed topsails; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-3", "prompt": "Sakhalin fog-bound coast, boat sounding strait with lead-line; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-4", "prompt": "Botany Bay with French frigates passing British First Fleet transports; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-5", "prompt": "Vanikoro reef storm, broken spars and anchor on coral; hand-coloured plate.", "size": "1200x800"}
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "tripId": "mallory-everest",
+  "style": "sepia hand-coloured plate, mid-1920s register",
+  "images": [
+    {"stopId": "stop-1", "prompt": "Darjeeling hill-station with kit piles, snow Kangchenjunga; sepia plate.", "size": "1200x800"},
+    {"stopId": "stop-2", "prompt": "Phari Dzong mud-fort on windswept plain, yaks with kit; sepia plate.", "size": "1200x800"},
+    {"stopId": "stop-3", "prompt": "Rongbuk monastery whitewashed on plain, Everest behind, monks with horns; sepia plate.", "size": "1200x800"},
+    {"stopId": "stop-4", "prompt": "Two tents on North Col snow saddle, climbers in tweed; sepia plate.", "size": "1200x800"},
+    {"stopId": "stop-5", "prompt": "Two figures roped on summit ridge with oxygen sets, swirling clouds; sepia plate.", "size": "1200x800"}
+  ]
+}

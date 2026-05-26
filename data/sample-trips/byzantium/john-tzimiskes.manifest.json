@@ -1,0 +1,11 @@
+{
+  "tripId": "john-tzimiskes",
+  "style": "hand-coloured cartographic plate, muted ink, period-appropriate",
+  "images": [
+    {"stopId": "stop-1", "prompt": "Constantinople Hippodrome Easter parade of tagmata; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-2", "prompt": "Antioch citadel with imperial standards and relic procession; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-3", "prompt": "Baalbek hexagonal temple ruins beside fortified Muslim town; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-4", "prompt": "Damascus gate, governor handing over keys; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-5", "prompt": "Sea of Galilee dawn, emperor in pilgrim's cloak; hand-coloured plate.", "size": "1200x800"}
+  ]
+}

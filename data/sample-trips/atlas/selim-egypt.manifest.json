@@ -1,0 +1,11 @@
+{
+  "tripId": "selim-egypt",
+  "style": "hand-coloured cartographic plate, muted ink, period-appropriate",
+  "images": [
+    {"stopId": "stop-1", "prompt": "Topkapı palace second courtyard with Janissaries assembling, Bosphorus in distance; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-2", "prompt": "Çaldıran plateau, wagon line of cannon, Safavid cavalry breaking against musket smoke; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-3", "prompt": "Marj Dabiq with Mamluk cavalry charging Ottoman gunpowder line; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-4", "prompt": "Damascus Gate of Jerusalem, Selim receiving keys on cushion; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-5", "prompt": "Cairo skyline with pyramids in haze, Janissaries outflanking Ridaniyya line; hand-coloured plate.", "size": "1200x800"}
+  ]
+}

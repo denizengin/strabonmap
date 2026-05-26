@@ -1,0 +1,60 @@
+{
+  "id": "julian-persian",
+  "era": "late-antiquity",
+  "title": "Julian — Persian campaign of 363",
+  "themeSuggestion": "late-antiquity-porphyry",
+  "viewport": "auto",
+  "intro": {
+    "title": "The Apostate's Last March",
+    "dateline": "363 CE",
+    "body": "Julian led 65,000 men from Antioch down the Euphrates to the gates of Ctesiphon, then burned his fleet to march east. Ammianus Marcellinus, who served on the campaign, gives the day-by-day account in Res Gestae XXIII-XXV. Julian died of a spear wound at Samarra on 26 June."
+  },
+  "companions": ["Ammianus Marcellinus"],
+  "stops": [
+    {
+      "id": "stop-1",
+      "name": "Antioch",
+      "lat": 36.20,
+      "lon": 36.16,
+      "note": "Winter quarters 362-363. Julian's satirical Misopogon (Beard-Hater) ridicules the city before he leaves.",
+      "imagePrompt": "Hand-coloured plate. Snowbound Syrian capital, bearded emperor in pagan dress haranguing assembled curiales.",
+      "vehicleToNext": "horse"
+    },
+    {
+      "id": "stop-2",
+      "name": "Hierapolis",
+      "lat": 36.40,
+      "lon": 37.97,
+      "note": "Mustering point on the Euphrates road, March 363. Julian's army marches eastward in two columns.",
+      "imagePrompt": "Hand-coloured plate. Steppe-fringe town, two columns of legions and cataphracts assembling on dusty roads.",
+      "vehicleToNext": "horse"
+    },
+    {
+      "id": "stop-3",
+      "name": "Callinicum",
+      "lat": 35.95,
+      "lon": 39.02,
+      "note": "Fleet rendezvous on the Euphrates, April 363. Over 1,100 supply ships join the army here.",
+      "imagePrompt": "Hand-coloured plate. River port crowded with shallow Roman transports, oxen drawing them upstream from a towpath.",
+      "vehicleToNext": "dromon"
+    },
+    {
+      "id": "stop-4",
+      "name": "Ctesiphon",
+      "lat": 33.09,
+      "lon": 44.58,
+      "note": "Sasanid capital. Julian wins the field battle outside the walls but cannot storm the city. He burns the fleet to march inland (Ammianus XXIV.7).",
+      "imagePrompt": "Hand-coloured plate. Great arched palace of Khusrau, river city with siege engines along the bank, Roman fleet burning.",
+      "vehicleToNext": "horse"
+    },
+    {
+      "id": "stop-5",
+      "name": "Samarra",
+      "lat": 34.20,
+      "lon": 43.87,
+      "note": "Julian struck by a cavalry javelin in a rearguard skirmish, 26 June 363. He dies in his tent that night. Jovian withdraws under truce.",
+      "imagePrompt": "Hand-coloured plate. Tigris-side encampment at dusk, emperor's tent lit from within, mourning officers outside.",
+      "vehicleToNext": "horse"
+    }
+  ]
+}

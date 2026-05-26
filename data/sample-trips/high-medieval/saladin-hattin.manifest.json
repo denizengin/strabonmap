@@ -1,0 +1,11 @@
+{
+  "tripId": "saladin-hattin",
+  "style": "hand-coloured cartographic plate, muted ink, period-appropriate",
+  "images": [
+    {"stopId": "stop-1", "prompt": "Ayyubid Damascus citadel with cavalry assembling outside; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-2", "prompt": "Tell Ashtara black-tented camp on basalt Hauran plain; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-3", "prompt": "Jordan ford crossing south of Sea of Galilee; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-4", "prompt": "Horns of Hattin twin-peaked hill above dry plain, Crusader banners falling; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-5", "prompt": "Saladin entering Jaffa Gate of Jerusalem, Dome of the Rock behind; hand-coloured plate.", "size": "1200x800"}
+  ]
+}

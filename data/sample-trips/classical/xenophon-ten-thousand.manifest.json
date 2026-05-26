@@ -1,0 +1,11 @@
+{
+  "tripId": "xenophon-ten-thousand",
+  "style": "hand-coloured cartographic plate, muted ink, period-appropriate",
+  "images": [
+    {"stopId": "stop-1", "prompt": "Lydian Sardis citadel above plain, hoplites assembling under satrap's pavilion; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-2", "prompt": "Cilician Tarsus on the Cydnus, hoplites bathing; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-3", "prompt": "Battle of Cunaxa, phalanx advancing on Mesopotamian plain, Persian chariots scattering; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-4", "prompt": "Mount Theches snowy ridge, hoplites sighting Black Sea, distant blue water; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-5", "prompt": "Trapezus Pontic harbour, hoplites sacrificing on beach; hand-coloured plate.", "size": "1200x800"}
+  ]
+}

@@ -1,0 +1,36 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Cart">
+  <!-- V-19 roman-cart / generic cart — meadow grade. Closes p03's bug
+       (was falling back to a modern automobile glyph). Two-wheeled goods
+       cart, side-on; flat bed with low rails carrying sacks + an amphora;
+       a draft-pole forward. One gold hub-boss = the single gold accent.
+       Light from TOP-LEFT. Color via the frozen class vocabulary only. -->
+  <!-- (1) cast shadow -->
+  <ellipse class="sh" cx="50" cy="83" rx="34" ry="5"/>
+  <!-- draft pole forward (to the right = direction of travel) -->
+  <path class="wood" d="M70 60 L94 55 L94 58 L70 63 Z"/>
+  <path class="out-thin" fill="none" d="M70 60 L94 55"/>
+  <!-- load bed (lit top face + shadow front face) -->
+  <path class="wood-l" d="M22 58 L74 58 L70 64 L26 64 Z"/>
+  <path class="wood" d="M22 58 L26 64 L26 72 L22 66 Z"/>
+  <path class="wood" d="M26 64 L70 64 L70 72 L26 72 Z"/>
+  <!-- low side rail -->
+  <path class="out-thin" fill="none" d="M24 58 L24 53 M72 58 L72 53 M24 55 L72 55"/>
+  <!-- cargo: two sacks (lit/shadow) + an amphora -->
+  <path class="wall" d="M30 58 q3 -12 9 -12 q6 0 8 12 Z"/>
+  <path class="wall-s" d="M39 46 q6 0 8 12 L42 58 Z"/>
+  <path class="roof" d="M52 58 q1 -10 5 -10 q4 0 5 10 Z"/>
+  <path class="roof-s" d="M57 48 q4 0 5 10 L57 58 Z"/>
+  <ellipse class="hi" cx="35" cy="49" rx="2.5" ry="1.4"/>
+  <!-- two wheels: shadow rim, lit spokes, gold hub-boss (the gold accent) -->
+  <circle class="wood" cx="34" cy="73" r="9"/>
+  <circle class="wood-l" cx="34" cy="73" r="9" fill="none" stroke-width="0"/>
+  <circle class="out" fill="none" cx="34" cy="73" r="9"/>
+  <path class="out-thin" fill="none" d="M34 64 L34 82 M25 73 L43 73 M28 67 L40 79 M40 67 L28 79"/>
+  <circle class="gold" cx="34" cy="73" r="2.4"/>
+  <circle class="wood" cx="64" cy="73" r="9"/>
+  <circle class="out" fill="none" cx="64" cy="73" r="9"/>
+  <path class="out-thin" fill="none" d="M64 64 L64 82 M55 73 L73 73 M58 67 L70 79 M70 67 L58 79"/>
+  <circle class="gold-s" cx="64" cy="73" r="2.2"/>
+  <!-- primary contour around the bed -->
+  <path class="out" fill="none" d="M22 58 L74 58 L70 72 L26 72 Z"/>
+</svg>

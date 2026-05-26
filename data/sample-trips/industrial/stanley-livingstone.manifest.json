@@ -1,0 +1,11 @@
+{
+  "tripId": "stanley-livingstone",
+  "style": "hand-coloured cartographic plate, muted ink, period-appropriate",
+  "images": [
+    {"stopId": "stop-1", "prompt": "Zanzibar Stone Town harbour, dhows, quay with cotton bales; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-2", "prompt": "Bagamoyo coconut palms above tidal beach, caravan stretching inland; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-3", "prompt": "Tabora mud-walled compound, baobabs, Stanley with Arab trader; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-4", "prompt": "Ujiji mango-shaded lakeshore, Livingstone meeting Stanley; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-5", "prompt": "Lake Tanganyika dugout with hippos and western mountain wall; hand-coloured plate.", "size": "1200x800"}
+  ]
+}

@@ -1,0 +1,35 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Steam locomotive">
+  <!-- period steam locomotive, side-on land rail engine. Light from TOP-LEFT.
+       Gold = boiler steam-dome (single gold accent). -->
+  <ellipse class="sh" cx="50" cy="82" rx="38" ry="4.5"/>
+  <!-- boiler barrel: lit upper + shadow lower -->
+  <path class="wall" d="M14 44 q0 -6 6 -6 L66 38 q4 0 4 6 L70 58 L14 58 Z"/>
+  <path class="wall-s" d="M14 58 L70 58 L70 62 L14 62 Z"/>
+  <path class="hi" d="M18 42 q24 -3 46 0 L64 45 q-23 -3 -46 0 Z"/>
+  <!-- smokebox front -->
+  <path class="wall-s" d="M70 40 L74 40 L74 62 L70 62 Z"/>
+  <!-- funnel / smokestack -->
+  <path class="wood" d="M58 38 L68 38 L67 26 L59 26 Z"/>
+  <path class="wood-l" d="M58 38 L62 38 L61 26 L59 26 Z"/>
+  <path class="out-thin" fill="none" d="M57 26 L69 26"/>
+  <!-- steam dome (gold accent) -->
+  <path class="copper" d="M34 38 q2 -8 8 -8 q6 0 8 8 Z"/>
+  <circle class="gold" cx="38" cy="32" r="2.6"/>
+  <!-- cab: lit roof + shadow side + window -->
+  <path class="roof" d="M16 30 L34 30 L34 44 L16 44 Z"/>
+  <path class="roof-s" d="M16 44 L34 44 L34 48 L16 48 Z"/>
+  <path class="win" d="M19 33 L31 33 L31 41 L19 41 Z"/>
+  <path class="out-thin" fill="none" d="M16 30 L34 30 L34 48 L16 48"/>
+  <!-- driving wheels: wood rim + lit spokes -->
+  <circle class="wood" cx="32" cy="64" r="10"/>
+  <circle class="out" fill="none" cx="32" cy="64" r="10"/>
+  <path class="out-thin" fill="none" d="M32 54 L32 74 M22 64 L42 64 M25 57 L39 71 M39 57 L25 71"/>
+  <circle class="wood-l" cx="32" cy="64" r="3.4"/>
+  <circle class="wood" cx="60" cy="64" r="10"/>
+  <circle class="out" fill="none" cx="60" cy="64" r="10"/>
+  <path class="out-thin" fill="none" d="M60 54 L60 74 M50 64 L70 64 M53 57 L67 71 M67 57 L53 71"/>
+  <circle class="wood-l" cx="60" cy="64" r="3.4"/>
+  <!-- coupling rod + primary contour -->
+  <path class="out-thin" fill="none" d="M32 67 L60 67"/>
+  <path class="out" fill="none" d="M14 44 q0 -6 6 -6 L66 38 q4 0 4 6 L74 44 L74 62 L14 62 Z"/>
+</svg>

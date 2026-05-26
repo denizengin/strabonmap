@@ -1,0 +1,60 @@
+{
+  "id": "sea-peoples-raid",
+  "era": "bronze-age",
+  "title": "Sea Peoples — Aegean to the Nile Delta",
+  "themeSuggestion": "bronze-age-limestone",
+  "viewport": "auto",
+  "intro": {
+    "title": "The Year of the Burning Coasts",
+    "dateline": "c. 1177 BCE",
+    "body": "Egyptian reliefs at Medinet Habu record Ramesses III's defence against a confederation of Sea Peoples — Peleset, Tjekker, Shekelesh, Denyen, Weshesh — whose passage left every major coastal city from Ugarit to the Delta burned in a single generation."
+  },
+  "companions": [],
+  "stops": [
+    {
+      "id": "stop-1",
+      "name": "Aegean (Mycenae)",
+      "lat": 37.73,
+      "lon": 22.75,
+      "note": "Origin theatre. Linear B tablets at Pylos record coastal watch postings before the palace's destruction c. 1180 BCE.",
+      "imagePrompt": "Hand-coloured plate. Lion gate and citadel above a plain, smoke rising from a distant palace.",
+      "vehicleToNext": "galley"
+    },
+    {
+      "id": "stop-2",
+      "name": "Ugarit",
+      "lat": 35.60,
+      "lon": 35.78,
+      "note": "Letter RS 20.18: 'My father, the enemy ships are already here, they have set fire to my towns.' Ugarit fell c. 1190-1185 BCE.",
+      "imagePrompt": "Hand-coloured plate. Coastal city in flames, fleet of crested-helmet warriors landing from low galleys.",
+      "vehicleToNext": "galley"
+    },
+    {
+      "id": "stop-3",
+      "name": "Cyprus (Enkomi)",
+      "lat": 35.17,
+      "lon": 33.88,
+      "note": "Enkomi shows a destruction layer dated c. 1190 BCE consistent with Sea Peoples passage; the site was resettled but never recovered.",
+      "imagePrompt": "Hand-coloured plate. Walled town on a low coast, breach in the wall, raiders within.",
+      "vehicleToNext": "galley"
+    },
+    {
+      "id": "stop-4",
+      "name": "Levantine coast (Ashkelon)",
+      "lat": 31.67,
+      "lon": 34.55,
+      "note": "Peleset (Philistines) settled the southern Levant after the raids; Ashkelon, Ashdod, Ekron, Gath, Gaza became their pentapolis.",
+      "imagePrompt": "Hand-coloured plate. Low dunes inland from a sandy beach, longhouses being raised by feathered-helmet warriors.",
+      "vehicleToNext": "galley"
+    },
+    {
+      "id": "stop-5",
+      "name": "Nile Delta (Medinet Habu)",
+      "lat": 31.20,
+      "lon": 32.30,
+      "note": "Year 8 of Ramesses III. The Medinet Habu reliefs depict the land and sea battle in which the Sea Peoples confederation was broken.",
+      "imagePrompt": "Hand-coloured plate. Delta river battle with reed-prowed Egyptian ships engaging crested-helmet warriors; archers on the bank.",
+      "vehicleToNext": "galley"
+    }
+  ]
+}

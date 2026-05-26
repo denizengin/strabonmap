@@ -1,0 +1,60 @@
+{
+  "id": "orient-express-inaugural",
+  "era": "industrial",
+  "title": "Orient Express — inaugural run",
+  "themeSuggestion": "industrial-engraving",
+  "viewport": "auto",
+  "intro": {
+    "title": "Paris to Constantinople by Rail",
+    "dateline": "1883 CE",
+    "body": "The Compagnie Internationale des Wagons-Lits inaugurated its through-train from Paris to Constantinople on 4 October 1883. The first run took 81 hours 40 minutes; passengers had to detrain at Giurgiu, ferry the Danube, and continue by Ottoman rail and steamer from Varna."
+  },
+  "companions": ["Georges Nagelmackers"],
+  "stops": [
+    {
+      "id": "stop-1",
+      "name": "Paris (Gare de l'Est)",
+      "lat": 48.88,
+      "lon": 2.36,
+      "note": "Departure 18:30, 4 October 1883. Inaugural train of 5 cars including the diner.",
+      "imagePrompt": "Hand-coloured plate. Gas-lit Belle Époque platform under a glass arch, locomotive of the Compagnie de l'Est venting steam, passengers in fur collars.",
+      "vehicleToNext": "locomotive"
+    },
+    {
+      "id": "stop-2",
+      "name": "Vienna",
+      "lat": 48.21,
+      "lon": 16.37,
+      "note": "Stop the morning of 5 October. The Austrian railways take over the train into Hungarian territory.",
+      "imagePrompt": "Hand-coloured plate. Viennese Westbahnhof at autumn dawn, Habsburg railway officials saluting on platform, train of dark blue carriages.",
+      "vehicleToNext": "locomotive"
+    },
+    {
+      "id": "stop-3",
+      "name": "Bucharest",
+      "lat": 44.43,
+      "lon": 26.10,
+      "note": "Arrival 6 October. The Romanian leg ends at Giurgiu where passengers disembark for the Danube ferry.",
+      "imagePrompt": "Hand-coloured plate. Bucharest station under autumn rain, passengers crossing the platform with porters, gilded cathedral roof in the distance.",
+      "vehicleToNext": "locomotive"
+    },
+    {
+      "id": "stop-4",
+      "name": "Varna",
+      "lat": 43.21,
+      "lon": 27.92,
+      "note": "Black Sea port. The Wagons-Lits steamer Espero takes passengers from Varna across the Black Sea to the Bosphorus.",
+      "imagePrompt": "Hand-coloured plate. Bulgarian port at sunset, side-wheel steamer with two funnels at the mole, passengers boarding with hand luggage.",
+      "vehicleToNext": "steamer"
+    },
+    {
+      "id": "stop-5",
+      "name": "Constantinople (Sirkeci)",
+      "lat": 41.01,
+      "lon": 28.98,
+      "note": "Arrival 8 October at the Sirkeci terminus on the European shore, 81 hours from Paris.",
+      "imagePrompt": "Hand-coloured plate. Sirkeci terminus on the Marmara shore, ornate orientalist station building, Ottoman officers greeting first-class passengers.",
+      "vehicleToNext": "ferry"
+    }
+  ]
+}

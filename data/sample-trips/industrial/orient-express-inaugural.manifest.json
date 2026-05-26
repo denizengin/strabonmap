@@ -1,0 +1,11 @@
+{
+  "tripId": "orient-express-inaugural",
+  "style": "hand-coloured cartographic plate, muted ink, period-appropriate",
+  "images": [
+    {"stopId": "stop-1", "prompt": "Gas-lit Gare de l'Est, Compagnie de l'Est locomotive venting steam; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-2", "prompt": "Vienna Westbahnhof autumn dawn, Habsburg railway officials saluting; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-3", "prompt": "Bucharest station autumn rain, passengers and porters; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-4", "prompt": "Varna sunset, side-wheel steamer with two funnels at mole; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-5", "prompt": "Sirkeci ornate orientalist terminus, Ottoman officers greeting passengers; hand-coloured plate.", "size": "1200x800"}
+  ]
+}

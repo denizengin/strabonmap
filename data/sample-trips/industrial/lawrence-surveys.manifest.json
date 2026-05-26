@@ -1,0 +1,11 @@
+{
+  "tripId": "lawrence-surveys",
+  "style": "hand-coloured cartographic plate, muted ink, period-appropriate",
+  "images": [
+    {"stopId": "stop-1", "prompt": "Beirut Ottoman port with paddle-steamer, young Englishman stepping ashore; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-2", "prompt": "Krak des Chevaliers, figure with camera tripod on inner ward; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-3", "prompt": "Carchemish dig house above Euphrates bend, neo-Hittite reliefs being lifted; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-4", "prompt": "Negev wadi dawn, surveyors with theodolite, kneeling camel; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-5", "prompt": "Aqaba mud-brick village under granite mountains, single dhow; hand-coloured plate.", "size": "1200x800"}
+  ]
+}

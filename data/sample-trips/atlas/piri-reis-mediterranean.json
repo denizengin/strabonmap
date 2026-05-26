@@ -1,0 +1,60 @@
+{
+  "id": "piri-reis-mediterranean",
+  "era": "atlas",
+  "title": "Pirî Reis — Kitab-i Bahriye survey",
+  "themeSuggestion": "atlas-sepia",
+  "viewport": "auto",
+  "intro": {
+    "title": "The Book of the Sea",
+    "dateline": "1521-1524 CE",
+    "body": "Pirî Reis compiled his Kitab-i Bahriye, a 130-chapter portolan of the Mediterranean, between 1521 and 1524 while serving in the Ottoman fleet. The surviving second edition adds notes from his own voyages along every coast he describes."
+  },
+  "companions": [],
+  "stops": [
+    {
+      "id": "stop-1",
+      "name": "Gallipoli",
+      "lat": 40.41,
+      "lon": 26.67,
+      "note": "Ottoman naval base. Pirî's base during his service under his uncle Kemal Reis.",
+      "imagePrompt": "Hand-coloured plate. Dardanelles arsenal with galleys drawn up on slipways, dockyard scribes at work on charts.",
+      "vehicleToNext": "caravel"
+    },
+    {
+      "id": "stop-2",
+      "name": "Rhodes",
+      "lat": 36.45,
+      "lon": 28.22,
+      "note": "Conquered by Suleiman 1522. Pirî served in the Ottoman fleet at the siege.",
+      "imagePrompt": "Hand-coloured plate. Walled Hospitaller city under siege, Ottoman galleys blocking the harbour mouth.",
+      "vehicleToNext": "caravel"
+    },
+    {
+      "id": "stop-3",
+      "name": "Alexandria",
+      "lat": 31.20,
+      "lon": 29.92,
+      "note": "Pirî gave the first manuscript of the Kitab-i Bahriye to Sultan Suleiman here in 1524 during the fleet's Egypt mission.",
+      "imagePrompt": "Hand-coloured plate. Egyptian harbour with Ottoman flagship, presentation of a leather-bound book to a turbaned sultan at the gangway.",
+      "vehicleToNext": "caravel"
+    },
+    {
+      "id": "stop-4",
+      "name": "Tunis",
+      "lat": 36.80,
+      "lon": 10.18,
+      "note": "Mediterranean survey leg, c. 1522. Pirî describes the harbour and the Khayr ad-Din corsair base at La Goulette.",
+      "imagePrompt": "Hand-coloured plate. North African harbour with corsair galleys at the mole, white kasbah on a hill behind.",
+      "vehicleToNext": "caravel"
+    },
+    {
+      "id": "stop-5",
+      "name": "Venice",
+      "lat": 45.43,
+      "lon": 12.34,
+      "note": "Western limit of the Kitab-i Bahriye charts. Pirî describes the lagoons in detail though Ottoman ships could not enter without truce.",
+      "imagePrompt": "Hand-coloured plate. Venetian lagoon from offshore, Doge's palace and campanile, gondolas in the foreground.",
+      "vehicleToNext": "caravel"
+    }
+  ]
+}

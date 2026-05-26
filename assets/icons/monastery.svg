@@ -1,0 +1,37 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Monastery">
+  <!-- A MONASTERY: a modest walled compound — a chapel with a small bell-tower on
+       the left, a low cloister arcade of repeated arches on the right. Light from
+       TOP-LEFT: left faces lit, right faces shadow. Gold bell in the tower = the
+       one gold accent. -->
+  <!-- (1) cast shadow -->
+  <ellipse class="sh" cx="50" cy="86" rx="40" ry="4.5"/>
+  <!-- chapel body (left): lit plaster face + shadow side -->
+  <path class="wall" d="M16 48 L40 48 L40 82 L16 82 Z"/>
+  <path class="wall-s" d="M34 48 L40 48 L40 82 L34 82 Z"/>
+  <!-- chapel pitched roof: lit left + shadow right -->
+  <path class="roof-l" d="M28 34 L16 48 L28 48 Z"/>
+  <path class="roof-s" d="M28 34 L40 48 L28 48 Z"/>
+  <!-- bell-tower rising over the chapel -->
+  <path class="wall" d="M24 22 L34 22 L34 48 L24 48 Z"/>
+  <path class="wall-s" d="M30 22 L34 22 L34 48 L30 48 Z"/>
+  <path class="roof-l" d="M29 14 L24 22 L29 22 Z"/>
+  <path class="roof-s" d="M29 14 L34 22 L29 22 Z"/>
+  <!-- bell-tower arched opening + gold bell -->
+  <path class="win" d="M26 38 L32 38 L32 30 q-3 -4 -6 0 Z"/>
+  <path class="gold" d="M27 31 q2 -3 4 0 L31 35 q-2 1 -4 0 Z"/>
+  <!-- cloister arcade body (right): lit + shadow -->
+  <path class="wall" d="M40 58 L86 58 L86 82 L40 82 Z"/>
+  <path class="wall-s" d="M70 58 L86 58 L86 82 L70 82 Z"/>
+  <!-- low cloister roof band -->
+  <path class="roof" d="M40 54 L86 54 L84 58 L42 58 Z"/>
+  <!-- repeated cloister arches (openings) -->
+  <path class="win" d="M44 82 L44 66 q4 -5 8 0 L52 82 Z"/>
+  <path class="win" d="M56 82 L56 66 q4 -5 8 0 L64 82 Z"/>
+  <path class="win" d="M68 82 L68 66 q4 -5 8 0 L76 82 Z"/>
+  <!-- chapel door opening -->
+  <path class="win" d="M24 82 L24 66 q4 -5 8 0 L32 82 Z"/>
+  <!-- arcade pier + course lines -->
+  <path class="out-thin" fill="none" d="M40 70 L86 70 M40 58 L40 82 M16 64 L40 64"/>
+  <!-- primary contour -->
+  <path class="out" fill="none" d="M16 82 L16 48 L28 34 L24 34 L24 14 L29 14 L34 22 L34 48 L40 48 L40 54 L86 54 L86 82"/>
+</svg>

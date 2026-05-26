@@ -1,0 +1,31 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mosque">
+  <!-- A MOSQUE: a central dome on a square prayer hall with a tall slender minaret
+       beside it (balcony + cap). Light from TOP-LEFT: left faces lit, right shadow.
+       Gold crescent finial atop the dome = the one gold accent. -->
+  <!-- (1) cast shadow -->
+  <ellipse class="sh" cx="50" cy="86" rx="38" ry="4.5"/>
+  <!-- prayer hall body: lit left + shadow right -->
+  <path class="wall" d="M22 52 L52 52 L52 82 L22 82 Z"/>
+  <path class="wall-s" d="M52 52 L70 52 L70 82 L52 82 Z"/>
+  <!-- central dome on a drum: lit left + shadow right -->
+  <path class="stone-l" d="M46 32 q-18 2 -18 20 L46 52 Z"/>
+  <path class="stone-s" d="M46 32 q18 2 18 20 L46 52 Z"/>
+  <!-- arched portal (dark) -->
+  <path class="win" d="M30 82 L30 64 q8 -10 16 0 L46 82 Z"/>
+  <!-- two arched windows on the hall -->
+  <path class="win" d="M55 70 q5 -6 10 0 L65 78 L55 78 Z"/>
+  <!-- slender minaret beside the hall: lit shaft + shadow side -->
+  <path class="wall" d="M74 30 L80 30 L80 82 L74 82 Z"/>
+  <path class="wall-s" d="M80 30 L84 30 L84 82 L80 82 Z"/>
+  <!-- minaret balcony -->
+  <path class="stone-l" d="M72 40 L86 40 L86 44 L72 44 Z"/>
+  <!-- minaret conical cap -->
+  <path class="roof-l" d="M79 18 L74 30 L79 30 Z"/>
+  <path class="roof-s" d="M79 18 L84 30 L79 30 Z"/>
+  <!-- gold crescent finial atop the dome -->
+  <path class="gold" d="M46 20 a6 6 0 1 0 0 12 a4.5 4.5 0 1 1 0 -12 Z"/>
+  <!-- dome base line + minaret window -->
+  <path class="out-thin" fill="none" d="M28 52 L64 52 M77 50 L77 64 M22 82 L70 82"/>
+  <!-- primary contour -->
+  <path class="out" fill="none" d="M22 82 L22 52 q24 -22 48 0 L70 82 M74 82 L74 30 L79 18 L84 30 L84 82"/>
+</svg>

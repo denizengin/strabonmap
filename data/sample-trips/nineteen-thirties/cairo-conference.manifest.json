@@ -1,0 +1,11 @@
+{
+  "tripId": "cairo-conference",
+  "style": "sepia hand-coloured plate, 1920s register",
+  "images": [
+    {"stopId": "stop-1", "prompt": "Whitehall in March drizzle, Churchill in homburg descending steps; sepia plate.", "size": "1200x800"},
+    {"stopId": "stop-2", "prompt": "Marseille two-funnel liner, party in straw hats climbing gangway; sepia plate.", "size": "1200x800"},
+    {"stopId": "stop-3", "prompt": "Alexandria liner berthed, dockside porters; sepia plate.", "size": "1200x800"},
+    {"stopId": "stop-4", "prompt": "Semiramis Hotel terrace by the Nile, conference photo being staged; sepia plate.", "size": "1200x800"},
+    {"stopId": "stop-5", "prompt": "Three camels before Great Pyramid, English visitors in topees; sepia plate.", "size": "1200x800"}
+  ]
+}

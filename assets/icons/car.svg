@@ -1,0 +1,30 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Motor car">
+  <!-- 1930s touring automobile, side-on. Light from TOP-LEFT.
+       Gold = headlamp (single gold accent). -->
+  <ellipse class="sh" cx="50" cy="80" rx="36" ry="4.5"/>
+  <!-- lower body: lit running-board + shadow valance -->
+  <path class="wall" d="M12 56 q4 -6 14 -6 L74 50 q12 0 16 8 L90 64 L12 64 Z"/>
+  <path class="wall-s" d="M12 64 L90 64 L90 70 q-4 2 -10 2 L20 72 q-6 0 -8 -2 Z"/>
+  <path class="out-thin" fill="none" d="M12 64 L90 64"/>
+  <!-- cabin: lit roof face + shadow side -->
+  <path class="roof" d="M34 30 q3 -6 12 -6 L62 24 q8 0 10 6 L72 50 L34 50 Z"/>
+  <path class="roof-s" d="M54 24 q8 0 10 6 L72 50 L54 50 Z"/>
+  <!-- windows -->
+  <path class="win" d="M38 32 q2 -4 8 -4 L48 46 L38 46 Z"/>
+  <path class="win" d="M52 28 L62 28 q6 0 7 5 L69 46 L52 46 Z"/>
+  <path class="out-thin" fill="none" d="M50 27 L50 46"/>
+  <!-- headlamp (gold) + lamp stem -->
+  <path class="out-thin" fill="none" d="M90 54 L94 52"/>
+  <circle class="gold" cx="95" cy="52" r="3"/>
+  <!-- two wheels: wood rim + lit spokes (like the cart) -->
+  <circle class="wood" cx="28" cy="68" r="10"/>
+  <circle class="out" fill="none" cx="28" cy="68" r="10"/>
+  <path class="out-thin" fill="none" d="M28 58 L28 78 M18 68 L38 68 M21 61 L35 75 M35 61 L21 75"/>
+  <circle class="wood-l" cx="28" cy="68" r="3.6"/>
+  <circle class="wood" cx="72" cy="68" r="10"/>
+  <circle class="out" fill="none" cx="72" cy="68" r="10"/>
+  <path class="out-thin" fill="none" d="M72 58 L72 78 M62 68 L82 68 M65 61 L79 75 M79 61 L65 75"/>
+  <circle class="wood-l" cx="72" cy="68" r="3.6"/>
+  <!-- primary contour -->
+  <path class="out" fill="none" d="M12 56 q4 -6 14 -6 L74 50 q12 0 16 8 L90 70 q-4 2 -10 2 L20 72 q-6 0 -8 -2 Z"/>
+</svg>

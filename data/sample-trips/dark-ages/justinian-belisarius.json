@@ -1,0 +1,60 @@
+{
+  "id": "justinian-belisarius",
+  "era": "dark-ages",
+  "title": "Belisarius — the Vandal war",
+  "themeSuggestion": "dark-ages-vellum",
+  "viewport": "auto",
+  "intro": {
+    "title": "Ninety Days to Carthage",
+    "dateline": "533-534 CE",
+    "body": "Justinian sent Belisarius with 15,000 men and a fleet of 500 ships to reclaim Africa from the Vandals. Procopius, who sailed with him, gives the day-by-day account in Wars III-IV. The campaign was won in two battles inside three months."
+  },
+  "companions": ["Belisarius", "Procopius"],
+  "stops": [
+    {
+      "id": "stop-1",
+      "name": "Constantinople",
+      "lat": 41.01,
+      "lon": 28.97,
+      "note": "Embarkation, 21 June 533. The patriarch Epiphanius blesses the lead ship from the harbour mole.",
+      "imagePrompt": "Hand-coloured plate. Golden Horn crowded with masts at midsummer, patriarch in vestments raising the cross over the fleet.",
+      "vehicleToNext": "dhow"
+    },
+    {
+      "id": "stop-2",
+      "name": "Methone",
+      "lat": 36.82,
+      "lon": 21.71,
+      "note": "Peloponnesian provisioning stop. Procopius records bad biscuit killing 500 men here — bakers had reused old grain.",
+      "imagePrompt": "Hand-coloured plate. Small harbour below a Venetian-style fortress (anachronistic — original was simpler), ships taking on water.",
+      "vehicleToNext": "dhow"
+    },
+    {
+      "id": "stop-3",
+      "name": "Caput Vada",
+      "lat": 35.23,
+      "lon": 11.13,
+      "note": "Landfall on the African coast, late August 533. Belisarius disembarks fully equipped and marches inland.",
+      "imagePrompt": "Hand-coloured plate. Long sandy headland, troops marching from beached transports, dust column inland.",
+      "vehicleToNext": "foot"
+    },
+    {
+      "id": "stop-4",
+      "name": "Ad Decimum",
+      "lat": 36.70,
+      "lon": 10.28,
+      "note": "13 September 533, ten miles south of Carthage. Belisarius wins the first Vandal battle by intercepting Gelimer's encirclement.",
+      "imagePrompt": "Hand-coloured plate. Roman milestone with the numeral 'X' (anachronistic — original was Roman numeric stone), running battle in olive groves.",
+      "vehicleToNext": "foot"
+    },
+    {
+      "id": "stop-5",
+      "name": "Carthage",
+      "lat": 36.86,
+      "lon": 10.32,
+      "note": "Belisarius enters 15 September 533. He dines that night in Gelimer's own palace, off the Vandal king's own plate (Procopius III.21).",
+      "imagePrompt": "Hand-coloured plate. Carthage harbour rings, byzantine general dining beneath frescoes, Vandal banner being lowered outside.",
+      "vehicleToNext": "dhow"
+    }
+  ]
+}

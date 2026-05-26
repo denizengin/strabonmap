@@ -1,0 +1,60 @@
+{
+  "id": "constantine-nicaea",
+  "era": "late-antiquity",
+  "title": "Constantine — to the Council of Nicaea",
+  "themeSuggestion": "late-antiquity-porphyry",
+  "viewport": "auto",
+  "intro": {
+    "title": "The Council and the City",
+    "dateline": "324-325 CE",
+    "body": "After defeating Licinius at Chrysopolis in September 324, Constantine reunited the empire and convened the first ecumenical council at Nicaea in May 325 to resolve the Arian controversy. The same year he began laying out his new capital across the Bosphorus."
+  },
+  "companions": ["Constantine"],
+  "stops": [
+    {
+      "id": "stop-1",
+      "name": "Thessalonica",
+      "lat": 40.64,
+      "lon": 22.94,
+      "note": "Constantine's residence during the Licinius war. Galerius's earlier rotunda and arch dominate the city.",
+      "imagePrompt": "Hand-coloured plate. Macedonian port with city walls, Galerian rotunda dome, fleet at anchor.",
+      "vehicleToNext": "liburna"
+    },
+    {
+      "id": "stop-2",
+      "name": "Chrysopolis",
+      "lat": 41.02,
+      "lon": 29.02,
+      "note": "Constantine's decisive victory over Licinius, 18 September 324, on the Asian shore opposite Byzantium. Modern Üsküdar.",
+      "imagePrompt": "Hand-coloured plate. Battle on a coastal slope, Bosphorus visible, labarum standard at the head of a column.",
+      "vehicleToNext": "foot"
+    },
+    {
+      "id": "stop-3",
+      "name": "Byzantium / Constantinople",
+      "lat": 41.01,
+      "lon": 28.97,
+      "note": "Refoundation begun 8 November 324. The new walls trace a vast peninsula; consecration follows in 330.",
+      "imagePrompt": "Hand-coloured plate. Surveyors with the emperor on a hilltop, Golden Horn below, traced wall-lines striking inland.",
+      "vehicleToNext": "horse"
+    },
+    {
+      "id": "stop-4",
+      "name": "Nicaea",
+      "lat": 40.43,
+      "lon": 29.72,
+      "note": "Imperial summer palace on Lake Ascanius. Site of the council, 20 May - 19 June 325. ~318 bishops attended.",
+      "imagePrompt": "Hand-coloured plate. Lake-side basilica with rows of seated bishops, emperor enthroned on a low dais.",
+      "vehicleToNext": "horse"
+    },
+    {
+      "id": "stop-5",
+      "name": "Antioch",
+      "lat": 36.20,
+      "lon": 36.16,
+      "note": "Constantine winters at Antioch after Nicaea, then turns east toward the Persian frontier in the late 320s.",
+      "imagePrompt": "Hand-coloured plate. Orontes city in evening, lamps in the colonnaded street, imperial party at the river palace.",
+      "vehicleToNext": "horse"
+    }
+  ]
+}

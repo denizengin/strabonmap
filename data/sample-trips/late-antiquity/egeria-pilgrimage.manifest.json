@@ -1,0 +1,11 @@
+{
+  "tripId": "egeria-pilgrimage",
+  "style": "hand-coloured cartographic plate, muted ink, period-appropriate",
+  "images": [
+    {"stopId": "stop-1", "prompt": "Constantinople with Hagia Eirene under scaffolding, nun at a scriptorium window; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-2", "prompt": "Jerusalem Anastasis rotunda with processional cross and candle-lit pilgrims; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-3", "prompt": "Sinai granite pinnacle at dawn, walled monastery in the wadi; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-4", "prompt": "Edessa citadel pools and basilica with martyrium; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-5", "prompt": "Chalcedon Saint Euphemia martyrium with pilgrims at relics; hand-coloured plate.", "size": "1200x800"}
+  ]
+}

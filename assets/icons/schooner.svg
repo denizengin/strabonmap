@@ -1,0 +1,29 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schooner">
+  <!-- Fast pilot-boat SCHOONER. Two raked masts carrying fore-and-aft
+       gaff sails, a jib at the bow, a sleek low hull. Light from TOP-LEFT;
+       water hint. Gold = the masthead truck (single accent). -->
+  <ellipse class="sh" cx="50" cy="82" rx="40" ry="4.5"/>
+  <path class="water" d="M8 79 q11 4 21 0 q10 -4 21 0 q11 4 21 0 q10 -4 21 0 L92 85 L8 85 Z"/>
+  <path class="foam" fill="none" d="M12 78 q8 3 16 0 M52 78 q8 3 16 0"/>
+  <!-- two raked masts -->
+  <path class="wood" d="M40 58 L46 14 L48 14 L42 58 Z"/>
+  <path class="wood" d="M62 58 L67 22 L69 22 L64 58 Z"/>
+  <circle class="gold" cx="47" cy="14" r="2.4"/>
+  <!-- mainsail (aft, gaff fore-and-aft): lit + shadow -->
+  <path class="wall" d="M42 56 L46 18 L66 54 Z"/>
+  <path class="wall-s" d="M46 18 L66 54 L55 52 L52 30 Z"/>
+  <path class="out-thin" fill="none" d="M42 56 L46 18 L66 54 Z"/>
+  <!-- foresail (forward, gaff fore-and-aft): lit + shadow -->
+  <path class="wall" d="M63 56 L67 26 L84 54 Z"/>
+  <path class="wall-s" d="M67 26 L84 54 L74 52 L72 36 Z"/>
+  <path class="out-thin" fill="none" d="M63 56 L67 26 L84 54 Z"/>
+  <!-- jib at the bow (right), triangular: lit + shadow -->
+  <path class="wall" d="M70 24 L92 54 L74 54 Z"/>
+  <path class="wall-s" d="M70 24 L92 54 L83 53 Z"/>
+  <path class="out-thin" fill="none" d="M70 24 L92 54 L74 54 Z"/>
+  <!-- sleek low hull: lit upper strake + shadow lower hull -->
+  <path class="wood-l" d="M14 56 L86 56 L88 60 L12 60 Z"/>
+  <path class="wood" d="M12 60 L88 60 q-5 9 -20 9 L30 69 q-15 0 -18 -9 Z"/>
+  <!-- primary contour around the hull -->
+  <path class="out" fill="none" d="M12 60 L88 60 q-5 9 -20 9 L30 69 q-15 0 -18 -9 Z"/>
+</svg>

@@ -1,0 +1,11 @@
+{
+  "tripId": "basil-bulgaroctonus",
+  "style": "hand-coloured cartographic plate, muted ink, period-appropriate",
+  "images": [
+    {"stopId": "stop-1", "prompt": "Constantinople Bucoleon harbour, imperial galley loading; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-2", "prompt": "Trajan's Gate forested ambush pass, Bulgarian archers in oaks; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-3", "prompt": "Thessalonica winter rain, imperial pavilion in gardens; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-4", "prompt": "Strymon defile, lines of blinded prisoners being led along a track; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-5", "prompt": "Ohrid lakeside town with churches, imperial party crossing bridge; hand-coloured plate.", "size": "1200x800"}
+  ]
+}

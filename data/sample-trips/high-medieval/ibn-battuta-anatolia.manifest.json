@@ -1,0 +1,11 @@
+{
+  "tripId": "ibn-battuta-anatolia",
+  "style": "hand-coloured cartographic plate, muted ink, period-appropriate",
+  "images": [
+    {"stopId": "stop-1", "prompt": "Alanya red-towered Seljuk harbour, scholar greeted on quay; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-2", "prompt": "Konya green-tiled mausoleum of Rumi with whirling dervishes; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-3", "prompt": "Kayseri snowy akhi convent at evening lamplight; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-4", "prompt": "Sivas medrese portal, two akhi delegations facing in snow; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-5", "prompt": "Sinope Black Sea harbour with single Genoese galley; hand-coloured plate.", "size": "1200x800"}
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "ibn-battuta-anatolia",
+  "era": "high-medieval",
+  "title": "Ibn Battuta — through the Anatolian beyliks",
+  "themeSuggestion": "high-medieval-vellum",
+  "viewport": "auto",
+  "intro": {
+    "title": "Among the Akhi Brotherhoods",
+    "dateline": "1331-1332 CE",
+    "body": "Ibn Battuta crossed Anatolia in winter 1331-1332, lodging among the akhi brotherhoods of the post-Seljuk beyliks. The Rihla devotes a long chapter to the journey from Alanya in the south to Sinope on the Black Sea coast."
+  },
+  "companions": ["Ibn Battuta"],
+  "stops": [
+    {
+      "id": "stop-1",
+      "name": "Alanya",
+      "lat": 36.55,
+      "lon": 32.00,
+      "note": "Landfall from Latakia, autumn 1331. Battuta describes the harbour and the Karamanid emir's hospitality.",
+      "imagePrompt": "Hand-coloured plate. Seljuk red-towered harbour, traveller in scholar's robe greeted on a quay by turbaned officials.",
+      "vehicleToNext": "horse"
+    },
+    {
+      "id": "stop-2",
+      "name": "Konya",
+      "lat": 37.87,
+      "lon": 32.49,
+      "note": "Old Seljuk capital. Battuta visits the tomb of Mevlana Rumi (d. 1273) and lodges with the akhis.",
+      "imagePrompt": "Hand-coloured plate. Conical green-tiled mausoleum of Rumi above an old town, dervishes in white robes turning in courtyard.",
+      "vehicleToNext": "horse"
+    },
+    {
+      "id": "stop-3",
+      "name": "Kayseri",
+      "lat": 38.72,
+      "lon": 35.49,
+      "note": "Eretnid territory. Battuta describes the great hospitality of the akhis and his lodging in their convent.",
+      "imagePrompt": "Hand-coloured plate. Anatolian highland town under snow, akhi convent with its banner outside, evening lamplight.",
+      "vehicleToNext": "horse"
+    },
+    {
+      "id": "stop-4",
+      "name": "Sivas",
+      "lat": 39.75,
+      "lon": 37.02,
+      "note": "Battuta witnesses an akhi turf-war in Sivas — two brotherhoods almost come to blows over who will host him.",
+      "imagePrompt": "Hand-coloured plate. Carved-portal medrese gate, two akhi delegations facing across a snowy street, traveller between.",
+      "vehicleToNext": "horse"
+    },
+    {
+      "id": "stop-5",
+      "name": "Sinope",
+      "lat": 42.03,
+      "lon": 35.15,
+      "note": "Black Sea port. Battuta waits forty days for fair sailing to the Crimea, then embarks for Caffa.",
+      "imagePrompt": "Hand-coloured plate. Black Sea harbour under low cloud, single Genoese galley in the bay, scholar standing on the mole.",
+      "vehicleToNext": "galley"
+    }
+  ]
+}

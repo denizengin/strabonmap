@@ -1,0 +1,11 @@
+{
+  "tripId": "khalid-yarmuk",
+  "style": "hand-coloured cartographic plate, muted ink, period-appropriate",
+  "images": [
+    {"stopId": "stop-1", "prompt": "Al-Hira Lakhmid town with palm groves and Khalid's bedouin camp; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-2", "prompt": "Anbar mud-brick walls and archers shooting at loopholes; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-3", "prompt": "Quraqir desert well with camels being watered; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-4", "prompt": "Damascus Ghouta gardens, dawn at East Gate, Arab cavalry inside; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-5", "prompt": "Yarmuk gorge dust-storm battle with broken Byzantine standards; hand-coloured plate.", "size": "1200x800"}
+  ]
+}
