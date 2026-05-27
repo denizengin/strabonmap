@@ -27,7 +27,25 @@
       "lon": 35.2,
       "note": "Herodotus II.44: he visits Tyre to ask the priests of Herakles about the temple's age. They give him 2,300 years.",
       "imagePrompt": "Hand-coloured plate. Island-city of Tyre with twin harbours, temple of Melqart on the headland.",
-      "vehicleToNext": "merchantman"
+      "vehicleToNext": "merchantman",
+      "viaToNext": [
+        {
+          "lat": 32.5,
+          "lon": 34.2
+        },
+        {
+          "lat": 31.6,
+          "lon": 32.3
+        },
+        {
+          "lat": 31.4,
+          "lon": 31.6
+        },
+        {
+          "lat": 31,
+          "lon": 31.3
+        }
+      ]
     },
     {
       "id": "stop-3",

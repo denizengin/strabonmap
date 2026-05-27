@@ -9,7 +9,11 @@
     "dateline": "1519-1522 CE",
     "body": "Ferdinand Magellan sailed from Sanlúcar with five ships and 270 men in September 1519. He was killed at Mactan in April 1521; Juan Sebastián Elcano brought the Victoria home in September 1522 with 18 survivors. Antonio Pigafetta's journal is the eyewitness."
   },
-  "companions": ["Magellan", "Elcano", "Pigafetta"],
+  "companions": [
+    "Magellan",
+    "Elcano",
+    "Pigafetta"
+  ],
   "stops": [
     {
       "id": "stop-1",
@@ -18,13 +22,27 @@
       "lon": -6.35,
       "note": "Departure 20 September 1519. The fleet of five ships clears the Guadalquivir bar.",
       "imagePrompt": "Hand-coloured plate. Andalusian river mouth, five caravels and naos under sail, white town on the bank.",
-      "vehicleToNext": "caravel"
+      "vehicleToNext": "caravel",
+      "viaToNext": [
+        {
+          "lat": 20,
+          "lon": -22
+        },
+        {
+          "lat": -8,
+          "lon": -34
+        },
+        {
+          "lat": -30,
+          "lon": -48
+        }
+      ]
     },
     {
       "id": "stop-2",
       "name": "Strait of Magellan",
-      "lat": -53.50,
-      "lon": -70.50,
+      "lat": -53.5,
+      "lon": -70.5,
       "note": "Discovered 21 October 1520. The 38-day passage through the strait at the southern tip of South America opens the Pacific.",
       "imagePrompt": "Hand-coloured plate. Narrow channel between snow-capped headlands, three ships in line with steep cliffs to either side.",
       "vehicleToNext": "caravel"
@@ -48,15 +66,42 @@
       "vehicleToNext": "caravel",
       "_viaComment": "Victoria's WESTWARD return (Elcano, 1522): south of the Indonesian arc into the open Indian Ocean, across to round the Cape of Good Hope, then north up the Atlantic to Sanlúcar. These waypoints keep the sea leg over water instead of drawing a straight chord across Asia + Arabia.",
       "viaToNext": [
-        { "lat": -11.0, "lon": 114.0 },
-        { "lat": -30.0, "lon": 90.0 },
-        { "lat": -37.0, "lon": 55.0 },
-        { "lat": -36.5, "lon": 20.0 },
-        { "lat": -34.0, "lon": 16.0 },
-        { "lat": -15.0, "lon": 2.0 },
-        { "lat": 5.0, "lon": -18.0 },
-        { "lat": 22.0, "lon": -22.0 },
-        { "lat": 33.0, "lon": -10.0 }
+        {
+          "lat": -11,
+          "lon": 114
+        },
+        {
+          "lat": -30,
+          "lon": 90
+        },
+        {
+          "lat": -37,
+          "lon": 55
+        },
+        {
+          "lat": -36.5,
+          "lon": 20
+        },
+        {
+          "lat": -34,
+          "lon": 16
+        },
+        {
+          "lat": -15,
+          "lon": 2
+        },
+        {
+          "lat": 5,
+          "lon": -18
+        },
+        {
+          "lat": 22,
+          "lon": -22
+        },
+        {
+          "lat": 33,
+          "lon": -10
+        }
       ]
     },
     {

@@ -27,7 +27,7 @@
       "lon": 27.428,
       "note": "The principal Carian city, a short coastwise hop from Karyanda. Herodotus, Histories I.171 records the Carians as the first to fit shield-grips and crests — a maritime warrior culture in which a son of Karyanda would have trained before entering Persian service.",
       "imagePrompt": "Hand-coloured cartographic plate, muted ink. Halikarnassos acropolis above a curving harbour, fortified mole, anchored galleys, a young pilot studying a coastal chart.",
-      "vehicleToNext": "trireme"
+      "vehicleToNext": "horse"
     },
     {
       "id": "stop-3",
@@ -163,7 +163,29 @@
       "lon": 32.55,
       "note": "Northern terminus of the Red Sea, near modern Suez, where the voyage ended. Herodotus, Histories IV.44: 'they completed their voyage in the thirtieth month'. Heroopolis stood at the head of the gulf where Darius's canal to the Nile would shortly be completed.",
       "imagePrompt": "Hand-coloured cartographic plate, muted ink. Head of the Gulf of Suez, the masonry of Darius's canal works in the middle distance, the Skylax expedition's worn triremes drawing up onto the beach.",
-      "vehicleToNext": "trireme"
+      "vehicleToNext": "horse",
+      "viaToNext": [
+        {
+          "lat": 31.2,
+          "lon": 34.3
+        },
+        {
+          "lat": 34.5,
+          "lon": 36
+        },
+        {
+          "lat": 37,
+          "lon": 35
+        },
+        {
+          "lat": 37.3,
+          "lon": 30.5
+        },
+        {
+          "lat": 37.2,
+          "lon": 28.5
+        }
+      ]
     },
     {
       "id": "stop-15",

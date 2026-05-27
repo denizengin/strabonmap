@@ -18,12 +18,26 @@
       "lon": 22.75,
       "note": "Origin theatre. Linear B tablets at Pylos record coastal watch postings before the palace's destruction c. 1180 BCE.",
       "imagePrompt": "Hand-coloured plate. Lion gate and citadel above a plain, smoke rising from a distant palace.",
-      "vehicleToNext": "galley"
+      "vehicleToNext": "galley",
+      "viaToNext": [
+        {
+          "lat": 36.5,
+          "lon": 24.5
+        },
+        {
+          "lat": 35.3,
+          "lon": 27.5
+        },
+        {
+          "lat": 35.5,
+          "lon": 32
+        }
+      ]
     },
     {
       "id": "stop-2",
       "name": "Ugarit",
-      "lat": 35.60,
+      "lat": 35.6,
       "lon": 35.78,
       "note": "Letter RS 20.18: 'My father, the enemy ships are already here, they have set fire to my towns.' Ugarit fell c. 1190-1185 BCE.",
       "imagePrompt": "Hand-coloured plate. Coastal city in flames, fleet of crested-helmet warriors landing from low galleys.",
@@ -50,8 +64,8 @@
     {
       "id": "stop-5",
       "name": "Nile Delta (Medinet Habu)",
-      "lat": 31.20,
-      "lon": 32.30,
+      "lat": 31.2,
+      "lon": 32.3,
       "note": "Year 8 of Ramesses III. The Medinet Habu reliefs depict the land and sea battle in which the Sea Peoples confederation was broken.",
       "imagePrompt": "Hand-coloured plate. Delta river battle with reed-prowed Egyptian ships engaging crested-helmet warriors; archers on the bank.",
       "vehicleToNext": "galley"

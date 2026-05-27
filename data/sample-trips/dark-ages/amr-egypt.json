@@ -9,13 +9,15 @@
     "dateline": "639-642 CE",
     "body": "ʿAmr ibn al-ʿAs crossed Sinai in December 639 with 4,000 horsemen and took Egypt in less than three years. The decisive engagements were the siege of the Roman fortress of Babylon by the Nile and the surrender of Alexandria after a six-month standoff."
   },
-  "companions": ["ʿAmr ibn al-ʿAs"],
+  "companions": [
+    "ʿAmr ibn al-ʿAs"
+  ],
   "stops": [
     {
       "id": "stop-1",
       "name": "ʿArish",
       "lat": 31.13,
-      "lon": 33.80,
+      "lon": 33.8,
       "note": "Last Sinai oasis before the Delta. ʿAmr crosses with 4,000 horsemen in early December 639, against caliphal hesitation.",
       "imagePrompt": "Hand-coloured plate. Coastal palms at a sandy oasis, Arab cavalry watering horses, low dunes east and west.",
       "vehicleToNext": "horse"
@@ -33,7 +35,7 @@
       "id": "stop-3",
       "name": "Heliopolis",
       "lat": 30.13,
-      "lon": 31.30,
+      "lon": 31.3,
       "note": "ʿAmr defeats the Roman field army outside Heliopolis in July 640, opening the road to the fortress of Babylon.",
       "imagePrompt": "Hand-coloured plate. Ancient obelisk above a plain, cavalry clash in mid-distance, palms in the foreground.",
       "vehicleToNext": "horse"
@@ -45,12 +47,26 @@
       "lon": 31.23,
       "note": "Roman fortress beside the Nile, surrenders 9 April 641. ʿAmr founds the camp-city of Fustat on the spot — origin of Cairo.",
       "imagePrompt": "Hand-coloured plate. Round Roman bastion at the Nile bend, Arab tents springing up around it, river craft on the water.",
-      "vehicleToNext": "dhow"
+      "vehicleToNext": "dhow",
+      "viaToNext": [
+        {
+          "lat": 30.6,
+          "lon": 31.3
+        },
+        {
+          "lat": 31.2,
+          "lon": 30.4
+        },
+        {
+          "lat": 31.4,
+          "lon": 30
+        }
+      ]
     },
     {
       "id": "stop-5",
       "name": "Alexandria",
-      "lat": 31.20,
+      "lat": 31.2,
       "lon": 29.92,
       "note": "Six-month siege from spring 641; the city surrenders 8 November 641 by the treaty of patriarch Cyrus. The Library, already much diminished, is not burned by ʿAmr — that story is twelfth-century invention.",
       "imagePrompt": "Hand-coloured plate. Pharos rising over walls and seafront, ceremonial surrender at the Eastern Harbour gate.",

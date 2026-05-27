@@ -9,7 +9,9 @@
     "dateline": "324-325 CE",
     "body": "After defeating Licinius at Chrysopolis in September 324, Constantine reunited the empire and convened the first ecumenical council at Nicaea in May 325 to resolve the Arian controversy. The same year he began laying out his new capital across the Bosphorus."
   },
-  "companions": ["Constantine"],
+  "companions": [
+    "Constantine"
+  ],
   "stops": [
     {
       "id": "stop-1",
@@ -18,7 +20,33 @@
       "lon": 22.94,
       "note": "Constantine's residence during the Licinius war. Galerius's earlier rotunda and arch dominate the city.",
       "imagePrompt": "Hand-coloured plate. Macedonian port with city walls, Galerian rotunda dome, fleet at anchor.",
-      "vehicleToNext": "liburna"
+      "vehicleToNext": "liburna",
+      "viaToNext": [
+        {
+          "lat": 39.5,
+          "lon": 24.2
+        },
+        {
+          "lat": 39.7,
+          "lon": 25.8
+        },
+        {
+          "lat": 40,
+          "lon": 26.2
+        },
+        {
+          "lat": 40.4,
+          "lon": 26.8
+        },
+        {
+          "lat": 40.6,
+          "lon": 27.6
+        },
+        {
+          "lat": 40.8,
+          "lon": 28.5
+        }
+      ]
     },
     {
       "id": "stop-2",
@@ -50,7 +78,7 @@
     {
       "id": "stop-5",
       "name": "Antioch",
-      "lat": 36.20,
+      "lat": 36.2,
       "lon": 36.16,
       "note": "Constantine winters at Antioch after Nicaea, then turns east toward the Persian frontier in the late 320s.",
       "imagePrompt": "Hand-coloured plate. Orontes city in evening, lamps in the colonnaded street, imperial party at the river palace.",
