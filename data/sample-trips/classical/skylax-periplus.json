@@ -33,7 +33,7 @@
       "id": "stop-3",
       "name": "Sardis",
       "lat": 38.488,
-      "lon": 28.040,
+      "lon": 28.04,
       "note": "Satrapal capital of Lydia and western terminus of the Royal Road that ran inland to Susa (Herodotus, Histories V.52). Any Carian taken into Achaemenid imperial service would pass through Sardis on the way east.",
       "imagePrompt": "Hand-coloured cartographic plate, muted ink. Sardis with the Pactolus stream and Tmolus mountain behind, a Persian satrap's palace, mounted couriers setting out on the Royal Road.",
       "vehicleToNext": "horse"
@@ -54,7 +54,25 @@
       "lon": 71.5,
       "note": "Embarkation point on the upper Indus. Herodotus, Histories IV.44: 'Darius sent ships manned with men he could trust, among whom was Skylax of Karyanda, and they put to sea from the city of Caspatyrus and the land of Pactyice.' Most often identified with the Kabul-Indus confluence near modern Peshawar.",
       "imagePrompt": "Hand-coloured cartographic plate, muted ink. River craft drawn up on the upper Indus below pine-clad hills, Persian officials and Greek sailors loading provisions.",
-      "vehicleToNext": "merchantman"
+      "vehicleToNext": "merchantman",
+      "viaToNext": [
+        {
+          "lat": 32.5,
+          "lon": 71.6
+        },
+        {
+          "lat": 31,
+          "lon": 71
+        },
+        {
+          "lat": 29.3,
+          "lon": 70.6
+        },
+        {
+          "lat": 28.4,
+          "lon": 69.5
+        }
+      ]
     },
     {
       "id": "stop-6",
@@ -63,7 +81,17 @@
       "lon": 68.5,
       "note": "Descent of the Indus through the Sind plains, the long middle stage of the river journey before the delta. Herodotus, Histories IV.44 compresses this into 'they sailed down the river toward the east and the sunrise', but a craft from Caspatyrus must traverse hundreds of kilometres of slow water here.",
       "imagePrompt": "Hand-coloured cartographic plate, muted ink. Broad muddy river under a hot sky, a merchantman drifting with the current, reed villages on the banks, herons in the shallows.",
-      "vehicleToNext": "merchantman"
+      "vehicleToNext": "merchantman",
+      "viaToNext": [
+        {
+          "lat": 26.6,
+          "lon": 68.2
+        },
+        {
+          "lat": 25.6,
+          "lon": 68
+        }
+      ]
     },
     {
       "id": "stop-7",
@@ -77,8 +105,8 @@
     {
       "id": "stop-8",
       "name": "Gedrosian Coast",
-      "lat": 25.0,
-      "lon": 60.0,
+      "lat": 25,
+      "lon": 60,
       "note": "The Makran coast, sailing westward along the southern edge of the Iranian plateau. Herodotus, Histories IV.44 says only 'westward through the sea', but any periplus from Patala to Hormuz must hug this arid shore — the same coast Nearchus would later log in detail.",
       "imagePrompt": "Hand-coloured cartographic plate, muted ink. Bone-dry cliff coast falling sheer to the sea, a trireme close inshore, a watering party landing at a wadi mouth.",
       "vehicleToNext": "trireme"
@@ -105,7 +133,7 @@
       "id": "stop-11",
       "name": "Hadramaut",
       "lat": 14.5,
-      "lon": 49.0,
+      "lon": 49,
       "note": "Southern Arabian coast — the incense lands. The voyage of Herodotus, Histories IV.44 passes the whole southern shore of Arabia; the Hadramaut is its central stretch and the source of the frankincense trade that already in Skylax's day reached Persia and the Mediterranean.",
       "imagePrompt": "Hand-coloured cartographic plate, muted ink. South-Arabian shore with frankincense trees on the inland ridges, a trireme close-hauled, a small fortified harbour town below.",
       "vehicleToNext": "trireme"
@@ -123,7 +151,7 @@
       "id": "stop-13",
       "name": "Red Sea — Berenike Coast",
       "lat": 22.5,
-      "lon": 36.0,
+      "lon": 36,
       "note": "Generic mid-Red-Sea anchorage on the Egyptian-controlled western shore, representing the long northward beat from Bab el-Mandeb. Herodotus, Histories IV.44 says only that after thirty months they reached the gulf 'from which the Egyptian king sent the Phoenicians to circumnavigate Libya' — the Red Sea.",
       "imagePrompt": "Hand-coloured cartographic plate, muted ink. Coral-fringed Red Sea coast, a trireme drying sails at a sheltered cove, distant desert mountains.",
       "vehicleToNext": "trireme"
@@ -131,7 +159,7 @@
     {
       "id": "stop-14",
       "name": "Heroopolis (Suez)",
-      "lat": 30.0,
+      "lat": 30,
       "lon": 32.55,
       "note": "Northern terminus of the Red Sea, near modern Suez, where the voyage ended. Herodotus, Histories IV.44: 'they completed their voyage in the thirtieth month'. Heroopolis stood at the head of the gulf where Darius's canal to the Nile would shortly be completed.",
       "imagePrompt": "Hand-coloured cartographic plate, muted ink. Head of the Gulf of Suez, the masonry of Darius's canal works in the middle distance, the Skylax expedition's worn triremes drawing up onto the beach.",

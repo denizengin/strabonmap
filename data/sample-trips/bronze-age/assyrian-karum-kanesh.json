@@ -24,7 +24,7 @@
       "id": "stop-2",
       "name": "Apum (Tell Leilan)",
       "lat": 36.96,
-      "lon": 41.50,
+      "lon": 41.5,
       "note": "Stopping-place in the Khabur triangle. Tablets from Tell Leilan attest its role as caravan node in the period of Shamshi-Adad.",
       "imagePrompt": "Hand-coloured plate. Walled tell on a steppe, caravanserai courtyard with donkeys at troughs.",
       "vehicleToNext": "donkey"
@@ -32,17 +32,27 @@
     {
       "id": "stop-3",
       "name": "Hahhum",
-      "lat": 37.30,
-      "lon": 38.80,
+      "lat": 37.3,
+      "lon": 38.8,
       "note": "Toll-station at a Euphrates crossing on the route to Anatolia. Identified tentatively with Lidar Höyük.",
       "imagePrompt": "Hand-coloured plate. River crossing with reed-bundle rafts ferrying donkeys, officials with clay tablets at a customs post.",
-      "vehicleToNext": "raft"
+      "vehicleToNext": "raft",
+      "viaToNext": [
+        {
+          "lat": 37.6,
+          "lon": 38.2
+        },
+        {
+          "lat": 38,
+          "lon": 37.5
+        }
+      ]
     },
     {
       "id": "stop-4",
       "name": "Mamma",
-      "lat": 38.20,
-      "lon": 37.00,
+      "lat": 38.2,
+      "lon": 37,
       "note": "Intermediate town in the Anti-Taurus. Kültepe letters mention it as a node where caravans regrouped before the mountain crossing.",
       "imagePrompt": "Hand-coloured plate. Mountain town in a steep valley, donkeys resting under pine, snow on the peaks.",
       "vehicleToNext": "donkey"

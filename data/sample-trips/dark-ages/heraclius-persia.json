@@ -9,7 +9,9 @@
     "dateline": "622-628 CE",
     "body": "Heraclius launched the first imperial campaign led personally by an emperor in two centuries, striking Khusrau II in the Caucasian heartland. The True Cross, taken from Jerusalem in 614, was returned to the city in 630."
   },
-  "companions": ["Heraclius"],
+  "companions": [
+    "Heraclius"
+  ],
   "stops": [
     {
       "id": "stop-1",
@@ -18,7 +20,29 @@
       "lon": 28.97,
       "note": "Departure 5 April 622. Sergius patriarch keeps the city while Heraclius takes the field — unprecedented since Theodosius.",
       "imagePrompt": "Hand-coloured plate. Emperor leaving Golden Gate at dawn, patriarch blessing standards.",
-      "vehicleToNext": "dhow"
+      "vehicleToNext": "dhow",
+      "viaToNext": [
+        {
+          "lat": 40.3,
+          "lon": 26.5
+        },
+        {
+          "lat": 38.5,
+          "lon": 25
+        },
+        {
+          "lat": 35.5,
+          "lon": 27
+        },
+        {
+          "lat": 34.5,
+          "lon": 32
+        },
+        {
+          "lat": 35.5,
+          "lon": 34.5
+        }
+      ]
     },
     {
       "id": "stop-2",
@@ -32,7 +56,7 @@
     {
       "id": "stop-3",
       "name": "Dvin",
-      "lat": 40.00,
+      "lat": 40,
       "lon": 44.58,
       "note": "Armenian capital, captured spring 624. The base from which Heraclius strikes east into Atropatene.",
       "imagePrompt": "Hand-coloured plate. Armenian fortified town on a high plateau, basilica beside the palace, Byzantine ensigns rising.",
@@ -42,7 +66,7 @@
       "id": "stop-4",
       "name": "Ganzak",
       "lat": 36.62,
-      "lon": 47.20,
+      "lon": 47.2,
       "note": "Royal Sasanid fire-temple of Adur Gushnasp. Heraclius sacks it in 624 in retaliation for the taking of Jerusalem.",
       "imagePrompt": "Hand-coloured plate. Walled fire-temple complex on a volcanic crater, sacred fire being extinguished.",
       "vehicleToNext": "horse"

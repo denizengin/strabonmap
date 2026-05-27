@@ -14,7 +14,7 @@
 // on the next commit that touches a runtime file. If you need to
 // force-invalidate caches (e.g. unrelated to a runtime change),
 // add a no-op touch like a trailing newline to sw.js itself and commit.
-const CACHE_VERSION = 'strabon-map-f566d45897';
+const CACHE_VERSION = 'strabon-map-da9f4a9df4';
 
 // #97 tiered loading (PERF_OFFLINE_ADDONS_COUNCIL). Two buckets:
 //   • CACHE_VERSION  — Tier-1 precache + content-versioned runtime assets.
@@ -210,6 +210,17 @@ self.addEventListener('activate', (event) => {
       }
     }
   })());
+});
+
+// E66b — let the PAGE activate a waiting SW on demand. The page's update banner
+// posts { type: 'SKIP_WAITING' } when the user clicks Refresh; we skipWaiting so
+// the new SW takes over WITHOUT a close-all-tabs cycle, then the page reloads on
+// controllerchange. (install also calls skipWaiting, but a worker that finished
+// installing while the page stayed open can sit "waiting" until prompted.)
+self.addEventListener('message', (event) => {
+  if (event && event.data && event.data.type === 'SKIP_WAITING') {
+    self.skipWaiting();
+  }
 });
 
 // Fetch: cache-first. On hit, return cached. On miss, fetch + cache for

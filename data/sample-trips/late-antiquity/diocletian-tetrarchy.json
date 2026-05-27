@@ -23,7 +23,7 @@
     {
       "id": "stop-2",
       "name": "Antioch",
-      "lat": 36.20,
+      "lat": 36.2,
       "lon": 36.16,
       "note": "Eastern operations base during the Persian campaigns of 296-299. The mint here issued tetrarchic coinage.",
       "imagePrompt": "Hand-coloured plate. Walled Syrian capital along the Orontes, palace on the river island, colonnaded street.",
@@ -32,7 +32,7 @@
     {
       "id": "stop-3",
       "name": "Alexandria",
-      "lat": 31.20,
+      "lat": 31.2,
       "lon": 29.92,
       "note": "Diocletian besieged the usurper Domitius Domitianus here, 297-298. The 'Pompey's Pillar' column commemorates the eventual capitulation.",
       "imagePrompt": "Hand-coloured plate. Lighthouse of Pharos in the distance, Egyptian-Greek port, victory column being raised.",
@@ -45,7 +45,29 @@
       "lon": 16.43,
       "note": "Diocletian's retirement palace, built 295-305 CE. The colonnaded peristyle and mausoleum survive as the core of modern Split.",
       "imagePrompt": "Hand-coloured plate. Coastal palace-fortress with peristyle, mausoleum dome, Adriatic in the background.",
-      "vehicleToNext": "liburna"
+      "vehicleToNext": "liburna",
+      "viaToNext": [
+        {
+          "lat": 43.9,
+          "lon": 15.6
+        },
+        {
+          "lat": 44.7,
+          "lon": 14.9
+        },
+        {
+          "lat": 45.3,
+          "lon": 14.5
+        },
+        {
+          "lat": 45.5,
+          "lon": 16.5
+        },
+        {
+          "lat": 45.1,
+          "lon": 18.5
+        }
+      ]
     },
     {
       "id": "stop-5",

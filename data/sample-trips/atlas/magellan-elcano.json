@@ -45,7 +45,19 @@
       "lon": 127.43,
       "note": "Victoria and Trinidad reach the Moluccas 8 November 1521. The cloves loaded here pay for the entire expedition.",
       "imagePrompt": "Hand-coloured plate. Volcanic peak above a tropical island, ships taking on sacks of cloves, sultan's pavilion on the strand.",
-      "vehicleToNext": "caravel"
+      "vehicleToNext": "caravel",
+      "_viaComment": "Victoria's WESTWARD return (Elcano, 1522): south of the Indonesian arc into the open Indian Ocean, across to round the Cape of Good Hope, then north up the Atlantic to Sanlúcar. These waypoints keep the sea leg over water instead of drawing a straight chord across Asia + Arabia.",
+      "viaToNext": [
+        { "lat": -11.0, "lon": 114.0 },
+        { "lat": -30.0, "lon": 90.0 },
+        { "lat": -37.0, "lon": 55.0 },
+        { "lat": -36.5, "lon": 20.0 },
+        { "lat": -34.0, "lon": 16.0 },
+        { "lat": -15.0, "lon": 2.0 },
+        { "lat": 5.0, "lon": -18.0 },
+        { "lat": 22.0, "lon": -22.0 },
+        { "lat": 33.0, "lon": -10.0 }
+      ]
     },
     {
       "id": "stop-5",

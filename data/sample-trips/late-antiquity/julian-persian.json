@@ -9,12 +9,14 @@
     "dateline": "363 CE",
     "body": "Julian led 65,000 men from Antioch down the Euphrates to the gates of Ctesiphon, then burned his fleet to march east. Ammianus Marcellinus, who served on the campaign, gives the day-by-day account in Res Gestae XXIII-XXV. Julian died of a spear wound at Samarra on 26 June."
   },
-  "companions": ["Ammianus Marcellinus"],
+  "companions": [
+    "Ammianus Marcellinus"
+  ],
   "stops": [
     {
       "id": "stop-1",
       "name": "Antioch",
-      "lat": 36.20,
+      "lat": 36.2,
       "lon": 36.16,
       "note": "Winter quarters 362-363. Julian's satirical Misopogon (Beard-Hater) ridicules the city before he leaves.",
       "imagePrompt": "Hand-coloured plate. Snowbound Syrian capital, bearded emperor in pagan dress haranguing assembled curiales.",
@@ -23,7 +25,7 @@
     {
       "id": "stop-2",
       "name": "Hierapolis",
-      "lat": 36.40,
+      "lat": 36.4,
       "lon": 37.97,
       "note": "Mustering point on the Euphrates road, March 363. Julian's army marches eastward in two columns.",
       "imagePrompt": "Hand-coloured plate. Steppe-fringe town, two columns of legions and cataphracts assembling on dusty roads.",
@@ -36,7 +38,25 @@
       "lon": 39.02,
       "note": "Fleet rendezvous on the Euphrates, April 363. Over 1,100 supply ships join the army here.",
       "imagePrompt": "Hand-coloured plate. River port crowded with shallow Roman transports, oxen drawing them upstream from a towpath.",
-      "vehicleToNext": "dromon"
+      "vehicleToNext": "dromon",
+      "viaToNext": [
+        {
+          "lat": 35,
+          "lon": 40.4
+        },
+        {
+          "lat": 34.3,
+          "lon": 41
+        },
+        {
+          "lat": 33.6,
+          "lon": 42.8
+        },
+        {
+          "lat": 33.1,
+          "lon": 43.8
+        }
+      ]
     },
     {
       "id": "stop-4",
@@ -50,7 +70,7 @@
     {
       "id": "stop-5",
       "name": "Samarra",
-      "lat": 34.20,
+      "lat": 34.2,
       "lon": 43.87,
       "note": "Julian struck by a cavalry javelin in a rearguard skirmish, 26 June 363. He dies in his tent that night. Jovian withdraws under truce.",
       "imagePrompt": "Hand-coloured plate. Tigris-side encampment at dusk, emperor's tent lit from within, mourning officers outside.",

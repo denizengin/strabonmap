@@ -9,7 +9,9 @@
     "dateline": "381-384 CE",
     "body": "Egeria, a Hispano-Roman nun, travelled from Gallaecia to the Holy Land and Sinai over three years. The surviving Itinerarium Egeriae records her route in letters home: 'Don't think, sisters, that the place is small.' Her descriptions of the Sinai monasteries and Jerusalem liturgy are the earliest extant."
   },
-  "companions": ["Egeria"],
+  "companions": [
+    "Egeria"
+  ],
   "stops": [
     {
       "id": "stop-1",
@@ -18,7 +20,29 @@
       "lon": 28.97,
       "note": "Egeria's letter-receiving sisters were in Gallaecia; she writes from Constantinople on the return leg, c. 384.",
       "imagePrompt": "Hand-coloured plate. New capital with Hagia Eirene under scaffolding, walls along the Marmara, woman in plain habit at a scriptorium window.",
-      "vehicleToNext": "liburna"
+      "vehicleToNext": "liburna",
+      "viaToNext": [
+        {
+          "lat": 40.3,
+          "lon": 26.5
+        },
+        {
+          "lat": 38.5,
+          "lon": 25
+        },
+        {
+          "lat": 34.8,
+          "lon": 28
+        },
+        {
+          "lat": 32.5,
+          "lon": 33
+        },
+        {
+          "lat": 32,
+          "lon": 34.7
+        }
+      ]
     },
     {
       "id": "stop-2",

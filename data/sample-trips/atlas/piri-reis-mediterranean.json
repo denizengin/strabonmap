@@ -18,7 +18,17 @@
       "lon": 26.67,
       "note": "Ottoman naval base. Pirî's base during his service under his uncle Kemal Reis.",
       "imagePrompt": "Hand-coloured plate. Dardanelles arsenal with galleys drawn up on slipways, dockyard scribes at work on charts.",
-      "vehicleToNext": "caravel"
+      "vehicleToNext": "caravel",
+      "viaToNext": [
+        {
+          "lat": 39.6,
+          "lon": 25.6
+        },
+        {
+          "lat": 37.4,
+          "lon": 26.4
+        }
+      ]
     },
     {
       "id": "stop-2",
@@ -32,7 +42,7 @@
     {
       "id": "stop-3",
       "name": "Alexandria",
-      "lat": 31.20,
+      "lat": 31.2,
       "lon": 29.92,
       "note": "Pirî gave the first manuscript of the Kitab-i Bahriye to Sultan Suleiman here in 1524 during the fleet's Egypt mission.",
       "imagePrompt": "Hand-coloured plate. Egyptian harbour with Ottoman flagship, presentation of a leather-bound book to a turbaned sultan at the gangway.",
@@ -41,7 +51,7 @@
     {
       "id": "stop-4",
       "name": "Tunis",
-      "lat": 36.80,
+      "lat": 36.8,
       "lon": 10.18,
       "note": "Mediterranean survey leg, c. 1522. Pirî describes the harbour and the Khayr ad-Din corsair base at La Goulette.",
       "imagePrompt": "Hand-coloured plate. North African harbour with corsair galleys at the mole, white kasbah on a hill behind.",
