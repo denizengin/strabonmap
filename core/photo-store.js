@@ -219,6 +219,14 @@
           if (old) URL.revokeObjectURL(old);
           _urlCache.set(id, URL.createObjectURL(new Blob([bytes], { type: record.type })));
         }
+        // BUG #19 follow-up (28 May): drop the local references explicitly so
+        // GC can reclaim the encoded bytes the instant the put resolves. On
+        // iOS WebKit's tight ~1-1.5 GB renderer cap, ~100 retained 250KB
+        // Uint8Arrays from in-flight ingests is enough to OOM the tab. Setting
+        // `bytes = null` and the record's `bytes` field to null cuts both
+        // closure-side roots; the IDB write is complete by this point so
+        // they're no longer needed.
+        bytes = null; record.bytes = null;
         return id;
       },
 

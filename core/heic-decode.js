@@ -27,10 +27,24 @@
 
   // Tunables. POOL_SIZE picked to match a typical iPhone's performance-core
   // count (2-3) without saturating the OS scheduler with too many WASM
-  // instances — 2 is the safe ceiling that doubles throughput without
-  // doubling battery. WORKER_RECYCLE_EVERY is per-WORKER (so total decodes
-  // between any individual recycle = POOL_SIZE × this).
-  const POOL_SIZE = 2;
+  // instances. BUG #19 follow-up (28 May 2026): on iOS Safari/Chrome (both
+  // WebKit), the renderer process is killed by the OS around 1-1.5 GB total
+  // memory. Two parallel libheif workers + the canvas + the encoded blob
+  // pushes over that wall around the 100-photo mark — user saw a white-
+  // screen-then-reload at ~100/213. So on iOS WebKit we DROP TO 1 WORKER,
+  // halving peak WASM heap (the dominant native-memory consumer). Throughput
+  // halves too — the user's user-experience says "it works" beats "it's
+  // 1.7× faster but crashes."
+  const _isIOSWebKit = (() => {
+    try {
+      const ua = navigator.userAgent || '';
+      // iPhone/iPod/iPad → all WebKit on iOS, regardless of "Chrome"/"Safari"
+      // in the UA. Also catches iPadOS-as-Mac (where MaxTouchPoints > 1).
+      return /iPhone|iPad|iPod/.test(ua)
+        || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+    } catch { return false; }
+  })();
+  const POOL_SIZE = _isIOSWebKit ? 1 : 2;
   const WORKER_RECYCLE_EVERY = 8;
 
   // Each slot owns one Worker, its in-flight count (0 or 1; we never queue
