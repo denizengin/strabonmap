@@ -14,7 +14,7 @@
 // on the next commit that touches a runtime file. If you need to
 // force-invalidate caches (e.g. unrelated to a runtime change),
 // add a no-op touch like a trailing newline to sw.js itself and commit.
-const CACHE_VERSION = 'strabon-map-ab911a4e2f';
+const CACHE_VERSION = 'strabon-map-versionrefresh-28may';
 
 // #97 tiered loading (PERF_OFFLINE_ADDONS_COUNCIL). Two buckets:
 //   • CACHE_VERSION  — Tier-1 precache + content-versioned runtime assets.
@@ -89,6 +89,8 @@ const RUNTIME_URLS = [
   'core/theme.js',
   'core/vehicle-infer.js',
   'core/vehicle-inventory-data.js',
+  // 28 May — Version + Force-refresh button wirers used by both HTML files.
+  'core/version-refresh.js',
   'core/viewports.js',
   // E103 — esbuild bundles src/boot.js (+ future src/ slices) into
   // dist/strabon-map.js. The bundled file is what ships; src/ stays
