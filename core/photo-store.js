@@ -185,21 +185,23 @@
       // is wasted there. Single-photo paths leave the default (cacheUrl=true) so
       // the just-added photo renders instantly.
       async put(id, blob, opts) {
-        // BUG #19 (iOS Chrome): some Blobs returned from canvas.toBlob() can't
-        // be structured-cloned into IDB on iOS Chrome under bulk-import load,
-        // failing with `UnknownError: Error preparing Blob/File data to be
-        // stored in object store`. The fix is to re-pack the bytes into a
-        // FRESH Blob via arrayBuffer() before the put — the round-trip gives
-        // WebKit a clean cloneable buffer. Costs one extra Uint8Array copy
-        // per photo (~250KB at re-encode size). Negligible; this unblocks a
-        // class that otherwise silently loses every photo at stamping.
-        const _stable = async (b) => {
-          try { return new Blob([await b.arrayBuffer()], { type: b.type || 'image/jpeg' }); }
-          catch { return b; /* fall back to original if even arrayBuffer fails */ }
-        };
-        const safe = await _stable(blob);
+        // BUG #19 (iOS WebKit, second attempt):
+        // The first fix (arrayBuffer→fresh Blob round-trip before put) did NOT
+        // help on real iOS devices — user repro 28 May with build d957240 STILL
+        // hit `UnknownError: Error preparing Blob/File data to be stored in
+        // object store`. So we now bypass Blob storage entirely: pull the bytes
+        // out as a Uint8Array and store THAT in IDB. ArrayBuffer / typed-array
+        // structured-clone is rock solid across browsers including iOS WebKit.
+        // On read (get()) we re-wrap into a Blob with the recorded mime type.
+        // Storage size is unchanged (same bytes), put-throughput is unchanged,
+        // public API (Blob in, Blob out) is unchanged. Only the on-disk shape
+        // moves from a Blob entry to { bytes: Uint8Array, type: string }.
+        let bytes;
+        try { bytes = new Uint8Array(await blob.arrayBuffer()); }
+        catch (e) { throw new Error('arrayBuffer() failed: ' + ((e && e.message) || e)); }
+        const record = { bytes, type: blob.type || 'image/jpeg' };
         try {
-          await _tx('readwrite', (store) => _reqToPromise(store.put(safe, id)));
+          await _tx('readwrite', (store) => _reqToPromise(store.put(record, id)));
         } catch (e) {
           if (_isQuotaError(e)) {
             const err = new Error('IDB storage full');
@@ -210,9 +212,12 @@
           throw e;
         }
         if (!opts || opts.cacheUrl !== false) {
+          // For the in-memory URL cache, re-wrap the bytes once into a fresh
+          // Blob — that view is read by the album/viewer code that expects a
+          // Blob URL. Same bytes, no original-Blob reference held.
           const old = _urlCache.get(id);
           if (old) URL.revokeObjectURL(old);
-          _urlCache.set(id, URL.createObjectURL(safe));
+          _urlCache.set(id, URL.createObjectURL(new Blob([bytes], { type: record.type })));
         }
         return id;
       },
@@ -222,9 +227,22 @@
       isQuotaError(e) { return _isQuotaError(e); },
 
       // read a Blob back. Returns null if absent.
+      // BUG #19 v2 (28 May): records are now { bytes:Uint8Array, type:string }
+      // wrapped into a Blob on read. Pre-#19v2 records were Blobs directly —
+      // we keep backward compat by detecting the old shape and passing it
+      // through. Lets existing users' IDB content keep working without a
+      // migration step (and migrations on iOS are exactly when bugs bite).
       async get(id) {
-        const blob = await _tx('readonly', (store) => _reqToPromise(store.get(id)));
-        return blob || null;
+        const rec = await _tx('readonly', (store) => _reqToPromise(store.get(id)));
+        if (!rec) return null;
+        // Legacy: stored as a Blob directly (pre-28 May).
+        if (typeof Blob !== 'undefined' && rec instanceof Blob) return rec;
+        // New: { bytes, type }. Re-wrap the bytes; callers want a Blob.
+        if (rec && rec.bytes) {
+          try { return new Blob([rec.bytes], { type: rec.type || 'image/jpeg' }); }
+          catch { return null; }
+        }
+        return null;
       },
 
       async has(id) {
