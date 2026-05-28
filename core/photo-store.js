@@ -185,8 +185,21 @@
       // is wasted there. Single-photo paths leave the default (cacheUrl=true) so
       // the just-added photo renders instantly.
       async put(id, blob, opts) {
+        // BUG #19 (iOS Chrome): some Blobs returned from canvas.toBlob() can't
+        // be structured-cloned into IDB on iOS Chrome under bulk-import load,
+        // failing with `UnknownError: Error preparing Blob/File data to be
+        // stored in object store`. The fix is to re-pack the bytes into a
+        // FRESH Blob via arrayBuffer() before the put — the round-trip gives
+        // WebKit a clean cloneable buffer. Costs one extra Uint8Array copy
+        // per photo (~250KB at re-encode size). Negligible; this unblocks a
+        // class that otherwise silently loses every photo at stamping.
+        const _stable = async (b) => {
+          try { return new Blob([await b.arrayBuffer()], { type: b.type || 'image/jpeg' }); }
+          catch { return b; /* fall back to original if even arrayBuffer fails */ }
+        };
+        const safe = await _stable(blob);
         try {
-          await _tx('readwrite', (store) => _reqToPromise(store.put(blob, id)));
+          await _tx('readwrite', (store) => _reqToPromise(store.put(safe, id)));
         } catch (e) {
           if (_isQuotaError(e)) {
             const err = new Error('IDB storage full');
@@ -199,7 +212,7 @@
         if (!opts || opts.cacheUrl !== false) {
           const old = _urlCache.get(id);
           if (old) URL.revokeObjectURL(old);
-          _urlCache.set(id, URL.createObjectURL(blob));
+          _urlCache.set(id, URL.createObjectURL(safe));
         }
         return id;
       },
