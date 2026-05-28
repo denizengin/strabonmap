@@ -172,6 +172,17 @@
       // open the DB eagerly — lets callers fail fast / probe availability.
       open() { return _openDb(); },
 
+      // close the DB connection — required before `indexedDB.deleteDatabase`
+      // would otherwise hit `onblocked` because this page holds the handle.
+      // Used by the Erase-all-data button (core/version-refresh.js). Idempotent:
+      // safe to call when no connection is open.
+      async close() {
+        if (!_dbPromise) return;
+        try { const db = await _dbPromise; if (db && db.close) db.close(); }
+        catch {}
+        _dbPromise = null;
+      },
+
       // write a Blob under `id`. Also caches an object URL so srcFor(id) is
       // immediately usable without a round-trip. On a quota-exceeded write the
       // rejected error carries `.isQuotaExceeded = true` so callers (the bulk

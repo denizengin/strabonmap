@@ -57,33 +57,62 @@
   const wireEraseDataButton = (btnId) => {
     const btn = document.getElementById(btnId);
     if (!btn) return;
-    btn.addEventListener('click', async () => {
+    // BUG #19 follow-up (28 May 2026): on iOS WebKit, confirm() inside an async
+    // chain plus IDB deleteDatabase + reload can silently no-op in any of three
+    // ways (confirm returning undefined in PWA contexts, deleteDatabase blocking
+    // forever because the page itself holds an open connection, location.reload
+    // not firing after a stale dialog). So we DO THIS DEFENSIVELY:
+    //   1. confirm() at the very top, never inside an IIFE wrapper.
+    //   2. localStorage.clear() FIRST — sync, can't fail silently.
+    //   3. Update button text + alert visible immediately so the user knows
+    //      something is happening even if the reload stalls.
+    //   4. Try-and-race the IDB delete with a 1.5s timeout (was 3s — quicker).
+    //   5. Reload via TWO mechanisms: location.reload() then a 100ms fallback
+    //      to location.href = location.pathname. On iOS one of them will land.
+    btn.addEventListener('click', () => {
       let tripCount = '?';
       try {
         const raw = localStorage.getItem('strabonMap.v3');
         if (raw) tripCount = String((JSON.parse(raw).trips || []).length);
       } catch {}
-      const ok = (() => {
-        try {
-          return confirm(`Erase ALL local data?\n\nThis deletes ${tripCount} trip(s) and ALL photographs from this device. The deletion is permanent and cannot be undone.\n\nThe app code stays installed — only your trips + photos are wiped.`);
-        } catch { return false; }
-      })();
+      const ok = confirm(`Erase ALL local data?\n\nThis deletes ${tripCount} trip(s) and ALL photographs from this device. Permanent.`);
       if (!ok) return;
-      const original = btn.textContent;
       btn.textContent = '✗ Erasing…';
-      try { localStorage.clear(); } catch {}
-      // Delete known IDB dbs. strabonMap is the photo store. If we ever add
-      // others, list them here so a single tap wipes everything.
-      const dbs = ['strabonMap'];
-      await Promise.all(dbs.map((name) => new Promise((resolve) => {
+      // STEP 1 — synchronous localStorage wipe. Can't fail silently in any
+      // browser; if it throws we surface that.
+      let lsErr = null;
+      try { localStorage.clear(); } catch (e) { lsErr = e; }
+      // STEP 1.5 — close the app's own IDB connection BEFORE deleteDatabase.
+      // The Strabon Map page opens `strabonMap` at boot via IDBPhotoStore.open
+      // and keeps the handle alive for the session. If we leave it open, the
+      // delete fires `onblocked` and never actually deletes — and after reload
+      // the data is STILL there. So we explicitly drop the connection first.
+      // Then STEP 2 — IDB delete with hard race-timeout.
+      // Then STEP 3 — reload, twice, to defeat iOS's silent-no-op.
+      const finish = () => {
+        try { location.reload(); } catch {}
+        setTimeout(() => { try { location.href = location.pathname; } catch {} }, 100);
+      };
+      const wipeIdb = async () => {
         try {
-          const req = indexedDB.deleteDatabase(name);
-          req.onsuccess = req.onerror = req.onblocked = () => resolve();
-          setTimeout(resolve, 3000); // bail after 3s — onblocked can hang if a tab still holds the connection
-        } catch { resolve(); }
-      })));
-      try { location.reload(); }
-      catch { btn.textContent = original; location.href = location.href; }
+          if (typeof IDBPhotoStore !== 'undefined' && typeof IDBPhotoStore.close === 'function') {
+            await IDBPhotoStore.close();
+          }
+        } catch {}
+        await new Promise((resolve) => {
+          try {
+            const req = indexedDB.deleteDatabase('strabonMap');
+            req.onsuccess = req.onerror = req.onblocked = () => resolve();
+          } catch { resolve(); }
+          setTimeout(resolve, 1500);
+        });
+        finish();
+      };
+      wipeIdb();
+      // Surface synchronous failure if localStorage didn't clear.
+      if (lsErr) {
+        try { alert('localStorage.clear() failed: ' + (lsErr.message || lsErr)); } catch {}
+      }
     });
   };
 
