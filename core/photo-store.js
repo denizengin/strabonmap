@@ -126,22 +126,44 @@
       return _dbPromise;
     };
 
+    // A typed error so callers can recognize quota-exceeded and stop trying,
+    // rather than burning N more rejected writes on the same exhausted store.
+    const _isQuotaError = (e) => !!(e && (e.name === 'QuotaExceededError'
+      || e.code === 22 || /quota/i.test(e.message || '')));
+
     const _tx = async (mode, fn) => {
       const db = await _openDb();
       return new Promise((resolve, reject) => {
         const tx = db.transaction(STORE, mode);
         const store = tx.objectStore(STORE);
         let result;
-        Promise.resolve(fn(store)).then((r) => { result = r; }).catch(reject);
+        let captured = null; // request-level error (often more specific than tx.error)
+        Promise.resolve(fn(store, (e) => { captured = e; }))
+          .then((r) => { result = r; })
+          .catch((e) => { if (!captured) captured = e; reject(e); });
         tx.oncomplete = () => resolve(result);
-        tx.onerror = () => reject(tx.error || new Error('IDB tx failed'));
-        tx.onabort = () => reject(tx.error || new Error('IDB tx aborted'));
+        tx.onerror    = () => reject(captured || tx.error || new Error('IDB tx failed'));
+        tx.onabort    = () => {
+          // Quota aborts can leave the connection wedged on some browsers — drop
+          // the cached open so the NEXT call gets a fresh handle. Single-tx fail.
+          if (_isQuotaError(captured) || _isQuotaError(tx.error)) _dbPromise = null;
+          reject(captured || tx.error || new Error('IDB tx aborted'));
+        };
       });
     };
 
-    const _reqToPromise = (req) => new Promise((resolve, reject) => {
+    const _reqToPromise = (req, onErr) => new Promise((resolve, reject) => {
       req.onsuccess = () => resolve(req.result);
-      req.onerror = () => reject(req.error);
+      req.onerror = (ev) => {
+        const err = req.error;
+        if (typeof onErr === 'function') onErr(err);
+        // preventDefault stops the error bubbling up to abort the WHOLE tx — for a
+        // quota failure on one put, this keeps the tx alive so its oncomplete can
+        // still fire if other requests in it succeed (defensive — most of our txs
+        // are single-request, so it mostly just makes tx.onerror reach reject).
+        try { ev.preventDefault(); } catch {}
+        reject(err);
+      };
     });
 
     return {
@@ -151,14 +173,40 @@
       open() { return _openDb(); },
 
       // write a Blob under `id`. Also caches an object URL so srcFor(id) is
-      // immediately usable without a round-trip.
-      async put(id, blob) {
-        await _tx('readwrite', (store) => _reqToPromise(store.put(blob, id)));
-        const old = _urlCache.get(id);
-        if (old) URL.revokeObjectURL(old);
-        _urlCache.set(id, URL.createObjectURL(blob));
+      // immediately usable without a round-trip. On a quota-exceeded write the
+      // rejected error carries `.isQuotaExceeded = true` so callers (the bulk
+      // import) can detect the storage wall and stop further attempts cleanly,
+      // instead of burning N more rejected writes on the same exhausted store.
+      //
+      // BUG #20 — opts.cacheUrl=false skips the object-URL cache. Bulk imports
+      // (250-photo confirm) hit a real heap wall: each cached URL pins its ~250KB
+      // re-encoded JPEG blob alive, so 250 puts = ~60MB of blobs held just for
+      // the cache. The viewer hydrates lazily on trip open, so the eager cache
+      // is wasted there. Single-photo paths leave the default (cacheUrl=true) so
+      // the just-added photo renders instantly.
+      async put(id, blob, opts) {
+        try {
+          await _tx('readwrite', (store) => _reqToPromise(store.put(blob, id)));
+        } catch (e) {
+          if (_isQuotaError(e)) {
+            const err = new Error('IDB storage full');
+            err.isQuotaExceeded = true;
+            err.cause = e;
+            throw err;
+          }
+          throw e;
+        }
+        if (!opts || opts.cacheUrl !== false) {
+          const old = _urlCache.get(id);
+          if (old) URL.revokeObjectURL(old);
+          _urlCache.set(id, URL.createObjectURL(blob));
+        }
         return id;
       },
+
+      // Exposed so callers that catch a put-rejected error can match by signature
+      // without leaking IDB error-type knowledge.
+      isQuotaError(e) { return _isQuotaError(e); },
 
       // read a Blob back. Returns null if absent.
       async get(id) {

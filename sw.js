@@ -14,7 +14,7 @@
 // on the next commit that touches a runtime file. If you need to
 // force-invalidate caches (e.g. unrelated to a runtime change),
 // add a no-op touch like a trailing newline to sw.js itself and commit.
-const CACHE_VERSION = 'strabon-map-da9f4a9df4';
+const CACHE_VERSION = 'strabon-map-ab911a4e2f';
 
 // #97 tiered loading (PERF_OFFLINE_ADDONS_COUNCIL). Two buckets:
 //   • CACHE_VERSION  — Tier-1 precache + content-versioned runtime assets.
@@ -71,6 +71,11 @@ const RUNTIME_URLS = [
   'core/exif.js',
   'core/geo-data.js',
   'core/heic-decode.js',
+  // BUG #20 — Worker-isolated HEIC decode. Must be precached so offline HEIC
+  // imports still work on the 2nd+ load (main thread does new Worker(core/...)
+  // — no single-quotes in this comment; the build-publish.sh drift guard's
+  // awk-extractor would treat them as a precached URL.
+  'core/heic-decode-worker.js',
   'core/migrations.js',
   'core/people.js',
   'core/photo-cluster.js',
