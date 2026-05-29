@@ -45,7 +45,12 @@
     } catch { return false; }
   })();
   const POOL_SIZE = _isIOSWebKit ? 1 : 2;
-  const WORKER_RECYCLE_EVERY = 8;
+  // iOS stamping wall (29 May 2026): recycle the worker twice as often on iOS
+  // WebKit (4 vs 8 decodes). Each recycle terminate()s the Worker, returning
+  // the libheif WASM heap to the OS — the dominant native-memory consumer.
+  // Halving the recycle interval halves the peak WASM heap held between
+  // recycles, the suspected ceiling that crashed the tab mid-stamp at ~209.
+  const WORKER_RECYCLE_EVERY = _isIOSWebKit ? 4 : 8;
 
   // Each slot owns one Worker, its in-flight count (0 or 1; we never queue
   // two decodes onto the same worker at once — libheif inside is serial),
