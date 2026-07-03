@@ -16,7 +16,15 @@
     { "name": "Vindolanda",   "country": "Britannia",      "lat": 54.99, "lon": -2.36 }
   ],
   "legs": [
-    { "vehicle": "carriage" },
+    { "vehicle": "carriage", "via": [
+      { "lat": 42.5, "lon": 11.8 },
+      { "lat": 43.5, "lon": 10.6 },
+      { "lat": 44.2, "lon": 9.5 },
+      { "lat": 44.5, "lon": 8.5 },
+      { "lat": 44.3, "lon": 7.5 },
+      { "lat": 44.5, "lon": 6.0 },
+      { "lat": 45.0, "lon": 4.9 }
+    ] },
     { "vehicle": "carriage" },
     { "vehicle": "ship" },
     { "vehicle": "carriage" },

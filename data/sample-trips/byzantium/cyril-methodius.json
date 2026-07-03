@@ -18,7 +18,14 @@
       "lon": 22.94,
       "note": "Birthplace of the brothers; their Slavonic-speaking childhood here made them the obvious choice for the mission.",
       "imagePrompt": "Hand-coloured plate. Macedonian port at autumn dusk, two monks at a scriptorium window with a wax tablet.",
-      "vehicleToNext": "horse"
+      "vehicleToNext": "horse",
+      "viaToNext": [
+        { "lat": 40.75, "lon": 23.5 },
+        { "lat": 40.85, "lon": 24.0 },
+        { "lat": 40.95, "lon": 25.0 },
+        { "lat": 41.15, "lon": 26.3 },
+        { "lat": 41.2, "lon": 27.5 }
+      ]
     },
     {
       "id": "stop-2",
@@ -45,7 +52,15 @@
       "lon": 17.40,
       "note": "Capital of Prince Rastislav of Moravia. The brothers arrive 863 and establish a Slavonic liturgy.",
       "imagePrompt": "Hand-coloured plate. Wooden palisade castle in central European forest, monks consecrating church with vernacular liturgy.",
-      "vehicleToNext": "horse"
+      "vehicleToNext": "horse",
+      "viaToNext": [
+        { "lat": 47.0, "lon": 16.5 },
+        { "lat": 46.0, "lon": 14.5 },
+        { "lat": 45.5, "lon": 12.0 },
+        { "lat": 44.5, "lon": 11.5 },
+        { "lat": 43.5, "lon": 12.5 },
+        { "lat": 42.5, "lon": 12.8 }
+      ]
     },
     {
       "id": "stop-5",

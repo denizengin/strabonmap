@@ -18,7 +18,12 @@
       "lon": 28.97,
       "note": "Crusader armies muster outside the walls 1096-97. Alexios extracts oaths of fealty before ferrying them across the Bosphorus.",
       "imagePrompt": "Hand-coloured plate. Latin knights camped outside Theodosian walls, Greek galleys ferrying horses across the Bosphorus.",
-      "vehicleToNext": "horse"
+      "vehicleToNext": "horse",
+      "viaToNext": [
+        { "lat": 41.1, "lon": 29.2 },
+        { "lat": 40.9, "lon": 29.5 },
+        { "lat": 40.6, "lon": 29.8 }
+      ]
     },
     {
       "id": "stop-2",
@@ -45,7 +50,14 @@
       "lon": 36.16,
       "note": "Seven-month siege October 1097 - June 1098. Bohemond enters through Firouz's tower; Kerbogha's relief army defeated 28 June.",
       "imagePrompt": "Hand-coloured plate. Antioch citadel above the besieging camp, scaling ladder against the tower, dawn ascent.",
-      "vehicleToNext": "horse"
+      "vehicleToNext": "horse",
+      "viaToNext": [
+        { "lat": 35.3, "lon": 36.05 },
+        { "lat": 34.5, "lon": 36.05 },
+        { "lat": 33.8, "lon": 35.9 },
+        { "lat": 33.0, "lon": 35.6 },
+        { "lat": 32.3, "lon": 35.3 }
+      ]
     },
     {
       "id": "stop-5",

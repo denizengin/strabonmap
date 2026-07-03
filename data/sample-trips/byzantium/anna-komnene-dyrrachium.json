@@ -18,7 +18,14 @@
       "lon": 28.97,
       "note": "Alexios crowned 1 April 1081. By autumn the Norman invasion forces him west.",
       "imagePrompt": "Hand-coloured plate. Imperial coronation in Hagia Sophia, banners and lances behind.",
-      "vehicleToNext": "horse"
+      "vehicleToNext": "horse",
+      "viaToNext": [
+        { "lat": 41.2, "lon": 27.5 },
+        { "lat": 41.15, "lon": 26.3 },
+        { "lat": 40.95, "lon": 25.0 },
+        { "lat": 40.85, "lon": 24.0 },
+        { "lat": 40.75, "lon": 23.5 }
+      ]
     },
     {
       "id": "stop-2",

@@ -61,7 +61,13 @@
       "lon": 11.13,
       "note": "Landfall on the African coast, late August 533. Belisarius disembarks fully equipped and marches inland.",
       "imagePrompt": "Hand-coloured plate. Long sandy headland, troops marching from beached transports, dust column inland.",
-      "vehicleToNext": "foot"
+      "vehicleToNext": "foot",
+      "viaToNext": [
+        { "lat": 35.5, "lon": 10.55 },
+        { "lat": 35.83, "lon": 10.6 },
+        { "lat": 36.07, "lon": 10.5 },
+        { "lat": 36.4, "lon": 10.45 }
+      ]
     },
     {
       "id": "stop-4",
@@ -70,7 +76,10 @@
       "lon": 10.28,
       "note": "13 September 533, ten miles south of Carthage. Belisarius wins the first Vandal battle by intercepting Gelimer's encirclement.",
       "imagePrompt": "Hand-coloured plate. Roman milestone with the numeral 'X' (anachronistic — original was Roman numeric stone), running battle in olive groves.",
-      "vehicleToNext": "foot"
+      "vehicleToNext": "foot",
+      "viaToNext": [
+        { "lat": 36.78, "lon": 10.22 }
+      ]
     },
     {
       "id": "stop-5",

@@ -55,7 +55,7 @@
       "lon": 29.02,
       "note": "Constantine's decisive victory over Licinius, 18 September 324, on the Asian shore opposite Byzantium. Modern Üsküdar.",
       "imagePrompt": "Hand-coloured plate. Battle on a coastal slope, Bosphorus visible, labarum standard at the head of a column.",
-      "vehicleToNext": "foot"
+      "vehicleToNext": "liburna"
     },
     {
       "id": "stop-3",
@@ -64,7 +64,12 @@
       "lon": 28.97,
       "note": "Refoundation begun 8 November 324. The new walls trace a vast peninsula; consecration follows in 330.",
       "imagePrompt": "Hand-coloured plate. Surveyors with the emperor on a hilltop, Golden Horn below, traced wall-lines striking inland.",
-      "vehicleToNext": "horse"
+      "vehicleToNext": "horse",
+      "viaToNext": [
+        { "lat": 41.1, "lon": 29.2 },
+        { "lat": 40.9, "lon": 29.5 },
+        { "lat": 40.6, "lon": 29.8 }
+      ]
     },
     {
       "id": "stop-4",

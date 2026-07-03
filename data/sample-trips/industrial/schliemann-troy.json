@@ -18,7 +18,18 @@
       "lon": 2.35,
       "note": "Schliemann's residence in the late 1860s where he wrote Ithaque and prepared his Trojan expedition.",
       "imagePrompt": "Hand-coloured plate. Haussmann boulevard, gentleman in fur-collared coat with map case stepping into a hansom.",
-      "vehicleToNext": "locomotive"
+      "vehicleToNext": "locomotive",
+      "viaToNext": [
+        { "lat": 48.5, "lon": 7.7 },
+        { "lat": 48.1, "lon": 11.6 },
+        { "lat": 48.2, "lon": 16.4 },
+        { "lat": 47.5, "lon": 19.0 },
+        { "lat": 44.8, "lon": 20.5 },
+        { "lat": 43.3, "lon": 21.9 },
+        { "lat": 42.0, "lon": 21.4 },
+        { "lat": 40.6, "lon": 22.9 },
+        { "lat": 39.3, "lon": 22.9 }
+      ]
     },
     {
       "id": "stop-2",
@@ -45,7 +56,14 @@
       "lon": 26.24,
       "note": "Excavations 1870-1873. The deep trench cuts through nine layers; Schliemann attributes the burned 'Treasure' layer to Priam (it is actually a millennium older).",
       "imagePrompt": "Hand-coloured plate. Wide excavation trench in a low mound, Turkish workmen with shovels, Schliemann in a sun-hat at the bottom.",
-      "vehicleToNext": "foot"
+      "vehicleToNext": "steamer",
+      "viaToNext": [
+        { "lat": 39.0, "lon": 24.5 },
+        { "lat": 38.0, "lon": 24.3 },
+        { "lat": 37.4, "lon": 24.0 },
+        { "lat": 37.35, "lon": 23.4 },
+        { "lat": 37.4, "lon": 23.15 }
+      ]
     },
     {
       "id": "stop-5",

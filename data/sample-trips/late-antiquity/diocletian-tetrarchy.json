@@ -27,7 +27,17 @@
       "lon": 36.16,
       "note": "Eastern operations base during the Persian campaigns of 296-299. The mint here issued tetrarchic coinage.",
       "imagePrompt": "Hand-coloured plate. Walled Syrian capital along the Orontes, palace on the river island, colonnaded street.",
-      "vehicleToNext": "horse"
+      "vehicleToNext": "horse",
+      "viaToNext": [
+        { "lat": 35.3, "lon": 36.05 },
+        { "lat": 34.5, "lon": 36.05 },
+        { "lat": 33.8, "lon": 35.9 },
+        { "lat": 33.0, "lon": 35.6 },
+        { "lat": 32.0, "lon": 34.85 },
+        { "lat": 31.4, "lon": 34.4 },
+        { "lat": 31.0, "lon": 32.5 },
+        { "lat": 31.1, "lon": 30.9 }
+      ]
     },
     {
       "id": "stop-3",

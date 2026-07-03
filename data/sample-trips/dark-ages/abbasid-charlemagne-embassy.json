@@ -27,7 +27,20 @@
       "lon": 36.30,
       "note": "Caravan stage on the route to the Mediterranean. The Umayyad mosque is then forty years old.",
       "imagePrompt": "Hand-coloured plate. Umayyad mosque courtyard with elephant resting in the shade, traders with caged falcons.",
-      "vehicleToNext": "camel"
+      "vehicleToNext": "camel",
+      "viaToNext": [
+        { "lat": 31.5, "lon": 35.5 },
+        { "lat": 30.8, "lon": 32.5 },
+        { "lat": 30.6, "lon": 29.0 },
+        { "lat": 30.8, "lon": 25.0 },
+        { "lat": 30.7, "lon": 21.0 },
+        { "lat": 30.5, "lon": 17.0 },
+        { "lat": 30.6, "lon": 14.0 },
+        { "lat": 31.5, "lon": 11.0 },
+        { "lat": 32.5, "lon": 10.2 },
+        { "lat": 34.0, "lon": 10.1 },
+        { "lat": 35.5, "lon": 10.15 }
+      ]
     },
     {
       "id": "stop-3",
