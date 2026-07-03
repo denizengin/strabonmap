@@ -214,5 +214,9 @@
   };
 
   /* Constants for migration + defaults. */
-  const DEFAULT_ERA_KEY = 'modern';     // new trips default here
+  // MVP-9 ERA COLLAPSE (owner sign-off 3 Jul 2026) — with the era picker off
+  // the front door, new trips default to the 1936 Adventure identity instead
+  // of 'modern'. The full 10-era choice remains in the trip editor; the era
+  // taxonomy itself is unchanged (reversible).
+  const DEFAULT_ERA_KEY = 'nineteen-thirties';  // new trips default here
   const LEGACY_ERA_KEY = 'nineteen-thirties';   // pre-E70 trips migrate here
