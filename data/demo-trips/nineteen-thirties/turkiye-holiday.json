@@ -1,0 +1,50 @@
+{
+  "id": "turkiye-holiday",
+  "era": "nineteen-thirties",
+  "title": "A Türkiye holiday",
+  "themeSuggestion": "thirties-grain",
+  "viewport": "auto",
+  "companions": ["you"],
+  "stops": [
+    {
+      "id": "stop-1",
+      "name": "İstanbul",
+      "lat": 41.01,
+      "lon": 28.98,
+      "note": "Fly out of the city on the strait, bound for the Anatolian plateau.",
+      "vehicleToNext": "prop-plane"
+    },
+    {
+      "id": "stop-2",
+      "name": "Kayseri",
+      "lat": 38.72,
+      "lon": 35.49,
+      "note": "Land under Mount Erciyes and head west into the tuff country.",
+      "vehicleToNext": "balloon"
+    },
+    {
+      "id": "stop-3",
+      "name": "Göreme",
+      "lat": 38.64,
+      "lon": 34.83,
+      "note": "Drift over the fairy chimneys of Cappadocia at first light.",
+      "vehicleToNext": "car"
+    },
+    {
+      "id": "stop-4",
+      "name": "Kuşadası",
+      "lat": 37.86,
+      "lon": 27.26,
+      "note": "Motor down to the Aegean coast and its harbour.",
+      "vehicleToNext": "foot"
+    },
+    {
+      "id": "stop-5",
+      "name": "Ephesus",
+      "lat": 37.94,
+      "lon": 27.34,
+      "note": "Walk the marble street to the Library of Celsus.",
+      "vehicleToNext": "foot"
+    }
+  ]
+}

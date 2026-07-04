@@ -1,0 +1,50 @@
+{
+  "id": "alpine-rail-foot",
+  "era": "nineteen-thirties",
+  "title": "An Alpine rail-and-foot loop",
+  "themeSuggestion": "thirties-grain",
+  "viewport": "auto",
+  "companions": ["you"],
+  "stops": [
+    {
+      "id": "stop-1",
+      "name": "Zürich",
+      "lat": 47.37,
+      "lon": 8.54,
+      "note": "Board the morning train south out of the lake city.",
+      "vehicleToNext": "locomotive"
+    },
+    {
+      "id": "stop-2",
+      "name": "Interlaken",
+      "lat": 46.69,
+      "lon": 7.86,
+      "note": "Step off between the two lakes with the Jungfrau ahead.",
+      "vehicleToNext": "foot"
+    },
+    {
+      "id": "stop-3",
+      "name": "Grindelwald",
+      "lat": 46.62,
+      "lon": 8.04,
+      "note": "Hike up the valley beneath the Eiger's north face.",
+      "vehicleToNext": "car"
+    },
+    {
+      "id": "stop-4",
+      "name": "Grimsel Pass",
+      "lat": 46.56,
+      "lon": 8.34,
+      "note": "Drive the hairpins over the high pass in the thin air.",
+      "vehicleToNext": "locomotive"
+    },
+    {
+      "id": "stop-5",
+      "name": "Bern",
+      "lat": 46.95,
+      "lon": 7.45,
+      "note": "Ride the rails home to the arcaded old town.",
+      "vehicleToNext": "foot"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "id": "aegean-island-hop",
+  "era": "nineteen-thirties",
+  "title": "An Aegean island-hop",
+  "themeSuggestion": "thirties-grain",
+  "viewport": "auto",
+  "companions": ["you"],
+  "stops": [
+    {
+      "id": "stop-1",
+      "name": "Piraeus",
+      "lat": 37.95,
+      "lon": 23.64,
+      "note": "Cast off from the port of Athens on the evening steamer.",
+      "vehicleToNext": "steamer"
+    },
+    {
+      "id": "stop-2",
+      "name": "Mykonos",
+      "lat": 37.45,
+      "lon": 25.33,
+      "note": "Wake among the whitewashed lanes and windmills.",
+      "vehicleToNext": "car"
+    },
+    {
+      "id": "stop-3",
+      "name": "Áno Merá",
+      "lat": 37.45,
+      "lon": 25.42,
+      "note": "Drive across the island to the monastery in the hills.",
+      "vehicleToNext": "ferry"
+    },
+    {
+      "id": "stop-4",
+      "name": "Naxos",
+      "lat": 37.10,
+      "lon": 25.38,
+      "note": "Take the ferry south to the great marble gateway.",
+      "vehicleToNext": "car"
+    },
+    {
+      "id": "stop-5",
+      "name": "Apeíranthos",
+      "lat": 37.08,
+      "lon": 25.52,
+      "note": "Climb the mountain road to the old emery village.",
+      "vehicleToNext": "foot"
+    }
+  ]
+}

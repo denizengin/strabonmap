@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "description": "Hero-demo manifest — the looping landing showcase for mobile-mvp.html ONLY. Kept SEPARATE from data/sample-trips/index.json (which contract tests pin at exactly 50 trips). These are believable multi-modal personal journeys authored to glide slowly under the hero copy; the Browse sheet still uses the sample-trips catalog. Each trip is data/demo-trips/<era>/<id>.json with the same rich schema, minus the intro card.",
+  "eras": [
+    {
+      "key": "nineteen-thirties",
+      "label": "Adventure (1920-1945)",
+      "trips": [
+        "turkiye-holiday",
+        "alpine-rail-foot",
+        "aegean-island-hop"
+      ]
+    }
+  ]
+}
