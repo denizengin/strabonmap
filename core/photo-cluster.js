@@ -13,8 +13,16 @@
 // at 2-space indent so tests/core-loader.js can scrape it.
 
   const PhotoCluster = (() => {
-    // tunables — chosen for "a normal trip", not a city walk
-    const CLUSTER_RADIUS_KM = 60;   // photos within this of the stop centroid join it
+    // tunables — clusters must be VISIT-SITE-sized, because stops are NAMED by
+    // the nearest gazetteer city. EASTBOURNE_INCIDENT (Jul 2026): at 60km a
+    // South-of-England trip chain-merged into ONE stop via the running centroid
+    // and 124 photos got labelled "Eastbourne". The owner's actual stops
+    // (Worthing / Arundel / West Wittering / Chichester) sit 9-15km apart, so
+    // even a town-scale 15km still blobs them: 6km ≈ one village/beach/site.
+    // Big cities that now split in two are folded back by mergeSameCity's
+    // NAME-equality rule (both halves resolve to "Rome" → one stop) — split
+    // resolution comes from the radius, merge truth comes from the gazetteer.
+    const CLUSTER_RADIUS_KM = 6;    // photos within this of the stop centroid join it
     const CLUSTER_GAP_HRS = 14;     // a gap longer than this starts a new stop
     const MIN_PHOTOS_PER_STOP = 1;  // keep even single-photo stops (user can merge)
 
@@ -39,13 +47,16 @@
 
     // cluster an array of photos into ordered stops.
     //   input photo:  { lat, lon, timestamp, ...anything else (kept) }
+    //   opts.cityKey: optional (lat,lon)=>string — the nearest-gazetteer-city
+    //     resolver the caller will NAME stops with; lets the same-city merge
+    //     use name equality (see mergeSameCity).
     //   output stop:  { photos:[...], lat, lon, start, end }
     //     - photos: the photos assigned to this stop, in time order
     //     - lat/lon: the stop centroid
     //     - start/end: min/max timestamp across the stop's photos (ms, or null)
     // Photos missing GPS are dropped (can't be placed). Photos missing a
     // timestamp still cluster by location — they just don't gate on time.
-    const cluster = (photos) => {
+    const cluster = (photos, opts) => {
       const placed = (photos || []).filter(
         (p) => p && typeof p.lat === 'number' && typeof p.lon === 'number');
       if (placed.length === 0) return [];
@@ -96,7 +107,7 @@
             end: times.length ? Math.max(...times) : null,
           };
         });
-      return mergeSameCity(finalized);
+      return mergeSameCity(finalized, opts && opts.cityKey);
     };
 
     // SAME_CITY_CLUSTER_COUNCIL (#70) — the time-gap rule (CLUSTER_GAP_HRS)
@@ -108,13 +119,32 @@
     // expresses a multi-day stay (wider start/end, longer photos[]). A
     // there-and-back route (A→B→A) is NOT merged because B sits between the
     // two A clusters, so they aren't CONSECUTIVE.
-    // A "same city" radius MUCH tighter than CLUSTER_RADIUS_KM (60km) — a
-    // city is ~15-30km across, and 60km would wrongly merge NEIGHBOURING
-    // cities (e.g. Larnaca↔Limassol ~57km apart). 25km merges an overnight
-    // stay inside one city but keeps distinct nearby cities separate.
-    const SAME_CITY_KM = 25;
-    const mergeSameCity = (clusters) => {
+    // Two ways consecutive clusters count as "the same place":
+    //  (a) NAME equality — when the caller provides cityKey(lat,lon) (the
+    //      nearest-gazetteer-city resolver the import uses for naming), two
+    //      consecutive clusters that resolve to the SAME name merge, capped at
+    //      SAME_NAME_KM so an ultra-sparse dict region (two towns 200km apart
+    //      both nearest "Tripoli") doesn't fold genuinely distinct stops.
+    //      This is what folds an overnight stay (the "3 Kayseris" council fix)
+    //      AND a big city the 6km radius split in halves.
+    //  (b) geometric fallback — no cityKey (older callers/tests): merge only
+    //      when centroids are within SAME_CITY_KM. Tight, because at 6km
+    //      cluster radius the owner's real stops sit 9-15km apart.
+    const SAME_CITY_KM = 5;
+    const SAME_NAME_KM = 30;
+    const mergeSameCity = (clusters, cityKey) => {
       if (!Array.isArray(clusters) || clusters.length < 2) return clusters || [];
+      const keyOf = (lat, lon) => {
+        if (typeof cityKey !== 'function') return null;
+        try { return cityKey(lat, lon) || null; } catch { return null; }
+      };
+      const samePlace = (a, b) => {
+        const d = distanceKm(a.lat, a.lon, b.lat, b.lon);
+        const ka = keyOf(a.lat, a.lon);
+        const kb = keyOf(b.lat, b.lon);
+        if (ka != null && kb != null) return ka === kb && d <= SAME_NAME_KM;
+        return d <= SAME_CITY_KM;
+      };
       // One day-cluster's reconstruction record: the date span + the photos
       // that fell in it. #77 P1 "split into days" replays these to rebuild the
       // day chapters losslessly (merged:N alone was just a count). photoIds is
@@ -132,7 +162,7 @@
       const out = [];
       for (const c of clusters) {
         const prev = out[out.length - 1];
-        if (prev && distanceKm(prev.lat, prev.lon, c.lat, c.lon) <= SAME_CITY_KM) {
+        if (prev && samePlace(prev, c)) {
           // same city as the immediately-preceding stop → merge in place
           const photos = prev.photos.concat(c.photos);
           const ctr = centroid(photos);
@@ -163,7 +193,7 @@
     //  (b) it has no GPS at all (filtered before clustering even starts).
     // Callers should feed (b) separately into the returned unallocated
     // array — cluster() only sees photos with valid GPS.
-    const clusterWithUnallocated = (photos) => {
+    const clusterWithUnallocated = (photos, opts) => {
       const all = photos || [];
       const placed = all.filter(
         (p) => p && typeof p.lat === 'number' && typeof p.lon === 'number');
@@ -217,7 +247,8 @@
         }
       }
       // #70 — same-city merge applies here too (the mobile-import path).
-      return { stops: mergeSameCity(keptStops), unallocated: [...orphans, ...noGps] };
+      return { stops: mergeSameCity(keptStops, opts && opts.cityKey),
+               unallocated: [...orphans, ...noGps] };
     };
 
     return { cluster, clusterWithUnallocated, mergeSameCity, distanceKm,
