@@ -44,6 +44,22 @@
       "lat": 37.08,
       "lon": 25.52,
       "note": "Climb the mountain road to the old emery village.",
+      "vehicleToNext": "ferry"
+    },
+    {
+      "id": "stop-6",
+      "name": "Santorini",
+      "lat": 36.42,
+      "lon": 25.43,
+      "note": "Sail south into the caldera as the cliffs turn gold.",
+      "vehicleToNext": "foot"
+    },
+    {
+      "id": "stop-7",
+      "name": "Oia",
+      "lat": 36.46,
+      "lon": 25.38,
+      "note": "Walk the rim path to the white village at the island's tip.",
       "vehicleToNext": "foot"
     }
   ]

@@ -36,10 +36,26 @@
       "lat": 46.56,
       "lon": 8.34,
       "note": "Drive the hairpins over the high pass in the thin air.",
-      "vehicleToNext": "locomotive"
+      "vehicleToNext": "car"
     },
     {
       "id": "stop-5",
+      "name": "Zermatt",
+      "lat": 46.02,
+      "lon": 7.75,
+      "note": "Wind down the Rhône valley to the foot of the Matterhorn.",
+      "vehicleToNext": "locomotive"
+    },
+    {
+      "id": "stop-6",
+      "name": "Montreux",
+      "lat": 46.43,
+      "lon": 6.91,
+      "note": "Take the lakeside line along Lac Léman's vineyards.",
+      "vehicleToNext": "locomotive"
+    },
+    {
+      "id": "stop-7",
       "name": "Bern",
       "lat": 46.95,
       "lon": 7.45,
