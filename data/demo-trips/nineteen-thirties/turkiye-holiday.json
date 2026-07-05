@@ -32,6 +32,14 @@
     },
     {
       "id": "stop-4",
+      "name": "Pamukkale",
+      "lat": 37.92,
+      "lon": 29.12,
+      "note": "Break the drive at the white travertine terraces of Hierapolis.",
+      "vehicleToNext": "car"
+    },
+    {
+      "id": "stop-5",
       "name": "Kuşadası",
       "lat": 37.86,
       "lon": 27.26,
@@ -39,7 +47,7 @@
       "vehicleToNext": "foot"
     },
     {
-      "id": "stop-5",
+      "id": "stop-6",
       "name": "Ephesus",
       "lat": 37.94,
       "lon": 27.34,
