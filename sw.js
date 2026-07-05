@@ -14,7 +14,7 @@
 // on the next commit that touches a runtime file. If you need to
 // force-invalidate caches (e.g. unrelated to a runtime change),
 // add a no-op touch like a trailing newline to sw.js itself and commit.
-const CACHE_VERSION = 'strabon-map-7d8aca6ebf';
+const CACHE_VERSION = 'strabon-map-cdbcda94e2';
 
 // #97 tiered loading (PERF_OFFLINE_ADDONS_COUNCIL). Two buckets:
 //   • CACHE_VERSION  — Tier-1 precache + content-versioned runtime assets.
@@ -51,7 +51,12 @@ const isAddonRequest = (url) => /\/(geo-refined|era-places-full|city-dict-full)\
 const RUNTIME_URLS = [
   './',
   'index.html',
+  // MVP-10 succession: mobile.html is the promoted MVP app; mobile-mvp.html is its
+  // byte-identical alias (transition bookmarks); mobile-classic.html is the legacy
+  // escape hatch (kept precached this release). All join the offline contract.
   'mobile.html',
+  'mobile-mvp.html',
+  'mobile-classic.html',
   'manifest.webmanifest',
   'manifest-mobile.webmanifest',
   // core modules (alphabetical; updated 17 May 2026 to include era +
@@ -96,8 +101,13 @@ const RUNTIME_URLS = [
   // dist/strabon-map.js. The bundled file is what ships; src/ stays
   // out of the runtime set so we don't double-cache.
   'dist/strabon-map.js',
-  // E108 — mobile entry bundled from src/mobile-boot.js.
+  // E108 — mobile entry bundled from src/mobile-boot.js (now the mobile-classic
+  // page's bundle post-succession).
   'dist/strabon-map-mobile.js',
+  // MVP-10 — the promoted mobile app's bundle (src/mobile-mvp-boot.js). This is
+  // what mobile.html + mobile-mvp.html load; precache so the hero + own trips work
+  // offline.
+  'dist/strabon-map-mvp.js',
   // vendor
   'vendor/exifr/exifr.lite.umd.js',
   // E61 — libheif-bundle.js (1.4 MB) is intentionally NOT pre-cached on
@@ -122,6 +132,11 @@ const RUNTIME_URLS = [
   // parity with the old inline blocks).
   'assets/app.css',
   'assets/mobile.css',
+  // MVP-10 — the promoted mobile app's stylesheets (mobile.css above is the
+  // shared base; mobile-mvp.css is the MVP surface; mvp-fonts.css declares the
+  // hero IM Fell + Special Elite faces). Precached so the MVP renders offline.
+  'assets/mobile-mvp.css',
+  'assets/mvp-fonts.css',
   'fonts/cardo/cardo-700-latin.woff2',
   'fonts/cardo/cardo-700-latin-ext.woff2',
   'fonts/caveat/caveat-700-latin.woff2',
@@ -154,6 +169,14 @@ const RUNTIME_URLS = [
   // isAddonRequest yet — that's the P1 Tier-2 cache slice; for now they
   // runtime-cache into CACHE_VERSION via the fetch handler.)
   'data/sample-trips/index.json',
+  // MVP-10 — the hero DEMO reel's trips. Unlike the sample-trips per-trip JSONs
+  // (large, runtime-cached on tap), these 3 are small + drive the landing's
+  // looping showcase, so precache the manifest + all three so the hero animates
+  // offline on the 2nd+ load.
+  'data/demo-trips/index.json',
+  'data/demo-trips/nineteen-thirties/turkiye-holiday.json',
+  'data/demo-trips/nineteen-thirties/alpine-rail-foot.json',
+  'data/demo-trips/nineteen-thirties/aegean-island-hop.json',
   // assets + icons
   'assets/og-image.png',
   'icons/icon-192.png',
