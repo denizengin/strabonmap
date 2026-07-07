@@ -111,11 +111,13 @@
         },
       ],
     },
-    /* ============= 9. ADVENTURE · 1936 (EXISTING - PRESERVE) ============= */
+    /* ============= 9. ADVENTURE (EXISTING - PRESERVE) ============= */
     {
       key: 'nineteen-thirties',
       name: 'Adventure',
-      year: '1936',
+      // No fixed display year — the Adventure register is year-free by owner
+      // decision; eraYear() derives a representative year from the window.
+      year: '',
       yearStart: 1920, yearEnd: 1945,
       sub: 'Pulp field-journal · the shipping register before E70',
       font: { family: "'IM Fell DW Pica', serif", weight: 400, style: 'italic', tracking: '0.02em' },

@@ -99,7 +99,7 @@
     'locomotive':   { glyph: 'train',    label: 'Locomotive' },
     'train':        { glyph: 'train',    label: 'Train' },
     // Sea. pair-11A: period vessels promoted to dedicated glyphs so they
-    // no longer alias to 'boat' (which used to render as a 1930s
+    // no longer alias to 'boat' (which used to render as a vintage
     // steamship). 'boat' is now a period-NEUTRAL sailing vessel; the
     // steamship art lives in the new 'steamer' glyph family.
     'raft':         { glyph: 'raft',        label: 'Raft' },

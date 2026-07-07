@@ -51,7 +51,15 @@
     if (!era) return null;
     const s = String(era.year || '').trim();
     const m = s.match(/(-?\d+)/);
-    if (!m) return null;
+    if (!m) {
+      // No display year on the era record (eras may carry only a window —
+      // display copy dropped fixed year branding): fall back to the window
+      // midpoint so alias activity windows still resolve.
+      if (typeof era.yearStart === 'number' && typeof era.yearEnd === 'number') {
+        return Math.round((era.yearStart + era.yearEnd) / 2);
+      }
+      return null;
+    }
     let y = parseInt(m[1], 10);
     if (/BCE/i.test(s)) y = -Math.abs(y);
     return y;

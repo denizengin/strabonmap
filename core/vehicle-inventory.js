@@ -84,7 +84,7 @@
    * dromon, dhow, cog, caravel, merchantman, raft, chariot, plus a
    * dedicated steamer glyph (the old `boat` art). Simultaneously
    * reframed the generic `boat` sprite as a period-neutral sailing
-   * vessel so the residual fallback is no longer a 1930s steamship.
+   * vessel so the residual fallback is no longer a vintage steamship.
    * Closes the "bronze-age galley renders as a steamship" + "chariot
    * renders as a modern automobile" bugs.
    */
@@ -96,7 +96,7 @@
     'horse', 'camel', 'donkey', 'pack-mule',
     'ox-cart', 'carriage',
     // pair-11A: 10 new sprites — period vessels + chariot + dedicated
-    // steamer. Closes the "bronze-age galley renders as 1930s steamship"
+    // steamer. Closes the "bronze-age galley renders as vintage steamship"
     // bug. 'boat' was simultaneously reframed (one mast + square sail,
     // no funnel) so the generic fallback is no longer anachronistic.
     'steamer', 'galley', 'trireme', 'dromon',

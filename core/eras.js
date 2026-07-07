@@ -8,7 +8,7 @@
 // Theme = HOW it renders (colour variant within the era).
 //
 // Modern is the default era for NEW trips. Existing pre-rename trips
-// migrate to Adventure (which is the 1936 pulp-adventure register
+// migrate to Adventure (which is the pulp-adventure register
 // the artifact previously shipped as its only register).
 //
 // HC is implemented as a sibling theme inside each era's themes list
