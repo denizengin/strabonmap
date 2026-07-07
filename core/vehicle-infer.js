@@ -105,12 +105,18 @@
    * era's sea vehicle. Falls back to 'plane' if era / transport can't
    * be resolved (existing default — never crashes a caller).
    */
-  const inferVehicle = ({ fromLat, fromLon, toLat, toLon, eraKey, year }) => {
+  const inferVehicle = ({ fromLat, fromLon, toLat, toLon, eraKey, year, seaWaterFraction }) => {
     if (!isFinite(fromLat) || !isFinite(fromLon)
         || !isFinite(toLat)   || !isFinite(toLon)) return 'plane';
     const distKm = _distanceKm(fromLat, fromLon, toLat, toLon);
     if (distKm < 5) return 'foot';
     const transport = _transportForEra(eraKey) || { sea: 'boat', land: 'car', air: 'plane' };
+    // Optional caller bias (additive; default keeps the historical 0.5): the
+    // photo-import passes a HIGH threshold because a coast-parallel drive's
+    // straight line runs over the coarse 1:50m "sea" (owner's West Wittering→
+    // Worthing guessed a boat) — for imports, only an overwhelmingly-water
+    // crossing should read as a ferry.
+    const seaThreshold = (typeof seaWaterFraction === 'number') ? seaWaterFraction : 0.5;
     // 17/18 May 2026 — air-vehicle year gates. Each entry in
     // VEHICLE_MIN_YEAR is the earliest year that vehicle plausibly
     // exists. Atlas-era balloon: Montgolfier 1783. Industrial-era
@@ -127,7 +133,7 @@
     }
     if (airCapable && distKm >= 4000) return transport.air;
     const water = _waterFraction(fromLat, fromLon, toLat, toLon);
-    if (water > 0.5) return transport.sea;
+    if (water > seaThreshold) return transport.sea;
     if (airCapable && distKm >= 2500) return transport.air;
     return transport.land;
   };
