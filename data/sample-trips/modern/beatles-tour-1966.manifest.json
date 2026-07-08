@@ -5,7 +5,9 @@
     {"stopId": "stop-1", "prompt": "Hamburg Ernst-Merck-Halle lobby, four young men in matched jackets; plate.", "size": "1200x800"},
     {"stopId": "stop-2", "prompt": "Tokyo Budokan octagonal hall with riot police and rainy plaza; plate.", "size": "1200x800"},
     {"stopId": "stop-3", "prompt": "Manila airport tarmac, musicians jostled toward BOAC airliner; plate.", "size": "1200x800"},
-    {"stopId": "stop-4", "prompt": "Mid-South Coliseum indoor arena with smoke-trail across foreground; plate.", "size": "1200x800"},
-    {"stopId": "stop-5", "prompt": "Candlestick Park night, small stage at second base, four musicians; plate.", "size": "1200x800"}
+    {"stopId": "stop-4", "prompt": "New Delhi airport hotel courtyard, four Westerners examining a sitar in warm haze; plate.", "size": "1200x800"},
+    {"stopId": "stop-5", "prompt": "A grey London airport apron, four figures descending airliner steps into a press scrum; plate.", "size": "1200x800"},
+    {"stopId": "stop-6", "prompt": "Mid-South Coliseum indoor arena with smoke-trail across foreground; plate.", "size": "1200x800"},
+    {"stopId": "stop-7", "prompt": "Candlestick Park night, small stage at second base, four musicians; plate.", "size": "1200x800"}
   ]
 }

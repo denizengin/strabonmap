@@ -21,7 +21,7 @@
       "lon": 28.97,
       "note": "Embarkation, 21 June 533. The patriarch Epiphanius blesses the lead ship from the harbour mole.",
       "imagePrompt": "Hand-coloured plate. Golden Horn crowded with masts at midsummer, patriarch in vestments raising the cross over the fleet.",
-      "vehicleToNext": "dhow",
+      "vehicleToNext": "dromon",
       "viaToNext": [
         {
           "lat": 40.7,
@@ -52,7 +52,7 @@
       "lon": 21.71,
       "note": "Peloponnesian provisioning stop. Procopius records bad biscuit killing 500 men here — bakers had reused old grain.",
       "imagePrompt": "Hand-coloured plate. Small harbour below a Venetian-style fortress (anachronistic — original was simpler), ships taking on water.",
-      "vehicleToNext": "dhow"
+      "vehicleToNext": "dromon"
     },
     {
       "id": "stop-3",
@@ -88,7 +88,7 @@
       "lon": 10.32,
       "note": "Belisarius enters 15 September 533. He dines that night in Gelimer's own palace, off the Vandal king's own plate (Procopius III.21).",
       "imagePrompt": "Hand-coloured plate. Carthage harbour rings, byzantine general dining beneath frescoes, Vandal banner being lowered outside.",
-      "vehicleToNext": "dhow"
+      "vehicleToNext": "dromon"
     }
   ]
 }

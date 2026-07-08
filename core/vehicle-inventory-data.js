@@ -30,8 +30,12 @@
       'dromon',
     ],
     // 4. ITINERARIA · 700-867 CE (Carolingian + Abbasid = islamic-golden)
+    // dromon: the Byzantine war-galley was in continuous service across this
+    // window (it bookends the era — late-antiquity + byzantium both list it), so
+    // a Byzantine campaign filed here (Justinian/Heraclius) uses the dromon, not
+    // the Arab dhow. Added 8 Jul for the sample-catalog sea-leg fix.
     'dark-ages': [
-      'foot', 'horse', 'camel', 'pack-mule', 'donkey', 'dhow',
+      'foot', 'horse', 'camel', 'pack-mule', 'donkey', 'dhow', 'dromon',
     ],
     // 5. BYZANTIUM · 867-1100 CE
     'byzantium': [

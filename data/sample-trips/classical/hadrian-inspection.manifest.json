@@ -1,0 +1,12 @@
+{
+  "tripId": "hadrian-inspection",
+  "style": "classical fresco plate, muted earth pigment",
+  "images": [
+    {"stopId": "stop-1", "prompt": "A raeda carriage leaving a marble city gate at dawn, mounted guard alongside, cypress-lined road climbing north; fresco plate.", "size": "1200x800"},
+    {"stopId": "stop-2", "prompt": "A Gallo-Roman town at a river confluence, forum and aqueduct, an imperial carriage changing teams at a mansio; fresco plate.", "size": "1200x800"},
+    {"stopId": "stop-3", "prompt": "A Roman harbour with a lighthouse and a low war-galley at the quay, oarsmen boarding, cold northern light; fresco plate.", "size": "1200x800"},
+    {"stopId": "stop-4", "prompt": "A timber-and-stone provincial town on a broad tidal river with a wooden bridge and merchant barges; fresco plate.", "size": "1200x800"},
+    {"stopId": "stop-5", "prompt": "A legionary fortress of stone ramparts on a river bend, standards and men on parade in the courtyard; fresco plate.", "size": "1200x800"},
+    {"stopId": "stop-6", "prompt": "A wall of dressed stone marching over bleak northern hills, a fort beside it, an emperor in a cloak surveying the line; fresco plate.", "size": "1200x800"}
+  ]
+}

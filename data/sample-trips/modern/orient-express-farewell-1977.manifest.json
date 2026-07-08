@@ -1,0 +1,12 @@
+{
+  "tripId": "orient-express-farewell-1977",
+  "style": "photographic plate, late-1970s register",
+  "images": [
+    {"stopId": "stop-1", "prompt": "Evening under the Gare de Lyon train-shed, a blue sleeping-car with a brass ISTANBUL board, porters loading leather cases, gold-lit clock tower beyond the glass; plate.", "size": "1200x800"},
+    {"stopId": "stop-2", "prompt": "Milano Centrale's monumental steel-and-stone train hall at morning, an express drawn up alongside, travellers stretching on the platform; plate.", "size": "1200x800"},
+    {"stopId": "stop-3", "prompt": "Santa Lucia station steps meeting the Grand Canal, a waiting vaporetto, city domes low on the far bank under a pale sky; plate.", "size": "1200x800"},
+    {"stopId": "stop-4", "prompt": "A gas-lamp-lit night platform, uniformed officials checking papers along a sleeping-car corridor, breath visible in the cold; plate.", "size": "1200x800"},
+    {"stopId": "stop-5", "prompt": "A Balkan station at first light, a dark-green express beneath wooded hills, a vendor with a tea urn on the platform; plate.", "size": "1200x800"},
+    {"stopId": "stop-6", "prompt": "Sirkeci terminus with its Ottoman-revival facade and stained-glass fanlights, a blue sleeping-car at the buffers, the Bosphorus bright beyond; plate.", "size": "1200x800"}
+  ]
+}

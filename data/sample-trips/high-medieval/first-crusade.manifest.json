@@ -2,10 +2,11 @@
   "tripId": "first-crusade",
   "style": "hand-coloured cartographic plate, muted ink, period-appropriate",
   "images": [
-    {"stopId": "stop-1", "prompt": "Latin knights camped outside Theodosian walls, Greek galleys ferrying horses; hand-coloured plate.", "size": "1200x800"},
-    {"stopId": "stop-2", "prompt": "Nicaea siege with galleys on Lake Ascanius and towers on shore; hand-coloured plate.", "size": "1200x800"},
-    {"stopId": "stop-3", "prompt": "Dorylaeum dawn battle, knights forming defensive ring against horse archers; hand-coloured plate.", "size": "1200x800"},
-    {"stopId": "stop-4", "prompt": "Antioch citadel with scaling ladder against tower at dawn; hand-coloured plate.", "size": "1200x800"},
-    {"stopId": "stop-5", "prompt": "Jerusalem siege tower against the northern wall, banners on parapet; hand-coloured plate.", "size": "1200x800"}
+    {"stopId": "stop-1", "prompt": "An open-air council on an Auvergne hillside, a pope on a raised platform addressing knights and clergy, autumn light; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-2", "prompt": "Latin knights camped outside Theodosian walls, Greek galleys ferrying horses; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-3", "prompt": "Nicaea siege with galleys on Lake Ascanius and towers on shore; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-4", "prompt": "Dorylaeum dawn battle, knights forming defensive ring against horse archers; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-5", "prompt": "Antioch citadel with scaling ladder against tower at dawn; hand-coloured plate.", "size": "1200x800"},
+    {"stopId": "stop-6", "prompt": "Jerusalem siege tower against the northern wall, banners on parapet; hand-coloured plate.", "size": "1200x800"}
   ]
 }

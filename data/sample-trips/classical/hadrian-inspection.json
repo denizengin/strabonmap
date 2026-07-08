@@ -1,0 +1,87 @@
+{
+  "id": "hadrian-inspection",
+  "era": "classical",
+  "title": "Hadrian's Inspection",
+  "themeSuggestion": "classical-fresco",
+  "viewport": "auto",
+  "intro": {
+    "title": "Hadrian's Inspection",
+    "dateline": "AD 122",
+    "body": "Hadrian travelled from Rome to Britannia to inspect the northern frontier, leaving Antinous behind. The journey took him across Gaul and the Channel; he walked the line where the empire would end.\n\nAt the frontier he ordered the great wall built — eighty Roman miles of stone across the neck of the island, marking not conquest but limit. A boundary in masonry. A frontier as policy."
+  },
+  "companions": ["you"],
+  "stops": [
+    {
+      "id": "stop-1",
+      "name": "Rome",
+      "lat": 41.90,
+      "lon": 12.50,
+      "note": "The emperor sets out from the capital on the imperial post-road, an entourage of officials and surveyors behind him, bound for the northern edge of the world.",
+      "imagePrompt": "Classical fresco plate. A raeda carriage leaving a marble city gate at dawn, mounted guard alongside, cypress-lined road climbing north.",
+      "vehicleToNext": "roman-cart",
+      "viaToNext": [
+        { "lat": 42.5, "lon": 11.8 },
+        { "lat": 43.5, "lon": 10.6 },
+        { "lat": 44.2, "lon": 9.5 },
+        { "lat": 44.5, "lon": 8.5 },
+        { "lat": 44.3, "lon": 7.5 },
+        { "lat": 44.5, "lon": 6.0 },
+        { "lat": 45.0, "lon": 4.9 }
+      ]
+    },
+    {
+      "id": "stop-2",
+      "name": "Lugdunum",
+      "lat": 45.76,
+      "lon": 4.83,
+      "note": "The great road-junction of the Gauls. Fresh horses and provisions before the long haul north to the Channel shore.",
+      "imagePrompt": "Classical fresco plate. A Gallo-Roman town at a river confluence, forum and aqueduct, an imperial carriage changing teams at a mansio.",
+      "vehicleToNext": "roman-cart"
+    },
+    {
+      "id": "stop-3",
+      "name": "Gesoriacum",
+      "lat": 50.73,
+      "lon": 1.61,
+      "note": "The Channel port and base of the fleet. A galley of the Classis Britannica waits on the tide to carry the emperor across the grey water to Britannia.",
+      "imagePrompt": "Classical fresco plate. A Roman harbour with a lighthouse and a low war-galley at the quay, oarsmen boarding, cold northern light on choppy sea.",
+      "vehicleToNext": "liburna",
+      "viaToNext": [
+        { "lat": 50.85, "lon": 1.50 },
+        { "lat": 51.10, "lon": 1.35 },
+        { "lat": 51.40, "lon": 1.45 },
+        { "lat": 51.52, "lon": 1.00 },
+        { "lat": 51.50, "lon": 0.55 },
+        { "lat": 51.47, "lon": 0.15 }
+      ]
+    },
+    {
+      "id": "stop-4",
+      "name": "Londinium",
+      "lat": 51.51,
+      "lon": -0.13,
+      "note": "The province's rising town on the tidal river. Hadrian is received by the governor before turning north up the road to the legions.",
+      "imagePrompt": "Classical fresco plate. A timber-and-stone provincial town on a broad river with a wooden bridge, merchant barges, a basilica rising behind.",
+      "vehicleToNext": "roman-cart"
+    },
+    {
+      "id": "stop-5",
+      "name": "Eboracum",
+      "lat": 53.96,
+      "lon": -1.08,
+      "note": "Fortress of the Sixth Legion and the northern military capital. The emperor reviews the troops who will build and hold the wall.",
+      "imagePrompt": "Classical fresco plate. A legionary fortress of stone ramparts and tiled roofs on a river bend, standards and men on parade in the courtyard.",
+      "vehicleToNext": "roman-cart"
+    },
+    {
+      "id": "stop-6",
+      "name": "Vindolanda",
+      "lat": 54.99,
+      "lon": -2.36,
+      "note": "The frontier itself, wind and moor to the north. Here Hadrian orders the line drawn in stone across the neck of the island — a boundary as policy.",
+      "imagePrompt": "Classical fresco plate. A wall of dressed stone marching over bleak northern hills, a fort and gatehouse beside it, an emperor in a cloak surveying the line.",
+      "vehicleToNext": null
+    }
+  ],
+  "hook": "The emperor walks the northern edge of the world and draws the empire's limit in stone."
+}

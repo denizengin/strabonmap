@@ -13,6 +13,15 @@
   "stops": [
     {
       "id": "stop-1",
+      "name": "Clermont",
+      "lat": 45.7797,
+      "lon": 3.0863,
+      "note": "November 1095. Urban II preaches the Crusade at the council; the cry 'Deus vult' answers him and the princely armies begin the long march east.",
+      "imagePrompt": "Hand-coloured plate. An open-air council on an Auvergne hillside, a pope on a raised platform addressing a crowd of knights and clergy, autumn light.",
+      "vehicleToNext": "horse"
+    },
+    {
+      "id": "stop-2",
       "name": "Constantinople",
       "lat": 41.01,
       "lon": 28.97,
@@ -26,7 +35,7 @@
       ]
     },
     {
-      "id": "stop-2",
+      "id": "stop-3",
       "name": "Nicaea",
       "lat": 40.43,
       "lon": 29.72,
@@ -35,7 +44,7 @@
       "vehicleToNext": "horse"
     },
     {
-      "id": "stop-3",
+      "id": "stop-4",
       "name": "Dorylaeum",
       "lat": 39.78,
       "lon": 30.50,
@@ -44,7 +53,7 @@
       "vehicleToNext": "horse"
     },
     {
-      "id": "stop-4",
+      "id": "stop-5",
       "name": "Antioch",
       "lat": 36.20,
       "lon": 36.16,
@@ -60,7 +69,7 @@
       ]
     },
     {
-      "id": "stop-5",
+      "id": "stop-6",
       "name": "Jerusalem",
       "lat": 31.78,
       "lon": 35.22,

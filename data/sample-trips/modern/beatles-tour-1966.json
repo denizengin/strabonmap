@@ -40,6 +40,24 @@
     },
     {
       "id": "stop-4",
+      "name": "New Delhi",
+      "lat": 28.6139,
+      "lon": 77.2090,
+      "note": "6 July 1966. The band breaks the flight home in India — a few unbilled days that plant the seed of Harrison's return the next year.",
+      "imagePrompt": "Photographic plate. New Delhi airport hotel courtyard, four young Westerners in shirtsleeves examining a sitar handed up by a shopkeeper, warm haze.",
+      "vehicleToNext": "airliner"
+    },
+    {
+      "id": "stop-5",
+      "name": "London",
+      "lat": 51.51,
+      "lon": -0.13,
+      "note": "Home for the rest of the summer. The world tour behind them, the American leg still to come — and a growing certainty that the touring years are ending.",
+      "imagePrompt": "Photographic plate. A grey London airport apron, four figures descending airliner steps into a scrum of press cameras and umbrellas.",
+      "vehicleToNext": "airliner"
+    },
+    {
+      "id": "stop-6",
       "name": "Memphis",
       "lat": 35.15,
       "lon": -90.05,
@@ -48,7 +66,7 @@
       "vehicleToNext": "airliner"
     },
     {
-      "id": "stop-5",
+      "id": "stop-7",
       "name": "San Francisco (Candlestick Park)",
       "lat": 37.71,
       "lon": -122.39,

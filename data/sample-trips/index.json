@@ -21,7 +21,8 @@
     "herodotus-egypt",
     "xenophon-ten-thousand",
     "alexander-anabasis",
-    "hannibal-italy"
+    "hannibal-italy",
+    "hadrian-inspection"
    ]
   },
   {
@@ -75,7 +76,6 @@
     "piri-reis-mediterranean",
     "magellan-elcano",
     "cook-first-voyage",
-    "la-perouse-pacific",
     "selim-egypt"
    ]
   },
@@ -105,8 +105,7 @@
    "key": "modern",
    "label": "Modern",
    "trips": [
-    "apollo-11",
-    "fuchs-trans-antarctic",
+    "orient-express-farewell-1977",
     "beatles-tour-1966",
     "hippie-trail"
    ]

@@ -14,8 +14,8 @@
     {
       "id": "stop-1",
       "name": "Karyanda",
-      "lat": 37.04,
-      "lon": 27.42,
+      "lat": 37.05,
+      "lon": 27.55,
       "note": "Skylax's birthplace, named in Herodotus, Histories IV.44 as 'Skylax of Karyanda'. Strab. XIV.2.20 describes Karyanda as a small island with a harbour, near Myndos on the Carian coast; identified with modern Salih Adası.",
       "imagePrompt": "Hand-coloured cartographic plate, muted ink. Small island-harbour on the Carian coast at dawn, a single beached trireme, fishing skiffs, low scrub and a watchtower.",
       "vehicleToNext": "foot"
@@ -190,8 +190,8 @@
     {
       "id": "stop-15",
       "name": "Return to Karyanda",
-      "lat": 37.04,
-      "lon": 27.42,
+      "lat": 37.05,
+      "lon": 27.55,
       "note": "Return to his Carian homeland after reporting at the Persian court. The Suda, s.v. 'Skylax', and Strab. XII.4.4 credit him with later writings including the Periodos Ges, an account of the coasts of the inhabited world — most plausibly composed in retirement at home.",
       "imagePrompt": "Hand-coloured cartographic plate, muted ink. The small island of Karyanda again, an older Skylax at a writing-desk under an awning, scrolls of a periplus on the table, the harbour and a single trireme beyond.",
       "vehicleToNext": null

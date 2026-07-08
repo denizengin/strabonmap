@@ -13,6 +13,15 @@
   "stops": [
     {
       "id": "stop-1",
+      "name": "Calcutta",
+      "lat": 22.5726,
+      "lon": 88.3639,
+      "note": "The expedition lands on the Bengal coast and gathers its stores before taking the rail north; the mountain is still four hundred miles away.",
+      "imagePrompt": "Sepia plate. A busy Bengal quayside with steamer funnels and stacked crates, tweed-clad expedition members supervising porters under a hot haze.",
+      "vehicleToNext": "locomotive"
+    },
+    {
+      "id": "stop-2",
       "name": "Darjeeling",
       "lat": 27.04,
       "lon": 88.27,
@@ -21,7 +30,7 @@
       "vehicleToNext": "foot"
     },
     {
-      "id": "stop-2",
+      "id": "stop-3",
       "name": "Phari Dzong",
       "lat": 27.74,
       "lon": 89.18,
@@ -30,7 +39,7 @@
       "vehicleToNext": "foot"
     },
     {
-      "id": "stop-3",
+      "id": "stop-4",
       "name": "Rongbuk Monastery",
       "lat": 28.18,
       "lon": 86.85,
@@ -39,7 +48,7 @@
       "vehicleToNext": "foot"
     },
     {
-      "id": "stop-4",
+      "id": "stop-5",
       "name": "Camp V (North Col)",
       "lat": 28.05,
       "lon": 86.93,
@@ -48,7 +57,7 @@
       "vehicleToNext": "foot"
     },
     {
-      "id": "stop-5",
+      "id": "stop-6",
       "name": "Camp VI / North-east Ridge",
       "lat": 27.99,
       "lon": 86.94,
