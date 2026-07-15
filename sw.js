@@ -14,7 +14,7 @@
 // on the next commit that touches a runtime file. If you need to
 // force-invalidate caches (e.g. unrelated to a runtime change),
 // add a no-op touch like a trailing newline to sw.js itself and commit.
-const CACHE_VERSION = 'strabon-map-13071876cb';
+const CACHE_VERSION = 'strabon-map-b892c87f07';
 
 // #97 tiered loading (PERF_OFFLINE_ADDONS_COUNCIL). Two buckets:
 //   • CACHE_VERSION  — Tier-1 precache + content-versioned runtime assets.
@@ -196,10 +196,6 @@ const RUNTIME_URLS = [
   // (large, runtime-cached on tap), these 3 are small + drive the landing's
   // looping showcase, so precache the manifest + all three so the hero animates
   // offline on the 2nd+ load.
-  'data/demo-trips/index.json',
-  'data/demo-trips/nineteen-thirties/turkiye-holiday.json',
-  'data/demo-trips/nineteen-thirties/alpine-rail-foot.json',
-  'data/demo-trips/nineteen-thirties/aegean-island-hop.json',
   // assets + icons
   'assets/og-image.png',
   'icons/icon-192.png',
