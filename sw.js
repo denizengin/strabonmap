@@ -14,7 +14,7 @@
 // on the next commit that touches a runtime file. If you need to
 // force-invalidate caches (e.g. unrelated to a runtime change),
 // add a no-op touch like a trailing newline to sw.js itself and commit.
-const CACHE_VERSION = 'strabon-map-efefaa4a99';
+const CACHE_VERSION = 'strabon-map-19c6ecdea4';
 
 // #97 tiered loading (PERF_OFFLINE_ADDONS_COUNCIL). Two buckets:
 //   • CACHE_VERSION  — Tier-1 precache + content-versioned runtime assets.
@@ -81,6 +81,16 @@ const RUNTIME_URLS = [
   // — no single-quotes in this comment; the build-publish.sh drift guard's
   // awk-extractor would treat them as a precached URL.
   'core/heic-decode-worker.js',
+  // 15 Jul — owner field report (blank app offline): these eleven classic
+  // scripts are loaded by the HTML pages but were MISSING here. Online they
+  // load fine and get runtime-cached — but every deploy purges the old cache
+  // bucket, so the first offline launch after a deploy had no copy and boot
+  // died under the veil. The offline probe could not catch it because its
+  // online warm-up runtime-cached them into the same bucket (blind spot now
+  // fixed in tools/check-offline-precache.mjs).
+  'core/land-router.js',
+  'core/land-router-astar.js',
+  'core/land-router-geo.js',
   'core/migrations.js',
   'core/people.js',
   'core/photo-cluster.js',
@@ -89,10 +99,18 @@ const RUNTIME_URLS = [
   'core/picker-state.js',
   'core/projection.js',
   'core/romanize.js',
+  'core/route-geometry.js',
+  'core/sea-router.js',
+  'core/sea-router-astar.js',
+  'core/sea-router-geo.js',
   'core/serializer.js',
   'core/sfx.js',
   'core/theme.js',
+  'core/trip-intro.js',
+  'core/trip-modality.js',
+  'core/trip-modality-geom.js',
   'core/vehicle-infer.js',
+  'core/vehicle-inventory.js',
   'core/vehicle-inventory-data.js',
   // 28 May — Version + Force-refresh button wirers used by both HTML files.
   'core/version-refresh.js',
