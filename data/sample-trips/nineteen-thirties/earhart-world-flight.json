@@ -1,60 +1,63 @@
 {
-  "id": "earhart-world-flight",
-  "era": "nineteen-thirties",
-  "title": "Amelia Earhart — second world-flight attempt",
-  "themeSuggestion": "thirties-grain",
-  "viewport": "auto",
-  "intro": {
-    "title": "Around the Equator",
-    "dateline": "1937 CE",
-    "body": "Amelia Earhart and Fred Noonan attempted to circumnavigate the world along the equator in a Lockheed Electra 10E in 1937. They left Miami eastbound on 1 June and disappeared between Lae and Howland Island on 2 July. Earhart sent dispatches to the Herald Tribune at each major stop."
+ "id": "earhart-world-flight",
+ "era": "nineteen-thirties",
+ "title": "Amelia Earhart — second world-flight attempt",
+ "themeSuggestion": "thirties-grain",
+ "viewport": "auto",
+ "intro": {
+  "title": "Around the Equator",
+  "dateline": "1937 CE",
+  "body": "Amelia Earhart and Fred Noonan attempted to circumnavigate the world along the equator in a Lockheed Electra 10E in 1937. They left Miami eastbound on 1 June and disappeared between Lae and Howland Island on 2 July. Earhart sent dispatches to the Herald Tribune at each major stop."
+ },
+ "companions": [
+  "Earhart",
+  "Noonan"
+ ],
+ "stops": [
+  {
+   "id": "stop-1",
+   "name": "Miami",
+   "lat": 25.79,
+   "lon": -80.29,
+   "note": "Departure 1 June 1937 at 5:56 am. The Electra heads south-east across the Caribbean.",
+   "imagePrompt": "Sepia plate. Florida airfield at dawn, twin-engine silver monoplane with NR16020 on the rudder, two aviators in leather jackets at the cockpit door.",
+   "vehicleToNext": "prop-plane"
   },
-  "companions": ["Earhart", "Noonan"],
-  "stops": [
-    {
-      "id": "stop-1",
-      "name": "Miami",
-      "lat": 25.79,
-      "lon": -80.29,
-      "note": "Departure 1 June 1937 at 5:56 am. The Electra heads south-east across the Caribbean.",
-      "imagePrompt": "Sepia plate. Florida airfield at dawn, twin-engine silver monoplane with NR16020 on the rudder, two aviators in leather jackets at the cockpit door.",
-      "vehicleToNext": "prop-plane"
-    },
-    {
-      "id": "stop-2",
-      "name": "Natal",
-      "lat": -5.78,
-      "lon": -35.21,
-      "note": "Brazilian Atlantic port. Last stop before the open-ocean crossing to West Africa, 7 June 1937.",
-      "imagePrompt": "Sepia plate. Tropical airfield with palms, mechanics under the wing, low-wing monoplane being refuelled by hand.",
-      "vehicleToNext": "prop-plane"
-    },
-    {
-      "id": "stop-3",
-      "name": "Karachi",
-      "lat": 24.86,
-      "lon": 67.01,
-      "note": "Arrival 17 June 1937 after legs through West Africa and Khartoum. Earhart phones George Putnam in California from Karachi.",
-      "imagePrompt": "Sepia plate. Imperial Airways flying-boat hangar at Karachi, Electra on the apron beside it, ground crew in shorts and pith helmets.",
-      "vehicleToNext": "prop-plane"
-    },
-    {
-      "id": "stop-4",
-      "name": "Lae (New Guinea)",
-      "lat": -6.73,
-      "lon": 146.99,
-      "note": "Last confirmed position. Take-off 0000 GMT 2 July 1937 with 1,100 US gallons of fuel for the 2,556-mile leg to Howland.",
-      "imagePrompt": "Sepia plate. Grass airstrip on a jungle bay, Electra taking off down the slope toward the sea, cargo ship offshore.",
-      "vehicleToNext": "prop-plane"
-    },
-    {
-      "id": "stop-5",
-      "name": "Howland Island (target)",
-      "lat": 0.81,
-      "lon": -176.62,
-      "note": "Never reached. The Itasca's radio operator hears Earhart at 8:43 GMT — 'We are running on north and south' — then nothing. The search continues today.",
-      "imagePrompt": "Sepia plate. Tiny coral island under empty Pacific sky, US Coast Guard cutter Itasca below, smoke trail signal rising — no aircraft visible.",
-      "vehicleToNext": "prop-plane"
-    }
-  ]
+  {
+   "id": "stop-2",
+   "name": "Natal",
+   "lat": -5.78,
+   "lon": -35.21,
+   "note": "Brazilian Atlantic port. Last stop before the open-ocean crossing to West Africa, 7 June 1937.",
+   "imagePrompt": "Sepia plate. Tropical airfield with palms, mechanics under the wing, low-wing monoplane being refuelled by hand.",
+   "vehicleToNext": "prop-plane"
+  },
+  {
+   "id": "stop-3",
+   "name": "Karachi",
+   "lat": 24.86,
+   "lon": 67.01,
+   "note": "Arrival 17 June 1937 after legs through West Africa and Khartoum. Earhart phones George Putnam in California from Karachi.",
+   "imagePrompt": "Sepia plate. Imperial Airways flying-boat hangar at Karachi, Electra on the apron beside it, ground crew in shorts and pith helmets.",
+   "vehicleToNext": "prop-plane"
+  },
+  {
+   "id": "stop-4",
+   "name": "Lae (New Guinea)",
+   "lat": -6.73,
+   "lon": 146.99,
+   "note": "Last confirmed position. Take-off 0000 GMT 2 July 1937 with 1,100 US gallons of fuel for the 2,556-mile leg to Howland.",
+   "imagePrompt": "Sepia plate. Grass airstrip on a jungle bay, Electra taking off down the slope toward the sea, cargo ship offshore.",
+   "vehicleToNext": "prop-plane"
+  },
+  {
+   "id": "stop-5",
+   "name": "Howland Island (target)",
+   "lat": 0.81,
+   "lon": -176.62,
+   "note": "Never reached. The Itasca's radio operator hears Earhart at 8:43 GMT — 'We are running on north and south' — then nothing. The search continues today.",
+   "imagePrompt": "Sepia plate. Tiny coral island under empty Pacific sky, US Coast Guard cutter Itasca below, smoke trail signal rising — no aircraft visible. uninhabited coral island, empty shore, no buildings.",
+   "vehicleToNext": "prop-plane"
+  }
+ ]
 }

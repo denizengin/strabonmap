@@ -1,60 +1,63 @@
 {
-  "id": "hippie-trail",
-  "era": "modern",
-  "title": "The Hippie Trail — London to Kathmandu",
-  "themeSuggestion": "modern-clean",
-  "viewport": "auto",
-  "intro": {
-    "title": "Overland in a Bedford",
-    "dateline": "1968-1972 CE",
-    "body": "Through the late 1960s and early 1970s, tens of thousands of young Westerners drove or rode the overland route from Europe to South Asia. Tony and Maureen Wheeler made the trip in a battered Mini in 1972; the notes they wrote on the way home became Lonely Planet's first guide, 'Across Asia on the Cheap'."
+ "id": "hippie-trail",
+ "era": "modern",
+ "title": "The Hippie Trail — London to Kathmandu",
+ "themeSuggestion": "modern-clean",
+ "viewport": "auto",
+ "intro": {
+  "title": "Overland in a Bedford",
+  "dateline": "1968-1972 CE",
+  "body": "Through the late 1960s and early 1970s, tens of thousands of young Westerners drove or rode the overland route from Europe to South Asia. Tony and Maureen Wheeler made the trip in a battered Mini in 1972; the notes they wrote on the way home became Lonely Planet's first guide, 'Across Asia on the Cheap'."
+ },
+ "companions": [
+  "Tony Wheeler",
+  "Maureen Wheeler"
+ ],
+ "stops": [
+  {
+   "id": "stop-1",
+   "name": "London",
+   "lat": 51.51,
+   "lon": -0.13,
+   "note": "Departure point for most. The Wheelers leave from Earl's Court in July 1972 with £400 and a one-year-old Mini.",
+   "imagePrompt": "Photographic plate. Wet London terraced street, dusty Mini packed to the roof with backpacks, two young travellers checking a paper map on the bonnet.",
+   "vehicleToNext": "car"
   },
-  "companions": ["Tony Wheeler", "Maureen Wheeler"],
-  "stops": [
-    {
-      "id": "stop-1",
-      "name": "London",
-      "lat": 51.51,
-      "lon": -0.13,
-      "note": "Departure point for most. The Wheelers leave from Earl's Court in July 1972 with £400 and a one-year-old Mini.",
-      "imagePrompt": "Photographic plate. Wet London terraced street, dusty Mini packed to the roof with backpacks, two young travellers checking a paper map on the bonnet.",
-      "vehicleToNext": "car"
-    },
-    {
-      "id": "stop-2",
-      "name": "Istanbul (Sultanahmet)",
-      "lat": 41.01,
-      "lon": 28.98,
-      "note": "The Pudding Shop in Sultanahmet is the bulletin board of the trail — lifts wanted, vehicles for sale, warnings from the road ahead.",
-      "imagePrompt": "Photographic plate. Tea-glass on a small marble table by a cork board covered with handwritten notes, Blue Mosque visible through the window.",
-      "vehicleToNext": "car"
-    },
-    {
-      "id": "stop-3",
-      "name": "Tehran",
-      "lat": 35.69,
-      "lon": 51.39,
-      "note": "Shah's Iran is still safely on the route. Travellers stop at the Amir Kabir hotel and the bazaar for spare parts.",
-      "imagePrompt": "Photographic plate. Tehran north-side hotel courtyard with kombi vans and motorcycles, sign in Persian and English, snowy Alborz mountains in the distance.",
-      "vehicleToNext": "car"
-    },
-    {
-      "id": "stop-4",
-      "name": "Herat",
-      "lat": 34.34,
-      "lon": 62.20,
-      "note": "Western Afghanistan. Travellers stay at Mr Naim's Hotel; the country is still under King Zahir Shah and remarkably calm.",
-      "imagePrompt": "Photographic plate. Mud-brick caravanserai with a battered Mercedes truck in the yard, men in turbans drinking tea, blue Friday Mosque in the distance.",
-      "vehicleToNext": "car"
-    },
-    {
-      "id": "stop-5",
-      "name": "Kathmandu (Freak Street)",
-      "lat": 27.70,
-      "lon": 85.31,
-      "note": "Jhochhen Tole — Freak Street — runs south from Durbar Square. The trail's end. The Wheelers fly home from here and write the first guidebook.",
-      "imagePrompt": "Photographic plate. Steep narrow Newari street, painted wooden facades, long-haired travellers at low cafés, prayer-wheels in the foreground.",
-      "vehicleToNext": "airliner"
-    }
-  ]
+  {
+   "id": "stop-2",
+   "name": "Istanbul (Sultanahmet)",
+   "lat": 41.01,
+   "lon": 28.98,
+   "note": "The Pudding Shop in Sultanahmet is the bulletin board of the trail — lifts wanted, vehicles for sale, warnings from the road ahead.",
+   "imagePrompt": "Photographic plate. Tea-glass on a small marble table by a cork board covered with handwritten notes, Blue Mosque visible through the window.",
+   "vehicleToNext": "car"
+  },
+  {
+   "id": "stop-3",
+   "name": "Tehran",
+   "lat": 35.69,
+   "lon": 51.39,
+   "note": "Shah's Iran is still safely on the route. Travellers stop at the Amir Kabir hotel and the bazaar for spare parts.",
+   "imagePrompt": "Photographic plate. Tehran north-side hotel courtyard with kombi vans and motorcycles, sign in Persian and English, snowy Alborz mountains in the distance.",
+   "vehicleToNext": "car"
+  },
+  {
+   "id": "stop-4",
+   "name": "Herat",
+   "lat": 34.34,
+   "lon": 62.2,
+   "note": "Western Afghanistan. Travellers stay at Mr Naim's Hotel; the country is still under King Zahir Shah and remarkably calm.",
+   "imagePrompt": "Photographic plate. Mud-brick caravanserai with a battered Mercedes truck in the yard, men in turbans drinking tea, blue Friday Mosque in the distance.",
+   "vehicleToNext": "car"
+  },
+  {
+   "id": "stop-5",
+   "name": "Kathmandu (Freak Street)",
+   "lat": 27.7,
+   "lon": 85.31,
+   "note": "Jhochhen Tole — Freak Street — runs south from Durbar Square. The trail's end. The Wheelers fly home from here and write the first guidebook.",
+   "imagePrompt": "Photographic plate. Steep narrow Newari street, painted wooden facades, long-haired travellers at low cafés, prayer-wheels in the foreground. tiered Newari pagoda rooftops, carved wooden houses.",
+   "vehicleToNext": "airliner"
+  }
+ ]
 }

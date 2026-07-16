@@ -1,69 +1,73 @@
 {
-  "id": "mallory-everest",
-  "era": "nineteen-thirties",
-  "title": "Mallory — to the summit ridge",
-  "themeSuggestion": "thirties-grain",
-  "viewport": "auto",
-  "intro": {
-    "title": "Because it is there",
-    "dateline": "1924 CE",
-    "body": "The 1924 British Everest expedition was the third attempt on the mountain. George Mallory and Andrew Irvine left Camp VI for the summit on the morning of 8 June and were last seen 'going strong for the top' by Noel Odell at around 12:50 pm. Mallory's body was found in 1999; whether they reached the top is unknown."
+ "id": "mallory-everest",
+ "era": "nineteen-thirties",
+ "title": "Mallory — to the summit ridge",
+ "themeSuggestion": "thirties-grain",
+ "viewport": "auto",
+ "intro": {
+  "title": "Because it is there",
+  "dateline": "1924 CE",
+  "body": "The 1924 British Everest expedition was the third attempt on the mountain. George Mallory and Andrew Irvine left Camp VI for the summit on the morning of 8 June and were last seen 'going strong for the top' by Noel Odell at around 12:50 pm. Mallory's body was found in 1999; whether they reached the top is unknown."
+ },
+ "companions": [
+  "Mallory",
+  "Irvine",
+  "Odell"
+ ],
+ "stops": [
+  {
+   "id": "stop-1",
+   "name": "Calcutta",
+   "lat": 22.5726,
+   "lon": 88.3639,
+   "note": "The expedition lands on the Bengal coast and gathers its stores before taking the rail north; the mountain is still four hundred miles away.",
+   "imagePrompt": "Sepia plate. A busy Bengal quayside with steamer funnels and stacked crates, tweed-clad expedition members supervising porters under a hot haze.",
+   "vehicleToNext": "locomotive"
   },
-  "companions": ["Mallory", "Irvine", "Odell"],
-  "stops": [
-    {
-      "id": "stop-1",
-      "name": "Calcutta",
-      "lat": 22.5726,
-      "lon": 88.3639,
-      "note": "The expedition lands on the Bengal coast and gathers its stores before taking the rail north; the mountain is still four hundred miles away.",
-      "imagePrompt": "Sepia plate. A busy Bengal quayside with steamer funnels and stacked crates, tweed-clad expedition members supervising porters under a hot haze.",
-      "vehicleToNext": "locomotive"
-    },
-    {
-      "id": "stop-2",
-      "name": "Darjeeling",
-      "lat": 27.04,
-      "lon": 88.27,
-      "note": "Expedition assembles February-March 1924. Tibet permits, Sherpa hiring, Howard-Bury and Norton in command.",
-      "imagePrompt": "Sepia plate. Hill-station town with toy-train rails, snow Kangchenjunga in the distance, expedition kit in canvas piles on the verandah.",
-      "vehicleToNext": "foot"
-    },
-    {
-      "id": "stop-3",
-      "name": "Phari Dzong",
-      "lat": 27.74,
-      "lon": 89.18,
-      "note": "Tibetan plateau staging post, end of March 1924. The expedition crosses into Tibet via the Jelep La.",
-      "imagePrompt": "Sepia plate. Brown-mud fort on a high windswept plain, yaks loaded with kit, expedition members in tweeds.",
-      "vehicleToNext": "foot"
-    },
-    {
-      "id": "stop-4",
-      "name": "Rongbuk Monastery",
-      "lat": 28.18,
-      "lon": 86.85,
-      "note": "Base of the approach. Lama Dzatrul receives the expedition; Mallory describes the monastery in letters home.",
-      "imagePrompt": "Sepia plate. Whitewashed monastery on a stony plain with Everest rising behind, monks blowing long horns.",
-      "vehicleToNext": "foot"
-    },
-    {
-      "id": "stop-5",
-      "name": "Camp V (North Col)",
-      "lat": 28.05,
-      "lon": 86.93,
-      "note": "Snow-camp on the col between Everest and Changtse, 7,000 m. The launch point for the summit push, 6 June 1924.",
-      "imagePrompt": "Sepia plate. Two small canvas tents in a snow saddle between two black peaks, climbers in tweed and silk in front.",
-      "vehicleToNext": "foot"
-    },
-    {
-      "id": "stop-6",
-      "name": "Camp VI / North-east Ridge",
-      "lat": 27.99,
-      "lon": 86.94,
-      "note": "8 June 1924. Mallory and Irvine leave for the summit at 8 am with oxygen sets. Odell sees them at 12:50 pm 'going strong for the top'. They never return.",
-      "imagePrompt": "Sepia plate. Two figures roped together on a high snow ridge, oxygen apparatus on their backs, summit pyramid above, swirling clouds.",
-      "vehicleToNext": "foot"
-    }
-  ]
+  {
+   "id": "stop-2",
+   "name": "Darjeeling",
+   "lat": 27.04,
+   "lon": 88.27,
+   "note": "Expedition assembles February-March 1924. Tibet permits, Sherpa hiring, Howard-Bury and Norton in command.",
+   "imagePrompt": "Sepia plate. Hill-station town with toy-train rails, snow Kangchenjunga in the distance, expedition kit in canvas piles on the verandah.",
+   "vehicleToNext": "foot"
+  },
+  {
+   "id": "stop-3",
+   "name": "Phari Dzong",
+   "lat": 27.74,
+   "lon": 89.18,
+   "note": "Tibetan plateau staging post, end of March 1924. The expedition crosses into Tibet via the Jelep La.",
+   "imagePrompt": "Sepia plate. Brown-mud fort on a high windswept plain, yaks loaded with kit, expedition members in tweeds.",
+   "vehicleToNext": "foot"
+  },
+  {
+   "id": "stop-4",
+   "name": "Rongbuk Monastery",
+   "lat": 28.18,
+   "lon": 86.85,
+   "note": "Base of the approach. Lama Dzatrul receives the expedition; Mallory describes the monastery in letters home.",
+   "imagePrompt": "Sepia plate. Whitewashed monastery on a stony plain with Everest rising behind, monks blowing long horns. stone gompa with a white chorten, himalaya.",
+   "vehicleToNext": "foot"
+  },
+  {
+   "id": "stop-5",
+   "name": "Camp V (North Col)",
+   "lat": 28.05,
+   "lon": 86.93,
+   "note": "Snow-camp on the col between Everest and Changtse, 7,000 m. The launch point for the summit push, 6 June 1924.",
+   "imagePrompt": "Sepia plate. Two small canvas tents in a snow saddle between two black peaks, climbers in tweed and silk in front.",
+   "vehicleToNext": "foot"
+  },
+  {
+   "id": "stop-6",
+   "name": "Camp VI / North-east Ridge",
+   "lat": 27.99,
+   "lon": 86.94,
+   "note": "8 June 1924. Mallory and Irvine leave for the summit at 8 am with oxygen sets. Odell sees them at 12:50 pm 'going strong for the top'. They never return.",
+   "imagePrompt": "Sepia plate. Two figures roped together on a high snow ridge, oxygen apparatus on their backs, summit pyramid above, swirling clouds.",
+   "vehicleToNext": "foot"
+  }
+ ]
 }

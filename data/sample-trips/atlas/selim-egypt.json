@@ -1,60 +1,62 @@
 {
-  "id": "selim-egypt",
-  "era": "atlas",
-  "title": "Selim I — Egyptian conquest",
-  "themeSuggestion": "atlas-sepia",
-  "viewport": "auto",
-  "intro": {
-    "title": "From Çaldıran to the Pyramids",
-    "dateline": "1514-1517 CE",
-    "body": "Selim the Grim defeated the Safavids at Çaldıran in 1514, then turned south to end Mamluk rule. Marj Dabiq broke the Mamluk field army in 1516; Ridaniyya delivered Cairo in 1517. Selim took the title of Servant of the Two Holy Sanctuaries."
+ "id": "selim-egypt",
+ "era": "atlas",
+ "title": "Selim I — Egyptian conquest",
+ "themeSuggestion": "atlas-sepia",
+ "viewport": "auto",
+ "intro": {
+  "title": "From Çaldıran to the Pyramids",
+  "dateline": "1514-1517 CE",
+  "body": "Selim the Grim defeated the Safavids at Çaldıran in 1514, then turned south to end Mamluk rule. Marj Dabiq broke the Mamluk field army in 1516; Ridaniyya delivered Cairo in 1517. Selim took the title of Servant of the Two Holy Sanctuaries."
+ },
+ "companions": [
+  "Selim I"
+ ],
+ "stops": [
+  {
+   "id": "stop-1",
+   "name": "Istanbul",
+   "lat": 41.01,
+   "lon": 28.97,
+   "note": "Selim's working capital. The Topkapı palace is then sixty years old.",
+   "imagePrompt": "Hand-coloured plate. Topkapı palace gardens with Janissaries assembling in the second courtyard, Bosphorus in distance.",
+   "vehicleToNext": "horse"
   },
-  "companions": ["Selim I"],
-  "stops": [
-    {
-      "id": "stop-1",
-      "name": "Istanbul",
-      "lat": 41.01,
-      "lon": 28.97,
-      "note": "Selim's working capital. The Topkapı palace is then sixty years old.",
-      "imagePrompt": "Hand-coloured plate. Topkapı palace gardens with Janissaries assembling in the second courtyard, Bosphorus in distance.",
-      "vehicleToNext": "horse"
-    },
-    {
-      "id": "stop-2",
-      "name": "Çaldıran",
-      "lat": 39.13,
-      "lon": 44.07,
-      "note": "23 August 1514. Selim's Janissary arquebuses and field artillery break Shah Ismail's cavalry charge on the plateau east of Lake Van.",
-      "imagePrompt": "Hand-coloured plate. High plateau battle, line of wagons with cannon, Safavid cavalry breaking against musket smoke.",
-      "vehicleToNext": "horse"
-    },
-    {
-      "id": "stop-3",
-      "name": "Marj Dabiq",
-      "lat": 36.43,
-      "lon": 37.20,
-      "note": "24 August 1516. Selim defeats and kills the Mamluk sultan Qansuh al-Ghuri north of Aleppo. The Levant is opened to the Ottomans.",
-      "imagePrompt": "Hand-coloured plate. Syrian plain with two armies opposed, Mamluk heavy cavalry against Ottoman gunpowder line, banner of a fallen sultan in the foreground.",
-      "vehicleToNext": "horse"
-    },
-    {
-      "id": "stop-4",
-      "name": "Jerusalem",
-      "lat": 31.78,
-      "lon": 35.22,
-      "note": "December 1516. Selim enters Jerusalem on his way south; receives the keys of the Haram al-Sharif from the city's notables.",
-      "imagePrompt": "Hand-coloured plate. Damascus Gate of Jerusalem, sultan on horseback receiving keys on a velvet cushion.",
-      "vehicleToNext": "horse"
-    },
-    {
-      "id": "stop-5",
-      "name": "Cairo (Ridaniyya)",
-      "lat": 30.05,
-      "lon": 31.25,
-      "note": "22 January 1517. Selim's flanking march around the Mamluk fortified line at Ridaniyya wins the battle. Tuman Bay is hanged at the Bab Zuwayla weeks later.",
-      "imagePrompt": "Hand-coloured plate. Cairo skyline with pyramids in the haze beyond, Mamluk fortified positions being outflanked by Janissary infantry.",
-      "vehicleToNext": "horse"
-    }
-  ]
+  {
+   "id": "stop-2",
+   "name": "Çaldıran",
+   "lat": 39.13,
+   "lon": 44.07,
+   "note": "23 August 1514. Selim's Janissary arquebuses and field artillery break Shah Ismail's cavalry charge on the plateau east of Lake Van.",
+   "imagePrompt": "Hand-coloured plate. High plateau battle, line of wagons with cannon, Safavid cavalry breaking against musket smoke. army camp, banners on the steppe.",
+   "vehicleToNext": "horse"
+  },
+  {
+   "id": "stop-3",
+   "name": "Marj Dabiq",
+   "lat": 36.43,
+   "lon": 37.2,
+   "note": "24 August 1516. Selim defeats and kills the Mamluk sultan Qansuh al-Ghuri north of Aleppo. The Levant is opened to the Ottomans.",
+   "imagePrompt": "Hand-coloured plate. Syrian plain with two armies opposed, Mamluk heavy cavalry against Ottoman gunpowder line, banner of a fallen sultan in the foreground. army camp, banners.",
+   "vehicleToNext": "horse"
+  },
+  {
+   "id": "stop-4",
+   "name": "Jerusalem",
+   "lat": 31.78,
+   "lon": 35.22,
+   "note": "December 1516. Selim enters Jerusalem on his way south; receives the keys of the Haram al-Sharif from the city's notables.",
+   "imagePrompt": "Hand-coloured plate. Damascus Gate of Jerusalem, sultan on horseback receiving keys on a velvet cushion.",
+   "vehicleToNext": "horse"
+  },
+  {
+   "id": "stop-5",
+   "name": "Cairo (Ridaniyya)",
+   "lat": 30.05,
+   "lon": 31.25,
+   "note": "22 January 1517. Selim's flanking march around the Mamluk fortified line at Ridaniyya wins the battle. Tuman Bay is hanged at the Bab Zuwayla weeks later.",
+   "imagePrompt": "Hand-coloured plate. Cairo skyline with pyramids in the haze beyond, Mamluk fortified positions being outflanked by Janissary infantry.",
+   "vehicleToNext": "horse"
+  }
+ ]
 }
