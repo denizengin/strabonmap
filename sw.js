@@ -14,7 +14,7 @@
 // on the next commit that touches a runtime file. If you need to
 // force-invalidate caches (e.g. unrelated to a runtime change),
 // add a no-op touch like a trailing newline to sw.js itself and commit.
-const CACHE_VERSION = 'strabon-map-b892c87f07';
+const CACHE_VERSION = 'strabon-map-69fc3817fb';
 
 // #97 tiered loading (PERF_OFFLINE_ADDONS_COUNCIL). Two buckets:
 //   • CACHE_VERSION  — Tier-1 precache + content-versioned runtime assets.
