@@ -1,31 +1,35 @@
 <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="On foot">
-  <!-- V-28 traveller on foot — the universal, era-neutral "delight anchor".
-       Single walking figure in profile, mid-stride: wide-brimmed hat,
-       cloak with a lit fold + shadow fold, a slung pack, a walking staff.
-       Gold staff-tip = the one gold accent. Light from TOP-LEFT. -->
-  <!-- (1) cast shadow -->
-  <ellipse class="sh" cx="50" cy="86" rx="22" ry="4.5"/>
-  <!-- walking staff (planted forward) -->
-  <path class="wood" d="M64 30 L60 84 L62.5 84 L66.5 30 Z"/>
-  <path class="out-thin" fill="none" d="M65 30 L61 84"/>
-  <circle class="gold" cx="65.2" cy="29" r="2.6"/>
-  <!-- legs mid-stride -->
-  <path class="wood" d="M43 60 L39 84 L43 84 L47 62 Z"/>
-  <path class="wood-l" d="M48 60 L56 82 L60 81 L52 60 Z"/>
-  <path class="out-thin" fill="none" d="M43 60 L39 84 M50 60 L57 82"/>
-  <!-- cloak: lit front face + shadow back fold (the two planes) -->
-  <path class="roof" d="M38 33 q-4 22 4 32 L58 65 q6 -30 -2 -34 Z"/>
-  <path class="roof-s" d="M50 31 q8 4 8 34 L50 65 Z"/>
-  <path class="hi" d="M40 36 q-2 14 2 24 L46 60 q-3 -22 -1 -26 Z"/>
-  <!-- slung pack on the back -->
-  <path class="wall" d="M34 44 q-5 3 -4 11 q4 3 7 0 q1 -8 -3 -11 Z"/>
-  <path class="wall-s" d="M30 55 q4 3 7 0 L36 50 Z"/>
-  <!-- head + wide-brimmed traveller's hat -->
-  <circle class="wall" cx="50" cy="26" r="6"/>
-  <path class="wall-s" d="M50 20 a6 6 0 0 1 0 12 Z"/>
-  <path class="wood" d="M38 22 q12 -7 24 0 q-3 4 -12 4 q-9 0 -12 -4 Z"/>
-  <path class="wood-l" d="M44 14 q6 -3 12 0 q1 6 -6 8 q-7 -2 -6 -8 Z"/>
-  <path class="out-thin" fill="none" d="M38 22 q12 -7 24 0"/>
-  <!-- primary contour over the cloak silhouette -->
-  <path class="out" fill="none" d="M38 33 q-4 22 4 32 L58 65 q6 -30 -2 -34"/>
+  <!-- the wayfarer IN STRIDE, profile facing RIGHT.
+       B4 (owner GO 17 Jul): a real walk — leaning forward, hem swept back,
+       satchel swinging, the fore arm (sleeved) reaching to the staff, dust
+       off the back heel. Light from TOP-LEFT. Gold staff-tip = the accent. -->
+  <ellipse class="sh" cx="52" cy="86" rx="26" ry="4.5"/>
+      <!-- staff swung forward with the stride -->
+      <path class="wood" d="M72 34 L60 84 L62.5 84 L74.5 35 Z"/>
+      <path class="out-thin" fill="none" d="M73 34 L61 84"/>
+      <circle class="gold" cx="73.5" cy="33" r="2.6"/>
+      <!-- long stride: back leg extended, front planted -->
+      <path class="wood" d="M40 58 L28 82 L32 84 L44 62 Z"/>
+      <path class="wood-l" d="M48 58 L58 82 L62 81 L53 58 Z"/>
+      <path class="out-thin" fill="none" d="M41 59 L30 82 M50 58 L59 82"/>
+      <!-- cloak leaning forward, hem swept back -->
+      <path class="roof" d="M42 32 q-8 18 -6 26 q1 6 8 8 L60 64 q7 -26 -4 -32 Z"/>
+      <path class="roof-s" d="M53 30 q9 6 7 34 L52 65 Z"/>
+      <path class="hi" d="M44 35 q-5 13 -3 23 L47 60 q-4 -18 0 -25 Z"/>
+      <path class="roof-s" d="M38 52 q-8 4 -12 12 q7 -2 10 -6 Z"/>
+      <!-- satchel swinging at the hip -->
+      <path class="wall" d="M38 44 q-6 3 -5 12 q5 4 9 0 q2 -9 -4 -12 Z"/>
+      <path class="wall-s" d="M33 56 q5 4 9 0 L41 51 Z"/>
+      <path class="out-thin" fill="none" d="M40 45 q4 -8 12 -12"/>
+      <!-- head leaning into the road -->
+      <circle class="wall" cx="56" cy="24" r="6"/>
+      <path class="wall-s" d="M56 18 a6 6 0 0 1 0 12 Z"/>
+      <path class="wood" d="M44 21 q12 -8 25 -1 q-3 4 -12 4 q-9 1 -13 -3 Z"/>
+      <path class="wood-l" d="M50 12 q6 -3 12 1 q0 6 -7 7 q-7 -2 -5 -8 Z"/>
+      <path class="out-thin" fill="none" d="M44 21 q12 -8 25 -1"/>
+      <!-- road dust behind the back foot -->
+      <path class="out-thin" fill="none" d="M24 82 q-5 1 -8 4 M28 77 q-6 0 -9 3"/>
+      <path class="roof-s" d="M52 36 q7 1 13 6 L63 45 q-6 -4 -12 -5 Z"/>
+      <circle class="wall" cx="65" cy="43" r="2"/>
+      <path class="out" fill="none" d="M42 32 q-8 18 -6 26 q1 6 8 8 L60 64 q7 -26 -4 -32"/>
 </svg>

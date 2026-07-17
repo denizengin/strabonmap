@@ -1,41 +1,47 @@
 <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Horse">
-  <!-- saddled horse, side-on profile facing RIGHT, mid-stride.
-       Light from TOP-LEFT. Body barrel (left), arched neck + head + muzzle
-       (right), four legs, flowing tail (rear), mane, saddle (roof/roof-s).
-       Gold = bridle bit ring at the muzzle (single gold accent). -->
+  <!-- saddled horse with a cloaked RIDER, side-on facing RIGHT, mid-stride.
+       B4 (owner GO 17 Jul): the shipped horse gains its traveller — hatted
+       rider, boot in the stirrup, rein to the bit — plus an eye, a nostril,
+       a second ear, hooves and a bridle strap. Light from TOP-LEFT.
+       Gold = bridle bit ring (single gold accent). -->
   <ellipse class="sh" cx="48" cy="88" rx="34" ry="4.5"/>
-  <!-- FAR legs (shadow), mid-stride -->
-  <path class="wood" d="M30 58 L26 86 L30 86 L34 58 Z"/>
-  <path class="wood" d="M62 58 L66 86 L70 86 L66 58 Z"/>
-  <!-- NEAR legs (lit), mid-stride: one foreleg forward, one hindleg back -->
-  <path class="wood-l" d="M36 58 L31 86 L35 86 L41 58 Z"/>
-  <path class="wood-l" d="M56 58 L61 84 L65 84 L60 58 Z"/>
-  <path class="out-thin" fill="none" d="M36 58 L31 86 M56 58 L61 84"/>
-  <!-- body barrel: lit topline + shadow belly -->
-  <path class="wall" d="M24 52 q4 -12 22 -13 q14 -1 22 4 q4 3 4 7 L24 56 Z"/>
-  <path class="wall-s" d="M24 56 L72 50 q1 7 -6 10 q-12 5 -28 4 q-12 -1 -14 -8 Z"/>
-  <path class="hi" d="M28 48 q10 -7 22 -7 q-13 1 -22 7 Z"/>
-  <!-- haunch (rear, lit) -->
-  <path class="wall" d="M24 52 q-4 1 -5 8 q1 5 6 6 q4 -1 4 -7 Z"/>
-  <!-- arched neck + head facing right: lit front + shadow underside -->
-  <path class="wall" d="M66 46 q6 -14 16 -20 q5 -3 9 0 q-3 5 -9 9 q-6 4 -10 14 Z"/>
-  <path class="wall-s" d="M91 26 q-3 5 -9 9 q-6 4 -10 14 L66 46 q9 -3 14 -9 q5 -6 11 -11 Z"/>
-  <!-- head + muzzle (the long jaw to the right) -->
-  <path class="wall" d="M82 26 q6 -3 12 -1 q3 2 1 5 q-4 4 -11 4 q-4 -1 -5 -4 Z"/>
-  <path class="wall-s" d="M88 25 q4 1 7 4 q-3 4 -11 4 q3 -3 4 -8 Z"/>
-  <!-- ears -->
-  <path class="wall" d="M82 23 q1 -5 4 -6 q1 3 -1 7 Z"/>
-  <!-- mane along the neck -->
-  <path class="roof-s" d="M70 42 q8 -13 18 -20 q-2 6 -7 12 q-5 6 -9 11 Z"/>
-  <!-- saddle on the back (roof lit + roof-s shadow) -->
-  <path class="roof" d="M36 41 q11 -5 20 -1 q-1 6 -10 7 q-9 -1 -10 -6 Z"/>
-  <path class="roof-s" d="M46 40 q5 0 10 0 q-1 6 -10 7 Z"/>
-  <path class="out-thin" fill="none" d="M36 41 q11 -5 20 -1"/>
-  <!-- flowing tail at the rear (left) -->
-  <path class="wood" d="M19 52 q-9 6 -9 24 q4 -4 5 -11 q2 -8 8 -10 Z"/>
-  <path class="out-thin" fill="none" d="M19 52 q-9 6 -9 24"/>
-  <!-- bridle bit ring at the muzzle (gold accent) -->
-  <circle class="gold" cx="93" cy="29" r="2.4"/>
-  <!-- primary contour: tail -> back -> neck -> head -> muzzle -> chest -> belly -->
-  <path class="out" fill="none" d="M19 52 q5 -13 27 -13 q14 -1 20 6 q6 -14 16 -20 q5 -3 9 0 q3 2 1 5 q-3 4 -10 4 q-6 5 -11 14 q1 8 -7 11 q-14 5 -30 4 q-12 -1 -14 -11 Z"/>
+      <path class="wood" d="M30 58 L26 86 L30 86 L34 58 Z"/>
+      <path class="wood" d="M62 58 L66 86 L70 86 L66 58 Z"/>
+      <path class="wood-l" d="M36 58 L31 86 L35 86 L41 58 Z"/>
+      <path class="wood-l" d="M56 58 L61 84 L65 84 L60 58 Z"/>
+      <path class="out-thin" fill="none" d="M36 58 L31 86 M56 58 L61 84"/>
+      <path class="wall" d="M24 52 q4 -12 22 -13 q14 -1 22 4 q4 3 4 7 L24 56 Z"/>
+      <path class="wall-s" d="M24 56 L72 50 q1 7 -6 10 q-12 5 -28 4 q-12 -1 -14 -8 Z"/>
+      <path class="hi" d="M28 48 q10 -7 22 -7 q-13 1 -22 7 Z"/>
+      <path class="wall" d="M24 52 q-4 1 -5 8 q1 5 6 6 q4 -1 4 -7 Z"/>
+      <path class="wall" d="M66 46 q6 -14 16 -20 q5 -3 9 0 q-3 5 -9 9 q-6 4 -10 14 Z"/>
+      <path class="wall-s" d="M91 26 q-3 5 -9 9 q-6 4 -10 14 L66 46 q9 -3 14 -9 q5 -6 11 -11 Z"/>
+      <path class="wall" d="M82 26 q6 -3 12 -1 q3 2 1 5 q-4 4 -11 4 q-4 -1 -5 -4 Z"/>
+      <path class="wall-s" d="M88 25 q4 1 7 4 q-3 4 -11 4 q3 -3 4 -8 Z"/>
+      <path class="wall" d="M82 23 q1 -5 4 -6 q1 3 -1 7 Z"/>
+      <path class="roof-s" d="M70 42 q8 -13 18 -20 q-2 6 -7 12 q-5 6 -9 11 Z"/>
+      <!-- RIDER: seated, cloaked, hatted, boot in stirrup, hand on rein -->
+      <path class="roof" d="M40 28 q5 -3 10 0 L52 42 L40 43 Z"/>
+      <path class="roof-s" d="M47 28 q2 0 3 0 L52 42 L48 42 Z"/>
+      <circle class="wall" cx="46" cy="20" r="5"/>
+      <path class="wall-s" d="M46 15 a5 5 0 0 1 0 10 Z"/>
+      <path class="wood" d="M38 17 q8 -5 16 0 q-2 3 -8 3 q-6 0 -8 -3 Z"/>
+      <path class="wood-l" d="M42 11 q4 -2 8 0 q1 4 -4 5 q-5 -1 -4 -5 Z"/>
+      <path class="out-thin" fill="none" d="M38 17 q8 -5 16 0"/>
+      <path class="wall" d="M50 30 q6 2 10 6 L58 39 q-5 -3 -9 -4 Z"/>
+      <path class="out-thin" fill="none" d="M58 37 Q78 30 92 30"/>
+      <path class="wood" d="M44 42 L44 56 L48 60 L50 57 L47 54 L47 42 Z"/>
+      <path class="out-thin" fill="none" d="M44 42 L44 56 L48 60"/>
+      <!-- saddle blanket under the rider -->
+      <path class="roof" d="M36 42 q11 -4 20 -1 q-1 6 -10 7 q-9 -1 -10 -6 Z"/>
+      <path class="roof-s" d="M46 41 q5 0 10 0 q-1 6 -10 7 Z"/>
+      <path class="wood" d="M19 52 q-9 6 -9 24 q4 -4 5 -11 q2 -8 8 -10 Z"/>
+      <path class="out-thin" fill="none" d="M19 52 q-9 6 -9 24"/>
+      <circle fill="#3a2817" cx="85" cy="25" r="1"/>
+      <circle fill="#3a2817" cx="93.4" cy="30.4" r="0.7"/>
+      <path class="wall-s" d="M86 22 q1 -4 3.5 -5 q0.5 3 -1.5 6 Z"/>
+      <path class="out-thin" fill="none" d="M85 27 L90 31"/>
+      <path class="wood" d="M30.5 84 L35.5 84 L35.5 87 L30.5 87 Z M60.5 82 L65.5 82 L65.5 85 L60.5 85 Z"/>
+      <circle class="gold" cx="93" cy="29" r="2.4"/>
+      <path class="out" fill="none" d="M19 52 q5 -13 27 -13 q14 -1 20 6 q6 -14 16 -20 q5 -3 9 0 q3 2 1 5 q-3 4 -10 4 q-6 5 -11 14 q1 8 -7 11 q-14 5 -30 4 q-12 -1 -14 -11 Z"/>
 </svg>
