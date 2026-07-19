@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Swipe-feedback mockups — #106</title>
+<style>
+  :root {
+    --paper-1: #ecd9aa; --paper-2: #d4ba88; --paper-3: #c9a772;
+    --ink: #3a2817; --ink-faded: #6b4a2e; --red: #7a1f1a;
+  }
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  html, body { margin: 0; padding: 0; background: #2a1a0c; color: var(--ink);
+    font-family: 'IM Fell DW Pica', Georgia, serif; overscroll-behavior: none; }
+  header { padding: 16px 18px 6px; color: #f3e7c8; }
+  header h1 { font-size: 1.05rem; margin: 0 0 2px; font-style: italic; font-weight: normal; }
+  header p { font-size: 0.78rem; margin: 0; color: #c9b48c; line-height: 1.4; }
+  .demo { margin: 14px 12px 22px; }
+  .demo > .label {
+    font-family: 'Special Elite', 'Courier New', monospace; font-size: 0.62rem;
+    letter-spacing: 0.14em; text-transform: uppercase; color: #d9c49a;
+    padding: 0 6px 7px; display: flex; justify-content: space-between; align-items: baseline;
+  }
+  .demo > .label b { color: #f3e7c8; font-weight: normal; letter-spacing: 0.08em; font-size: 0.72rem; }
+  .stage {
+    position: relative; height: 340px; overflow: hidden; border-radius: 4px;
+    background: radial-gradient(ellipse at 50% 40%, var(--paper-1), var(--paper-2) 62%, var(--paper-3));
+    box-shadow: 0 6px 18px rgba(0,0,0,0.4); touch-action: pan-y;
+  }
+  .card {
+    position: absolute; inset: 0; padding: 20px 18px;
+    display: flex; flex-direction: column; gap: 10px;
+    background: radial-gradient(ellipse at 50% 35%, var(--paper-1), var(--paper-2) 62%, var(--paper-3));
+    will-change: transform;
+  }
+  .card .eyebrow { font-family: 'Special Elite', monospace; font-size: 0.58rem;
+    letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-faded); }
+  .card .name { font-size: 1.5rem; font-style: italic; margin: 0; }
+  .card .photo { flex: 1; border-radius: 3px; background-size: cover; background-position: center;
+    box-shadow: 0 2px 8px rgba(42,26,12,0.35), inset 0 0 0 5px #f7efdb, inset 0 0 0 6px rgba(42,26,12,0.15); }
+  .card .note { font-size: 0.9rem; line-height: 1.4; color: var(--ink); font-style: italic; }
+  .hint { text-align: center; font-family: 'Special Elite', monospace; font-size: 0.56rem;
+    letter-spacing: 0.12em; color: #b89f76; padding: 8px 0 0; text-transform: uppercase; }
+
+  /* Photos (open-license-style gradients standing in for the plates) */
+  .p1 { background-image: linear-gradient(135deg, #6b8ca8, #2e4a63 70%), url(''); }
+  .p2 { background-image: linear-gradient(135deg, #b8794a, #6b3a1f 70%); }
+  .p3 { background-image: linear-gradient(135deg, #8a9a6a, #3a4a28 70%); }
+
+  /* Mechanism A — peeking neighbour + rubber-band: handled in JS via transforms. */
+  /* Mechanism B — edge-glow + page-corner lift */
+  .lift-edge {
+    position: absolute; top: 0; bottom: 0; width: 34%; pointer-events: none; opacity: 0;
+    background: linear-gradient(90deg, rgba(58,40,23,0) 0%, rgba(58,40,23,0.22) 100%);
+  }
+  .lift-edge.right { right: 0; }
+  .lift-edge.left { left: 0; transform: scaleX(-1); }
+  .glow {
+    position: absolute; top: 0; bottom: 0; width: 6px; pointer-events: none; opacity: 0;
+    background: radial-gradient(ellipse at center, rgba(122,31,26,0.9), rgba(122,31,26,0) 70%);
+    filter: blur(3px);
+  }
+  .glow.right { right: 0; } .glow.left { left: 0; }
+
+  /* Mechanism C — filmstrip track */
+  .strip { position: absolute; top: 0; bottom: 0; left: 0; display: flex; will-change: transform; }
+  .frame { width: 78vw; max-width: 360px; height: 100%; padding: 16px 14px;
+    display: flex; flex-direction: column; gap: 8px; border-right: 2px dashed rgba(58,40,23,0.25);
+    background: radial-gradient(ellipse at 50% 35%, var(--paper-1), var(--paper-2) 62%, var(--paper-3)); }
+  .frame .photo { flex: 1; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Swipe-feedback mockups — three options</h1>
+  <p>Drag left / right inside each panel to feel the motion. Pick the one that feels right; I'll wire it into the real journey view.</p>
+</header>
+
+<!-- A -->
+<div class="demo">
+  <div class="label"><span>Option A</span><b>Peeking neighbour + rubber-band</b></div>
+  <div class="stage" id="stageA">
+    <div class="card" id="nextA">
+      <div class="eyebrow">Stop 3 · The Iliad</div>
+      <h2 class="name">Troy</h2>
+      <div class="photo p2"></div>
+      <div class="note">The windy plain before the walls.</div>
+    </div>
+    <div class="card" id="curA">
+      <div class="eyebrow">Stop 2 · The Iliad</div>
+      <h2 class="name">Tenedos</h2>
+      <div class="photo p1"></div>
+      <div class="note">The fleet lay hidden behind the isle.</div>
+    </div>
+  </div>
+  <div class="hint">both cards track your finger · release past 40% commits · short drag springs back</div>
+</div>
+
+<!-- B -->
+<div class="demo">
+  <div class="label"><span>Option B</span><b>Edge-glow + page-corner lift</b></div>
+  <div class="stage" id="stageB">
+    <div class="card" id="curB">
+      <div class="eyebrow">Stop 2 · The Iliad</div>
+      <h2 class="name">Tenedos</h2>
+      <div class="photo p1"></div>
+      <div class="note">The fleet lay hidden behind the isle.</div>
+      <div class="lift-edge left"></div><div class="lift-edge right"></div>
+      <div class="glow left"></div><div class="glow right"></div>
+    </div>
+  </div>
+  <div class="hint">the card stays · the pulled edge lifts + glows · release turns the page</div>
+</div>
+
+<!-- C -->
+<div class="demo">
+  <div class="label"><span>Option C</span><b>Filmstrip track (flick through frames)</b></div>
+  <div class="stage" id="stageC">
+    <div class="strip" id="stripC">
+      <div class="frame"><div class="eyebrow">Stop 1</div><h2 class="name">Aulis</h2><div class="photo p3"></div><div class="note">Where the black ships gathered.</div></div>
+      <div class="frame"><div class="eyebrow">Stop 2</div><h2 class="name">Tenedos</h2><div class="photo p1"></div><div class="note">The fleet lay hidden behind the isle.</div></div>
+      <div class="frame"><div class="eyebrow">Stop 3</div><h2 class="name">Troy</h2><div class="photo p2"></div><div class="note">The windy plain before the walls.</div></div>
+    </div>
+  </div>
+  <div class="hint">flick to travel several stops · friction settles on a frame</div>
+</div>
+
+<script>
+(function () {
+  var W = function (el) { return el.getBoundingClientRect().width; };
+
+  // ---- Option A: peeking neighbour + rubber-band ----
+  (function () {
+    var stage = document.getElementById('stageA');
+    var cur = document.getElementById('curA'), nxt = document.getElementById('nextA');
+    var w = 0, x0 = null, dx = 0;
+    function place(off) {
+      var width = w || W(stage);
+      cur.style.transform = 'translateX(' + off + 'px)';
+      // next card sits just off the side you're dragging toward
+      var from = off < 0 ? width : -width;
+      nxt.style.transform = 'translateX(' + (from + off) + 'px)';
+      var k = Math.min(1, Math.abs(off) / width);
+      cur.style.boxShadow = '0 0 ' + (30 * k) + 'px rgba(42,26,12,' + (0.5 * k) + ')';
+    }
+    place(0);
+    stage.addEventListener('touchstart', function (e) { w = W(stage); x0 = e.touches[0].clientX; cur.style.transition = nxt.style.transition = 'none'; }, { passive: true });
+    stage.addEventListener('touchmove', function (e) { if (x0 == null) return; dx = e.touches[0].clientX - x0; place(dx); }, { passive: true });
+    stage.addEventListener('touchend', function () {
+      if (x0 == null) return;
+      var width = w || W(stage), commit = Math.abs(dx) >= width * 0.4;
+      cur.style.transition = nxt.style.transition = 'transform 320ms cubic-bezier(.22,1,.36,1), box-shadow 320ms';
+      if (commit) { var dir = dx < 0 ? -1 : 1; place(dir * width); setTimeout(function () { cur.style.transition = nxt.style.transition = 'none'; place(0); }, 340); }
+      else { place(0); }
+      x0 = null; dx = 0;
+    });
+  })();
+
+  // ---- Option B: edge-glow + page-corner lift ----
+  (function () {
+    var stage = document.getElementById('stageB');
+    var card = document.getElementById('curB');
+    var edges = card.querySelectorAll('.lift-edge'), glows = card.querySelectorAll('.glow');
+    var x0 = null, dx = 0, w = 0;
+    function apply(off) {
+      var width = w || W(stage), k = Math.min(1, Math.abs(off) / (width * 0.5));
+      var toLeft = off < 0; // dragging left → pulling toward the RIGHT edge (next)
+      card.querySelector('.lift-edge.right').style.opacity = toLeft ? k : 0;
+      card.querySelector('.lift-edge.left').style.opacity = toLeft ? 0 : k;
+      card.querySelector('.glow.right').style.opacity = toLeft ? k : 0;
+      card.querySelector('.glow.left').style.opacity = toLeft ? 0 : k;
+      card.style.transform = 'perspective(900px) rotateY(' + (toLeft ? -k * 7 : k * 7) + 'deg)';
+      card.style.transformOrigin = toLeft ? 'left center' : 'right center';
+    }
+    stage.addEventListener('touchstart', function (e) { w = W(stage); x0 = e.touches[0].clientX; card.style.transition = 'none'; edges.forEach(function (n) { n.style.transition = 'none'; }); }, { passive: true });
+    stage.addEventListener('touchmove', function (e) { if (x0 == null) return; dx = e.touches[0].clientX - x0; apply(dx); }, { passive: true });
+    stage.addEventListener('touchend', function () {
+      if (x0 == null) return;
+      card.style.transition = 'transform 300ms ease'; edges.forEach(function (n) { n.style.transition = 'opacity 260ms'; });
+      glows.forEach(function (n) { n.style.transition = 'opacity 260ms'; });
+      apply(0); card.style.transform = 'none';
+      edges.forEach(function (n) { n.style.opacity = 0; }); glows.forEach(function (n) { n.style.opacity = 0; });
+      x0 = null; dx = 0;
+    });
+  })();
+
+  // ---- Option C: filmstrip track ----
+  (function () {
+    var stage = document.getElementById('stageC');
+    var strip = document.getElementById('stripC');
+    var idx = 1, x0 = null, dx = 0, t0 = 0, base = 0, fw = 0;
+    function frameW() { return strip.children[0].getBoundingClientRect().width; }
+    function settle(i) { fw = frameW(); idx = Math.max(0, Math.min(2, i)); strip.style.transition = 'transform 340ms cubic-bezier(.22,1,.36,1)'; strip.style.transform = 'translateX(' + (-idx * fw) + 'px)'; }
+    settle(1);
+    stage.addEventListener('touchstart', function (e) { fw = frameW(); base = -idx * fw; x0 = e.touches[0].clientX; t0 = Date.now(); strip.style.transition = 'none'; }, { passive: true });
+    stage.addEventListener('touchmove', function (e) { if (x0 == null) return; dx = e.touches[0].clientX - x0; strip.style.transform = 'translateX(' + (base + dx) + 'px)'; }, { passive: true });
+    stage.addEventListener('touchend', function () {
+      if (x0 == null) return;
+      var v = dx / Math.max(1, (Date.now() - t0)); // px/ms — flick velocity
+      var step = 0;
+      if (Math.abs(v) > 0.5) step = v < 0 ? Math.ceil(-v) : -Math.ceil(v); // flick jumps frames
+      else if (Math.abs(dx) > fw * 0.35) step = dx < 0 ? 1 : -1;
+      settle(idx + step); x0 = null; dx = 0;
+    });
+  })();
+})();
+</script>
+</body>
+</html>
