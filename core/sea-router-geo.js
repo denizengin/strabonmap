@@ -179,7 +179,14 @@
   // on land.
   const chordCrossesLand = (verts, isLand, opts) => {
     const o = opts || {};
-    const stepKm = o.stepKm || 40;
+    // #135 (owner IMG_0072, Piri Reis hero: Gallipoli→Rhodes + Tunis→Venice
+    // chorded straight OVER LAND): the 40km step gave a several-hundred-km Med
+    // leg too few interior samples to catch the islands/peninsulas between two
+    // sparse points, so the crossing read as "all sea" and no detour routed —
+    // the sea-side mirror of the #113 land-router fix. 8km samples finely enough
+    // to see the Peloponnese/Aegean islands/Sardinia a chord slices; maxSamples
+    // still bounds a transatlantic leg. Finer sampling only ADDS detections.
+    const stepKm = o.stepKm || 8;
     const maxSamples = o.maxSamples || 400;
     const samples = _sampleChord(verts, stepKm, maxSamples);
     for (let i = 1; i < samples.length - 1; i++) {
