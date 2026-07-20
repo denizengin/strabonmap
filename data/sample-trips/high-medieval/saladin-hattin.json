@@ -1,6 +1,7 @@
 {
   "id": "saladin-hattin",
   "era": "high-medieval",
+  "year": 1187,
   "title": "Saladin — to the Horns of Hattin",
   "themeSuggestion": "high-medieval-vellum",
   "viewport": "auto",
@@ -9,13 +10,15 @@
     "dateline": "1187 CE",
     "body": "Saladin crossed the Jordan in late June 1187 with 30,000 men, drew the Crusader army into waterless ground at the Horns of Hattin, and shattered it on 4 July. Jerusalem surrendered three months later. Ibn al-Athir and Imad al-Din are the primary Muslim sources."
   },
-  "companions": ["Saladin"],
+  "companions": [
+    "Saladin"
+  ],
   "stops": [
     {
       "id": "stop-1",
       "name": "Damascus",
       "lat": 33.51,
-      "lon": 36.30,
+      "lon": 36.3,
       "note": "Saladin's headquarters since 1174. Spring 1187: he summons the contingents of his empire from Egypt to Mesopotamia.",
       "imagePrompt": "Hand-coloured plate. Ayyubid Damascus citadel, contingents of Egyptian and Syrian cavalry assembling outside.",
       "vehicleToNext": "horse"
@@ -41,7 +44,7 @@
     {
       "id": "stop-4",
       "name": "Horns of Hattin",
-      "lat": 32.80,
+      "lat": 32.8,
       "lon": 35.45,
       "note": "4 July 1187. Saladin pins the Crusader army against the twin-peaked extinct volcano without water; the army melts in the heat. King Guy and the True Cross are captured.",
       "imagePrompt": "Hand-coloured plate. Twin-peaked volcanic hill above dry plain, smoke from burning brush, Crusader banners falling.",

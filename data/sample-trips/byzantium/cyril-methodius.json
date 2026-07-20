@@ -1,111 +1,112 @@
 {
- "id": "cyril-methodius",
- "era": "byzantium",
- "title": "Cyril and Methodius — mission to the Slavs",
- "themeSuggestion": "byzantium-gold",
- "viewport": "auto",
- "intro": {
-  "title": "An Alphabet for the Slavs",
-  "dateline": "863-867 CE",
-  "body": "Photios dispatched the brothers Cyril and Methodius from Thessalonica to evangelise Moravia at the request of Prince Rastislav. They invented the Glagolitic script en route and translated the gospels into Slavonic before reaching Rome to defend their liturgy."
- },
- "companions": [
-  "Cyril",
-  "Methodius"
- ],
- "stops": [
-  {
-   "id": "stop-1",
-   "name": "Thessalonica",
-   "lat": 40.64,
-   "lon": 22.94,
-   "note": "Birthplace of the brothers; their Slavonic-speaking childhood here made them the obvious choice for the mission.",
-   "imagePrompt": "Hand-coloured plate. Macedonian port at autumn dusk, two monks at a scriptorium window with a wax tablet.",
-   "vehicleToNext": "horse",
-   "viaToNext": [
+  "id": "cyril-methodius",
+  "era": "byzantium",
+  "year": 863,
+  "title": "Cyril and Methodius — mission to the Slavs",
+  "themeSuggestion": "byzantium-gold",
+  "viewport": "auto",
+  "intro": {
+    "title": "An Alphabet for the Slavs",
+    "dateline": "863-867 CE",
+    "body": "Photios dispatched the brothers Cyril and Methodius from Thessalonica to evangelise Moravia at the request of Prince Rastislav. They invented the Glagolitic script en route and translated the gospels into Slavonic before reaching Rome to defend their liturgy."
+  },
+  "companions": [
+    "Cyril",
+    "Methodius"
+  ],
+  "stops": [
     {
-     "lat": 40.75,
-     "lon": 23.5
+      "id": "stop-1",
+      "name": "Thessalonica",
+      "lat": 40.64,
+      "lon": 22.94,
+      "note": "Birthplace of the brothers; their Slavonic-speaking childhood here made them the obvious choice for the mission.",
+      "imagePrompt": "Hand-coloured plate. Macedonian port at autumn dusk, two monks at a scriptorium window with a wax tablet.",
+      "vehicleToNext": "horse",
+      "viaToNext": [
+        {
+          "lat": 40.75,
+          "lon": 23.5
+        },
+        {
+          "lat": 40.85,
+          "lon": 24.0
+        },
+        {
+          "lat": 40.95,
+          "lon": 25.0
+        },
+        {
+          "lat": 41.15,
+          "lon": 26.3
+        },
+        {
+          "lat": 41.2,
+          "lon": 27.5
+        }
+      ]
     },
     {
-     "lat": 40.85,
-     "lon": 24.0
+      "id": "stop-2",
+      "name": "Constantinople",
+      "lat": 41.01,
+      "lon": 28.97,
+      "note": "Final preparations 862. Photios commissions the mission; the alphabet is begun here.",
+      "imagePrompt": "Hand-coloured plate. Patriarchal scriptorium with Cyril drafting Glagolitic letters on a parchment scroll.",
+      "vehicleToNext": "horse"
     },
     {
-     "lat": 40.95,
-     "lon": 25.0
+      "id": "stop-3",
+      "name": "Sirmium",
+      "lat": 44.97,
+      "lon": 19.61,
+      "note": "Pannonian stage of the journey, 863. The brothers translate the Psalter and gospel readings along the road.",
+      "imagePrompt": "Hand-coloured plate. Pannonian town in a river plain, brothers and Slavic scribes copying texts beside a slow river.",
+      "vehicleToNext": "horse"
     },
     {
-     "lat": 41.15,
-     "lon": 26.3
+      "id": "stop-4",
+      "name": "Velehrad (Moravia)",
+      "lat": 49.1,
+      "lon": 17.4,
+      "note": "Capital of Prince Rastislav of Moravia. The brothers arrive 863 and establish a Slavonic liturgy.",
+      "imagePrompt": "Hand-coloured plate. Wooden palisade castle in central European forest, monks consecrating church with vernacular liturgy. timber church within a wooden palisade.",
+      "vehicleToNext": "horse",
+      "viaToNext": [
+        {
+          "lat": 47.0,
+          "lon": 16.5
+        },
+        {
+          "lat": 46.0,
+          "lon": 14.5
+        },
+        {
+          "lat": 45.5,
+          "lon": 12.0
+        },
+        {
+          "lat": 44.5,
+          "lon": 11.5
+        },
+        {
+          "lat": 43.5,
+          "lon": 12.5
+        },
+        {
+          "lat": 42.5,
+          "lon": 12.8
+        }
+      ]
     },
     {
-     "lat": 41.2,
-     "lon": 27.5
+      "id": "stop-5",
+      "name": "Rome",
+      "lat": 41.9,
+      "lon": 12.5,
+      "note": "867. The brothers travel to Rome with relics of Pope Clement to defend their Slavonic liturgy. Cyril dies there in 869.",
+      "imagePrompt": "Hand-coloured plate. Saint Peter's basilica precinct, pope receiving two Byzantine monks with relic-casket.",
+      "vehicleToNext": "horse"
     }
-   ]
-  },
-  {
-   "id": "stop-2",
-   "name": "Constantinople",
-   "lat": 41.01,
-   "lon": 28.97,
-   "note": "Final preparations 862. Photios commissions the mission; the alphabet is begun here.",
-   "imagePrompt": "Hand-coloured plate. Patriarchal scriptorium with Cyril drafting Glagolitic letters on a parchment scroll.",
-   "vehicleToNext": "horse"
-  },
-  {
-   "id": "stop-3",
-   "name": "Sirmium",
-   "lat": 44.97,
-   "lon": 19.61,
-   "note": "Pannonian stage of the journey, 863. The brothers translate the Psalter and gospel readings along the road.",
-   "imagePrompt": "Hand-coloured plate. Pannonian town in a river plain, brothers and Slavic scribes copying texts beside a slow river.",
-   "vehicleToNext": "horse"
-  },
-  {
-   "id": "stop-4",
-   "name": "Velehrad (Moravia)",
-   "lat": 49.1,
-   "lon": 17.4,
-   "note": "Capital of Prince Rastislav of Moravia. The brothers arrive 863 and establish a Slavonic liturgy.",
-   "imagePrompt": "Hand-coloured plate. Wooden palisade castle in central European forest, monks consecrating church with vernacular liturgy. timber church within a wooden palisade.",
-   "vehicleToNext": "horse",
-   "viaToNext": [
-    {
-     "lat": 47.0,
-     "lon": 16.5
-    },
-    {
-     "lat": 46.0,
-     "lon": 14.5
-    },
-    {
-     "lat": 45.5,
-     "lon": 12.0
-    },
-    {
-     "lat": 44.5,
-     "lon": 11.5
-    },
-    {
-     "lat": 43.5,
-     "lon": 12.5
-    },
-    {
-     "lat": 42.5,
-     "lon": 12.8
-    }
-   ]
-  },
-  {
-   "id": "stop-5",
-   "name": "Rome",
-   "lat": 41.9,
-   "lon": 12.5,
-   "note": "867. The brothers travel to Rome with relics of Pope Clement to defend their Slavonic liturgy. Cyril dies there in 869.",
-   "imagePrompt": "Hand-coloured plate. Saint Peter's basilica precinct, pope receiving two Byzantine monks with relic-casket.",
-   "vehicleToNext": "horse"
-  }
- ]
+  ]
 }

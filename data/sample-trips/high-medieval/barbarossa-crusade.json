@@ -1,6 +1,7 @@
 {
   "id": "barbarossa-crusade",
   "era": "high-medieval",
+  "year": 1189,
   "title": "Frederick Barbarossa — Third Crusade",
   "themeSuggestion": "high-medieval-vellum",
   "viewport": "auto",
@@ -9,13 +10,15 @@
     "dateline": "1189-1190 CE",
     "body": "Frederick I marched 100,000 men overland to recover Jerusalem after Hattin, fighting Byzantine obstruction across the Balkans and Turkish ambushes through Anatolia. He drowned on 10 June 1190 in the Saleph river, never reaching Acre. The Historia de expeditione Friderici is the eyewitness."
   },
-  "companions": ["Frederick Barbarossa"],
+  "companions": [
+    "Frederick Barbarossa"
+  ],
   "stops": [
     {
       "id": "stop-1",
       "name": "Regensburg",
       "lat": 49.02,
-      "lon": 12.10,
+      "lon": 12.1,
       "note": "Muster point on the Danube, May 1189. The emperor takes the cross with his son Frederick of Swabia.",
       "imagePrompt": "Hand-coloured plate. Danube bridge with imperial banners, mounted knights in mail with red crosses, cathedral behind.",
       "vehicleToNext": "horse"
@@ -50,8 +53,8 @@
     {
       "id": "stop-5",
       "name": "Saleph (Göksu)",
-      "lat": 36.30,
-      "lon": 33.50,
+      "lat": 36.3,
+      "lon": 33.5,
       "note": "10 June 1190. Frederick drowns crossing the river in Cilicia; the army largely disintegrates. His son carries his bones toward Acre.",
       "imagePrompt": "Hand-coloured plate. Cilician river in flood, riderless horse on the bank, drowned imperial helm in shallow water downstream.",
       "vehicleToNext": "horse"

@@ -1,6 +1,7 @@
 {
   "id": "burton-speke-nile",
   "era": "industrial",
+  "year": 1857,
   "title": "Burton and Speke — sources of the Nile",
   "themeSuggestion": "industrial-engraving",
   "viewport": "auto",
@@ -9,13 +10,16 @@
     "dateline": "1857-1859 CE",
     "body": "Richard Burton and John Hanning Speke crossed German East Africa in 1857-1859 searching for the source of the Nile. They reached Lake Tanganyika together; Speke alone pressed north and sighted Lake Victoria. The dispute over which lake was the source ended only with Speke's death in 1864."
   },
-  "companions": ["Burton", "Speke"],
+  "companions": [
+    "Burton",
+    "Speke"
+  ],
   "stops": [
     {
       "id": "stop-1",
       "name": "Zanzibar",
       "lat": -6.16,
-      "lon": 39.20,
+      "lon": 39.2,
       "note": "Departure preparations, December 1856 - June 1857. Burton hires Sidi Mubarak Bombay as headman.",
       "imagePrompt": "Hand-coloured plate. Sultan's palace overlooking the harbour, two Englishmen in waistcoats arguing in a courtyard, porters loading crates.",
       "vehicleToNext": "steamer"
@@ -24,7 +28,7 @@
       "id": "stop-2",
       "name": "Bagamoyo",
       "lat": -6.44,
-      "lon": 38.90,
+      "lon": 38.9,
       "note": "Mainland departure 27 June 1857. The party of 132 porters strikes inland for the unknown lakes.",
       "imagePrompt": "Hand-coloured plate. Equatorial beach at dawn, surf, long string of porters with chests on heads ascending into bush.",
       "vehicleToNext": "foot"
@@ -33,7 +37,7 @@
       "id": "stop-3",
       "name": "Tabora",
       "lat": -5.0167,
-      "lon": 32.8000,
+      "lon": 32.8,
       "note": "Arab depot. Burton and Speke recover here from malaria. From Tabora, Speke strikes north alone on a rumour of a great water while Burton stays to convalesce.",
       "imagePrompt": "Hand-coloured plate. Arab-style flat-roofed houses behind a thorn fence, one English officer setting off north with a small party while another rests under a verandah.",
       "vehicleToNext": "foot"
@@ -42,7 +46,7 @@
       "id": "stop-4",
       "name": "Mwanza (Lake Victoria)",
       "lat": -2.5167,
-      "lon": 32.9000,
+      "lon": 32.9,
       "note": "3 August 1858. Speke reaches the southern shore alone and looks out over the great lake he names for the Queen, claiming it as the Nile's source — a sighting Burton, back at Tabora, will dispute for the rest of his life.",
       "imagePrompt": "Hand-coloured plate. Sunlit inland sea with low granite islands, a single European in a pith helmet on a boulder above the shore, porters resting in the foreground.",
       "vehicleToNext": "foot"

@@ -1,6 +1,7 @@
 {
   "id": "photios-embassy",
   "era": "byzantium",
+  "year": 860,
   "title": "Photios — embassy to the Caliph",
   "themeSuggestion": "byzantium-gold",
   "viewport": "auto",
@@ -9,7 +10,9 @@
     "dateline": "845-847 CE",
     "body": "Photios, future patriarch of Constantinople, was sent as ambassador to the Caliph al-Wathiq in Samarra. He wrote his Bibliotheca — 280 book reviews — to console his brother Tarasios for his absence. The route is reconstructed from the dedicatory letter."
   },
-  "companions": ["Photios"],
+  "companions": [
+    "Photios"
+  ],
   "stops": [
     {
       "id": "stop-1",
@@ -33,7 +36,7 @@
       "id": "stop-3",
       "name": "Tarsus",
       "lat": 36.92,
-      "lon": 34.90,
+      "lon": 34.9,
       "note": "Frontier exchange-point with the Caliphate. Prisoner exchanges crossed the Lamus river nearby every two to four years.",
       "imagePrompt": "Hand-coloured plate. Border river with two parties facing on opposite banks, scribes recording names of exchanged prisoners.",
       "vehicleToNext": "camel"
@@ -42,7 +45,7 @@
       "id": "stop-4",
       "name": "Baghdad",
       "lat": 33.34,
-      "lon": 44.40,
+      "lon": 44.4,
       "note": "Abbasid capital, court of al-Wathiq. Photios's brother Tarasios remained in Constantinople, prompting the Bibliotheca letters.",
       "imagePrompt": "Hand-coloured plate. Tigris with the Round City behind, Byzantine envoy received in tiled audience hall.",
       "vehicleToNext": "camel"
@@ -50,7 +53,7 @@
     {
       "id": "stop-5",
       "name": "Samarra",
-      "lat": 34.20,
+      "lat": 34.2,
       "lon": 43.87,
       "note": "Caliphal seat 836-892. Photios meets al-Wathiq here in his last year.",
       "imagePrompt": "Hand-coloured plate. Spiral minaret of the Great Mosque, Caliph's tent-pavilion city stretching to the horizon.",

@@ -1,6 +1,7 @@
 {
   "id": "iliad-troy",
   "era": "bronze-age",
+  "year": -1200,
   "title": "Iliad — Achaean expedition to Troy",
   "themeSuggestion": "bronze-age-limestone",
   "viewport": "auto",
@@ -9,13 +10,18 @@
     "dateline": "c. 1190 BCE",
     "body": "The Catalogue of Ships in Iliad II names roughly 1,186 vessels mustering at Aulis under Agamemnon to recover Helen from Troy. The siege runs ten years; only the final year is sung. The route shown is the bridgehead, not the campaign — Aulis to Tenedos to the Trojan plain at Hisarlık."
   },
-  "companions": ["Agamemnon", "Achilles", "Odysseus", "Diomedes"],
+  "companions": [
+    "Agamemnon",
+    "Achilles",
+    "Odysseus",
+    "Diomedes"
+  ],
   "stops": [
     {
       "id": "stop-1",
       "name": "Aulis",
-      "lat": 38.40,
-      "lon": 23.60,
+      "lat": 38.4,
+      "lon": 23.6,
       "note": "Mustering harbour on the Euboean Gulf. Iliad II describes the fleet held there by contrary winds until Iphigenia's sacrifice released them.",
       "imagePrompt": "Hand-coloured cartographic plate, muted ink. Wide bay packed with low black-hulled triremes, lateen sails furled, smoke from an altar on the headland, weathered antique colour palette.",
       "vehicleToNext": "galley"

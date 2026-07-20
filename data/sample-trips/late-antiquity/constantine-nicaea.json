@@ -1,6 +1,7 @@
 {
   "id": "constantine-nicaea",
   "era": "late-antiquity",
+  "year": 325,
   "title": "Constantine — to the Council of Nicaea",
   "themeSuggestion": "late-antiquity-porphyry",
   "viewport": "auto",
@@ -66,9 +67,18 @@
       "imagePrompt": "Hand-coloured plate. Surveyors with the emperor on a hilltop, Golden Horn below, traced wall-lines striking inland.",
       "vehicleToNext": "horse",
       "viaToNext": [
-        { "lat": 41.1, "lon": 29.2 },
-        { "lat": 40.9, "lon": 29.5 },
-        { "lat": 40.6, "lon": 29.8 }
+        {
+          "lat": 41.1,
+          "lon": 29.2
+        },
+        {
+          "lat": 40.9,
+          "lon": 29.5
+        },
+        {
+          "lat": 40.6,
+          "lon": 29.8
+        }
       ]
     },
     {

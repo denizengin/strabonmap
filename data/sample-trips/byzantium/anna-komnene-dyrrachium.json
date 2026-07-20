@@ -1,6 +1,7 @@
 {
   "id": "anna-komnene-dyrrachium",
   "era": "byzantium",
+  "year": 1081,
   "title": "Anna Komnene — Alexios at Dyrrachium",
   "themeSuggestion": "byzantium-gold",
   "viewport": "auto",
@@ -9,7 +10,10 @@
     "dateline": "1081-1083 CE",
     "body": "Alexios I Komnenos faced Robert Guiscard's Norman invasion of the Adriatic in his first year as emperor. Anna's Alexiad IV-VI gives the daughter's account of her father's campaign, from the loss at Dyrrachium to the recovery of Kastoria."
   },
-  "companions": ["Alexios", "Anna Komnene"],
+  "companions": [
+    "Alexios",
+    "Anna Komnene"
+  ],
   "stops": [
     {
       "id": "stop-1",
@@ -20,11 +24,26 @@
       "imagePrompt": "Hand-coloured plate. Imperial coronation in Hagia Sophia, banners and lances behind.",
       "vehicleToNext": "horse",
       "viaToNext": [
-        { "lat": 41.2, "lon": 27.5 },
-        { "lat": 41.15, "lon": 26.3 },
-        { "lat": 40.95, "lon": 25.0 },
-        { "lat": 40.85, "lon": 24.0 },
-        { "lat": 40.75, "lon": 23.5 }
+        {
+          "lat": 41.2,
+          "lon": 27.5
+        },
+        {
+          "lat": 41.15,
+          "lon": 26.3
+        },
+        {
+          "lat": 40.95,
+          "lon": 25.0
+        },
+        {
+          "lat": 40.85,
+          "lon": 24.0
+        },
+        {
+          "lat": 40.75,
+          "lon": 23.5
+        }
       ]
     },
     {

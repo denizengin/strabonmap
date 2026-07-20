@@ -1,6 +1,7 @@
 {
   "id": "abbasid-charlemagne-embassy",
   "era": "dark-ages",
+  "year": 797,
   "title": "Harun al-Rashid's embassy to Charlemagne",
   "themeSuggestion": "dark-ages-vellum",
   "viewport": "auto",
@@ -9,13 +10,15 @@
     "dateline": "797-802 CE",
     "body": "Charlemagne sent Isaac the Jew east as part of an embassy to Harun al-Rashid in 797. Isaac returned in 802 with caliphal gifts — silks, brass clocks, and Abul-Abbas the elephant — who walked from Baghdad to Aachen via Tunisia. Einhard's Vita Karoli records the elephant's death in 810."
   },
-  "companions": ["Isaac the Jew"],
+  "companions": [
+    "Isaac the Jew"
+  ],
   "stops": [
     {
       "id": "stop-1",
       "name": "Baghdad",
       "lat": 33.34,
-      "lon": 44.40,
+      "lon": 44.4,
       "note": "Round City of Mansur, Abbasid capital. Isaac receives Harun's gifts in autumn 801.",
       "imagePrompt": "Hand-coloured plate. Concentric round city plan, palace at center, elephant being led out toward the western gate.",
       "vehicleToNext": "camel"
@@ -24,22 +27,55 @@
       "id": "stop-2",
       "name": "Damascus",
       "lat": 33.51,
-      "lon": 36.30,
+      "lon": 36.3,
       "note": "Caravan stage on the route to the Mediterranean. The Umayyad mosque is then forty years old.",
       "imagePrompt": "Hand-coloured plate. Umayyad mosque courtyard with elephant resting in the shade, traders with caged falcons.",
       "vehicleToNext": "camel",
       "viaToNext": [
-        { "lat": 31.5, "lon": 35.5 },
-        { "lat": 30.8, "lon": 32.5 },
-        { "lat": 30.6, "lon": 29.0 },
-        { "lat": 30.8, "lon": 25.0 },
-        { "lat": 30.7, "lon": 21.0 },
-        { "lat": 30.5, "lon": 17.0 },
-        { "lat": 30.6, "lon": 14.0 },
-        { "lat": 31.5, "lon": 11.0 },
-        { "lat": 32.5, "lon": 10.2 },
-        { "lat": 34.0, "lon": 10.1 },
-        { "lat": 35.5, "lon": 10.15 }
+        {
+          "lat": 31.5,
+          "lon": 35.5
+        },
+        {
+          "lat": 30.8,
+          "lon": 32.5
+        },
+        {
+          "lat": 30.6,
+          "lon": 29.0
+        },
+        {
+          "lat": 30.8,
+          "lon": 25.0
+        },
+        {
+          "lat": 30.7,
+          "lon": 21.0
+        },
+        {
+          "lat": 30.5,
+          "lon": 17.0
+        },
+        {
+          "lat": 30.6,
+          "lon": 14.0
+        },
+        {
+          "lat": 31.5,
+          "lon": 11.0
+        },
+        {
+          "lat": 32.5,
+          "lon": 10.2
+        },
+        {
+          "lat": 34.0,
+          "lon": 10.1
+        },
+        {
+          "lat": 35.5,
+          "lon": 10.15
+        }
       ]
     },
     {

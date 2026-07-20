@@ -1,6 +1,7 @@
 {
   "id": "orient-express-inaugural",
   "era": "industrial",
+  "year": 1883,
   "title": "Orient Express — inaugural run",
   "themeSuggestion": "industrial-engraving",
   "viewport": "auto",
@@ -9,7 +10,9 @@
     "dateline": "1883 CE",
     "body": "The Compagnie Internationale des Wagons-Lits inaugurated its through-train from Paris to Constantinople on 4 October 1883. The first run took 81 hours 40 minutes; passengers had to detrain at Giurgiu, ferry the Danube, and continue by Ottoman rail and steamer from Varna."
   },
-  "companions": ["Georges Nagelmackers"],
+  "companions": [
+    "Georges Nagelmackers"
+  ],
   "stops": [
     {
       "id": "stop-1",
@@ -33,7 +36,7 @@
       "id": "stop-3",
       "name": "Bucharest",
       "lat": 44.43,
-      "lon": 26.10,
+      "lon": 26.1,
       "note": "Arrival 6 October. The Romanian leg ends at Giurgiu where passengers disembark for the Danube ferry.",
       "imagePrompt": "Hand-coloured plate. Bucharest station under autumn rain, passengers crossing the platform with porters, gilded cathedral roof in the distance.",
       "vehicleToNext": "locomotive"

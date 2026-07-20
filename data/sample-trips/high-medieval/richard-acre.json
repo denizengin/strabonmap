@@ -1,6 +1,7 @@
 {
   "id": "richard-acre",
   "era": "high-medieval",
+  "year": 1191,
   "title": "Richard I — to Acre",
   "themeSuggestion": "high-medieval-vellum",
   "viewport": "auto",
@@ -9,12 +10,14 @@
     "dateline": "1190-1191 CE",
     "body": "Richard sailed from Marseille in August 1190, wintered in Sicily, took Cyprus in May 1191 to spite Isaac Komnenos, and arrived at the siege of Acre in June. Acre fell on 12 July. The Itinerarium Peregrinorum and Ambroise's verse chronicle are the sources."
   },
-  "companions": ["Richard I"],
+  "companions": [
+    "Richard I"
+  ],
   "stops": [
     {
       "id": "stop-1",
       "name": "Marseille",
-      "lat": 43.30,
+      "lat": 43.3,
       "lon": 5.37,
       "note": "Richard embarks late August 1190 with ~100 ships and ~17,000 men.",
       "imagePrompt": "Hand-coloured plate. Provençal harbour at sunset, knight banners on cogs, royal galley at the mole.",
@@ -42,7 +45,7 @@
       "id": "stop-4",
       "name": "Tyre",
       "lat": 33.27,
-      "lon": 35.20,
+      "lon": 35.2,
       "note": "Provisioning call. Conrad of Montferrat's stronghold; Richard adjudicates the rival claims to the crown of Jerusalem here.",
       "imagePrompt": "Hand-coloured plate. Twin-harbour island city of Tyre, royal council under awnings in the cathedral close.",
       "vehicleToNext": "cog"

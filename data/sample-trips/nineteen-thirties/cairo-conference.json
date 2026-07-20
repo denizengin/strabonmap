@@ -1,6 +1,7 @@
 {
   "id": "cairo-conference",
   "era": "nineteen-thirties",
+  "year": 1921,
   "title": "Cairo Conference — drawing the Middle East",
   "themeSuggestion": "thirties-grain",
   "viewport": "auto",
@@ -9,7 +10,11 @@
     "dateline": "1921 CE",
     "body": "Winston Churchill, then Colonial Secretary, convened the Cairo Conference in March 1921 to settle the Middle Eastern mandates. Faisal became king of Iraq; Abdullah was given Transjordan; the borders we live with were drawn at the Semiramis Hotel."
   },
-  "companions": ["Churchill", "Lawrence", "Gertrude Bell"],
+  "companions": [
+    "Churchill",
+    "Lawrence",
+    "Gertrude Bell"
+  ],
   "stops": [
     {
       "id": "stop-1",
@@ -23,7 +28,7 @@
     {
       "id": "stop-2",
       "name": "Marseille",
-      "lat": 43.30,
+      "lat": 43.3,
       "lon": 5.37,
       "note": "Embarkation for Egypt aboard a P&O liner.",
       "imagePrompt": "Sepia plate. Provençal port, two-funnel liner at the mole, Colonial Office party climbing gangway in straw hats.",
@@ -32,7 +37,7 @@
     {
       "id": "stop-3",
       "name": "Alexandria",
-      "lat": 31.20,
+      "lat": 31.2,
       "lon": 29.92,
       "note": "Landfall 9 March 1921. Train onwards to Cairo.",
       "imagePrompt": "Sepia plate. Mediterranean harbour, liner berthed, dockside porters in galabiyas, English ladies under parasols.",

@@ -1,6 +1,7 @@
 {
   "id": "justinian-belisarius",
   "era": "dark-ages",
+  "year": 533,
   "title": "Belisarius — the Vandal war",
   "themeSuggestion": "dark-ages-vellum",
   "viewport": "auto",
@@ -63,10 +64,22 @@
       "imagePrompt": "Hand-coloured plate. Long sandy headland, troops marching from beached transports, dust column inland.",
       "vehicleToNext": "foot",
       "viaToNext": [
-        { "lat": 35.5, "lon": 10.55 },
-        { "lat": 35.83, "lon": 10.6 },
-        { "lat": 36.07, "lon": 10.5 },
-        { "lat": 36.4, "lon": 10.45 }
+        {
+          "lat": 35.5,
+          "lon": 10.55
+        },
+        {
+          "lat": 35.83,
+          "lon": 10.6
+        },
+        {
+          "lat": 36.07,
+          "lon": 10.5
+        },
+        {
+          "lat": 36.4,
+          "lon": 10.45
+        }
       ]
     },
     {
@@ -78,7 +91,10 @@
       "imagePrompt": "Hand-coloured plate. Roman milestone with the numeral 'X' (anachronistic — original was Roman numeric stone), running battle in olive groves.",
       "vehicleToNext": "foot",
       "viaToNext": [
-        { "lat": 36.78, "lon": 10.22 }
+        {
+          "lat": 36.78,
+          "lon": 10.22
+        }
       ]
     },
     {

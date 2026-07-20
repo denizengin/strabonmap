@@ -1,6 +1,7 @@
 {
   "id": "theodosius-east",
   "era": "late-antiquity",
+  "year": 379,
   "title": "Theodosius I — east to Constantinople",
   "themeSuggestion": "late-antiquity-porphyry",
   "viewport": "auto",
@@ -9,7 +10,9 @@
     "dateline": "378-381 CE",
     "body": "After the Roman defeat at Adrianople in August 378, Gratian summoned Theodosius from Spain to take the eastern command. Theodosius spent three campaigning seasons rebuilding the Balkan field army before entering Constantinople in November 380."
   },
-  "companions": ["Theodosius"],
+  "companions": [
+    "Theodosius"
+  ],
   "stops": [
     {
       "id": "stop-1",
@@ -38,10 +41,22 @@
       "imagePrompt": "Hand-coloured plate. Macedonian port-city basilica, edict being read from the steps to assembled people.",
       "vehicleToNext": "horse",
       "viaToNext": [
-        { "lat": 40.85, "lon": 24.0 },
-        { "lat": 40.95, "lon": 25.0 },
-        { "lat": 41.15, "lon": 26.3 },
-        { "lat": 41.2, "lon": 27.3 }
+        {
+          "lat": 40.85,
+          "lon": 24.0
+        },
+        {
+          "lat": 40.95,
+          "lon": 25.0
+        },
+        {
+          "lat": 41.15,
+          "lon": 26.3
+        },
+        {
+          "lat": 41.2,
+          "lon": 27.3
+        }
       ]
     },
     {
@@ -53,8 +68,14 @@
       "imagePrompt": "Hand-coloured plate. Propontis port at low autumn light, cavalry tents on the strand, the city walls behind.",
       "vehicleToNext": "horse",
       "viaToNext": [
-        { "lat": 41.15, "lon": 28.2 },
-        { "lat": 41.15, "lon": 28.6 }
+        {
+          "lat": 41.15,
+          "lon": 28.2
+        },
+        {
+          "lat": 41.15,
+          "lon": 28.6
+        }
       ]
     },
     {

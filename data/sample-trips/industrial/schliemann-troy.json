@@ -1,6 +1,7 @@
 {
   "id": "schliemann-troy",
   "era": "industrial",
+  "year": 1871,
   "title": "Schliemann at Hisarlık",
   "themeSuggestion": "industrial-engraving",
   "viewport": "auto",
@@ -9,7 +10,10 @@
     "dateline": "1868-1873 CE",
     "body": "Heinrich Schliemann arrived at Hisarlık in 1868 convinced it was the site of Homeric Troy. After Frank Calvert directed him to the right mound, Schliemann began excavating in 1870 and announced 'Priam's Treasure' in May 1873. His work damaged the site but identified it correctly."
   },
-  "companions": ["Schliemann", "Calvert"],
+  "companions": [
+    "Schliemann",
+    "Calvert"
+  ],
   "stops": [
     {
       "id": "stop-1",
@@ -20,15 +24,42 @@
       "imagePrompt": "Hand-coloured plate. Haussmann boulevard, gentleman in fur-collared coat with map case stepping into a hansom.",
       "vehicleToNext": "locomotive",
       "viaToNext": [
-        { "lat": 48.5, "lon": 7.7 },
-        { "lat": 48.1, "lon": 11.6 },
-        { "lat": 48.2, "lon": 16.4 },
-        { "lat": 47.5, "lon": 19.0 },
-        { "lat": 44.8, "lon": 20.5 },
-        { "lat": 43.3, "lon": 21.9 },
-        { "lat": 42.0, "lon": 21.4 },
-        { "lat": 40.6, "lon": 22.9 },
-        { "lat": 39.3, "lon": 22.9 }
+        {
+          "lat": 48.5,
+          "lon": 7.7
+        },
+        {
+          "lat": 48.1,
+          "lon": 11.6
+        },
+        {
+          "lat": 48.2,
+          "lon": 16.4
+        },
+        {
+          "lat": 47.5,
+          "lon": 19.0
+        },
+        {
+          "lat": 44.8,
+          "lon": 20.5
+        },
+        {
+          "lat": 43.3,
+          "lon": 21.9
+        },
+        {
+          "lat": 42.0,
+          "lon": 21.4
+        },
+        {
+          "lat": 40.6,
+          "lon": 22.9
+        },
+        {
+          "lat": 39.3,
+          "lon": 22.9
+        }
       ]
     },
     {
@@ -58,11 +89,26 @@
       "imagePrompt": "Hand-coloured plate. Wide excavation trench in a low mound, Turkish workmen with shovels, Schliemann in a sun-hat at the bottom.",
       "vehicleToNext": "steamer",
       "viaToNext": [
-        { "lat": 39.0, "lon": 24.5 },
-        { "lat": 38.0, "lon": 24.3 },
-        { "lat": 37.4, "lon": 24.0 },
-        { "lat": 37.35, "lon": 23.4 },
-        { "lat": 37.4, "lon": 23.15 }
+        {
+          "lat": 39.0,
+          "lon": 24.5
+        },
+        {
+          "lat": 38.0,
+          "lon": 24.3
+        },
+        {
+          "lat": 37.4,
+          "lon": 24.0
+        },
+        {
+          "lat": 37.35,
+          "lon": 23.4
+        },
+        {
+          "lat": 37.4,
+          "lon": 23.15
+        }
       ]
     },
     {

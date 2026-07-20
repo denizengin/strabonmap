@@ -1,6 +1,7 @@
 {
   "id": "lawrence-surveys",
   "era": "industrial",
+  "year": 1914,
   "title": "T.E. Lawrence — pre-war surveys",
   "themeSuggestion": "industrial-engraving",
   "viewport": "auto",
@@ -9,13 +10,16 @@
     "dateline": "1909-1914 CE",
     "body": "Lawrence walked Syria in 1909 photographing crusader castles for his Oxford thesis, then excavated at Carchemish under D.G. Hogarth from 1911. In 1914 he and Leonard Woolley surveyed the Wilderness of Zin in southern Palestine — ostensibly archaeology, in fact military intelligence for the coming war."
   },
-  "companions": ["Lawrence", "Woolley"],
+  "companions": [
+    "Lawrence",
+    "Woolley"
+  ],
   "stops": [
     {
       "id": "stop-1",
       "name": "Beirut",
       "lat": 33.89,
-      "lon": 35.50,
+      "lon": 35.5,
       "note": "Landfall by steamer, July 1909. Lawrence sets out on his castle walk with one bag and a Mauser pistol.",
       "imagePrompt": "Hand-coloured plate. Ottoman Levantine port with paddle-steamer at quay, young Englishman in shirtsleeves stepping ashore.",
       "vehicleToNext": "foot"
@@ -24,7 +28,7 @@
       "id": "stop-2",
       "name": "Krak des Chevaliers",
       "lat": 34.76,
-      "lon": 36.30,
+      "lon": 36.3,
       "note": "August 1909. Lawrence writes his thesis chapter inside the walls and photographs every face of the keep.",
       "imagePrompt": "Hand-coloured plate. Vast crusader castle on a Syrian ridge, single figure with camera tripod on the inner ward.",
       "vehicleToNext": "horse"
@@ -51,7 +55,7 @@
       "id": "stop-5",
       "name": "Aqaba",
       "lat": 29.53,
-      "lon": 35.00,
+      "lon": 35.0,
       "note": "Lawrence reconnoitres the head of the Red Sea on the same trip. The town will fall to him three years later in July 1917.",
       "imagePrompt": "Hand-coloured plate. Mud-brick coastal village under bare granite mountains, single dhow at anchor, surveyor sketching the bay.",
       "vehicleToNext": "horse"

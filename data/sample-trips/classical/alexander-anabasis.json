@@ -1,6 +1,7 @@
 {
   "id": "alexander-anabasis",
   "era": "classical",
+  "year": -334,
   "title": "Alexander — Granicus to Gaugamela",
   "themeSuggestion": "classical-marble",
   "viewport": "auto",
@@ -9,13 +10,16 @@
     "dateline": "334-331 BCE",
     "body": "Alexander crossed the Hellespont in May 334 BCE with ~40,000 men. The three set-piece battles that broke the Achaemenid empire — Granicus, Issus, Gaugamela — span three campaigning seasons. The route shown is the strategic arc; the actual march was longer and more sinuous."
   },
-  "companions": ["Hephaestion", "Parmenion"],
+  "companions": [
+    "Hephaestion",
+    "Parmenion"
+  ],
   "stops": [
     {
       "id": "stop-1",
       "name": "Hellespont crossing",
       "lat": 40.18,
-      "lon": 26.40,
+      "lon": 26.4,
       "note": "Alexander throws his spear into Asian soil from the prow (Arrian I.11). The army crosses by relay near Abydos.",
       "imagePrompt": "Hand-coloured plate. Narrow strait crowded with low transports, royal trireme leading, two coasts visible.",
       "vehicleToNext": "foot"
@@ -38,18 +42,33 @@
       "imagePrompt": "Hand-coloured plate. Narrow coastal plain between mountains and sea, sarissa phalanx versus Persian center, Darius's chariot turning.",
       "vehicleToNext": "foot",
       "viaToNext": [
-        { "lat": 36.0, "lon": 36.05 },
-        { "lat": 35.3, "lon": 36.05 },
-        { "lat": 34.7, "lon": 36.05 },
-        { "lat": 34.0, "lon": 36.0 },
-        { "lat": 33.5, "lon": 35.5 }
+        {
+          "lat": 36.0,
+          "lon": 36.05
+        },
+        {
+          "lat": 35.3,
+          "lon": 36.05
+        },
+        {
+          "lat": 34.7,
+          "lon": 36.05
+        },
+        {
+          "lat": 34.0,
+          "lon": 36.0
+        },
+        {
+          "lat": 33.5,
+          "lon": 35.5
+        }
       ]
     },
     {
       "id": "stop-4",
       "name": "Tyre",
       "lat": 33.27,
-      "lon": 35.20,
+      "lon": 35.2,
       "note": "Seven-month siege, January-July 332 BCE. Alexander builds a mole from the mainland to the island (Arrian II.16-24).",
       "imagePrompt": "Hand-coloured plate. Island fortress under siege, a stone causeway extending from the mainland, siege towers on rollers.",
       "vehicleToNext": "foot"

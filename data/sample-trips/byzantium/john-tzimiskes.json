@@ -1,6 +1,7 @@
 {
   "id": "john-tzimiskes",
   "era": "byzantium",
+  "year": 971,
   "title": "John Tzimiskes — eastern campaign",
   "themeSuggestion": "byzantium-gold",
   "viewport": "auto",
@@ -9,7 +10,9 @@
     "dateline": "974-975 CE",
     "body": "John I Tzimiskes campaigned south into Hamdanid Syria and Fatimid territory in 974-975, recovering relics from Antioch and reaching as far as the Sea of Galilee. The expedition is recorded in his letter to King Ashot III of Armenia preserved by Matthew of Edessa."
   },
-  "companions": ["John Tzimiskes"],
+  "companions": [
+    "John Tzimiskes"
+  ],
   "stops": [
     {
       "id": "stop-1",
@@ -23,7 +26,7 @@
     {
       "id": "stop-2",
       "name": "Antioch",
-      "lat": 36.20,
+      "lat": 36.2,
       "lon": 36.16,
       "note": "Already in Byzantine hands since 969 (Phokas reconquest). Tzimiskes uses it as forward base; he recovers the sandals of Christ kept here.",
       "imagePrompt": "Hand-coloured plate. Antioch citadel with imperial standards, relic procession through the colonnaded street.",
@@ -33,7 +36,7 @@
       "id": "stop-3",
       "name": "Baalbek",
       "lat": 34.01,
-      "lon": 36.20,
+      "lon": 36.2,
       "note": "Taken October 974. Tzimiskes's letter says he found Roman ruins still standing and many Muslim sanctuaries.",
       "imagePrompt": "Hand-coloured plate. Hexagonal temple ruins beside a fortified Muslim town, Byzantine cavalry encamped between.",
       "vehicleToNext": "horse"
@@ -42,7 +45,7 @@
       "id": "stop-4",
       "name": "Damascus",
       "lat": 33.51,
-      "lon": 36.30,
+      "lon": 36.3,
       "note": "Fatimid governor pays tribute and submits, autumn 974. The city itself was not occupied.",
       "imagePrompt": "Hand-coloured plate. Damascus gate with white-robed governor handing over keys, Byzantine officers receiving.",
       "vehicleToNext": "horse"

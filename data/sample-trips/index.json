@@ -1,114 +1,114 @@
 {
- "version": 1,
- "description": "Sample-trips manifest. The welcome-screen gallery + test suite read this to discover trips. Update when adding/removing files under data/sample-trips/<era>/.",
- "eras": [
-  {
-   "key": "bronze-age",
-   "label": "Bronze Age",
-   "trips": [
-    "iliad-troy",
-    "odyssey-return",
-    "hittite-royal-progress",
-    "assyrian-karum-kanesh",
-    "sea-peoples-raid"
-   ]
-  },
-  {
-   "key": "classical",
-   "label": "Classical",
-   "trips": [
-    "skylax-periplus",
-    "herodotus-egypt",
-    "xenophon-ten-thousand",
-    "alexander-anabasis",
-    "hannibal-italy",
-    "hadrian-inspection"
-   ]
-  },
-  {
-   "key": "late-antiquity",
-   "label": "Late Antiquity",
-   "trips": [
-    "diocletian-tetrarchy",
-    "constantine-nicaea",
-    "egeria-pilgrimage",
-    "julian-persian",
-    "theodosius-east"
-   ]
-  },
-  {
-   "key": "dark-ages",
-   "label": "Dark Ages",
-   "trips": [
-    "justinian-belisarius",
-    "heraclius-persia",
-    "khalid-yarmuk",
-    "amr-egypt",
-    "abbasid-charlemagne-embassy"
-   ]
-  },
-  {
-   "key": "byzantium",
-   "label": "Byzantium",
-   "trips": [
-    "photios-embassy",
-    "john-tzimiskes",
-    "basil-bulgaroctonus",
-    "anna-komnene-dyrrachium",
-    "cyril-methodius"
-   ]
-  },
-  {
-   "key": "high-medieval",
-   "label": "High Medieval",
-   "trips": [
-    "first-crusade",
-    "saladin-hattin",
-    "richard-acre",
-    "ibn-battuta-anatolia",
-    "barbarossa-crusade"
-   ]
-  },
-  {
-   "key": "atlas",
-   "label": "Age of Sail",
-   "trips": [
-    "piri-reis-mediterranean",
-    "magellan-elcano",
-    "cook-first-voyage",
-    "selim-egypt"
-   ]
-  },
-  {
-   "key": "industrial",
-   "label": "Industrial",
-   "trips": [
-    "schliemann-troy",
-    "lawrence-surveys",
-    "orient-express-inaugural",
-    "stanley-livingstone",
-    "burton-speke-nile"
-   ]
-  },
-  {
-   "key": "nineteen-thirties",
-   "label": "Adventure (1920-1945)",
-   "trips": [
-    "christie-orient-express",
-    "cairo-conference",
-    "earhart-world-flight",
-    "mallory-everest",
-    "hindenburg-transatlantic"
-   ]
-  },
-  {
-   "key": "modern",
-   "label": "Modern",
-   "trips": [
-    "orient-express-farewell-1977",
-    "beatles-tour-1966",
-    "hippie-trail"
-   ]
-  }
- ]
+  "version": 1,
+  "description": "Sample-trips manifest. The welcome-screen gallery + test suite read this to discover trips. Update when adding/removing files under data/sample-trips/<era>/.",
+  "eras": [
+    {
+      "key": "bronze-age",
+      "label": "Bronze Age",
+      "trips": [
+        "assyrian-karum-kanesh",
+        "hittite-royal-progress",
+        "iliad-troy",
+        "odyssey-return",
+        "sea-peoples-raid"
+      ]
+    },
+    {
+      "key": "classical",
+      "label": "Classical",
+      "trips": [
+        "skylax-periplus",
+        "herodotus-egypt",
+        "xenophon-ten-thousand",
+        "alexander-anabasis",
+        "hannibal-italy",
+        "hadrian-inspection"
+      ]
+    },
+    {
+      "key": "late-antiquity",
+      "label": "Late Antiquity",
+      "trips": [
+        "diocletian-tetrarchy",
+        "constantine-nicaea",
+        "julian-persian",
+        "theodosius-east",
+        "egeria-pilgrimage"
+      ]
+    },
+    {
+      "key": "dark-ages",
+      "label": "Dark Ages",
+      "trips": [
+        "justinian-belisarius",
+        "heraclius-persia",
+        "khalid-yarmuk",
+        "amr-egypt",
+        "abbasid-charlemagne-embassy"
+      ]
+    },
+    {
+      "key": "byzantium",
+      "label": "Byzantium",
+      "trips": [
+        "photios-embassy",
+        "cyril-methodius",
+        "john-tzimiskes",
+        "basil-bulgaroctonus",
+        "anna-komnene-dyrrachium"
+      ]
+    },
+    {
+      "key": "high-medieval",
+      "label": "High Medieval",
+      "trips": [
+        "first-crusade",
+        "saladin-hattin",
+        "barbarossa-crusade",
+        "richard-acre",
+        "ibn-battuta-anatolia"
+      ]
+    },
+    {
+      "key": "atlas",
+      "label": "Age of Sail",
+      "trips": [
+        "piri-reis-mediterranean",
+        "selim-egypt",
+        "magellan-elcano",
+        "cook-first-voyage"
+      ]
+    },
+    {
+      "key": "industrial",
+      "label": "Industrial",
+      "trips": [
+        "burton-speke-nile",
+        "schliemann-troy",
+        "stanley-livingstone",
+        "orient-express-inaugural",
+        "lawrence-surveys"
+      ]
+    },
+    {
+      "key": "nineteen-thirties",
+      "label": "Adventure (1920-1945)",
+      "trips": [
+        "cairo-conference",
+        "mallory-everest",
+        "christie-orient-express",
+        "hindenburg-transatlantic",
+        "earhart-world-flight"
+      ]
+    },
+    {
+      "key": "modern",
+      "label": "Modern",
+      "trips": [
+        "beatles-tour-1966",
+        "hippie-trail",
+        "orient-express-farewell-1977"
+      ]
+    }
+  ]
 }

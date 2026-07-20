@@ -1,6 +1,7 @@
 {
   "id": "hannibal-italy",
   "era": "classical",
+  "year": -218,
   "title": "Hannibal — Iberia to Cannae",
   "themeSuggestion": "classical-marble",
   "viewport": "auto",
@@ -9,25 +10,51 @@
     "dateline": "218-216 BCE",
     "body": "Hannibal Barca led ~50,000 men and 37 elephants from New Carthage across the Alps in autumn 218 BCE. Three battles in three years — Trebia, Trasimene, Cannae — annihilated Roman field armies but did not break the Republic."
   },
-  "companions": ["Hannibal"],
+  "companions": [
+    "Hannibal"
+  ],
   "stops": [
     {
       "id": "stop-1",
       "name": "New Carthage",
-      "lat": 37.60,
+      "lat": 37.6,
       "lon": -0.98,
       "note": "Carthaginian Iberian capital; departure point May 218 BCE (Polybius III.35). Note: outside Eastern Mediterranean region pack — shown for context.",
       "imagePrompt": "Hand-coloured plate. Iberian harbour city under twin headlands, elephants embarking on transports, sun rising east.",
       "vehicleToNext": "foot",
       "viaToNext": [
-        { "lat": 38.5, "lon": -0.6 },
-        { "lat": 39.6, "lon": -0.3 },
-        { "lat": 40.5, "lon": 0.2 },
-        { "lat": 41.2, "lon": 1.0 },
-        { "lat": 42.0, "lon": 2.0 },
-        { "lat": 42.8, "lon": 2.8 },
-        { "lat": 43.5, "lon": 3.2 },
-        { "lat": 43.7, "lon": 4.0 }
+        {
+          "lat": 38.5,
+          "lon": -0.6
+        },
+        {
+          "lat": 39.6,
+          "lon": -0.3
+        },
+        {
+          "lat": 40.5,
+          "lon": 0.2
+        },
+        {
+          "lat": 41.2,
+          "lon": 1.0
+        },
+        {
+          "lat": 42.0,
+          "lon": 2.0
+        },
+        {
+          "lat": 42.8,
+          "lon": 2.8
+        },
+        {
+          "lat": 43.5,
+          "lon": 3.2
+        },
+        {
+          "lat": 43.7,
+          "lon": 4.0
+        }
       ]
     },
     {
@@ -42,8 +69,8 @@
     {
       "id": "stop-3",
       "name": "Alps crossing",
-      "lat": 45.20,
-      "lon": 7.10,
+      "lat": 45.2,
+      "lon": 7.1,
       "note": "Fifteen-day passage, October 218 BCE. Snow, rockslide, and elephant deaths; Polybius III.50-56 is the primary account. The exact pass is debated.",
       "imagePrompt": "Hand-coloured plate. Mountain pass in early snow, column of elephants and infantry on a narrow track, ravine below.",
       "vehicleToNext": "foot"
@@ -52,7 +79,7 @@
       "id": "stop-4",
       "name": "Lake Trasimene",
       "lat": 43.15,
-      "lon": 12.10,
+      "lon": 12.1,
       "note": "21 June 217 BCE. Hannibal ambushes the consul Flaminius in fog along the lake shore; ~15,000 Romans killed (Polybius III.83-84).",
       "imagePrompt": "Hand-coloured plate. Misty lakeshore, Roman column strung along narrow road, Carthaginian infantry descending from wooded hills.",
       "vehicleToNext": "foot"
@@ -60,7 +87,7 @@
     {
       "id": "stop-5",
       "name": "Cannae",
-      "lat": 41.30,
+      "lat": 41.3,
       "lon": 16.13,
       "note": "2 August 216 BCE. Hannibal's double-envelopment destroys eight Roman legions on the Apulian plain (Polybius III.107-117).",
       "imagePrompt": "Hand-coloured plate. Apulian plain, crescent-shaped Carthaginian line absorbing Roman center, cavalry closing both flanks.",

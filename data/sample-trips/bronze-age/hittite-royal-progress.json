@@ -1,6 +1,7 @@
 {
   "id": "hittite-royal-progress",
   "era": "bronze-age",
+  "year": -1275,
   "title": "Hittite royal progress — Hattusa circuit",
   "themeSuggestion": "bronze-age-limestone",
   "viewport": "auto",
@@ -33,7 +34,7 @@
       "id": "stop-3",
       "name": "Arinna",
       "lat": 39.78,
-      "lon": 33.50,
+      "lon": 33.5,
       "note": "Cult-centre of the Sun-Goddess of Arinna, chief deity of the Hittite pantheon. Identified by many with modern Alaca Höyük.",
       "imagePrompt": "Hand-coloured plate. Sun-disk standard above a stone temple precinct, priestesses leading procession.",
       "vehicleToNext": "chariot"
@@ -42,7 +43,7 @@
       "id": "stop-4",
       "name": "Zippalanda",
       "lat": 39.85,
-      "lon": 34.10,
+      "lon": 34.1,
       "note": "Cult-centre of the Storm-God of Zippalanda. Convincingly identified with Uşaklı Höyük on the basis of recent excavation.",
       "imagePrompt": "Hand-coloured plate. Mountain shrine with bull-statue, storm clouds gathering above.",
       "vehicleToNext": "chariot"

@@ -1,83 +1,84 @@
 {
- "id": "beatles-tour-1966",
- "era": "modern",
- "title": "The Beatles — final world tour",
- "themeSuggestion": "modern-clean",
- "viewport": "auto",
- "intro": {
-  "title": "Bigger than Jesus",
-  "dateline": "1966 CE",
-  "body": "The Beatles' last commercial tour ran from June to August 1966 — Germany, Japan, the Philippines, then the United States. Death threats in Memphis and the Philippines fiasco soured them on touring. Their last paid concert was at Candlestick Park, San Francisco on 29 August."
- },
- "companions": [
-  "Lennon",
-  "McCartney",
-  "Harrison",
-  "Starr"
- ],
- "stops": [
-  {
-   "id": "stop-1",
-   "name": "Hamburg",
-   "lat": 53.55,
-   "lon": 9.99,
-   "note": "26 June 1966. Reunion concert at the Ernst-Merck-Halle — first return to the city where they cut their teeth in 1960-62.",
-   "imagePrompt": "Photographic plate, mod-1960s register. German concert hall lobby, four young men in matched jackets stepping out of a Mercedes, fans behind barriers.",
-   "vehicleToNext": "airliner"
+  "id": "beatles-tour-1966",
+  "era": "modern",
+  "year": 1966,
+  "title": "The Beatles — final world tour",
+  "themeSuggestion": "modern-clean",
+  "viewport": "auto",
+  "intro": {
+    "title": "Bigger than Jesus",
+    "dateline": "1966 CE",
+    "body": "The Beatles' last commercial tour ran from June to August 1966 — Germany, Japan, the Philippines, then the United States. Death threats in Memphis and the Philippines fiasco soured them on touring. Their last paid concert was at Candlestick Park, San Francisco on 29 August."
   },
-  {
-   "id": "stop-2",
-   "name": "Tokyo (Budokan)",
-   "lat": 35.69,
-   "lon": 139.75,
-   "note": "30 June - 2 July 1966. Five concerts at the Nippon Budokan, the first Western pop act in the martial-arts hall. Riot police line the venue.",
-   "imagePrompt": "Photographic plate. Octagonal pagoda-roofed hall in central Tokyo, riot police in white helmets, fans with banners on rainy plaza. octagonal pagoda-roofed hall in an urban plaza.",
-   "vehicleToNext": "airliner"
-  },
-  {
-   "id": "stop-3",
-   "name": "Manila",
-   "lat": 14.6,
-   "lon": 120.98,
-   "note": "4 July 1966. The Beatles unintentionally snub Imelda Marcos by missing a presidential luncheon; the next day's airport departure is a near-riot.",
-   "imagePrompt": "Photographic plate. Manila airport tarmac, four musicians being jostled through a crowd, BOAC airliner with steps lowered behind.",
-   "vehicleToNext": "airliner"
-  },
-  {
-   "id": "stop-4",
-   "name": "New Delhi",
-   "lat": 28.6139,
-   "lon": 77.209,
-   "note": "6 July 1966. The band breaks the flight home in India — a few unbilled days that plant the seed of Harrison's return the next year.",
-   "imagePrompt": "Photographic plate. New Delhi airport hotel courtyard, four young Westerners in shirtsleeves examining a sitar handed up by a shopkeeper, warm haze.",
-   "vehicleToNext": "airliner"
-  },
-  {
-   "id": "stop-5",
-   "name": "London",
-   "lat": 51.51,
-   "lon": -0.13,
-   "note": "Home for the rest of the summer. The world tour behind them, the American leg still to come — and a growing certainty that the touring years are ending.",
-   "imagePrompt": "Photographic plate. A grey London airport apron, four figures descending airliner steps into a scrum of press cameras and umbrellas.",
-   "vehicleToNext": "airliner"
-  },
-  {
-   "id": "stop-6",
-   "name": "Memphis",
-   "lat": 35.15,
-   "lon": -90.05,
-   "note": "19 August 1966. Two shows at the Mid-South Coliseum. A firecracker thrown on stage stops the band; they think they have been shot at.",
-   "imagePrompt": "Photographic plate. Indoor arena in low light, four figures on a small stage, smoke-trail across the foreground, security men closing in.",
-   "vehicleToNext": "airliner"
-  },
-  {
-   "id": "stop-7",
-   "name": "San Francisco (Candlestick Park)",
-   "lat": 37.71,
-   "lon": -122.39,
-   "note": "29 August 1966. Last paid concert. McCartney asks the press photographer to take a souvenir shot from the stage. Eleven songs in 33 minutes.",
-   "imagePrompt": "Photographic plate. Floodlit baseball stadium at night, small stage at second base, four musicians on it, screaming crowd in the stands.",
-   "vehicleToNext": "airliner"
-  }
- ]
+  "companions": [
+    "Lennon",
+    "McCartney",
+    "Harrison",
+    "Starr"
+  ],
+  "stops": [
+    {
+      "id": "stop-1",
+      "name": "Hamburg",
+      "lat": 53.55,
+      "lon": 9.99,
+      "note": "26 June 1966. Reunion concert at the Ernst-Merck-Halle — first return to the city where they cut their teeth in 1960-62.",
+      "imagePrompt": "Photographic plate, mod-1960s register. German concert hall lobby, four young men in matched jackets stepping out of a Mercedes, fans behind barriers.",
+      "vehicleToNext": "airliner"
+    },
+    {
+      "id": "stop-2",
+      "name": "Tokyo (Budokan)",
+      "lat": 35.69,
+      "lon": 139.75,
+      "note": "30 June - 2 July 1966. Five concerts at the Nippon Budokan, the first Western pop act in the martial-arts hall. Riot police line the venue.",
+      "imagePrompt": "Photographic plate. Octagonal pagoda-roofed hall in central Tokyo, riot police in white helmets, fans with banners on rainy plaza. octagonal pagoda-roofed hall in an urban plaza.",
+      "vehicleToNext": "airliner"
+    },
+    {
+      "id": "stop-3",
+      "name": "Manila",
+      "lat": 14.6,
+      "lon": 120.98,
+      "note": "4 July 1966. The Beatles unintentionally snub Imelda Marcos by missing a presidential luncheon; the next day's airport departure is a near-riot.",
+      "imagePrompt": "Photographic plate. Manila airport tarmac, four musicians being jostled through a crowd, BOAC airliner with steps lowered behind.",
+      "vehicleToNext": "airliner"
+    },
+    {
+      "id": "stop-4",
+      "name": "New Delhi",
+      "lat": 28.6139,
+      "lon": 77.209,
+      "note": "6 July 1966. The band breaks the flight home in India — a few unbilled days that plant the seed of Harrison's return the next year.",
+      "imagePrompt": "Photographic plate. New Delhi airport hotel courtyard, four young Westerners in shirtsleeves examining a sitar handed up by a shopkeeper, warm haze.",
+      "vehicleToNext": "airliner"
+    },
+    {
+      "id": "stop-5",
+      "name": "London",
+      "lat": 51.51,
+      "lon": -0.13,
+      "note": "Home for the rest of the summer. The world tour behind them, the American leg still to come — and a growing certainty that the touring years are ending.",
+      "imagePrompt": "Photographic plate. A grey London airport apron, four figures descending airliner steps into a scrum of press cameras and umbrellas.",
+      "vehicleToNext": "airliner"
+    },
+    {
+      "id": "stop-6",
+      "name": "Memphis",
+      "lat": 35.15,
+      "lon": -90.05,
+      "note": "19 August 1966. Two shows at the Mid-South Coliseum. A firecracker thrown on stage stops the band; they think they have been shot at.",
+      "imagePrompt": "Photographic plate. Indoor arena in low light, four figures on a small stage, smoke-trail across the foreground, security men closing in.",
+      "vehicleToNext": "airliner"
+    },
+    {
+      "id": "stop-7",
+      "name": "San Francisco (Candlestick Park)",
+      "lat": 37.71,
+      "lon": -122.39,
+      "note": "29 August 1966. Last paid concert. McCartney asks the press photographer to take a souvenir shot from the stage. Eleven songs in 33 minutes.",
+      "imagePrompt": "Photographic plate. Floodlit baseball stadium at night, small stage at second base, four musicians on it, screaming crowd in the stands.",
+      "vehicleToNext": "airliner"
+    }
+  ]
 }

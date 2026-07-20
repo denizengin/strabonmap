@@ -1,72 +1,73 @@
 {
- "id": "orient-express-farewell-1977",
- "era": "modern",
- "title": "Orient Express — the last direct run",
- "themeSuggestion": "modern-clean",
- "viewport": "auto",
- "intro": {
-  "title": "The Last Direct Paris–Istanbul",
-  "dateline": "19–22 May 1977",
-  "body": "For most of a century a traveller could board a single train in Paris and step down at the edge of the Bosphorus. On a spring evening the last direct service pulled out of the Gare de Lyon for Istanbul, and the through-carriage that had carried diplomats, spies and novelists finally uncoupled from the timetable. What remained afterward was the name, and the memory of a continent crossed in one unbroken run."
- },
- "companions": [
-  "you"
- ],
- "stops": [
-  {
-   "id": "stop-1",
-   "name": "Paris (Gare de Lyon)",
-   "lat": 48.8443,
-   "lon": 2.3743,
-   "note": "The through-carriage waits at the far end of the platform, its enamel board still lettered for a city three days east. The buffet clock reads a quarter to departure.",
-   "imagePrompt": "Photographic plate. Evening under the Gare de Lyon train-shed, a single blue sleeping-car with a brass ISTANBUL board, porters loading leather cases, gold-lit clock tower beyond the glass.",
-   "vehicleToNext": "locomotive"
+  "id": "orient-express-farewell-1977",
+  "era": "modern",
+  "year": 1977,
+  "title": "Orient Express — the last direct run",
+  "themeSuggestion": "modern-clean",
+  "viewport": "auto",
+  "intro": {
+    "title": "The Last Direct Paris–Istanbul",
+    "dateline": "19–22 May 1977",
+    "body": "For most of a century a traveller could board a single train in Paris and step down at the edge of the Bosphorus. On a spring evening the last direct service pulled out of the Gare de Lyon for Istanbul, and the through-carriage that had carried diplomats, spies and novelists finally uncoupled from the timetable. What remained afterward was the name, and the memory of a continent crossed in one unbroken run."
   },
-  {
-   "id": "stop-2",
-   "name": "Milan",
-   "lat": 45.4864,
-   "lon": 9.2041,
-   "note": "Dawn over the Lombard plain, the Alps already behind. A change of engines under the vast iron canopy while the corridor windows fog with coffee steam.",
-   "imagePrompt": "Photographic plate. Milano Centrale's monumental steel-and-stone train hall at morning, an express drawn up alongside, travellers stretching on the platform.",
-   "vehicleToNext": "locomotive"
-  },
-  {
-   "id": "stop-3",
-   "name": "Venice (Santa Lucia)",
-   "lat": 45.4412,
-   "lon": 12.32,
-   "note": "The line runs out across the lagoon causeway and the station doors open straight onto water. A few minutes of vaporetto bells, then the train draws east again toward the mountains.",
-   "imagePrompt": "Photographic plate. Santa Lucia station steps meeting the Grand Canal, a waiting vaporetto, the domes of the city low on the far bank under a pale sky.",
-   "vehicleToNext": "locomotive"
-  },
-  {
-   "id": "stop-4",
-   "name": "Belgrade",
-   "lat": 44.8178,
-   "lon": 20.4569,
-   "note": "A long midnight halt where the platforms smell of coal and lime blossom. Frontier officials work the corridor by torchlight; the carriage is shunted to the Sofia line.",
-   "imagePrompt": "Photographic plate. A gas-lamp-lit platform at night, uniformed officials checking papers along a sleeping-car corridor, breath visible in the cold air.",
-   "vehicleToNext": "locomotive"
-  },
-  {
-   "id": "stop-5",
-   "name": "Sofia",
-   "lat": 42.6977,
-   "lon": 23.3219,
-   "note": "The last mountain morning. Beyond the window the Balkan passes give way to tobacco fields, and the corridor talk turns, at last, to the sea.",
-   "imagePrompt": "Photographic plate. A Balkan station at first light, a dark-green express drawn up beneath wooded hills, a vendor with a tea urn on the platform.",
-   "vehicleToNext": "locomotive"
-  },
-  {
-   "id": "stop-6",
-   "name": "Istanbul (Sirkeci)",
-   "lat": 41.0136,
-   "lon": 28.977,
-   "note": "The buffers of Sirkeci, a step from the Golden Horn — the end of the line and, this time, the end of the run. The board is lifted down for the last time and the name goes into memory.",
-   "imagePrompt": "Photographic plate. Sirkeci terminus with its Ottoman-revival façade and stained-glass fanlights, a blue sleeping-car at the buffers, the Bosphorus bright beyond the doors. railway terminus platform at the buffers, Bosphorus bay water beyond.",
-   "vehicleToNext": null
-  }
- ],
- "hook": "The through-carriage that carried Agatha Christie's cast and, a century before, the very first inaugural run — travelled one last time, Paris to the Bosphorus, before the name outlived the train."
+  "companions": [
+    "you"
+  ],
+  "stops": [
+    {
+      "id": "stop-1",
+      "name": "Paris (Gare de Lyon)",
+      "lat": 48.8443,
+      "lon": 2.3743,
+      "note": "The through-carriage waits at the far end of the platform, its enamel board still lettered for a city three days east. The buffet clock reads a quarter to departure.",
+      "imagePrompt": "Photographic plate. Evening under the Gare de Lyon train-shed, a single blue sleeping-car with a brass ISTANBUL board, porters loading leather cases, gold-lit clock tower beyond the glass.",
+      "vehicleToNext": "locomotive"
+    },
+    {
+      "id": "stop-2",
+      "name": "Milan",
+      "lat": 45.4864,
+      "lon": 9.2041,
+      "note": "Dawn over the Lombard plain, the Alps already behind. A change of engines under the vast iron canopy while the corridor windows fog with coffee steam.",
+      "imagePrompt": "Photographic plate. Milano Centrale's monumental steel-and-stone train hall at morning, an express drawn up alongside, travellers stretching on the platform.",
+      "vehicleToNext": "locomotive"
+    },
+    {
+      "id": "stop-3",
+      "name": "Venice (Santa Lucia)",
+      "lat": 45.4412,
+      "lon": 12.32,
+      "note": "The line runs out across the lagoon causeway and the station doors open straight onto water. A few minutes of vaporetto bells, then the train draws east again toward the mountains.",
+      "imagePrompt": "Photographic plate. Santa Lucia station steps meeting the Grand Canal, a waiting vaporetto, the domes of the city low on the far bank under a pale sky.",
+      "vehicleToNext": "locomotive"
+    },
+    {
+      "id": "stop-4",
+      "name": "Belgrade",
+      "lat": 44.8178,
+      "lon": 20.4569,
+      "note": "A long midnight halt where the platforms smell of coal and lime blossom. Frontier officials work the corridor by torchlight; the carriage is shunted to the Sofia line.",
+      "imagePrompt": "Photographic plate. A gas-lamp-lit platform at night, uniformed officials checking papers along a sleeping-car corridor, breath visible in the cold air.",
+      "vehicleToNext": "locomotive"
+    },
+    {
+      "id": "stop-5",
+      "name": "Sofia",
+      "lat": 42.6977,
+      "lon": 23.3219,
+      "note": "The last mountain morning. Beyond the window the Balkan passes give way to tobacco fields, and the corridor talk turns, at last, to the sea.",
+      "imagePrompt": "Photographic plate. A Balkan station at first light, a dark-green express drawn up beneath wooded hills, a vendor with a tea urn on the platform.",
+      "vehicleToNext": "locomotive"
+    },
+    {
+      "id": "stop-6",
+      "name": "Istanbul (Sirkeci)",
+      "lat": 41.0136,
+      "lon": 28.977,
+      "note": "The buffers of Sirkeci, a step from the Golden Horn — the end of the line and, this time, the end of the run. The board is lifted down for the last time and the name goes into memory.",
+      "imagePrompt": "Photographic plate. Sirkeci terminus with its Ottoman-revival façade and stained-glass fanlights, a blue sleeping-car at the buffers, the Bosphorus bright beyond the doors. railway terminus platform at the buffers, Bosphorus bay water beyond.",
+      "vehicleToNext": null
+    }
+  ],
+  "hook": "The through-carriage that carried Agatha Christie's cast and, a century before, the very first inaugural run — travelled one last time, Paris to the Bosphorus, before the name outlived the train."
 }

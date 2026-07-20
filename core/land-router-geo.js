@@ -57,7 +57,14 @@
   // leg touch water?".
   const chordCrossesWater = (verts, isLand, opts) => {
     const o = opts || {};
-    const stepKm = o.stepKm || 40;
+    // #113 (owner IMG_9385, West Wittering → Worthing car leg chorded over the
+    // sea): the old 40km step gave a ~38km coastal leg just ONE interior sample
+    // (n = round(38/40) = 1 → clamped to 2 → a single midpoint). If that lone
+    // point missed the bay the chord read as "all land" and drove across the
+    // water. 8km samples a short coastal leg every few km so a bay it crosses is
+    // caught; maxSamples still bounds a transcontinental leg (it coarsens at the
+    // cap). Finer sampling only ADDS crossing detections — never removes one.
+    const stepKm = o.stepKm || 8;
     const maxSamples = o.maxSamples || 400;
     const samples = _lrSampleChord(verts, stepKm, maxSamples);
     for (let i = 1; i < samples.length - 1; i++) {
