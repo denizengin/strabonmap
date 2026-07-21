@@ -20,13 +20,18 @@
   // silent no-op (no fetch, no 404). When a real file lands, swap
   // the null for `'assets/sfx/<name>.opus'`. See assets/sfx/README.md
   // for the council's source/encoding spec.
+  // #18 (owner GO 21 Jul) — clips SHIPPED. NOTE: these are tasteful synthesized
+  // foley-STYLE clips (tools/gen-foley-sfx.mjs), a deliberate deviation from the
+  // E68 "recorded foley only" spec because real recording/licensing wasn't
+  // possible; they are drop-in replaceable (swap the file, keep the name) with
+  // recorded foley later. A missing/renamed file is still a silent no-op.
   const SFX_ASSETS = {
-    'pen-scratch':    null,
-    'page-turn':      null,
-    'typewriter-fin': null,
-    'stamp-thud':     null,
-    'paper-crumple':  null,
-    'ui-mute-toggle': null,
+    'pen-scratch':    'assets/sfx/pen-scratch.wav',
+    'page-turn':      'assets/sfx/page-turn.wav',
+    'typewriter-fin': 'assets/sfx/typewriter-fin.wav',
+    'stamp-thud':     'assets/sfx/stamp-thud.wav',
+    'paper-crumple':  'assets/sfx/paper-crumple.wav',
+    'ui-mute-toggle': 'assets/sfx/ui-mute-toggle.wav',
   };
 
   const SFX_GAIN_DB = -9;                          // council: 9dB below the music bed

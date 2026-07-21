@@ -14,7 +14,7 @@
 // on the next commit that touches a runtime file. If you need to
 // force-invalidate caches (e.g. unrelated to a runtime change),
 // add a no-op touch like a trailing newline to sw.js itself and commit.
-const CACHE_VERSION = 'strabon-map-7ff5ca11e8';
+const CACHE_VERSION = 'strabon-map-7b01f306ed';
 
 // #97 tiered loading (PERF_OFFLINE_ADDONS_COUNCIL). Two buckets:
 //   • CACHE_VERSION  — Tier-1 precache + content-versioned runtime assets.
@@ -105,6 +105,13 @@ const RUNTIME_URLS = [
   'core/sea-router-geo.js',
   'core/serializer.js',
   'core/sfx.js',
+  // #18 — period foley clips (offline-first: precached so SFX work with no net)
+  'assets/sfx/pen-scratch.wav',
+  'assets/sfx/page-turn.wav',
+  'assets/sfx/typewriter-fin.wav',
+  'assets/sfx/stamp-thud.wav',
+  'assets/sfx/paper-crumple.wav',
+  'assets/sfx/ui-mute-toggle.wav',
   'core/theme.js',
   'core/trip-intro.js',
   'core/trip-modality.js',
