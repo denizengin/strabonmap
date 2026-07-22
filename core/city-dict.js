@@ -25,7 +25,19 @@
 
   const CITY_DICT = (() => {
     // parse the raw blob once into parallel arrays (compact, fast to scan)
-    const names = [], cc = [], lats = [], lons = [], pops = [], lower = [];
+    // Owner council ⑤ (21 Jul): forgiving search so many "not found" cases resolve
+    // without growing the data. fold() lowercases + strips diacritics (NFD then
+    // drop combining marks) + normalises a few common transliteration pairs, so
+    // "Lefkoşa" ≈ "lefkosa" ≈ "nicosia" (via aliases) and accented queries match
+    // unaccented dict names and vice versa. Cheap, offline, no data-size cost.
+    const fold = (s) => String(s || '')
+      .normalize('NFD').replace(/[̀-ͯ]/g, '') // strip combining accents
+      .toLowerCase()
+      .replace(/ı/g, 'i').replace(/ş/g, 's').replace(/ğ/g, 'g') // Turkish folds (post-NFD safety)
+      .replace(/ø/g, 'o').replace(/ß/g, 'ss')
+      .trim();
+
+    const names = [], cc = [], lats = [], lons = [], pops = [], lower = [], folded = [];
     for (const row of (GEONAMES_RAW + '|' + GEONAMES_RAW_WEST).split('|')) {
       const f = row.split(';');
       if (f.length < 5) continue;
@@ -35,24 +47,79 @@
       lons.push(+f[3]);
       pops.push(+f[4]);
       lower.push(f[0].toLowerCase());
+      folded.push(fold(f[0]));
     }
     const countryName = (code) => CC_DISPLAY[code] || code || '';
 
-    // search: case-insensitive prefix-first match, ranked by population.
-    // Returns up to `limit` { name, cc, country, lat, lon, pop } objects.
+    // Alias table (council ⑤): an alternative spelling / endonym / exonym /
+    // transliteration → the dict name it should resolve to. Only entries that
+    // EXIST in the gazetteer are worth aliasing (Karpaz has no dict target — that
+    // is the pin-drop's job, not search's). Folded on both sides at build time.
+    const ALIASES_RAW = {
+      // Cyprus endonym/exonym + common Greek/Turkish pairs
+      'lefkosa': 'Nicosia', 'lefkosia': 'Nicosia', 'lefkoşa': 'Nicosia',
+      'lemesos': 'Limassol', 'leymosun': 'Limassol',
+      'larnaka': 'Larnaca', 'skala': 'Larnaca',
+      // A few high-traffic exonyms elsewhere so the mechanism proves itself
+      'istanbul': 'Istanbul', 'constantinople': 'Istanbul', 'stamboul': 'Istanbul',
+      'firenze': 'Florence', 'roma': 'Rome', 'napoli': 'Naples', 'venezia': 'Venice',
+      'wien': 'Vienna', 'praha': 'Prague', 'lisboa': 'Lisbon', 'sevilla': 'Seville',
+      'köln': 'Cologne', 'muenchen': 'Munich', 'münchen': 'Munich',
+      'al-qahira': 'Cairo', 'kahire': 'Cairo', 'dimashq': 'Damascus', 'esh sham': 'Damascus',
+    };
+    // Build fold(alias) → the index of its target dict entry (first exact match).
+    const aliasIndex = new Map();
+    for (const [alias, target] of Object.entries(ALIASES_RAW)) {
+      const tf = fold(target);
+      const idx = folded.findIndex((f) => f === tf);
+      if (idx >= 0) aliasIndex.set(fold(alias), idx);
+    }
+
+    // Levenshtein ≤1 test (council ⑤ typo tolerance) — true when `a` is within one
+    // insert/delete/substitute of `b`. Bounded + early-out; only used as a last
+    // resort on the whole-name so it never floods results with near-misses.
+    const within1 = (a, b) => {
+      const la = a.length, lb = b.length;
+      if (Math.abs(la - lb) > 1) return false;
+      if (a === b) return true;
+      let i = 0, j = 0, edits = 0;
+      while (i < la && j < lb) {
+        if (a[i] === b[j]) { i++; j++; continue; }
+        if (++edits > 1) return false;
+        if (la > lb) i++; else if (lb > la) j++; else { i++; j++; }
+      }
+      if (i < la || j < lb) edits++;
+      return edits <= 1;
+    };
+
+    // search: forgiving, diacritic-insensitive, prefix-first, ranked by population.
+    // Order: prefix > contains > alias hit > typo (≤1). Returns up to `limit`
+    // { name, cc, country, lat, lon, pop } objects. (Council ⑤, owner 21 Jul.)
     const search = (query, limit = 8) => {
-      const q = String(query || '').trim().toLowerCase();
+      const raw = String(query || '').trim().toLowerCase();
+      const q = fold(query);
       if (!q) return [];
-      const prefix = [], contains = [];
-      for (let i = 0; i < lower.length; i++) {
-        const idx = lower[i].indexOf(q);
-        if (idx === 0) prefix.push(i);
-        else if (idx > 0) contains.push(i);
+      const prefix = [], contains = [], seen = new Set();
+      const take = (i, bucket) => { if (!seen.has(i)) { seen.add(i); bucket.push(i); } };
+      for (let i = 0; i < folded.length; i++) {
+        const idx = folded[i].indexOf(q);
+        if (idx === 0) take(i, prefix);
+        else if (idx > 0) take(i, contains);
+      }
+      // Alias hit — an alternative name maps straight to a dict entry.
+      const alias = [];
+      if (aliasIndex.has(q)) take(aliasIndex.get(q), alias);
+      // Typo fallback (only when we have little/nothing so it never adds noise to
+      // a good query): whole-name edit-distance ≤1.
+      const typo = [];
+      if (prefix.length + contains.length + alias.length < 3 && q.length >= 3) {
+        for (let i = 0; i < folded.length; i++) {
+          if (!seen.has(i) && within1(q, folded[i])) take(i, typo);
+        }
       }
       const byPop = (a, b) => pops[b] - pops[a];
-      prefix.sort(byPop);
-      contains.sort(byPop);
-      return prefix.concat(contains).slice(0, limit).map((i) => ({
+      prefix.sort(byPop); contains.sort(byPop); alias.sort(byPop); typo.sort(byPop);
+      return prefix.concat(alias, contains, typo).slice(0, limit).map((i) => ({
         name: names[i],
         cc: cc[i],
         country: countryName(cc[i]),
