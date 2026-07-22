@@ -14,7 +14,7 @@
 // on the next commit that touches a runtime file. If you need to
 // force-invalidate caches (e.g. unrelated to a runtime change),
 // add a no-op touch like a trailing newline to sw.js itself and commit.
-const CACHE_VERSION = 'strabon-map-5e1679bbb5';
+const CACHE_VERSION = 'strabon-map-77c9494eb5';
 
 // #97 tiered loading (PERF_OFFLINE_ADDONS_COUNCIL). Two buckets:
 //   • CACHE_VERSION  — Tier-1 precache + content-versioned runtime assets.
@@ -230,10 +230,20 @@ const _resolvedRuntimeURLs = () => {
 self.addEventListener('install', (event) => {
   event.waitUntil((async () => {
     const cache = await caches.open(CACHE_VERSION);
-    // Use addAll for atomicity (any single 404 fails the install).
-    // For local-first dev this means a missing music file fails install
-    // — that's the desired strictness.
-    await cache.addAll(_resolvedRuntimeURLs());
+    // Owner field bug (22 Jul, "had to kill the app; the ↻ refresh wasn't enough"):
+    // cache.addAll() fetches THROUGH the browser HTTP cache. On GitHub Pages the new
+    // sw.js can reach the CDN edge before the new bundle does, so a freshly-installing
+    // SW would precache the OLD bytes into the NEW CACHE_VERSION bucket — version says
+    // new, content is old, and only a full app-kill escaped it. Fetch each URL with
+    // {cache:'reload'} to BYPASS the HTTP cache: the new bucket can never inherit stale
+    // bytes. Still atomic (any 404 rejects the whole install, same as addAll).
+    const urls = _resolvedRuntimeURLs();
+    const responses = await Promise.all(urls.map(async (u) => {
+      const res = await fetch(new Request(u, { cache: 'reload' }));
+      if (!res || !res.ok) throw new Error('precache fetch failed: ' + u + ' → ' + (res && res.status));
+      return [u, res];
+    }));
+    await Promise.all(responses.map(([u, res]) => cache.put(u, res)));
     // Skip waiting: next page navigation gets the new SW immediately
     // rather than after a tab close + reopen.
     await self.skipWaiting();
