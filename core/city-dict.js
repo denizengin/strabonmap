@@ -52,14 +52,27 @@
     const countryName = (code) => CC_DISPLAY[code] || code || '';
 
     // Alias table (council ⑤): an alternative spelling / endonym / exonym /
-    // transliteration → the dict name it should resolve to. Only entries that
-    // EXIST in the gazetteer are worth aliasing (Karpaz has no dict target — that
-    // is the pin-drop's job, not search's). Folded on both sides at build time.
+    // transliteration → the dict name it should resolve to. The target may live in
+    // the base dict OR in a region pack loaded LATER via addPlaces — so aliases are
+    // resolved DYNAMICALLY at search time against the live folded[] array, not baked
+    // to an index at init. That's what lets 'karpaz' → 'Rizokarpaso' work: the
+    // Turkish endonym has no base-dict target, but once the Cyprus pack loads its
+    // Greek name, the alias finds it. (Owner field bug IMG_9422, 22 Jul.)
     const ALIASES_RAW = {
       // Cyprus endonym/exonym + common Greek/Turkish pairs
       'lefkosa': 'Nicosia', 'lefkosia': 'Nicosia', 'lefkoşa': 'Nicosia',
       'lemesos': 'Limassol', 'leymosun': 'Limassol',
       'larnaka': 'Larnaca', 'skala': 'Larnaca',
+      'gazimagusa': 'Famagusta', 'magusa': 'Famagusta', 'ammochostos': 'Famagusta',
+      'girne': 'Kyrenia',
+      'baf': 'Paphos', 'gemikonagi': 'Lefka', 'lefke': 'Lefka',
+      'guzelyurt': 'Morphou', 'omorfo': 'Morphou',
+      'iskele': 'Trikomo', 'gecitkale': 'Lefkoniko',
+      // The Karpas/Karpaz peninsula — the field-reported miss. Turkish endonyms of
+      // Rizokarpaso (the pack's Greek name) so 'karpaz' surfaces the peninsula tip.
+      'karpaz': 'Rizokarpaso', 'karpas': 'Rizokarpaso', 'karpasia': 'Rizokarpaso',
+      'dipkarpaz': 'Rizokarpaso', 'rizokarpason': 'Rizokarpaso',
+      'yenierenkoy': 'Yialousa', 'yeni erenkoy': 'Yialousa',
       // A few high-traffic exonyms elsewhere so the mechanism proves itself
       'istanbul': 'Istanbul', 'constantinople': 'Istanbul', 'stamboul': 'Istanbul',
       'firenze': 'Florence', 'roma': 'Rome', 'napoli': 'Naples', 'venezia': 'Venice',
@@ -67,13 +80,20 @@
       'köln': 'Cologne', 'muenchen': 'Munich', 'münchen': 'Munich',
       'al-qahira': 'Cairo', 'kahire': 'Cairo', 'dimashq': 'Damascus', 'esh sham': 'Damascus',
     };
-    // Build fold(alias) → the index of its target dict entry (first exact match).
-    const aliasIndex = new Map();
+    // fold(alias) → fold(target). Resolution to a live array index happens per-search
+    // (in resolveAlias) so a pack loaded after init can still be an alias target.
+    const aliasTargets = new Map();
     for (const [alias, target] of Object.entries(ALIASES_RAW)) {
-      const tf = fold(target);
-      const idx = folded.findIndex((f) => f === tf);
-      if (idx >= 0) aliasIndex.set(fold(alias), idx);
+      aliasTargets.set(fold(alias), fold(target));
     }
+    // Resolve a folded query through the alias table to the FIRST live dict index
+    // whose folded name matches the alias's target, or -1. Runs against folded[] as
+    // it is NOW, so region-pack additions are visible.
+    const resolveAlias = (q) => {
+      const tf = aliasTargets.get(q);
+      if (!tf) return -1;
+      return folded.findIndex((f) => f === tf);
+    };
 
     // Levenshtein ≤1 test (council ⑤ typo tolerance) — true when `a` is within one
     // insert/delete/substitute of `b`. Bounded + early-out; only used as a last
@@ -106,9 +126,11 @@
         if (idx === 0) take(i, prefix);
         else if (idx > 0) take(i, contains);
       }
-      // Alias hit — an alternative name maps straight to a dict entry.
+      // Alias hit — an alternative name maps to a dict entry, resolved against the
+      // CURRENT arrays so a region-pack place (e.g. Rizokarpaso for 'karpaz') counts.
       const alias = [];
-      if (aliasIndex.has(q)) take(aliasIndex.get(q), alias);
+      const aliasIdx = resolveAlias(q);
+      if (aliasIdx >= 0) take(aliasIdx, alias);
       // Typo fallback (only when we have little/nothing so it never adds noise to
       // a good query): whole-name edit-distance ≤1.
       const typo = [];
