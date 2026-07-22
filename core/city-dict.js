@@ -129,5 +129,35 @@
       }));
     };
 
-    return { names, cc, lats, lons, pops, countryName, search, count: names.length };
+    // Council ③ (owner 21 Jul): lazy region packs. addPlaces appends dense local
+    // places (data/regions/*.json → {name,lat,lon,cc?,pop?}) to the SAME searchable
+    // arrays, so search()/nearest see them on the next read — Karpaz/Famagusta/
+    // Rizokarpaso autocomplete offline once the reader's region pack loads. Cold
+    // start stays the ~2,062 bundled set; a pack is fetched on demand + SW-cached.
+    // Deduped by folded-name + rounded coords so re-loading a pack is idempotent.
+    const _addedKeys = new Set();
+    const addPlaces = (arr) => {
+      if (!Array.isArray(arr)) return 0;
+      let added = 0;
+      for (const p of arr) {
+        if (!p || typeof p.lat !== 'number' || typeof p.lon !== 'number' || !p.name) continue;
+        const key = fold(p.name) + '@' + p.lat.toFixed(2) + ',' + p.lon.toFixed(2);
+        if (_addedKeys.has(key)) continue;
+        // Skip a place already in the base dict at ~the same spot (big cities overlap).
+        const nf = fold(p.name);
+        let dup = false;
+        for (let i = 0; i < folded.length; i++) {
+          if (folded[i] === nf && Math.abs(lats[i] - p.lat) < 0.05 && Math.abs(lons[i] - p.lon) < 0.05) { dup = true; break; }
+        }
+        if (dup) { _addedKeys.add(key); continue; }
+        _addedKeys.add(key);
+        names.push(p.name); cc.push(p.cc || ''); lats.push(p.lat); lons.push(p.lon);
+        pops.push(typeof p.pop === 'number' ? p.pop : 0);
+        lower.push(String(p.name).toLowerCase()); folded.push(nf);
+        added++;
+      }
+      return added;
+    };
+
+    return { names, cc, lats, lons, pops, countryName, search, addPlaces, get count() { return names.length; } };
   })();
