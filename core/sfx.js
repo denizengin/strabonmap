@@ -32,6 +32,10 @@
     'stamp-thud':     'assets/sfx/stamp-thud.wav',
     'paper-crumple':  'assets/sfx/paper-crumple.wav',
     'ui-mute-toggle': 'assets/sfx/ui-mute-toggle.wav',
+    // #176 mode-change flourish — a foley tick at each car→plane→ferry hand-off.
+    'car-door':       'assets/sfx/car-door.wav',
+    'jet-whoosh':     'assets/sfx/jet-whoosh.wav',
+    'ferry-horn':     'assets/sfx/ferry-horn.wav',
   };
 
   const SFX_GAIN_DB = -9;                          // council: 9dB below the music bed
