@@ -6,7 +6,7 @@
   "scope": "./",
   "display": "standalone",
   "orientation": "any",
-  "background_color": "#d6b787",
+  "background_color": "#e8d7ad",
   "theme_color": "#7a1f1a",
   "lang": "en",
   "categories": ["travel", "lifestyle", "photo"],
