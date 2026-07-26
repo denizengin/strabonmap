@@ -72,6 +72,74 @@
     return false;
   };
 
+  /* Which LANDMASS a point sits on — a stable key for the Natural Earth
+   * polygon that contains it, or null when it sits on no known land.
+   * Two stops on different landmasses cannot be joined by a road, which is
+   * the honest way to tell a shore DRIVE from an island HOP: it works at any
+   * distance and inside a single country (the Greek-islands failure, 25 Jul,
+   * where every open-sea ferry between islands guessed "by motor-car"
+   * because the legs were short and domestic).
+   */
+  const _landmassAt = (lat, lon) => {
+    if (typeof NATURAL_EARTH_FC === 'undefined') return null;
+    const features = NATURAL_EARTH_FC.features || [];
+    for (let fi = 0; fi < features.length; fi++) {
+      const g = features[fi].geometry;
+      if (!g) continue;
+      const polys = (g.type === 'MultiPolygon') ? g.coordinates : [g.coordinates];
+      for (let pi = 0; pi < polys.length; pi++) {
+        const rings = polys[pi];
+        if (!_pointInRingVI(lon, lat, rings[0])) continue;
+        let inHole = false;
+        for (let i = 1; i < rings.length; i++) {
+          if (_pointInRingVI(lon, lat, rings[i])) { inHole = true; break; }
+        }
+        if (!inHole) return fi + ':' + pi;
+      }
+    }
+    return null;
+  };
+
+  /* A coastal stop's coordinates often fall in the SEA at 1:50m (Piraeus,
+   * Dover, West Wittering all do), so the containing-polygon test alone
+   * answers "no land" for perfectly ordinary harbours. Walk outward in rings
+   * and report BOTH the landmass found and how far we had to reach for it —
+   * the reach is the confidence: a harbour snaps within a couple of km, while
+   * an island the coastline doesn't carry only snaps from much further out.
+   */
+  const _landmassKey = (lat, lon) => {
+    const here = _landmassAt(lat, lon);
+    if (here) return { key: here, snapKm: 0 };
+    const KM_PER_DEG = 111;
+    for (const km of [2, 5, 10, 20]) {
+      const dLat = km / KM_PER_DEG;
+      const dLon = km / (KM_PER_DEG * Math.max(0.2, Math.cos(lat * Math.PI / 180)));
+      for (let a = 0; a < 8; a++) {
+        const th = a * Math.PI / 4;
+        const hit = _landmassAt(lat + dLat * Math.sin(th), lon + dLon * Math.cos(th));
+        if (hit) return { key: hit, snapKm: km };
+      }
+    }
+    return null;
+  };
+
+  /* true  — both stops sit on the SAME landmass (a road can exist)
+   * false — they sit on DIFFERENT landmasses (only a crossing joins them)
+   * null  — undecidable: at least one stop only found land far away, which is
+   *         what a small island missing from the coarse coastline looks like.
+   *         The caller decides, and should keep the boat.
+   */
+  const SNAP_TRUST_KM = 10;
+  // Test/diagnostic seam: which landmass a point resolved to, and from how far.
+  const landmassInfo = (lat, lon) => _landmassKey(lat, lon);
+  const sameLandmass = (aLat, aLon, bLat, bLon) => {
+    const a = _landmassKey(aLat, aLon);
+    const b = _landmassKey(bLat, bLon);
+    if (!a || !b) return null;
+    if (a.snapKm > SNAP_TRUST_KM || b.snapKm > SNAP_TRUST_KM) return null;
+    return a.key === b.key;
+  };
+
   /* Ray-cast point-in-ring on a closed lon/lat ring. */
   const _pointInRingVI = (x, y, ring) => {
     let inside = false;
@@ -99,6 +167,13 @@
     }
     return water / (n - 1);
   };
+
+  /* How much of the straight line between two points is off land (0..1) —
+   * exposed so other layers can ask "is there sea between these two places?"
+   * (the photo clusterer uses it to refuse to merge two stops across water).
+   */
+  const waterFractionBetween = (aLat, aLon, bLat, bLon, samples) =>
+    _waterFraction(aLat, aLon, bLat, bLon, samples);
 
   /* inferVehicle({fromLat, fromLon, toLat, toLon, eraKey})
    * Returns a string suggestion: 'foot' | 'air' | era's land vehicle |
@@ -135,6 +210,11 @@
     const water = _waterFraction(fromLat, fromLon, toLat, toLon);
     if (water > seaThreshold) return transport.sea;
     if (airCapable && distKm >= 2500) return transport.air;
+    // Stress finding (25 Jul, the Greek islands): a 20km strait between two
+    // islands samples as mostly LAND at 1:50m, so the water test never fired
+    // and a motor-car drove across the Aegean. Landmasses settle it — you
+    // cannot drive from one island to another, however short the gap.
+    if (sameLandmass(fromLat, fromLon, toLat, toLon) === false) return transport.sea;
     return transport.land;
   };
 

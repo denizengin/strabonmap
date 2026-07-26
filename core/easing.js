@@ -71,9 +71,14 @@
   // users get the same proportional scaling, just compressed) without
   // duplicating the formula at every call site.
   const legDurationMs = (lengthPx, reduced) => {
-    const pxPerMs = 0.30;
-    const minMs   = 800;
-    const maxMs   = 3000;
+    // Owner (26 Jul): "vehicles moving too fast — half speed." Halved from
+    // 0.30 px/ms with both bounds doubled, so the whole band slows by exactly
+    // two rather than just the middle of it. (A journey the reader OPENS is
+    // paced by HERO_LEG_TARGET_MS in the mobile boot; this is the base pace
+    // every other surface — desktop playback, the film's own legs — uses.)
+    const pxPerMs = 0.15;
+    const minMs   = 1600;
+    const maxMs   = 6000;
     const raw     = Math.max(0, lengthPx | 0) / pxPerMs;
     const clamped = Math.max(minMs, Math.min(maxMs, raw));
     return reduced ? Math.max(400, Math.round(clamped * 0.5)) : Math.round(clamped);

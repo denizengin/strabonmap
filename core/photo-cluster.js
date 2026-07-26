@@ -131,14 +131,43 @@
     //      when centroids are within SAME_CITY_KM. Tight, because at 6km
     //      cluster radius the owner's real stops sit 9-15km apart.
     const SAME_CITY_KM = 5;
-    const SAME_NAME_KM = 30;
+    // 30km was too generous: it folded two genuinely different places that a
+    // sparse gazetteer happened to give the same nearest name (Chambord 14km
+    // from Blois — the château simply disappeared from the journey). A city's
+    // own day-clusters sit within a few km of each other, so 12km still folds
+    // the overnight stay and the big city the 6km radius split in halves.
+    const SAME_NAME_KM = 12;
     const mergeSameCity = (clusters, cityKey) => {
       if (!Array.isArray(clusters) || clusters.length < 2) return clusters || [];
       const keyOf = (lat, lon) => {
         if (typeof cityKey !== 'function') return null;
         try { return cityKey(lat, lon) || null; } catch { return null; }
       };
+      // Stress finding (Petros, 25 Jul): a whole photographed stop VANISHED —
+      // five islands imported as four, because two islands 17km apart resolved
+      // to the same nearest gazetteer name and the name rule folded them. No
+      // name is worth losing a stop across water: two clusters on DIFFERENT
+      // landmasses are never the same place, however close or however alike
+      // their nearest city. (sameLandmass comes from core/vehicle-infer.js —
+      // absent in worker/test contexts, where the old rule stands.)
+      /* global sameLandmass, waterFractionBetween */
+      const SEA_BETWEEN_MIN_KM = 10;   // a city's own halves sit closer than this
+      const SEA_BETWEEN_FRAC = 0.6;
+      const acrossWater = (a, b) => {
+        try {
+          if (typeof sameLandmass === 'function'
+              && sameLandmass(a.lat, a.lon, b.lat, b.lon) === false) return true;
+          // Small islands the coarse coastline doesn't carry both resolve to the
+          // mainland, so the landmass test alone answers "same". The sea between
+          // them still says otherwise: no single place spans 10km of open water.
+          if (typeof waterFractionBetween === 'function'
+              && distanceKm(a.lat, a.lon, b.lat, b.lon) > SEA_BETWEEN_MIN_KM
+              && waterFractionBetween(a.lat, a.lon, b.lat, b.lon) > SEA_BETWEEN_FRAC) return true;
+        } catch (e) { /* fall through to the old rule */ }
+        return false;
+      };
       const samePlace = (a, b) => {
+        if (acrossWater(a, b)) return false;
         const d = distanceKm(a.lat, a.lon, b.lat, b.lon);
         const ka = keyOf(a.lat, a.lon);
         const kb = keyOf(b.lat, b.lon);
