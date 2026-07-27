@@ -299,6 +299,35 @@ self.addEventListener('message', (event) => {
 // Fetch: cache-first. On hit, return cached. On miss, fetch + cache for
 // next time (lets late-loaded assets — e.g. a fresh region pack — get
 // captured without bumping the version).
+// The page of last resort. Held as a STRING inside the worker, so it depends on
+// no cache entry, no stylesheet and no bundle — the three things that are
+// missing whenever it is needed. Same parchment and the same voice as the boot
+// veil, because a reader who sees this should still be somewhere recognisable.
+const OFFLINE_PAGE = `<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Strabon Map</title><style>
+html,body{margin:0;height:100%;background:#e6d5ab;color:#3a2817;
+  font-family:Georgia,'Times New Roman',serif;-webkit-text-size-adjust:100%}
+.w{min-height:100%;display:flex;align-items:center;justify-content:center;
+  text-align:center;padding:28px;box-sizing:border-box}
+.m{width:44px;height:44px;margin:0 auto 20px;border:1.5px solid rgba(58,40,23,.5);
+  border-radius:50%;position:relative}
+.m:before,.m:after{content:'';position:absolute;left:50%;top:50%;background:rgba(58,40,23,.55)}
+.m:before{width:1.5px;height:28px;margin:-14px 0 0 -.75px}
+.m:after{width:28px;height:1.5px;margin:-.75px 0 0 -14px}
+h1{font-size:1.6rem;font-style:italic;font-weight:400;margin:0 0 10px}
+p{margin:0 0 8px;font-style:italic;color:rgba(58,40,23,.78);line-height:1.5}
+button{margin-top:24px;padding:14px 26px;min-height:44px;cursor:pointer;
+  background:#f2e8cd;color:#3a2817;border:1.4px solid rgba(58,40,23,.55);border-radius:8px;
+  font-family:Georgia,serif;font-size:1rem;font-style:italic}
+</style></head><body><div class="w"><div>
+<div class="m"></div>
+<h1>Strabon Map</h1>
+<p>The map could not be reached just now.</p>
+<p>Your journeys and photographs are safe on this device.</p>
+<button onclick="location.reload()">Try again</button>
+</div></div></body></html>`;
+
 self.addEventListener('fetch', (event) => {
   // Only handle same-origin GETs. Other origins (none today by design)
   // pass through to the network so we don't accidentally cache analytics.
@@ -324,12 +353,38 @@ self.addEventListener('fetch', (event) => {
       }
       return response;
     } catch (err) {
-      // Network failed AND nothing in cache. For a navigation request
-      // (i.e. an HTML page), fall back to the cached index.html so the
-      // app still launches into its empty state offline.
+      // Network failed AND nothing in cache.
+      //
+      // OWNER, 27 Jul: "first fix the white blank page issue which still
+      // exists". This was it. A navigation that reached here did two wrong
+      // things: it looked only for index.html — the DESKTOP page — when the
+      // reader was on mobile.html; and if that was not cached either it
+      // rethrew, and a thrown navigation is a WHITE VOID. No words, no retry,
+      // nothing to tap. That is reachable in a real window: just after an
+      // activate has purged the previous CACHE_VERSION bucket, before the new
+      // precache has finished filling it, with the network slow or gone.
+      //
+      // Now: the page the reader ASKED for, then the other entry point, then a
+      // page built into this worker as a string — which needs no cache and no
+      // network and therefore cannot fail. A reader is never shown a void.
       if (req.mode === 'navigate') {
-        const fallback = await cache.match(new URL('index.html', self.registration.scope).href);
-        if (fallback) return fallback;
+        const scope = self.registration.scope;
+        const wanted = url.pathname.split('/').pop() || '';
+        // Prefer the page they were actually going to, and prefer the mobile
+        // app for anything that is not explicitly the desktop page.
+        const order = wanted && wanted.endsWith('.html')
+          ? [wanted, 'mobile.html', 'mobile-mvp.html', 'index.html']
+          : ['mobile.html', 'mobile-mvp.html', 'index.html'];
+        for (const name of order) {
+          try {
+            const hit = await cache.match(new URL(name, scope).href);
+            if (hit) return hit;
+          } catch (e) { /* try the next one */ }
+        }
+        return new Response(OFFLINE_PAGE, {
+          status: 200,
+          headers: { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'no-store' },
+        });
       }
       throw err;
     }
