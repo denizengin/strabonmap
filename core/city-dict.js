@@ -158,6 +158,13 @@
     // start stays the ~2,062 bundled set; a pack is fetched on demand + SW-cached.
     // Deduped by folded-name + rounded coords so re-loading a pack is idempotent.
     const _addedKeys = new Set();
+    // folded name → indices, built once from the seed and kept current as places
+    // are appended, so the dedupe above is a lookup rather than a sweep.
+    const _byFolded = new Map();
+    for (let i = 0; i < folded.length; i++) {
+      const list = _byFolded.get(folded[i]);
+      if (list) list.push(i); else _byFolded.set(folded[i], [i]);
+    }
     const addPlaces = (arr) => {
       if (!Array.isArray(arr)) return 0;
       let added = 0;
@@ -165,17 +172,26 @@
         if (!p || typeof p.lat !== 'number' || typeof p.lon !== 'number' || !p.name) continue;
         const key = fold(p.name) + '@' + p.lat.toFixed(2) + ',' + p.lon.toFixed(2);
         if (_addedKeys.has(key)) continue;
-        // Skip a place already in the base dict at ~the same spot (big cities overlap).
+        // Skip a place already in the dict at ~the same spot (big cities overlap).
+        // Indexed by folded name, not scanned: the world tier feeds ~4,000 places
+        // through here on idle, and a linear scan per place is O(n²) — measured
+        // as a multi-second main-thread block that starved an import mid-confirm.
         const nf = fold(p.name);
         let dup = false;
-        for (let i = 0; i < folded.length; i++) {
-          if (folded[i] === nf && Math.abs(lats[i] - p.lat) < 0.05 && Math.abs(lons[i] - p.lon) < 0.05) { dup = true; break; }
+        const hits = _byFolded.get(nf);
+        if (hits) {
+          for (const i of hits) {
+            if (Math.abs(lats[i] - p.lat) < 0.05 && Math.abs(lons[i] - p.lon) < 0.05) { dup = true; break; }
+          }
         }
         if (dup) { _addedKeys.add(key); continue; }
         _addedKeys.add(key);
         names.push(p.name); cc.push(p.cc || ''); lats.push(p.lat); lons.push(p.lon);
         pops.push(typeof p.pop === 'number' ? p.pop : 0);
         lower.push(String(p.name).toLowerCase()); folded.push(nf);
+        const at = folded.length - 1;
+        const list = _byFolded.get(nf);
+        if (list) list.push(at); else _byFolded.set(nf, [at]);
         added++;
       }
       return added;
