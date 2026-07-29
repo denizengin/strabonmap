@@ -14,7 +14,7 @@
 // on the next commit that touches a runtime file. If you need to
 // force-invalidate caches (e.g. unrelated to a runtime change),
 // add a no-op touch like a trailing newline to sw.js itself and commit.
-const CACHE_VERSION = 'strabon-map-eb78f85a1c';
+const CACHE_VERSION = 'strabon-map-5fb2372be0';
 
 // #97 tiered loading (PERF_OFFLINE_ADDONS_COUNCIL). Two buckets:
 //   • CACHE_VERSION  — Tier-1 precache + content-versioned runtime assets.
@@ -345,6 +345,21 @@ self.addEventListener('fetch', (event) => {
     const cache = await caches.open(bucket);
     const cached = await cache.match(req);
     if (cached) return cached;
+    // Asia slice (28 Jul) — an add-on URL can ALSO be Tier-1 precached: the
+    // seven Mediterranean region packs stay in RUNTIME_URLS (owner ruling,
+    // Regional-Data folio §7.4 — "ok dont change mediterranean") yet
+    // isAddonRequest routes every data/regions/ fetch to ADDONS_CACHE. Before
+    // this fallback, a pack that was precached at install but never fetched
+    // online sat UNREACHABLE in CACHE_VERSION and the request died offline —
+    // i.e. the precache-guard's "precached ⇒ offline" contract silently did
+    // not hold for the very files it pins. Cache-first order is now: ADDONS
+    // (survives deploys) → CACHE_VERSION precache → network. New on-demand
+    // packs (japan, korea, …) are NOT precached and take the network branch
+    // on first use, landing in ADDONS_CACHE like geo-refined does.
+    if (bucket === ADDONS_CACHE) {
+      const pre = await (await caches.open(CACHE_VERSION)).match(req);
+      if (pre) return pre;
+    }
     try {
       const response = await fetch(req);
       // Only cache OK responses; never cache opaque / error responses.
