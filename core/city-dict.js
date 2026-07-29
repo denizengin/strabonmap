@@ -105,6 +105,17 @@
       // Greek endonyms whose romanisation differs from the dict's English
       // exonym spelling (athina≠Athens, peiraias≠Piraeus).
       'αθήνα': 'Athens', 'αθήναι': 'Athens', 'πειραιάς': 'Piraeus', 'πειραιεύς': 'Piraeus',
+      // The Aegean crossing (stress W13-F1, Nesrin): the app's own heartland
+      // islands + ferry towns in BOTH scripts. The targets live in the aegean
+      // region pack, not the base dict — aliases resolve against the live
+      // arrays, so they light up the moment the pack loads (desktop warms the
+      // packs on a zero-result; mobile warms them on sheet-open/import).
+      // Greek keys whose fold already equals the target ('χίος'≡'chios',
+      // 'σάμος'≡'samos', 'κως'≡'kos', 'ρόδος'≡'rodos'→alias below) are omitted.
+      'mytilini': 'Mytilene', 'μυτιλήνη': 'Mytilene',
+      'lesbos': 'Mytilene', 'lesvos': 'Mytilene', 'midilli': 'Mytilene',
+      'aivali': 'Ayvalık', 'ayvali': 'Ayvalık', 'kydonies': 'Ayvalık',
+      'sakız': 'Chios', 'rodos': 'Rhodes', 'sisam': 'Samos',
     };
     // fold(alias) → fold(target). Resolution to a live array index happens per-search
     // (in resolveAlias) so a pack loaded after init can still be an alias target.
@@ -166,7 +177,11 @@
         }
       }
       const byPop = (a, b) => pops[b] - pops[a];
-      prefix.sort(byPop); contains.sort(byPop); alias.sort(byPop); typo.sort(byPop);
+      // W13-F2 (Nesrin): 'kos' must mean the island of Kos, not Košice — an
+      // EXACT folded-name match outranks bigger-city prefix matches; pop
+      // ordering still decides within each tier.
+      const exactFirst = (a, b) => ((folded[b] === q ? 1 : 0) - (folded[a] === q ? 1 : 0)) || byPop(a, b);
+      prefix.sort(exactFirst); contains.sort(byPop); alias.sort(byPop); typo.sort(byPop);
       return prefix.concat(alias, contains, typo).slice(0, limit).map((i) => ({
         name: names[i],
         cc: cc[i],
