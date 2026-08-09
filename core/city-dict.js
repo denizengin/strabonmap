@@ -54,7 +54,11 @@
       .replace(/[α-ω]/g, (ch) => GREEK_LAT[ch] || ch) // then letter-by-letter (W12-F1)
       .trim();
 
-    const names = [], cc = [], lats = [], lons = [], pops = [], lower = [], folded = [];
+    // `kinds` carries a pack place's OSM class ('city'|'town'|'village'|
+    // 'hamlet'|'airport'|'site'). The seed rows are settlements, so they take
+    // '' and every consumer treats a blank as 'an ordinary place'. W16: a
+    // naming chooser cannot apply the site rule it cannot see.
+    const names = [], cc = [], lats = [], lons = [], pops = [], lower = [], folded = [], kinds = [], siteClass = [];
     for (const row of (GEONAMES_RAW + '|' + GEONAMES_RAW_WEST).split('|')) {
       const f = row.split(';');
       if (f.length < 5) continue;
@@ -65,6 +69,7 @@
       pops.push(+f[4]);
       lower.push(f[0].toLowerCase());
       folded.push(fold(f[0]));
+      kinds.push(''); siteClass.push('');
     }
     const countryName = (code) => CC_DISPLAY[code] || code || '';
 
@@ -267,6 +272,7 @@
         names.push(p.name); cc.push(p.cc || ''); lats.push(p.lat); lons.push(p.lon);
         pops.push(typeof p.pop === 'number' ? p.pop : 0);
         lower.push(String(p.name).toLowerCase()); folded.push(nf);
+        kinds.push(p.kind || ''); siteClass.push(p.site || '');
         const at = folded.length - 1;
         const list = _byFolded.get(nf);
         if (list) list.push(at); else _byFolded.set(nf, [at]);
@@ -277,5 +283,5 @@
       return added + refined;
     };
 
-    return { names, cc, lats, lons, pops, countryName, search, addPlaces, get count() { return names.length; } };
+    return { names, cc, lats, lons, pops, kinds, siteClass, countryName, search, addPlaces, get count() { return names.length; } };
   })();
