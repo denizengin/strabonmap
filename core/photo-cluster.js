@@ -166,13 +166,47 @@
         } catch (e) { /* fall through to the old rule */ }
         return false;
       };
+      // W22 (Lakeland walking holiday, loop wave 16): six villages 2-4km apart
+      // folded into two stops — a 5km geometric merge is right for a driving
+      // trip whose stops sit 9-15km apart and wrong for a walk whose whole
+      // world is smaller than the threshold. The merge respects the JOURNEY'S
+      // OWN GRAIN: threshold = min(SAME_CITY_KM, 0.6 × the median consecutive
+      // centroid distance), floored at 1km. A city's overnight halves (~1-2km
+      // apart inside a 30km-grain drive) still fold; villages that ARE the
+      // journey do not.
+      const geomKm = (() => {
+        // Degenerate case first (the '3 Kayseris' fold must survive): when the
+        // WHOLE journey fits inside one city's radius, every day-cluster is
+        // the same place — grain has no meaning on a 1-stop trip.
+        let diam = 0;
+        for (let i = 0; i < clusters.length; i++) {
+          for (let j = i + 1; j < clusters.length; j++) {
+            const d = distanceKm(clusters[i].lat, clusters[i].lon,
+              clusters[j].lat, clusters[j].lon);
+            if (d > diam) diam = d;
+          }
+        }
+        if (diam <= SAME_CITY_KM) return SAME_CITY_KM;
+        const ds = [];
+        for (let i = 0; i < clusters.length - 1; i++) {
+          ds.push(distanceKm(clusters[i].lat, clusters[i].lon,
+            clusters[i + 1].lat, clusters[i + 1].lon));
+        }
+        if (!ds.length) return SAME_CITY_KM;
+        ds.sort((x, y) => x - y);
+        const med = ds[Math.floor(ds.length / 2)];
+        return Math.max(1, Math.min(SAME_CITY_KM, med * 0.6));
+      })();
       const samePlace = (a, b) => {
         if (acrossWater(a, b)) return false;
         const d = distanceKm(a.lat, a.lon, b.lat, b.lon);
         const ka = keyOf(a.lat, a.lon);
         const kb = keyOf(b.lat, b.lon);
+        // Name equality keeps its FULL reach: the overnight stay a big city's
+        // 6km radius split in halves must fold, and the reach cap upstream
+        // already refuses the false names that used to fold a valley.
         if (ka != null && kb != null) return ka === kb && d <= SAME_NAME_KM;
-        return d <= SAME_CITY_KM;
+        return d <= geomKm;
       };
       // One day-cluster's reconstruction record: the date span + the photos
       // that fell in it. #77 P1 "split into days" replays these to rebuild the
