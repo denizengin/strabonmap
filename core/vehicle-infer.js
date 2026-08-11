@@ -208,7 +208,38 @@
     }
     if (airCapable && distKm >= 4000) return transport.air;
     const water = _waterFraction(fromLat, fromLon, toLat, toLon);
-    if (water > seaThreshold) return transport.sea;
+    if (water > seaThreshold) {
+      // W21 (loop wave 15): Kyrenia→Rizokarpaso — 100km along the north coast
+      // of ONE island — sampled 86% water on its straight chord (the coast
+      // curves, the chord doesn't) and sailed. A mostly-water chord whose ends
+      // sit on the SAME landmass within driving range is a COAST ROAD, not a
+      // ferry: the road exists precisely where the chord cannot. Distance
+      // keeps the real ferries: Brindisi→Igoumenitsa (315km) shares the
+      // Eurasian landmass at this map scale but nobody drives around the
+      // Adriatic — a long open-water crossing stays a sail. Hand-set ferries
+      // (legs[].vehicle) override all of this upstream.
+      // …but sameLandmass SNAPS an off-map point to the nearest carried
+      // landmass, so two tiny islands the 1:50m coastline does not hold
+      // (Hydra, Spetses) both "snap" to the Peloponnese and would drive
+      // across the strait. A coast-road endpoint lives ON a carried landmass;
+      // an uncarried island floats in pure water. Measure each endpoint's
+      // LOCAL LAND SHARE (four short segments through it): Kyrenia 1.0,
+      // Rizokarpaso 0.82 vs Hydra 0.0, Spetses 0.0 — a clean separation.
+      const localLand = (lat, lon) => {
+        const d = 0.03;
+        let water = 0;
+        water += _waterFraction(lat - d, lon, lat + d, lon, 8);
+        water += _waterFraction(lat, lon - d, lat, lon + d, 8);
+        water += _waterFraction(lat - d, lon - d, lat + d, lon + d, 8);
+        water += _waterFraction(lat - d, lon + d, lat + d, lon - d, 8);
+        return 1 - water / 4;
+      };
+      const coastal = distKm < 150
+        && sameLandmass(fromLat, fromLon, toLat, toLon) === true
+        && localLand(fromLat, fromLon) >= 0.3
+        && localLand(toLat, toLon) >= 0.3;
+      if (!coastal) return transport.sea;
+    }
     if (airCapable && distKm >= 2500) return transport.air;
     // Stress finding (25 Jul, the Greek islands): a 20km strait between two
     // islands samples as mostly LAND at 1:50m, so the water test never fired
