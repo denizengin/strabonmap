@@ -121,8 +121,23 @@
         out.push(b);
         continue;
       }
-      const path = _lrAstarLandPath(a, b, isLand, o);
-      if (!path || path.length < 2) { out.push(b); continue; } // impossible → chord
+      // OWNER, 10-11 Aug (car crossing the sea from Girne to Karpaz): the A*
+      // grid defaults to 0.08° cells (~9km), and the Karpaz peninsula is
+      // narrower than that — every cell centre along it classified as WATER, so
+      // the search found NO land path and fell back to the straight chord,
+      // driving the car across the sea. Measured on his leg: 0.08° → null,
+      // 0.04° → 32 points, 0.02° → 63. When the coarse pass fails, retry finer
+      // before giving up: a narrow coast road is exactly the case the fallback
+      // was hiding. Bounded — two extra attempts, each with its own cell budget,
+      // and the result is memoised per leg so this cost is paid once.
+      let path = _lrAstarLandPath(a, b, isLand, o);
+      if (!path || path.length < 2) {
+        for (const cellDeg of [0.04, 0.02]) {
+          path = _lrAstarLandPath(a, b, isLand, { ...o, cellDeg, maxCells: o.maxCells || 90000 });
+          if (path && path.length >= 2) break;
+        }
+      }
+      if (!path || path.length < 2) { out.push(b); continue; } // genuinely no land route → chord
       const simplified = _lrSimplifyPath(path, o.tolDeg, isLand);
       const near = (p, q) => Math.abs(p.lat - q.lat) < 1e-4 && Math.abs(p.lon - q.lon) < 1e-4;
       for (let k = 0; k < simplified.length; k++) {
