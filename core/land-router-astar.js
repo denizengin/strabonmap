@@ -91,6 +91,22 @@
       }
     }
 
+    // Terrain toll (11 Aug, the Pedoulas→Larnaca straight line over the
+    // Troodos): when the caller supplies terrainCost(lon,lat) — the same
+    // mountain bands the map draws carets for — crossing a range costs a
+    // motor-car dearly and the route flows around it, exactly as it flows
+    // around water. 0 everywhere outside the bands: plains legs pay nothing.
+    const terrainAt = (typeof o.terrainCost === 'function') ? o.terrainCost : null;
+    let terrain = null;
+    if (terrainAt) {
+      terrain = new Float32Array(gridW * gridH);
+      for (let r = 0; r < gridH; r++) {
+        for (let c = 0; c < gridW; c++) {
+          try { terrain[idx(r, c)] = terrainAt(cellLon(c), cellLat(r)) || 0; } catch (e) { terrain[idx(r, c)] = 0; }
+        }
+      }
+    }
+
     // Snap a coord to the nearest LAND cell (an authored stop may classify as
     // water in coarse data — a coastal town sits offshore by ONE cell — so
     // search outward a SHORT way only).
@@ -224,7 +240,8 @@
                 Math.min(dLon, dLat) * 0.5)) continue;
           const stepCost = _lrHaversineKm(curLat, curLon, cellLat(nr), cellLon(nc));
           const hug = nearWater[ni] ? 1.04 : 1.0;         // small inland-buffer nudge
-          const tentative = gScore[cur] + stepCost * hug;
+          const toll = terrain ? (1 + 5 * terrain[ni]) : 1;  // ranges tax the crossing
+          const tentative = gScore[cur] + stepCost * hug * toll;
           if (tentative < gScore[ni]) {
             came[ni] = cur;
             gScore[ni] = tentative;

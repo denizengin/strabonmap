@@ -110,14 +110,29 @@
     const chord = [from, ...via.map((v) => ({ lat: v.lat, lon: v.lon })), to];
 
     if (typeof isLand !== 'function') return chord;
-    if (!chordCrossesWater(chord, isLand, o)) return chord;
+    // A chord is routed when it crosses terrain a motor-car cannot take:
+    // water, or (11 Aug) a mountain range the map itself draws. Sampling the
+    // chord against the caller's terrainCost keeps this dataset-generic.
+    const crossesRange = (verts) => {
+      if (typeof o.terrainCost !== 'function') return false;
+      for (let i = 0; i < verts.length - 1; i++) {
+        const a = verts[i], b = verts[i + 1];
+        for (let t = 0.1; t < 1; t += 0.1) {
+          const lat = a.lat + (b.lat - a.lat) * t;
+          const lon = a.lon + (b.lon - a.lon) * t;
+          try { if (o.terrainCost(lon, lat) > 0.35) return true; } catch (e) { return false; }
+        }
+      }
+      return false;
+    };
+    if (!chordCrossesWater(chord, isLand, o) && !crossesRange(chord)) return chord;
 
     // Route around. We route each chord SEGMENT that crosses water; authored
     // via points are kept and only the wet segments between them are detailed.
     const out = [chord[0]];
     for (let i = 0; i < chord.length - 1; i++) {
       const a = chord[i], b = chord[i + 1];
-      if (!chordCrossesWater([a, b], isLand, o)) {
+      if (!chordCrossesWater([a, b], isLand, o) && !crossesRange([a, b])) {
         out.push(b);
         continue;
       }
