@@ -58,7 +58,7 @@
     // 'hamlet'|'airport'|'site'). The seed rows are settlements, so they take
     // '' and every consumer treats a blank as 'an ordinary place'. W16: a
     // naming chooser cannot apply the site rule it cannot see.
-    const names = [], cc = [], lats = [], lons = [], pops = [], lower = [], folded = [], kinds = [], siteClass = [];
+    const names = [], cc = [], lats = [], lons = [], pops = [], lower = [], folded = [], kinds = [], siteClass = [], alts = [];
     for (const row of (GEONAMES_RAW + '|' + GEONAMES_RAW_WEST).split('|')) {
       const f = row.split(';');
       if (f.length < 5) continue;
@@ -69,7 +69,7 @@
       pops.push(+f[4]);
       lower.push(f[0].toLowerCase());
       folded.push(fold(f[0]));
-      kinds.push(''); siteClass.push('');
+      kinds.push(''); siteClass.push(''); alts.push(null);
     }
     const countryName = (code) => CC_DISPLAY[code] || code || '';
 
@@ -154,6 +154,14 @@
       return edits <= 1;
     };
 
+    // W17 (Turkish names): pack places can carry alt-language spellings
+    // (place.alt = { loc, tr, el, … }). Each alt spelling is indexed here as a
+    // searchable row pointing at its place, so 'Girne' and 'Κερύνεια' find the
+    // Kyrenia row by PREFIX, not only via the hand-kept alias table.
+    const _altRows = [];               // { f: folded alt spelling, i: dict index }
+    const _altByFolded = new Map();    // folded alt spelling → indices
+    const _altKeySeen = new Set();     // 'folded@index' — refine passes re-run
+
     // search: forgiving, diacritic-insensitive, prefix-first, ranked by population.
     // Order: prefix > contains > alias hit > typo (≤1). Returns up to `limit`
     // { name, cc, country, lat, lon, pop } objects. (Council ⑤, owner 21 Jul.)
@@ -167,6 +175,11 @@
         const idx = folded[i].indexOf(q);
         if (idx === 0) take(i, prefix);
         else if (idx > 0) take(i, contains);
+      }
+      for (const a of _altRows) {
+        const idx = a.f.indexOf(q);
+        if (idx === 0) take(a.i, prefix);
+        else if (idx > 0) take(a.i, contains);
       }
       // Alias hit — an alternative name maps to a dict entry, resolved against the
       // CURRENT arrays so a region-pack place (e.g. Rizokarpaso for 'karpaz') counts.
@@ -188,7 +201,7 @@
       const exactFirst = (a, b) => ((folded[b] === q ? 1 : 0) - (folded[a] === q ? 1 : 0)) || byPop(a, b);
       prefix.sort(exactFirst); contains.sort(byPop); alias.sort(byPop); typo.sort(byPop);
       return prefix.concat(alias, contains, typo).slice(0, limit).map((i) => ({
-        name: names[i],
+        name: displayName(i),
         cc: cc[i],
         country: countryName(cc[i]),
         lat: lats[i],
@@ -261,6 +274,7 @@
                 }
                 if (typeof p.pop === 'number' && p.pop > (pops[i] || 0)) pops[i] = p.pop;
                 if (p.cc && !cc[i]) cc[i] = p.cc;
+                if (p.alt) { alts[i] = p.alt; _indexAlts(p.alt, i, nf); }
                 refined++;
               }
               break;
@@ -273,7 +287,9 @@
         pops.push(typeof p.pop === 'number' ? p.pop : 0);
         lower.push(String(p.name).toLowerCase()); folded.push(nf);
         kinds.push(p.kind || ''); siteClass.push(p.site || '');
+        alts.push(p.alt || null);
         const at = folded.length - 1;
+        if (p.alt) _indexAlts(p.alt, at, nf);
         const list = _byFolded.get(nf);
         if (list) list.push(at); else _byFolded.set(nf, [at]);
         added++;
@@ -283,5 +299,57 @@
       return added + refined;
     };
 
-    return { names, cc, lats, lons, pops, kinds, siteClass, countryName, search, addPlaces, get count() { return names.length; } };
+    // Index a place's alt spellings for search + reverse lookup. Idempotent
+    // (refine passes re-run with the same values).
+    const _indexAlts = (alt, i, ownFolded) => {
+      for (const k of Object.keys(alt)) {
+        const af = fold(alt[k]);
+        if (!af || af === ownFolded) continue;
+        const key = af + '@' + i;
+        if (_altKeySeen.has(key)) continue;
+        _altKeySeen.add(key);
+        _altRows.push({ f: af, i });
+        const l = _altByFolded.get(af);
+        if (l) l.push(i); else _altByFolded.set(af, [i]);
+      }
+    };
+
+    // ---- name language (W17: "Turkish names come back Greek") --------------
+    // The dict's rows keep ONE canonical name (the pack's name:en choice); the
+    // language a name is SHOWN in is a display decision, made here and nowhere
+    // else. _langPref is an ordered list of alt keys to try ('tr', 'el', or
+    // the special 'loc' = what the local signs say); empty means the canonical
+    // name, which keeps every English-device behaviour byte-identical.
+    let _langPref = [];
+    const setNameLang = (pref) => { _langPref = Array.isArray(pref) ? pref.filter(Boolean) : []; };
+    const getNameLang = () => _langPref.slice();
+    // For a raw pack place ({ name, alt }) — the map's own labels.
+    const pickName = (place) => {
+      const alt = place && place.alt;
+      if (alt) { for (const l of _langPref) { if (alt[l]) return alt[l]; } }
+      return (place && place.name) || '';
+    };
+    // For a dict row.
+    const displayName = (i) => {
+      const alt = alts[i];
+      if (alt) { for (const l of _langPref) { if (alt[l]) return alt[l]; } }
+      return names[i];
+    };
+    // Reverse lookup for the stored-trip localize pass: the row this NAME at
+    // this SPOT came from — canonical or any alt spelling, nearest within
+    // ~0.1° so namesakes elsewhere never match. -1 when unknown (a name the
+    // dict didn't write is a user's own and must never be touched).
+    const findRow = (name, lat, lon) => {
+      const nf = fold(name);
+      const cands = (_byFolded.get(nf) || []).concat(_altByFolded.get(nf) || []);
+      let best = -1, bestD = Infinity;
+      for (const i of cands) {
+        const d = Math.abs(lats[i] - lat) + Math.abs(lons[i] - lon);
+        if (d < 0.1 && d < bestD) { bestD = d; best = i; }
+      }
+      return best;
+    };
+
+    return { names, cc, lats, lons, pops, kinds, siteClass, alts, countryName, search, addPlaces,
+      setNameLang, getNameLang, pickName, displayName, findRow, get count() { return names.length; } };
   })();
