@@ -92,8 +92,11 @@
           // entry never does — the fold happens exactly where it is true.
           let movedOn = false;
           if (photo.timestamp != null && prevTs != null) {
+            // 20min, not 45 (wave 18): a brisk walker photographs each village
+            // ~30min apart and 45 never fired. The refold safety is unchanged
+            // — a town wander that over-splits refolds by NAME downstream.
             movedOn = distanceKm(c.lat, c.lon, photo.lat, photo.lon) > 1.5
-              && (photo.timestamp - prevTs) > 45 * 60 * 1000;
+              && (photo.timestamp - prevTs) > 20 * 60 * 1000;
           }
           startNew = farInSpace || farInTime || movedOn;
         }
@@ -304,8 +307,11 @@
           // entry never does — the fold happens exactly where it is true.
           let movedOn = false;
           if (photo.timestamp != null && prevTs != null) {
+            // 20min, not 45 (wave 18): a brisk walker photographs each village
+            // ~30min apart and 45 never fired. The refold safety is unchanged
+            // — a town wander that over-splits refolds by NAME downstream.
             movedOn = distanceKm(c.lat, c.lon, photo.lat, photo.lon) > 1.5
-              && (photo.timestamp - prevTs) > 45 * 60 * 1000;
+              && (photo.timestamp - prevTs) > 20 * 60 * 1000;
           }
           startNew = farInSpace || farInTime || movedOn;
         }
