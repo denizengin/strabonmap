@@ -83,7 +83,19 @@
           if (photo.timestamp != null && prevTs != null) {
             farInTime = (photo.timestamp - prevTs) > CLUSTER_GAP_HRS * 3600 * 1000;
           }
-          startNew = farInSpace || farInTime;
+          // W23 (owner session — the intra-day walking tour): six villages
+          // walked in ONE day folded into two stops; 6km accretion only splits
+          // on big distance or a 14h gap. A walker who has MOVED ON — beyond
+          // ~1.5km with a real pause since the last photograph — has left the
+          // place. City sightseeing is safe: a big city's fragments re-fold
+          // downstream by NAME (mergeSameCity); a village without a gazetteer
+          // entry never does — the fold happens exactly where it is true.
+          let movedOn = false;
+          if (photo.timestamp != null && prevTs != null) {
+            movedOn = distanceKm(c.lat, c.lon, photo.lat, photo.lon) > 1.5
+              && (photo.timestamp - prevTs) > 45 * 60 * 1000;
+          }
+          startNew = farInSpace || farInTime || movedOn;
         }
         if (startNew) {
           current = { photos: [] };
@@ -283,7 +295,19 @@
           if (photo.timestamp != null && prevTs != null) {
             farInTime = (photo.timestamp - prevTs) > CLUSTER_GAP_HRS * 3600 * 1000;
           }
-          startNew = farInSpace || farInTime;
+          // W23 (owner session — the intra-day walking tour): six villages
+          // walked in ONE day folded into two stops; 6km accretion only splits
+          // on big distance or a 14h gap. A walker who has MOVED ON — beyond
+          // ~1.5km with a real pause since the last photograph — has left the
+          // place. City sightseeing is safe: a big city's fragments re-fold
+          // downstream by NAME (mergeSameCity); a village without a gazetteer
+          // entry never does — the fold happens exactly where it is true.
+          let movedOn = false;
+          if (photo.timestamp != null && prevTs != null) {
+            movedOn = distanceKm(c.lat, c.lon, photo.lat, photo.lon) > 1.5
+              && (photo.timestamp - prevTs) > 45 * 60 * 1000;
+          }
+          startNew = farInSpace || farInTime || movedOn;
         }
         if (startNew) {
           current = { photos: [] };

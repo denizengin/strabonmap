@@ -234,11 +234,21 @@
         water += _waterFraction(lat - d, lon + d, lat + d, lon - d, 8);
         return 1 - water / 4;
       };
+      // …and the SHORT case (owner session: the 5.4km drive from Larnaka to
+      // Larnaka Havaalanı sailed — the airport sits on the shoreline, the
+      // whole chord samples sea and sameLandmass fails on the offshore snap,
+      // so his film ended with a steamer to his own departure gate). No ferry
+      // exists at town-to-its-airport scale: under 12km, if EITHER endpoint
+      // sits on carried land, the leg is the shore road. Genuine short island
+      // hops keep sailing — both their endpoints float in pure water
+      // (Hydra 0.0), and real straits are wider than this anyway.
+      const shortShore = distKm < 12
+        && (localLand(fromLat, fromLon) >= 0.25 || localLand(toLat, toLon) >= 0.25);
       const coastal = distKm < 150
         && sameLandmass(fromLat, fromLon, toLat, toLon) === true
         && localLand(fromLat, fromLon) >= 0.3
         && localLand(toLat, toLon) >= 0.3;
-      if (!coastal) return transport.sea;
+      if (!coastal && !shortShore) return transport.sea;
     }
     if (airCapable && distKm >= 2500) return transport.air;
     // Stress finding (25 Jul, the Greek islands): a 20km strait between two
