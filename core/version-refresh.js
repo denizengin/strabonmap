@@ -99,13 +99,38 @@
             await IDBPhotoStore.close();
           }
         } catch {}
-        await new Promise((resolve) => {
+        // The kept-films store holds its own connection (separate DB by
+        // design) — close it too or its delete blocks and silently no-ops.
+        try {
+          if (window.__strabonFilms && typeof window.__strabonFilms.close === 'function') {
+            await window.__strabonFilms.close();
+          }
+        } catch {}
+        // An honest full wipe deletes EVERY strabon* database, not a named
+        // one — the films DB post-dated this code and survived "Erase all
+        // data", offering a film of an erased journey for sending (auditor,
+        // wave 44). Enumerate where the browser allows; the fallback list
+        // covers engines without indexedDB.databases().
+        let names = ['strabonMap', 'strabonFilms'];
+        try {
+          if (indexedDB.databases) {
+            const ds = await Promise.race([
+              indexedDB.databases(),
+              new Promise((res) => setTimeout(() => res(null), 800)),
+            ]);
+            if (Array.isArray(ds)) {
+              const found = ds.map((d) => d && d.name).filter((n) => n && /^strabon/i.test(n));
+              if (found.length) names = Array.from(new Set(names.concat(found)));
+            }
+          }
+        } catch {}
+        await Promise.all(names.map((n) => new Promise((resolve) => {
           try {
-            const req = indexedDB.deleteDatabase('strabonMap');
+            const req = indexedDB.deleteDatabase(n);
             req.onsuccess = req.onerror = req.onblocked = () => resolve();
           } catch { resolve(); }
           setTimeout(resolve, 1500);
-        });
+        })));
         finish();
       };
       wipeIdb();
