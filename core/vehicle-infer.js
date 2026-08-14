@@ -50,6 +50,29 @@
    * browser callers / unit-test contexts that don't load geo-data.
    */
   const _isOnLand = (lat, lon) => {
+    // FINE COASTLINE FIRST (owner's Rhodes trip, 14 Aug): the coarse
+    // Natural-Earth layer's island polygons drop whole shorelines — Rhodes
+    // town, Ialysos and the airport all sample as OPEN SEA (localLand 0.00),
+    // so a 7km drive to the island's own airport sailed. Any region pack the
+    // app has loaded carries the real OSM coastline for exactly these
+    // waters; ask it first, and only fall back to the coarse layer where no
+    // pack covers the point. The mechanism serves every island the packs
+    // know, not the one leg that exposed it.
+    try {
+      const packs = (typeof REGION_PACK_COASTS === 'function') ? REGION_PACK_COASTS() : null;
+      if (packs && packs.length) {
+        let covered = false;
+        for (const p of packs) {
+          const b = p && p.bbox;
+          if (!b || lon < b[0] || lon > b[2] || lat < b[1] || lat > b[3]) continue;
+          covered = true;
+          for (const ring of (p.coast || [])) {
+            if (_pointInRingVI(lon, lat, ring)) return true;
+          }
+        }
+        if (covered) return false; // a covering pack that excludes it IS sea
+      }
+    } catch (e) { /* fall through to the coarse layer */ }
     if (typeof NATURAL_EARTH_FC === 'undefined') return true;
     const features = NATURAL_EARTH_FC.features || [];
     for (const f of features) {
