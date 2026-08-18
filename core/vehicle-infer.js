@@ -104,6 +104,33 @@
    * because the legs were short and domestic).
    */
   const _landmassAt = (lat, lon) => {
+    // THE FINE COASTLINE KNOWS WHICH ISLAND (15 Aug): _isOnLand consults the
+    // loaded region packs, so points the coarse layer never carried now read
+    // as land — and a crossing between two such islands would infer a ROAD if
+    // this function still said "unknown". A pack ring IS a landmass: each is
+    // one island's shoreline, so its index identifies it. Hydra (ring 5) and
+    // Spetses (ring 38) are different rings, hence different landmasses,
+    // hence a ferry — the answer the coarse data could not give at all.
+    try {
+      const packs = (typeof REGION_PACK_COASTS === 'function') ? REGION_PACK_COASTS() : null;
+      if (packs && packs.length) {
+        for (const p of packs) {
+          const b = p && p.bbox;
+          if (!b || lon < b[0] || lon > b[2] || lat < b[1] || lat > b[3]) continue;
+          const rings = p.coast || [];
+          for (let i = 0; i < rings.length; i++) {
+            // The key is POSITIONAL (pack id + ring index) and is only ever
+            // compared for equality — same-vs-different is preserved under any
+            // ring reordering, but the string itself is not a stable
+            // identifier: never log it, persist it, or match it across a pack
+            // refresh. A harbour (Piraeus) sits in water at every resolution
+            // and returns null here by design; _landmassKey's outward walk
+            // then snaps it to its mainland ring within SNAP_TRUST_KM.
+            if (_pointInRingVI(lon, lat, rings[i])) return `${p.id}#${i}`;
+          }
+        }
+      }
+    } catch (e) { /* fall through to the coarse layer */ }
     if (typeof NATURAL_EARTH_FC === 'undefined') return null;
     const features = NATURAL_EARTH_FC.features || [];
     for (let fi = 0; fi < features.length; fi++) {
