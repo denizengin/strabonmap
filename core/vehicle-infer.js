@@ -103,6 +103,27 @@
    * where every open-sea ferry between islands guessed "by motor-car"
    * because the legs were short and domestic).
    */
+  /* The coarse world layer's own membership — one source among several. */
+  const _neAt = (lat, lon) => {
+    if (typeof NATURAL_EARTH_FC === 'undefined') return null;
+    const features = NATURAL_EARTH_FC.features || [];
+    for (let fi = 0; fi < features.length; fi++) {
+      const g = features[fi].geometry;
+      if (!g) continue;
+      const polys = (g.type === 'MultiPolygon') ? g.coordinates : [g.coordinates];
+      for (let pi = 0; pi < polys.length; pi++) {
+        const rings = polys[pi];
+        if (!_pointInRingVI(lon, lat, rings[0])) continue;
+        let inHole = false;
+        for (let i = 1; i < rings.length; i++) {
+          if (_pointInRingVI(lon, lat, rings[i])) { inHole = true; break; }
+        }
+        if (!inHole) return 'ne:' + fi + ':' + pi;
+      }
+    }
+    return null;
+  };
+
   const _landmassAt = (lat, lon) => {
     // THE FINE COASTLINE KNOWS WHICH ISLAND (15 Aug): _isOnLand consults the
     // loaded region packs, so points the coarse layer never carried now read
@@ -182,12 +203,63 @@
   const SNAP_TRUST_KM = 10;
   // Test/diagnostic seam: which landmass a point resolved to, and from how far.
   const landmassInfo = (lat, lon) => _landmassKey(lat, lon);
+  // A VERDICT MUST COME FROM ONE MAP ANSWERING BOTH POINTS (the owner's real
+  // trip, 27 Aug): Torba resolved through the turkey pack's ring while
+  // Türkbükü — 8km up the road, on shore the pack's coarse ring cuts off —
+  // resolved through the coarse world fallback, and comparing keys from two
+  // DIFFERENT maps declared one peninsula two landmasses: an 8km drive around
+  // a bay became a ferry. Keys are only comparable within a single source, so
+  // ask each source in fidelity order (each published pack, then the coarse
+  // world layer) whether IT can place both points — direct ring membership
+  // first, then the outward harbour walk WITHIN that same source — and the
+  // first source that can answer both delivers the verdict. A source that can
+  // place only one point abstains; no source able to place both = null, and
+  // the caller keeps the boat.
+  const _keyInSource = (src, lat, lon) => {
+    if (src.pack) {
+      const b = src.pack.bbox;
+      if (!b || lon < b[0] || lon > b[2] || lat < b[1] || lat > b[3]) return null;
+      const rings = src.pack.coast || [];
+      for (let i = 0; i < rings.length; i++) {
+        if (_pointInRingVI(lon, lat, rings[i])) return src.pack.id + '#' + i;
+      }
+      return null;
+    }
+    return _neAt(lat, lon);
+  };
+  const _resolveInSource = (src, lat, lon) => {
+    const here = _keyInSource(src, lat, lon);
+    if (here) return { key: here, snapKm: 0 };
+    const KM_PER_DEG = 111;
+    for (const km of [2, 5, 10]) {
+      const dLat = km / KM_PER_DEG;
+      const dLon = km / (KM_PER_DEG * Math.max(0.2, Math.cos(lat * Math.PI / 180)));
+      for (let a = 0; a < 8; a++) {
+        const th = a * Math.PI / 4;
+        const hit = _keyInSource(src, lat + dLat * Math.sin(th), lon + dLon * Math.cos(th));
+        if (hit) return { key: hit, snapKm: km };
+      }
+    }
+    return null;
+  };
+  const _sources = () => {
+    const out = [];
+    try {
+      const packs = (typeof REGION_PACK_COASTS === 'function') ? REGION_PACK_COASTS() : null;
+      for (const p of (packs || [])) { if (p && p.coast && p.coast.length) out.push({ pack: p }); }
+    } catch (e) {}
+    out.push({ ne: true });
+    return out;
+  };
   const sameLandmass = (aLat, aLon, bLat, bLon) => {
-    const a = _landmassKey(aLat, aLon);
-    const b = _landmassKey(bLat, bLon);
-    if (!a || !b) return null;
-    if (a.snapKm > SNAP_TRUST_KM || b.snapKm > SNAP_TRUST_KM) return null;
-    return a.key === b.key;
+    for (const src of _sources()) {
+      const a = _resolveInSource(src, aLat, aLon);
+      if (!a || a.snapKm > SNAP_TRUST_KM) continue;
+      const b = _resolveInSource(src, bLat, bLon);
+      if (!b || b.snapKm > SNAP_TRUST_KM) continue;
+      return a.key === b.key;
+    }
+    return null;
   };
 
   /* Ray-cast point-in-ring on a closed lon/lat ring. */
